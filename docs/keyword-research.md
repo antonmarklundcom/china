@@ -63,17 +63,17 @@ drive the plan are listed; everything at 10/mo is long tail and is covered by gu
 ## Round 2 (Sept 2026)
 | Keyword | Vol | Comp. | Top bid (kr) | Goes to |
 |---|---|---|---|---|
-| courier paraguay / courier en paraguay | 5,400 | Low | 1.99–5.63 | courier.com.py |
-| amazon paraguay / amazon en paraguay | 4,400 | Low | 1.37–8.14 | courier.com.py |
+| courier paraguay / courier en paraguay | 5,400 | Low | 1.99–5.63 | couriers.com.py |
+| amazon paraguay / amazon en paraguay | 4,400 | Low | 1.37–8.14 | couriers.com.py |
 | aliexpress paraguay | 2,400 (+81 % YoY) | Low | 0.30–4.17 | this site, §3.A |
-| paypal paraguay (py / en paraguay) | 2,400 | Low | 1.67–3.77 | courier.com.py |
-| ebay paraguay | 1,300 | Low | 1.17–6.45 | courier.com.py |
+| paypal paraguay (py / en paraguay) | 2,400 | Low | 1.67–3.77 | couriers.com.py |
+| ebay paraguay | 1,300 | Low | 1.17–6.45 | couriers.com.py |
 | aduana clorinda | 480 (+418 % YoY) | Low | — | this site, §3.C |
-| compras online paraguay | 320 | Med | 2.29–18.44 | courier.com.py |
+| compras online paraguay | 320 | Med | 2.29–18.44 | couriers.com.py |
 | wise paraguay / payoneer paraguay | 320 / 320 | Low | 3.2–14.3 | both (affiliate) |
-| paypal funciona en paraguay | 320 | Low | — | courier.com.py |
+| paypal funciona en paraguay | 320 | Low | — | couriers.com.py |
 | como comprar en temu desde paraguay | 70 | Low | — | this site, §3.A |
-| empresas de courier en paraguay | 70 | Low | 2.47–7.03 | courier.com.py |
+| empresas de courier en paraguay | 70 | Low | 2.47–7.03 | couriers.com.py |
 | puente san ignacio de loyola | 70 | Low | — | this site, §3.C |
 | forwarder paraguay | 50 | Med | 3.96–12.25 | this site, §3.B |
 | Argentina/Bolivia import + visa + Cantón terms | ≤ 10 each | — | — | no LatAm expansion |
