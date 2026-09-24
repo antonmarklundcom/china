@@ -72,7 +72,7 @@ require ROOT_DIR . '/partials/header.php';
     <section class="section section--surface">
       <div class="container prose">
         <?php foreach ($tool['intro'] as $paragraph): ?>
-          <p><?= e($paragraph) ?></p>
+          <p><?= rich($paragraph) ?></p>
         <?php endforeach; ?>
       </div>
     </section>

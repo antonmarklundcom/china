@@ -96,6 +96,17 @@ for forbidden in docs prompts tests deploy .git config.php dist plan.md README.m
   fi
 done
 
+# WITH_CONFIG=1 ships the local, git-ignored .secrets/config.php (VenderCRM key) inside
+# the zip for hosts where secrets cannot be set in a panel. The file is PHP
+# that only returns an array, and .htaccess denies it over HTTP, so the key is
+# never readable from the web. The zip name says so: never share that zip.
+if [ "${WITH_CONFIG:-0}" = "1" ]; then
+  [ -f "$ROOT/.secrets/config.php" ] || { echo "WITH_CONFIG=1 but .secrets/config.php is missing" >&2; exit 1; }
+  php -l "$ROOT/.secrets/config.php" >/dev/null || { echo "config.php does not parse" >&2; exit 1; }
+  cp "$ROOT/.secrets/config.php" "$STAGE/config.php"
+  NAME="$NAME-con-config"
+fi
+
 # Flat archive: extracting it inside public_html/ puts index.php, .htaccess and
 # every page directory directly in place — no wrapper folder to move out of.
 ( cd "$STAGE" && zip -qr "$DIST/$NAME.zip" . )

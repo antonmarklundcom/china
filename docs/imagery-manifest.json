@@ -6,7 +6,7 @@
     "ledger_checked": "2026-09-24: 10 lines \"GPT Image 2.5 Sunburst\", 6×1 + 4×0.5",
     "resolution_rule": "2k for hero/hub slots rendered ≥1200 px wide, 1k for service/guide figures",
     "high_slots": [],
-    "download_status": "awaiting-download: this cloud environment blocks *.cloudfront.net (CONNECT 403). Run deploy/fetch-images.sh where the CDN is reachable."
+    "download_status": "localized 2026-09-24 by the localize-images workflow (webimg batch, AVIF+WebP) — 10/10 in assets/img"
   },
   "images": [
     {

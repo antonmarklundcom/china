@@ -24,7 +24,7 @@ $faqTitle = $faqTitle ?? ui('service.faq');
     <?php if (empty($faqItem['q']) || empty($faqItem['a'])) { continue; } ?>
     <details>
       <summary><?= e($faqItem['q']) ?></summary>
-      <p><?= e($faqItem['a']) ?></p>
+      <p><?= rich($faqItem['a']) ?></p>
     </details>
   <?php endforeach; ?>
 </div>

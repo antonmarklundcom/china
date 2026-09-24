@@ -42,7 +42,7 @@ $page = [
 ];
 
 $svcImage    = $service['image'] ?? null;
-$page['ogImage'] = image_ready($svcImage) ? $svcImage['src'] : null;
+$page['ogImage'] = image_og($svcImage);
 $hero        = $service['hero'];
 $ctaWhatsapp = whatsapp_text_for_page($page);
 
@@ -75,11 +75,7 @@ require ROOT_DIR . '/partials/header.php';
         </div>
       </div>
       <?php if (image_ready($svcImage)): ?>
-        <figure class="page-hero__figure">
-          <img src="<?= e(asset($svcImage['src'])) ?>" alt="<?= e($svcImage['alt'] ?? '') ?>"
-               width="<?= e((string) ($svcImage['width'] ?? 1600)) ?>" height="<?= e((string) ($svcImage['height'] ?? 900)) ?>"
-               fetchpriority="high" decoding="async">
-        </figure>
+        <figure class="page-hero__figure"><?= picture_html($svcImage, '(max-width: 1280px) 100vw, 1200px', '', true) ?></figure>
       <?php endif; ?>
     </div>
   </section>
@@ -146,7 +142,7 @@ require ROOT_DIR . '/partials/header.php';
           <div class="prose">
             <h2><?= e($block['h2'] ?? '') ?></h2>
             <?php foreach ($block['body'] ?? [] as $paragraph): ?>
-              <p><?= e($paragraph) ?></p>
+              <p><?= rich($paragraph) ?></p>
             <?php endforeach; ?>
             <?php if (!empty($block['items'])): ?>
               <div class="grid grid--2 mt-4">

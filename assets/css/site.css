@@ -2535,7 +2535,7 @@ a.industries__item:focus-visible {
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
-.hero__img + .route-card { margin-top: -96px; margin-inline: 24px; position: relative; }
+.hero__visual picture + .route-card { margin-top: -96px; margin-inline: 24px; position: relative; }
 
 .route-card {
   background: var(--bg);
@@ -2719,9 +2719,10 @@ a.industries__item:focus-visible {
 @media (max-width: 768px) {
   .doors,
   .link-list { grid-template-columns: 1fr; }
-  .hero__img + .route-card { margin-top: -48px; margin-inline: 12px; }
+  .hero__visual picture + .route-card { margin-top: -48px; margin-inline: 12px; }
   .route-card { padding: 20px; }
 }
 .section--ink .section-head__aside { color: var(--on-ink-muted); }
 .route::before { bottom: 30px; }
 .tool-form__row { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.hero__visual picture, .door picture, .page-hero__figure picture { display: block; }

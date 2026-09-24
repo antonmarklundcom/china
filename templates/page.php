@@ -56,7 +56,7 @@ require ROOT_DIR . '/partials/header.php';
               <h2><?= e($pageBlock['h2']) ?></h2>
             <?php endif; ?>
             <?php foreach ($pageBlock['body'] ?? [] as $pageParagraph): ?>
-              <p><?= e($pageParagraph) ?></p>
+              <p><?= rich($pageParagraph) ?></p>
             <?php endforeach; ?>
           </div>
         <?php endforeach; ?>

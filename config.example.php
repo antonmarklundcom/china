@@ -14,7 +14,7 @@ declare(strict_types=1);
 return [
     // Absolute origin, no trailing slash. Used for canonical URLs, OG tags and
     // the sitemap. Falls back to the request host when empty.
-    'SITE_URL' => '',
+    'SITE_URL' => 'https://china.com.py',
 
     // VenderCRM (Sitios → this site). Without both values the lead form runs in
     // degraded mode: submissions are appended to logs/leads.log and the visitor
