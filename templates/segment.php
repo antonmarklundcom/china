@@ -31,7 +31,7 @@ $page = [
     'description' => $record['metaDescription'],
     'path'        => $record['path'],
     'breadcrumbs' => [
-        ['label' => ui('nav.services'), 'path' => '/servicios/'],
+        ['label' => ui('nav.services'), 'path' => services_hub_path()],
         ['label' => $record['seoTitle'], 'path' => $record['path']],
     ],
     'faq'      => $record['faq'],

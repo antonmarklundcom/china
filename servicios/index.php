@@ -7,12 +7,12 @@
 
 require __DIR__ . '/../lib/bootstrap.php';
 
-$meta = page_meta('/servicios/');
+$meta = page_meta(services_hub_path());
 $page = [
     'title'       => $meta['title'],
     'description' => $meta['description'],
-    'path'        => '/servicios/',
-    'breadcrumbs' => [['label' => ui('nav.services'), 'path' => '/servicios/']],
+    'path'        => services_hub_path(),
+    'breadcrumbs' => [['label' => ui('nav.services'), 'path' => services_hub_path()]],
 ];
 
 $hubWhatsapp = whatsapp_link(whatsapp_text_for_page());

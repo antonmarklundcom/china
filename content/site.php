@@ -33,6 +33,11 @@ return [
     // 'Plumber', 'Dentist', 'AccountingService', …).
     'schemaType' => ['LocalBusiness'],
 
+    // Path of the services hub. '/servicios/' by default; a store can use
+    // '/productos/'. Move the servicios/ route directory and its
+    // content/pages.php key to match.
+    'servicesHub' => '/servicios/',
+
     'legalName'   => null,                       // registered legal name
     'description' => 'Empresa de ejemplo: reemplace este texto por lo que hace el negocio, '
                    . 'en una frase que un cliente reconozca.',

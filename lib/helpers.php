@@ -95,6 +95,18 @@ function services(?string $slug = null): ?array
 }
 
 /**
+ * Path of the services hub — '/servicios/' unless content/site.php sets
+ * 'servicesHub' (e.g. '/productos/' for a store). The hub's route directory
+ * must match: move servicios/index.php to the new path.
+ */
+function services_hub_path(): string
+{
+    $hub = site('servicesHub');
+
+    return is_string($hub) && $hub !== '' ? $hub : '/servicios/';
+}
+
+/**
  * A static page record from content/pages.php, keyed by path.
  */
 function page_meta(string $path): array

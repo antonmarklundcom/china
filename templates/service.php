@@ -24,7 +24,7 @@ $clusterLabel = clusters()[$service['cluster']] ?? '';
 
 /* Inicio › Servicios › [Auditoría ›] Title — the audit children sit under their
    sub-hub. */
-$breadcrumbs = [['label' => ui('nav.services'), 'path' => '/servicios/']];
+$breadcrumbs = [['label' => ui('nav.services'), 'path' => services_hub_path()]];
 if (!empty($service['parent']) && ($parent = services($service['parent'])) !== null) {
     $breadcrumbs[] = ['label' => $parent['navLabel'], 'path' => $parent['path']];
 }

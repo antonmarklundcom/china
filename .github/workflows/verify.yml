@@ -1,13 +1,19 @@
 name: verify
 
+# Budget: PR-only (a push to main was a second, billed run of the same commit),
+# superseded runs cancelled, and every job capped well under the 360-minute default.
 on:
   pull_request:
-  push:
-    branches: [main]
+    paths-ignore: ['**.md', 'docs/**', 'prompts/**']
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -32,6 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     # Preview images for the PR body. Never blocks the merge on its own.
     if: github.event_name == 'pull_request'
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:

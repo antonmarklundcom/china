@@ -117,7 +117,7 @@ require ROOT_DIR . '/partials/header.php';
         </a>
       </div>
 
-      <p class="mt-4"><a href="/servicios/"><?= e(ui('nav.all_services')) ?> &rarr;</a></p>
+      <p class="mt-4"><a href="<?= e(services_hub_path()) ?>"><?= e(ui('nav.all_services')) ?> &rarr;</a></p>
     </div>
   </section>
 

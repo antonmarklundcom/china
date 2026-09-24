@@ -42,7 +42,7 @@ require ROOT_DIR . '/partials/header.php';
       $gridNumbered = false;
       require ROOT_DIR . '/partials/service-card-grid.php';
       ?>
-      <p class="mt-4"><a href="/servicios/"><?= e(ui('nav.all_services')) ?> →</a></p>
+      <p class="mt-4"><a href="<?= e(services_hub_path()) ?>"><?= e(ui('nav.all_services')) ?> →</a></p>
     </div>
   </section>
 </main>

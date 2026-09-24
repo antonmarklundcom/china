@@ -43,7 +43,7 @@ foreach ($byCluster as $cluster) {
 return [
     // Header bar, left to right. 'mega' opens the services panel.
     'primary' => [
-        ['label' => ui('nav.services'), 'path' => '/servicios/', 'mega' => true],
+        ['label' => ui('nav.services'), 'path' => services_hub_path(), 'mega' => true],
         ['label' => ui('nav.pricing'),  'path' => '/precios/'],
         ['label' => ui('nav.tools'),    'path' => '/herramientas/'],
         ['label' => ui('nav.guides'),   'path' => '/guias/'],

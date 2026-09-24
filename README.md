@@ -40,7 +40,8 @@ is open. Budget: about 30 minutes.
    not, fix that first; every later step trusts this gate.
 3. **Branch.** `git checkout -b t0-adopt`.
 4. **Identity.** Edit `content/site.php`: `name`, `domain`, `slug` (lower-case, names the deploy
-   zip), `market` (`py` or `se`), `schemaType` (the schema.org type of the business, e.g.
+   zip), `market` (`py` or `se`), `servicesHub` (`/servicios/` by default; a store can use
+   `/productos/` — then move `servicios/index.php` and its `content/pages.php` key to match), `schemaType` (the schema.org type of the business, e.g.
    `['LegalService']`), `description`. Leave every contact and address value `null` until the
    owner confirms it — the site degrades on purpose.
 5. **Language and labels.** Edit `content/ui.php`: every visible word on the site is here. For a
