@@ -92,14 +92,14 @@ return [
             [
                 'h2' => 'Cuándo conviene pedir asesoría',
                 'body' => [
-                    'Conviene en su primera compra del exterior, cuando el pedido tiene un valor que no quiere arriesgar, cuando compra artículos voluminosos o electrónicos, o cuando piensa comprar cantidades para vender y no sabe si ya es una importación.',
-                    'Si su pedido es chico, con envío directo y seguimiento, probablemente no la necesite: nuestras guías de Temu, Shein y AliExpress cubren ese caso.',
+                    'Conviene en su primera compra del exterior (puede estimar el costo antes con la [calculadora de compras online](/herramientas/calculadora-compras-online/)), cuando el pedido tiene un valor que no quiere arriesgar, cuando compra artículos voluminosos o electrónicos, o cuando piensa comprar cantidades para vender y no sabe si ya es una importación.',
+                    'Si su pedido es chico, con envío directo y seguimiento, probablemente no la necesite: nuestras guías de [Temu en Paraguay](/comprar/temu-paraguay/), Shein en Paraguay y AliExpress en Paraguay cubren ese caso.',
                 ],
             ],
             [
                 'h2' => 'Quién hace qué',
                 'body' => [
-                    'Nosotros orientamos y coordinamos. La tienda vende y envía; el courier transporta, declara y cobra los tributos; la aduana (DNIT) libera el paquete. Si la compra pasa a ser comercial, lo conectamos con un agente de compras en China y con un despachante de aduana matriculado, que es quien hace el despacho formal. No somos una empresa oficial ni estamos afiliados a Temu, Shein, AliExpress ni Alibaba.',
+                    'Nosotros orientamos y coordinamos. La tienda vende y envía; el courier transporta, declara y cobra los tributos; la aduana (DNIT) libera el paquete. Si la compra pasa a ser comercial, lo conectamos con un [agente de compras en China](/servicios/agente-de-compras-china/) y con un [despachante de aduana matriculado](/aduana/despachantes-de-aduana-paraguay/), que es quien hace el despacho formal. No somos una empresa oficial ni estamos afiliados a Temu, Shein, AliExpress ni Alibaba.',
                 ],
             ],
         ],
@@ -111,10 +111,10 @@ return [
         ],
         'faq' => [
             ['q' => '¿Ustedes compran por mí en Temu o Shein?', 'a' => 'No. Usted compra y paga en la plataforma oficial; nosotros revisamos el pedido y le explicamos el costo final y la mejor forma de envío.'],
-            ['q' => '¿Me pueden decir exactamente cuánto voy a pagar de impuestos?', 'a' => 'Le damos una estimación con las reglas y tarifas vigentes que confirmamos con el courier o la DNIT. El monto final lo liquida la aduana a través del courier.'],
+            ['q' => '¿Me pueden decir exactamente cuánto voy a pagar de impuestos?', 'a' => 'Le damos una estimación con las reglas y tarifas vigentes que confirmamos con el courier o la DNIT. El monto final lo liquida la aduana a través del courier; el mecanismo está explicado en [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/).'],
             ['q' => '¿Me ayudan si el paquete quedó retenido?', 'a' => 'Sí, le indicamos qué documento falta y a quién presentarlo. Si hace falta un despacho formal, lo conectamos con un despachante de aduana matriculado.'],
-            ['q' => '¿Sirve para compras en Alibaba?', 'a' => 'Sí, para una muestra o un primer pedido chico. Para volumen comercial, lo derivamos a un agente de compras y a la guía de importación.'],
-            ['q' => '¿Trabajan con un courier en particular?', 'a' => 'Coordinamos con couriers socios, pero le explicamos cómo comparar casillas para que usted decida.'],
+            ['q' => '¿Sirve para compras en Alibaba?', 'a' => 'Sí, para una muestra o un primer pedido chico (vea Alibaba en Paraguay). Para volumen comercial, lo derivamos a un agente de compras y a la guía cómo importar de China a Paraguay.'],
+            ['q' => '¿Trabajan con un courier en particular?', 'a' => 'Coordinamos con couriers socios, pero le explicamos cómo comparar [casillas de courier en Paraguay](/comprar/casillas-courier-paraguay/) para que usted decida.'],
         ],
         'cta' => [
             'label' => 'Consultar mi pedido',
@@ -128,7 +128,7 @@ return [
         ],
         'affiliates' => [],
         'disclaimer' => false,
-        'image' => ['src' => '/assets/img/guias/compra-online-desempaque.webp', 'alt' => 'Persona abre en la mesa de su cocina un paquete de una compra online y sostiene una prenda', 'width' => 1200, 'height' => 671],
+        'image' => ['base' => '/assets/img/compra-online-desempaque-paraguay', 'widths' => [640, 1280], 'alt' => 'Persona abre en la mesa de su cocina un paquete de una compra online y sostiene una prenda', 'width' => 1280, 'height' => 716],
     ],
 
 ];
