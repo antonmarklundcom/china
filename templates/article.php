@@ -133,7 +133,7 @@ require ROOT_DIR . '/partials/header.php';
             <?php if (!empty($articleSection['items'])): ?>
               <ul class="checklist mt-4">
                 <?php foreach ($articleSection['items'] as $sectionItem): ?>
-                  <li><span><?php if (!empty($sectionItem['title'])): ?><strong><?= e($sectionItem['title']) ?>:</strong> <?php endif; ?><?= e($sectionItem['text'] ?? '') ?></span></li>
+                  <li><span><?php if (!empty($sectionItem['title'])): ?><strong><?= e($sectionItem['title']) ?>:</strong> <?php endif; ?><?= rich($sectionItem['text'] ?? '') ?></span></li>
                 <?php endforeach; ?>
               </ul>
             <?php endif; ?>

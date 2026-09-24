@@ -149,7 +149,7 @@ require ROOT_DIR . '/partials/header.php';
                 <?php foreach ($block['items'] as $item): ?>
                   <div class="card">
                     <h3 class="card-title"><?= e($item['title'] ?? '') ?></h3>
-                    <p class="card__text"><?= e($item['text'] ?? '') ?></p>
+                    <p class="card__text"><?= rich($item['text'] ?? '') ?></p>
                   </div>
                 <?php endforeach; ?>
               </div>
@@ -168,7 +168,7 @@ require ROOT_DIR . '/partials/header.php';
           <?php foreach ($service['benefits'] as $benefit): ?>
             <div class="card">
               <h3 class="card-title"><?= e($benefit['title'] ?? '') ?></h3>
-              <p class="card__text"><?= e($benefit['text'] ?? '') ?></p>
+              <p class="card__text"><?= rich($benefit['text'] ?? '') ?></p>
             </div>
           <?php endforeach; ?>
         </div>
