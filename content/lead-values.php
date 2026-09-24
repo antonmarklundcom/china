@@ -49,78 +49,198 @@ $tierValues = [
 /* Labels for `need` keys that are not one of the form chips, so the CRM reads a
    sentence instead of a raw key. */
 $needLabels = [
-    'recordatorio' => 'Recordatorio de vencimientos',
+    'recordatorio' => 'Aviso de cambios en las reglas',
 ];
 
 return [
-
     'tierValues' => $tierValues,
     'needLabels' => $needLabels,
-
-    /* Which services the WhatsApp menu offers, in order, after the current
-       page's own service. Keep it short: four is plenty. */
-    'whatsappMenu' => ['servicio-ejemplo'],
-
-    /* The record for a page that names no service: an article without one, a
-       legal page, the homepage. Never null — every form resolves to something. */
+    'whatsappMenu' => [
+        'importacion-llave-en-mano',
+        'agente-de-compras-china',
+        'despacho-aduanero',
+        'asesoria-compras-online',
+    ],
     'default' => [
-        'menuLabel'    => 'Consulta general',
-        'need'         => 'otro',
-        'tier'         => 'C',
-        'whatsappText' => 'Hola, quisiera hacer una consulta.',
-        'nextStep'     => [
+        'menuLabel' => 'Consulta general',
+        'need' => 'importar',
+        'tier' => 'C',
+        'whatsappText' => 'Hola, vi china.com.py y quisiera hacer una consulta sobre comprar o importar de China.',
+        'nextStep' => [
             'Le respondemos dentro del siguiente día hábil.',
-            'Tenga a mano una descripción breve de su situación.',
+            'Cuéntenos qué producto quiere traer y en qué cantidad.',
         ],
-        'crmTag'       => 'consulta-general',
-        'nextLink'     => null,
+        'crmTag' => 'consulta-general',
+        'nextLink' => null,
     ],
-
-    /* One record per key in content/services.php. verify.sh fails when a service
-       has none — an untagged lead is a lead nobody can route. */
     'services' => [
-        'servicio-ejemplo' => [
-            'example' => true,
-            'menuLabel'    => 'Servicio de ejemplo',
-            'need'         => 'servicio',
-            'tier'         => 'A',
-            'whatsappText' => 'Hola, quisiera consultar por el servicio de ejemplo.',
-            'nextStep'     => [
+        'asesoria-compras-online' => [
+            'menuLabel' => 'Asesoría compras online',
+            'need' => 'compras',
+            'tier' => 'C',
+            'whatsappText' => 'Hola, vi la página de asesoría compras online en china.com.py y quisiera consultar.',
+            'nextStep' => [
                 'Le respondemos dentro del siguiente día hábil.',
-                'Tenga a mano la documentación que pedimos en "qué necesitamos de usted".',
+                'Tenga a mano qué producto, qué cantidad y para cuándo lo necesita.',
             ],
-            'crmTag'       => 'servicio-ejemplo',
-            'nextLink'     => [
-                'path'  => '/herramientas/herramienta-ejemplo/',
-                'label' => 'Mientras tanto, haga la cuenta',
+            'crmTag' => 'compras-asesoria-compras-online',
+            'nextLink' => null,
+        ],
+        'agente-de-compras-china' => [
+            'menuLabel' => 'Agente de compras en China',
+            'need' => 'importar',
+            'tier' => 'B',
+            'whatsappText' => 'Hola, vi la página de agente de compras en china en china.com.py y quisiera consultar.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Tenga a mano qué producto, qué cantidad y para cuándo lo necesita.',
             ],
+            'crmTag' => 'importar-agente-de-compras-china',
+            'nextLink' => null,
+        ],
+        'inspeccion-de-calidad' => [
+            'menuLabel' => 'Inspección de calidad',
+            'need' => 'importar',
+            'tier' => 'B',
+            'whatsappText' => 'Hola, vi la página de inspección de calidad en china.com.py y quisiera consultar.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Tenga a mano qué producto, qué cantidad y para cuándo lo necesita.',
+            ],
+            'crmTag' => 'importar-inspeccion-de-calidad',
+            'nextLink' => null,
+        ],
+        'flete-maritimo-contenedor' => [
+            'menuLabel' => 'Flete marítimo y contenedor',
+            'need' => 'importar',
+            'tier' => 'A',
+            'whatsappText' => 'Hola, vi la página de flete marítimo y contenedor en china.com.py y quisiera consultar.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Tenga a mano qué producto, qué cantidad y para cuándo lo necesita.',
+            ],
+            'crmTag' => 'importar-flete-maritimo-contenedor',
+            'nextLink' => null,
+        ],
+        'flete-aereo-china' => [
+            'menuLabel' => 'Flete aéreo',
+            'need' => 'importar',
+            'tier' => 'B',
+            'whatsappText' => 'Hola, vi la página de flete aéreo en china.com.py y quisiera consultar.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Tenga a mano qué producto, qué cantidad y para cuándo lo necesita.',
+            ],
+            'crmTag' => 'importar-flete-aereo-china',
+            'nextLink' => null,
+        ],
+        'importacion-llave-en-mano' => [
+            'menuLabel' => 'Importación llave en mano',
+            'need' => 'importar',
+            'tier' => 'A',
+            'whatsappText' => 'Hola, vi la página de importación llave en mano en china.com.py y quisiera consultar.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Tenga a mano qué producto, qué cantidad y para cuándo lo necesita.',
+            ],
+            'crmTag' => 'importar-importacion-llave-en-mano',
+            'nextLink' => null,
+        ],
+        'despacho-aduanero' => [
+            'menuLabel' => 'Despacho aduanero',
+            'need' => 'aduana',
+            'tier' => 'B',
+            'whatsappText' => 'Hola, vi la página de despacho aduanero en china.com.py y quisiera consultar.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Tenga a mano qué producto, qué cantidad y para cuándo lo necesita.',
+            ],
+            'crmTag' => 'aduana-despacho-aduanero',
+            'nextLink' => null,
+        ],
+        'visa-china' => [
+            'menuLabel' => 'Visa China',
+            'need' => 'viajes',
+            'tier' => 'B',
+            'whatsappText' => 'Hola, vi la página de visa china en china.com.py y quisiera consultar.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Tenga a mano qué producto, qué cantidad y para cuándo lo necesita.',
+            ],
+            'crmTag' => 'viajes-visa-china',
+            'nextLink' => null,
+        ],
+        'tour-negocios-china' => [
+            'menuLabel' => 'Tour Feria de Cantón',
+            'need' => 'viajes',
+            'tier' => 'A',
+            'whatsappText' => 'Hola, vi la página de tour feria de cantón en china.com.py y quisiera consultar.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Tenga a mano qué producto, qué cantidad y para cuándo lo necesita.',
+            ],
+            'crmTag' => 'viajes-tour-negocios-china',
+            'nextLink' => null,
         ],
     ],
-
-    /* One record per key in content/tools.php. A calculator lead is worth less
-       than a service lead — that is the whole point of tiering them. */
     'tools' => [
-        'herramienta-ejemplo' => [
-            'example' => true,
-            'menuLabel'    => 'Calculadora de ejemplo',
-            'need'         => 'servicio',
-            'tier'         => 'C',
-            'whatsappText' => 'Hola, usé la calculadora de ejemplo y quisiera confirmar el resultado.',
-            'nextStep'     => [
+        'calculadora-costo-importacion' => [
+            'menuLabel' => 'Costo de importación',
+            'need' => 'importar',
+            'tier' => 'C',
+            'whatsappText' => 'Hola, usé la calculadora de costo de importación en china.com.py y quisiera una cotización real.',
+            'nextStep' => [
                 'Le respondemos dentro del siguiente día hábil.',
-                'Guarde el resultado que calculó: se lo revisamos con usted.',
+                'Guarde el resultado que calculó: lo usamos como punto de partida.',
             ],
-            'crmTag'       => 'herramienta-ejemplo',
-            'nextLink'     => null,
+            'crmTag' => 'herramienta-calculadora-costo-importacion',
+            'nextLink' => null,
+        ],
+        'calculadora-cbm-contenedor' => [
+            'menuLabel' => 'CBM y contenedor',
+            'need' => 'importar',
+            'tier' => 'C',
+            'whatsappText' => 'Hola, usé la calculadora de cbm y contenedor en china.com.py y quisiera una cotización real.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Guarde el resultado que calculó: lo usamos como punto de partida.',
+            ],
+            'crmTag' => 'herramienta-calculadora-cbm-contenedor',
+            'nextLink' => null,
+        ],
+        'calculadora-compras-online' => [
+            'menuLabel' => 'Compras online',
+            'need' => 'compras',
+            'tier' => 'C',
+            'whatsappText' => 'Hola, usé la calculadora de compras online en china.com.py y quisiera una cotización real.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Guarde el resultado que calculó: lo usamos como punto de partida.',
+            ],
+            'crmTag' => 'herramienta-calculadora-compras-online',
+            'nextLink' => null,
         ],
     ],
-
-    /* One record per chip in content/ui.php 'needs'. A lead from a page with no
-       service of its own takes the tier of the chip the visitor picked, and
-       borrows that chip's service copy when it names one. */
     'needs' => [
-        'servicio' => ['tier' => 'B', 'crmTag' => 'servicio-puntual', 'service' => 'servicio-ejemplo'],
-        'mensual'  => ['tier' => 'A', 'crmTag' => 'trabajo-mensual',  'service' => 'servicio-ejemplo'],
-        'otro'     => ['tier' => 'C', 'crmTag' => 'consulta-general', 'service' => null],
+        'compras' => [
+            'tier' => 'C',
+            'crmTag' => 'chip-compras',
+            'service' => 'asesoria-compras-online',
+        ],
+        'importar' => [
+            'tier' => 'B',
+            'crmTag' => 'chip-importar',
+            'service' => 'importacion-llave-en-mano',
+        ],
+        'aduana' => [
+            'tier' => 'B',
+            'crmTag' => 'chip-aduana',
+            'service' => 'despacho-aduanero',
+        ],
+        'viajes' => [
+            'tier' => 'B',
+            'crmTag' => 'chip-viajes',
+            'service' => 'visa-china',
+        ],
     ],
 ];

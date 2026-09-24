@@ -31,8 +31,8 @@ $page = [
     'description' => $record['metaDescription'],
     'path'        => $record['path'],
     'breadcrumbs' => [
-        ['label' => ui('nav.services'), 'path' => services_hub_path()],
-        ['label' => $record['seoTitle'], 'path' => $record['path']],
+        ['label' => ui('hubs.importar.label'), 'path' => ui('hubs.importar.path')],
+        ['label' => $record['navLabel'], 'path' => $record['path']],
     ],
     'faq'      => $record['faq'],
     /* Every WhatsApp link and the CTA band on this page resolve through the
@@ -40,6 +40,8 @@ $page = [
     'leadSlug' => $record['leadSlug'],
 ];
 
+$segImage    = $record['image'] ?? null;
+$page['ogImage'] = $segImage['src'] ?? null;
 $hero        = $record['hero'];
 $ctaWhatsapp = whatsapp_text_for_page($page);
 
@@ -62,6 +64,13 @@ require ROOT_DIR . '/partials/header.php';
           <?php endif; ?>
         </div>
       </div>
+      <?php if (!empty($segImage['src'])): ?>
+        <figure class="page-hero__figure">
+          <img src="<?= e(asset($segImage['src'])) ?>" alt="<?= e($segImage['alt'] ?? '') ?>"
+               width="<?= e((string) ($segImage['width'] ?? 1600)) ?>" height="<?= e((string) ($segImage['height'] ?? 900)) ?>"
+               fetchpriority="high" decoding="async">
+        </figure>
+      <?php endif; ?>
     </div>
   </section>
 

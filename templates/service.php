@@ -41,6 +41,8 @@ $page = [
     'leadSlug'    => $slug,
 ];
 
+$svcImage    = $service['image'] ?? null;
+$page['ogImage'] = $svcImage['src'] ?? null;
 $hero        = $service['hero'];
 $ctaWhatsapp = whatsapp_text_for_page($page);
 
@@ -72,8 +74,27 @@ require ROOT_DIR . '/partials/header.php';
           <?php endif; ?>
         </div>
       </div>
+      <?php if (!empty($svcImage['src'])): ?>
+        <figure class="page-hero__figure">
+          <img src="<?= e(asset($svcImage['src'])) ?>" alt="<?= e($svcImage['alt'] ?? '') ?>"
+               width="<?= e((string) ($svcImage['width'] ?? 1600)) ?>" height="<?= e((string) ($svcImage['height'] ?? 900)) ?>"
+               fetchpriority="high" decoding="async">
+        </figure>
+      <?php endif; ?>
     </div>
   </section>
+
+  <?php if (!empty($service['disclaimer']) || !empty($service['affiliates'])): ?>
+    <section class="section section--tight">
+      <div class="container stack">
+        <?php if (!empty($service['disclaimer'])): ?>
+          <?php if (is_array($service['disclaimer'])) { $discLink = $service['disclaimer']; } ?>
+          <?php require ROOT_DIR . '/partials/disclaimer-oficial.php'; ?>
+        <?php endif; ?>
+        <?php $affIds = $service['affiliates'] ?? []; require ROOT_DIR . '/partials/affiliate-box.php'; ?>
+      </div>
+    </section>
+  <?php endif; ?>
 
   <?php
     $svcExcludes = $service['excludes'] ?? [];

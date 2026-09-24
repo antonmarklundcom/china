@@ -27,38 +27,11 @@
  * Every tool slug also needs a record in content/lead-values.php.
  */
 
+/* LOADER: the records live in one file per cluster under content/tools/,
+   so two content phases never edit the same file. Add a cluster file here. */
+
 declare(strict_types=1);
 
-return [
-
-    'herramienta-ejemplo' => [
-        'example' => true,
-        'path'            => '/herramientas/herramienta-ejemplo/',
-        'title'           => 'Calculadora de ejemplo',
-        'navLabel'        => 'Calculadora de ejemplo',
-        'seoTitle'        => 'Calculadora de ejemplo',
-        'metaDescription' => 'Calculadora de ejemplo: muestra cómo una herramienta se arma sobre '
-                           . 'templates/tool.php y el módulo de mercado, sin tocar el chrome.',
-        'hero' => [
-            'eyebrow' => 'Herramientas',
-            'h1'      => 'Calculadora de ejemplo',
-            'lead'    => 'Una línea que dice exactamente qué calcula y para quién.',
-        ],
-        'intro' => [
-            'Dos o tres párrafos que explican la cuenta que hace la calculadora, con las reglas '
-                . 'que aplica y sus límites. Este texto se lee sin JavaScript y es lo que posiciona '
-                . 'la página: la calculadora convierte, el texto es lo que trae la visita.',
-        ],
-        'faq' => [
-            [
-                'q' => '¿De dónde salen los números?',
-                'a' => 'Del módulo de mercado (lib/market/<market>.php), que es la única fuente de '
-                     . 'tablas legales del sitio.',
-            ],
-        ],
-        'related'       => ['servicio-ejemplo'],
-        'ctaWhatsapp'   => '',
-        'formNeed'      => 'servicio',
-        'analyticsTool' => 'herramienta_ejemplo',
-    ],
-];
+return array_merge(
+    require __DIR__ . '/tools/herramientas.php'
+);

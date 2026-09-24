@@ -43,12 +43,12 @@ foreach ($byCluster as $cluster) {
 return [
     // Header bar, left to right. 'mega' opens the services panel.
     'primary' => [
-        ['label' => ui('nav.services'), 'path' => services_hub_path(), 'mega' => true],
-        ['label' => ui('nav.pricing'),  'path' => '/precios/'],
-        ['label' => ui('nav.tools'),    'path' => '/herramientas/'],
-        ['label' => ui('nav.guides'),   'path' => '/guias/'],
-        ['label' => ui('nav.blog'),     'path' => '/blog/'],
-        ['label' => ui('nav.contact'),  'path' => '/contacto/'],
+        ['label' => ui('hubs.compras.label'),  'path' => ui('hubs.compras.path')],
+        ['label' => ui('hubs.importar.label'), 'path' => ui('hubs.importar.path')],
+        ['label' => ui('hubs.aduana.label'),   'path' => ui('hubs.aduana.path')],
+        ['label' => ui('hubs.viajes.label'),   'path' => ui('hubs.viajes.path')],
+        ['label' => ui('nav.services'),        'path' => services_hub_path(), 'mega' => true],
+        ['label' => ui('nav.tools'),           'path' => '/herramientas/'],
     ],
 
     // The clusters inside the services mega-menu.
@@ -59,10 +59,11 @@ return [
 
     // Footer column 3. Tools are appended from the 'tools' key below.
     'firm' => [
-        ['label' => ui('nav.pricing'), 'path' => '/precios/'],
-        ['label' => ui('nav.guides'),  'path' => '/guias/'],
-        ['label' => ui('nav.blog'),    'path' => '/blog/'],
-        ['label' => ui('nav.contact'), 'path' => '/contacto/'],
+        ['label' => ui('nav.about'),    'path' => '/sobre/'],
+        ['label' => ui('nav.guides'),   'path' => '/guias/'],
+        ['label' => ui('nav.blog'),     'path' => '/blog/'],
+        ['label' => ui('nav.business'), 'path' => '/para-empresas/'],
+        ['label' => ui('nav.contact'),  'path' => '/contacto/'],
     ],
 
     // One entry per content/tools.php record, in the same order.
@@ -80,6 +81,8 @@ return [
     'legal' => [
         ['label' => ui('nav.privacy'), 'path' => '/privacidad/'],
         ['label' => ui('nav.terms'),   'path' => '/terminos/'],
+        ['label' => ui('nav.legal'),   'path' => '/aviso-legal/'],
+        ['label' => ui('nav.affiliates'), 'path' => '/afiliados/'],
     ],
 
     // Rendered only when content/site.php has social URLs.

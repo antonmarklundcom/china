@@ -31,18 +31,22 @@ require ROOT_DIR . '/partials/header.php';
 
   <section class="section">
     <div class="container">
-      <?php if (content('guias') === []): ?>
-        <p class="lead"><?= e(ui('hub.empty')) ?></p>
-      <?php else: ?>
-        <div class="grid grid--3">
-          <?php foreach (content('guias') as $listGuide): ?>
-            <a class="card card--link" href="<?= e($listGuide['path']) ?>">
-              <h2 class="card-title"><?= e($listGuide['navLabel']) ?></h2>
+      <?php foreach (content('ui')['hubs'] as $listCluster => $listHub): ?>
+        <?php $listGuides = array_filter(content('guias'), static fn (array $g): bool => ($g['cluster'] ?? '') === $listCluster); ?>
+        <?php if ($listGuides === []) { continue; } ?>
+        <div class="section-head mt-5">
+          <h2><a href="<?= e($listHub['path']) ?>"><?= e(content('ui')['clusters'][$listCluster]) ?></a></h2>
+          <p class="lead"><?= e(content('ui')['cluster_leads'][$listCluster]) ?></p>
+        </div>
+        <div class="grid grid--3 mt-4">
+          <?php foreach ($listGuides as $listGuide): ?>
+            <a class="card card--link card--guide" href="<?= e($listGuide['path']) ?>">
+              <h3 class="card-title"><?= e($listGuide['navLabel']) ?></h3>
               <p class="card__text"><?= e($listGuide['metaDescription']) ?></p>
             </a>
           <?php endforeach; ?>
         </div>
-      <?php endif; ?>
+      <?php endforeach; ?>
     </div>
   </section>
 

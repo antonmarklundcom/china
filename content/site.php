@@ -9,19 +9,19 @@
  * partial that would show it hides instead or falls back to neutral phrasing.
  * Never a placeholder number, never an invented address.
  *
- * THIS FILE IS EXAMPLE DATA. Step 2 of "Start a new site (T0)" in README.md
- * replaces every value below with the real business.
+ * china.com.py — China-Paraguay. Contact values stay null until Anton confirms
+ * them (plan.md §7).
  */
 
 declare(strict_types=1);
 
 return [
     // --- identity -----------------------------------------------------------
-    'name'   => 'Ejemplo S.A.',
+    'name'   => 'China-Paraguay',
     // Bare hostname, no scheme: the wordmark and robots.txt print it.
-    'domain' => 'ejemplo.com.py',
+    'domain' => 'china.com.py',
     // Lower-case, filename-safe: names the deploy zip (dist/<slug>-DATE.zip).
-    'slug'   => 'ejemplo',
+    'slug'   => 'china-py',
 
     // Which lib/market/<market>.php + assets/js/market/<market>.js pair loads:
     // money formatting, tax-id validation, long dates, VAT rates and the legal
@@ -31,7 +31,7 @@ return [
     // schema.org types for the organisation block, most specific first. See
     // https://schema.org/LocalBusiness for the list ('LegalService',
     // 'Plumber', 'Dentist', 'AccountingService', …).
-    'schemaType' => ['LocalBusiness'],
+    'schemaType' => ['Organization'],
 
     // Path of the services hub. '/servicios/' by default; a store can use
     // '/productos/'. Move the servicios/ route directory and its
@@ -39,8 +39,8 @@ return [
     'servicesHub' => '/servicios/',
 
     'legalName'   => null,                       // registered legal name
-    'description' => 'Empresa de ejemplo: reemplace este texto por lo que hace el negocio, '
-                   . 'en una frase que un cliente reconozca.',
+    'description' => 'Guías, calculadoras y contactos para comprar e importar desde China a '
+                   . 'Paraguay: Temu, Shein, Alibaba, flete, aduana y viajes de negocios.',
 
     // --- contact ------------------------------------------------------------
     // 'phone' and 'whatsapp' in international form, e.g. '+595 981 123 456'.

@@ -1,5 +1,10 @@
 # plan.md — China ↔ Paraguay: comprar, importar, aduana, viajar
 
+> **Build mode changed (2026-09-24):** Anton asked for the whole site to be built in one
+> Opus session with one PR per step, instead of the spawned phase sessions below. The phase
+> table stays as the work breakdown; guides live under their cluster hub
+> (`/comprar/`, `/importar/`, `/aduana/`, `/viajar-a-china/`, plus `/feria-de-canton/`).
+
 HTML+PHP site built from `antonmarklundcom/php-site-template` (market `py`, Spanish, "usted" register),
 phased autonomous build per the `phased-autonomous-build` skill, template profile.
 Keyword evidence: `docs/keyword-research.md` (Google KWP, location Paraguay, Sept 2026).

@@ -49,13 +49,22 @@ $howTo = [
     'step'        => $howToSteps,
 ];
 
+/* Breadcrumb parent: the guide's cluster hub (/comprar/, /importar/, …), or
+   /guias/ for a guide without one. */
+$guideHubRecord = content('ui')['hubs'][$guide['cluster'] ?? ''] ?? null;
+$guideHub = $guideHubRecord !== null
+    ? ['label' => $guideHubRecord['label'], 'path' => $guideHubRecord['path']]
+    : ['label' => ui('nav.guides'), 'path' => '/guias/'];
+$guideImage = $guide['image'] ?? null;
+
 $page = [
+    'ogImage'     => $guideImage['src'] ?? null,
     'title'       => $guide['seoTitle'] !== '' ? $guide['seoTitle'] : $guide['title'],
     'description' => $guide['metaDescription'],
     'path'        => $guide['path'],
     'breadcrumbs' => [
-        ['label' => ui('nav.guides'), 'path' => '/guias/'],
-        ['label' => $guide['title'], 'path' => $guide['path']],
+        $guideHub,
+        ['label' => $guide['navLabel'], 'path' => $guide['path']],
     ],
     'faq'      => $guide['faq'],
     'leadSlug' => $delegateSlug,
@@ -75,6 +84,13 @@ require ROOT_DIR . '/partials/header.php';
         <h1><?= e($guide['hero']['h1']) ?></h1>
         <p class="lead"><?= e($guide['hero']['lead']) ?></p>
       </div>
+      <?php if (!empty($guideImage['src'])): ?>
+        <figure class="page-hero__figure">
+          <img src="<?= e(asset($guideImage['src'])) ?>" alt="<?= e($guideImage['alt'] ?? '') ?>"
+               width="<?= e((string) ($guideImage['width'] ?? 1600)) ?>" height="<?= e((string) ($guideImage['height'] ?? 900)) ?>"
+               fetchpriority="high" decoding="async">
+        </figure>
+      <?php endif; ?>
     </div>
   </section>
 
@@ -82,8 +98,13 @@ require ROOT_DIR . '/partials/header.php';
     <div class="container stack">
       <p class="note guide-reviewed">
         <?= e(ui('guide.reviewed_prefix')) ?>
-        <?= e($guide['lastReviewed']) ?>. <?= e(ui('guide.orientativo')) ?>
+        <?= e(fmt_date_long($guide['lastReviewed'])) ?>. <?= e(ui('guide.orientativo')) ?>
       </p>
+
+      <?php if (!empty($guide['disclaimer'])): ?>
+        <?php if (is_array($guide['disclaimer'])) { $discLink = $guide['disclaimer']; } ?>
+        <?php require ROOT_DIR . '/partials/disclaimer-oficial.php'; ?>
+      <?php endif; ?>
 
       <?php if ($guide['intro'] !== []): ?>
         <div class="prose">
@@ -105,6 +126,48 @@ require ROOT_DIR . '/partials/header.php';
           <?php endforeach; ?>
         </ol>
       <?php endif; ?>
+
+      <?php if (!empty($guide['table']['rows'])): ?>
+        <?php $guideTable = $guide['table']; ?>
+        <div class="table-wrap mt-4">
+          <table class="data-table">
+            <?php if (!empty($guideTable['caption'])): ?>
+              <caption><?= e($guideTable['caption']) ?></caption>
+            <?php endif; ?>
+            <thead><tr>
+              <?php foreach ($guideTable['head'] as $guideTh): ?><th scope="col"><?= e($guideTh) ?></th><?php endforeach; ?>
+            </tr></thead>
+            <tbody>
+              <?php foreach ($guideTable['rows'] as $guideRow): ?>
+                <tr><?php foreach ($guideRow as $guideCellIndex => $guideCell): ?><?= $guideCellIndex === 0 ? '<th scope="row">' . e($guideCell) . '</th>' : '<td>' . e($guideCell) . '</td>' ?><?php endforeach; ?></tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
+        </div>
+        <?php if (!empty($guideTable['note'])): ?>
+          <p class="note"><?= e($guideTable['note']) ?></p>
+        <?php endif; ?>
+      <?php endif; ?>
+
+      <?php if (!empty($guide['sections'])): ?>
+        <?php foreach ($guide['sections'] as $guideSection): ?>
+          <div class="prose mt-4">
+            <h2><?= e($guideSection['h2']) ?></h2>
+            <?php foreach ($guideSection['body'] as $guideSectionParagraph): ?>
+              <p><?= e($guideSectionParagraph) ?></p>
+            <?php endforeach; ?>
+            <?php if (!empty($guideSection['items'])): ?>
+              <ul class="checklist">
+                <?php foreach ($guideSection['items'] as $guideSectionItem): ?>
+                  <li><span><strong><?= e($guideSectionItem['title']) ?>.</strong> <?= e($guideSectionItem['text']) ?></span></li>
+                <?php endforeach; ?>
+              </ul>
+            <?php endif; ?>
+          </div>
+        <?php endforeach; ?>
+      <?php endif; ?>
+
+      <?php $affIds = $guide['affiliates'] ?? []; require ROOT_DIR . '/partials/affiliate-box.php'; ?>
     </div>
   </section>
 

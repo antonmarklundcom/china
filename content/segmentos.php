@@ -31,40 +31,11 @@
  * contract and the sitemap by existing.
  */
 
+/* LOADER: the records live in one file per cluster under content/segmentos/,
+   so two content phases never edit the same file. Add a cluster file here. */
+
 declare(strict_types=1);
 
-return [
-
-    'rubro-ejemplo' => [
-        'example' => true,
-        'path'            => '/segmentos/rubro-ejemplo/',
-        'navLabel'        => 'Rubro de ejemplo',
-        'seoTitle'        => 'Servicios para el rubro de ejemplo',
-        'metaDescription' => 'Página de segmento de ejemplo: las trampas del rubro, el paquete de '
-                           . 'servicios que le armamos y el formulario ya preseleccionado.',
-        'hero' => [
-            'eyebrow' => 'Para su rubro',
-            'h1'      => 'Servicios para el rubro de ejemplo',
-            'lead'    => 'Una línea que demuestra que conoce el rubro: el problema que sufren todos '
-                       . 'los negocios de este tipo.',
-        ],
-        'leadSlug' => 'servicio-ejemplo',
-        'bundle'   => ['servicio-ejemplo'],
-        'traps'    => [
-            [
-                'title' => 'El error típico del rubro',
-                'text'  => 'Qué sale mal, por qué pasa y qué cuesta cuando pasa.',
-            ],
-        ],
-        'sections' => [],
-        'weNeed'   => [
-            'Lo que necesitamos para armar el presupuesto',
-        ],
-        'faq' => [
-            [
-                'q' => '¿Trabajan con negocios de mi tamaño?',
-                'a' => 'Una respuesta concreta sobre el tipo de cliente que atiende el negocio.',
-            ],
-        ],
-    ],
-];
+return array_merge(
+    require __DIR__ . '/segmentos/productos.php'
+);

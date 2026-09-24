@@ -1,67 +1,73 @@
 <?php
 /**
  * Every UI string on the site, in one file — the single-locale layer. Nothing
- * in partials/ or templates/ contains a visible word; they all read from here,
- * so translating the site is this one file plus content/*.
+ * in partials/ or templates/ contains a visible word; they all read from here.
  *
- * The strings below are neutral Spanish (formal "usted"), matching the 'py'
- * market the example content uses. A Swedish site rewrites this file in
- * Swedish and sets 'market' => 'se' in content/site.php; no code changes.
- *
- * Nothing here may name a month, a year, a price or a client: strings must stay
- * true without anyone remembering to edit them.
+ * Spanish (Paraguay), formal "usted". Nothing here may name a month, a year, a
+ * price, a rate or a client: strings must stay true without anyone editing them.
  */
 
 declare(strict_types=1);
 
 return [
 
-    // Cluster labels, in the order the mega-menu and the services hub use them.
-    // A cluster key is referenced by every service record ('cluster' => ...).
+    // The four topic clusters. Services, guides and hubs all key into these.
     'clusters' => [
-        'principal'  => 'Servicios principales',
-        'adicional'  => 'Servicios adicionales',
+        'compras'  => 'Comprar online',
+        'importar' => 'Importar de China',
+        'aduana'   => 'Aduana',
+        'viajes'   => 'Viajar y negocios',
     ],
 
-    // One line under each cluster heading on the services hub. Keyed by cluster id.
     'cluster_leads' => [
-        'principal' => 'Lo que hacemos todos los meses para la mayoría de nuestros clientes.',
-        'adicional' => 'Trabajos puntuales que se contratan cuando hacen falta.',
+        'compras'  => 'Temu, Shein, AliExpress y Alibaba: cómo llegan sus compras a Paraguay y cuánto pagan.',
+        'importar' => 'Para quien compra en China para vender: proveedores, flete, inspección y costos.',
+        'aduana'   => 'Despacho, tributos y fronteras, explicados en lenguaje claro. No somos la aduana.',
+        'viajes'   => 'Feria de Cantón, visa y viajes de negocios a China desde Paraguay.',
+    ],
+
+    // One hub page per cluster. The guide template uses these for breadcrumbs.
+    'hubs' => [
+        'compras'  => ['label' => 'Comprar online',   'path' => '/comprar/'],
+        'importar' => ['label' => 'Importar',         'path' => '/importar/'],
+        'aduana'   => ['label' => 'Aduana',           'path' => '/aduana/'],
+        'viajes'   => ['label' => 'Viajar a China',   'path' => '/viajar-a-china/'],
     ],
 
     'nav' => [
         'home'         => 'Inicio',
         'services'     => 'Servicios',
+        'topics'       => 'Temas',
         'pricing'      => 'Precios',
-        'tools'        => 'Herramientas',
+        'tools'        => 'Calculadoras',
         'guides'       => 'Guías',
-        'about'        => 'Nosotros',
+        'about'        => 'Sobre el sitio',
         'blog'         => 'Blog',
         'contact'      => 'Contacto',
         'privacy'      => 'Privacidad',
         'terms'        => 'Términos',
+        'legal'        => 'Aviso legal',
+        'affiliates'   => 'Afiliados',
+        'business'     => 'Para empresas',
         'menu'         => 'Menú',
         'close'        => 'Cerrar',
         'open_menu'    => 'Abrir el menú',
         'close_menu'   => 'Cerrar el menú',
         'skip'         => 'Ir al contenido principal',
-        'firm'         => 'La empresa',
+        'firm'         => 'El sitio',
         'all_services' => 'Ver todos los servicios',
     ],
 
     'cta' => [
-        'quote'         => 'Pedir presupuesto',
+        'quote'         => 'Pedir cotización',
         'whatsapp'      => 'WhatsApp',
         'whatsapp_long' => 'Escribir por WhatsApp',
-        'consult'       => 'Solicitar una consulta',
+        'consult'       => 'Hacer una consulta',
         'contact'       => 'Contactar',
         'see_included'  => 'Ver qué incluye',
-        'talk'          => 'Hablar con nosotros',
+        'talk'          => 'Contarnos su caso',
     ],
 
-    // The WhatsApp menu. These are BUTTON LABELS only — the message that
-    // actually reaches WhatsApp always comes from content/lead-values.php and
-    // names a service, never a generic "consulta gratis".
     'whatsapp' => [
         'menu_title' => '¿Sobre qué quiere escribirnos?',
         'menu_note'  => 'Abrimos WhatsApp con el mensaje ya escrito. Puede cambiarlo antes de enviarlo.',
@@ -72,91 +78,84 @@ return [
     ],
 
     'home' => [
-        'eyebrow'   => 'Tomamos nuevos clientes',
-        'h1_lead'   => 'El titular de la portada va acá, ',
-        'h1_accent' => 'con la promesa al final.',
-        'lead'      => 'Una o dos líneas que explican qué hace el negocio, para quién y qué '
-                     . 'gana el cliente. Sin adjetivos que no se puedan sostener.',
+        'eyebrow'   => 'China ↔ Paraguay, en lenguaje claro',
+        'h1_lead'   => 'Compre, importe y viaje a China ',
+        'h1_accent' => 'sabiendo cuánto le cuesta.',
+        'lead'      => 'Guías prácticas y calculadoras para comprar en Temu, Shein o Alibaba, '
+                     . 'traer mercadería en contenedor, pasar la aduana y preparar su viaje de '
+                     . 'negocios. Y cuando quiera que alguien se encargue, lo conectamos.',
+
+        'doors_eyebrow' => 'Empiece por acá',
+        'doors_title'   => '¿Qué quiere hacer?',
+
+        'tools_eyebrow' => 'Calculadoras',
+        'tools_title'   => 'Haga la cuenta antes de comprar.',
+        'tools_lead'    => 'Tres calculadoras gratuitas: costo puesto en Paraguay, volumen de su '
+                         . 'carga y total de un pedido online.',
+
+        'popular_eyebrow' => 'Más consultadas',
+        'popular_title'   => 'Las guías que más se leen',
 
         'services_eyebrow' => 'Servicios',
-        'services_title'   => 'Lo que hacemos',
-        'services_lead'    => 'Contrate lo que necesita hoy y sume servicios cuando haga falta.',
+        'services_title'   => 'Cuando prefiere que alguien se encargue',
+        'services_lead'    => 'Coordinamos con agentes en China, transportistas y despachantes '
+                            . 'matriculados en Paraguay. Usted recibe una sola respuesta.',
 
-        'unsure_title' => '¿No sabe qué necesita?',
-        'unsure_text'  => 'Cuéntenos su situación y le decimos qué corresponde, sin costo.',
+        'aduana_eyebrow' => 'Aduana',
+        'aduana_title'   => 'Despacho, tributos y fronteras sin sorpresas.',
+        'aduana_lead'    => 'Qué se paga, quién firma el despacho y qué puede traer al cruzar. '
+                          . 'Somos un sitio privado de información: siempre enlazamos la fuente oficial.',
+
+        'unsure_title' => '¿No sabe por dónde empezar?',
+        'unsure_text'  => 'Cuéntenos qué quiere traer y en qué cantidad. Le decimos qué camino le conviene.',
     ],
 
-    // The panel at the foot of the homepage hero. Labels only: no amounts, no
-    // dates, no percentages, no client name — see partials/status-panel.php.
     'panel' => [
-        'title' => 'Su trabajo del mes, a la vista',
-        'badge' => 'Al día',
+        'title' => 'Su importación, paso a paso',
+        'badge' => 'Ejemplo',
         'tiles' => [
-            ['label' => 'Primer entregable',  'value' => 'Listo'],
-            ['label' => 'Segundo entregable', 'value' => 'Listo'],
-            ['label' => 'Tercer entregable',  'value' => 'En curso'],
+            ['label' => 'Proveedor verificado', 'value' => 'Listo'],
+            ['label' => 'Inspección en fábrica', 'value' => 'Listo'],
+            ['label' => 'Flete y despacho',      'value' => 'En curso'],
         ],
-        'foot'  => 'Próximo paso acordado',
-        'note'  => 'Ejemplo del informe mensual',
+        'foot'  => 'Entrega en Asunción',
+        'note'  => 'Ejemplo de seguimiento',
     ],
 
-    // The "quiénes somos" band on the homepage. Every line here is a commitment
-    // about how the business works, never a claim about size or results — those
-    // need the owner's confirmation and belong in content/site.php.
     'about' => [
-        'eyebrow' => 'Quiénes somos',
-        'title'   => 'Una frase sobre cómo trabajamos y en qué se nota.',
-        'text'    => 'Dos o tres oraciones sobre el equipo, el proceso y el tipo de cliente que '
-                   . 'atiende. Concreto y verificable: qué hace, con qué frecuencia y qué recibe '
-                   . 'el cliente.',
-        // Shown while content/site.php has no credentials[] of its own.
+        'eyebrow' => 'Sobre el sitio',
+        'title'   => 'Información práctica primero. Servicios solo cuando usted los pide.',
+        'text'    => 'China-Paraguay reúne lo que hace falta saber para comprar, importar y viajar '
+                   . 'a China desde Paraguay. Cuando pide ayuda, coordinamos con agentes, '
+                   . 'transportistas y despachantes matriculados, y usted sabe desde el inicio quién '
+                   . 'hace cada parte.',
         'credentials' => [
-            'Una persona asignada a su cuenta, no una mesa de entrada',
-            'Alcance y precio acordados por escrito antes de empezar',
-            'Respuesta dentro del siguiente día hábil',
+            'Cada cifra con su fuente, o marcada para confirmar',
+            'Nunca nos presentamos como organismo oficial',
+            'Alcance y costo por escrito antes de empezar',
         ],
         'badge_note'     => 'de experiencia',
-        'badge_fallback' => 'Equipo propio',
+        'badge_fallback' => 'China ↔ Paraguay',
     ],
 
-    // The four-step "cómo trabajamos" block, reused on service pages.
     'process' => [
         'eyebrow' => 'Cómo trabajamos',
-        'title'   => 'De la primera conversación al primer entregable, con fechas acordadas.',
+        'title'   => 'De la consulta a la mercadería en su depósito.',
         'steps'   => [
-            [
-                'title' => 'Conversación inicial',
-                'text'  => 'Media hora para entender qué necesita y en qué situación está hoy.',
-            ],
-            [
-                'title' => 'Propuesta por escrito',
-                'text'  => 'Alcance detallado y precio, con lo que está incluido y lo que no.',
-            ],
-            [
-                'title' => 'Puesta en marcha',
-                'text'  => 'Recibimos la información, ordenamos lo pendiente y arrancamos.',
-            ],
-            [
-                'title' => 'Seguimiento',
-                'text'  => 'Una persona asignada y un informe en lenguaje claro.',
-            ],
+            ['title' => 'Nos cuenta qué necesita', 'text' => 'Producto, cantidad, destino y plazo. Por WhatsApp o formulario.'],
+            ['title' => 'Cotización por escrito',  'text' => 'Costo de producto, flete, seguro y despacho, cada uno por separado.'],
+            ['title' => 'Coordinación',            'text' => 'Proveedor, inspección, transporte y aduana con socios que usted conoce.'],
+            ['title' => 'Entrega y cierre',        'text' => 'Seguimiento hasta la entrega y los comprobantes de cada pago.'],
         ],
     ],
 
-    // Rendered in place of the testimonials band while content/site.php has
-    // none. Sectors, not clients: nothing to verify.
     'industries' => [
-        'eyebrow' => 'Rubros',
-        'title'   => 'Rubros que atendemos',
-        'lead'    => 'Cada rubro tiene sus propias trampas. Estos son los que trabajamos.',
-        // Each item is either a plain string or ['label' => ..., 'path' => ...]
-        // pointing at a segment page in content/segmentos.php.
-        'items'   => [
-            ['label' => 'Rubro de ejemplo', 'path' => '/segmentos/rubro-ejemplo/'],
-        ],
+        'eyebrow' => 'Por producto',
+        'title'   => 'Qué se importa de China a Paraguay',
+        'lead'    => 'Cada producto tiene sus propias trampas: talles, homologación, marcas y mínimos de compra.',
+        'items'   => [],
     ],
 
-    // The band renders only when content/site.php has testimonials.
     'testimonials' => [
         'eyebrow' => 'Casos',
         'title'   => 'Lo que dicen nuestros clientes',
@@ -164,30 +163,31 @@ return [
 
     'services_hub' => [
         'eyebrow'      => 'Servicios',
-        'title'        => 'Todo lo que hacemos, en un solo lugar.',
-        'lead'         => 'Contrate lo que necesita hoy y sume servicios cuando haga falta.',
+        'title'        => 'Lo que coordinamos por usted.',
+        'lead'         => 'Compras, importación, despacho y viajes. Cada servicio lo ejecuta un socio '
+                        . 'especializado; nosotros coordinamos y le respondemos.',
         'unsure_title' => '¿No sabe qué necesita?',
-        'unsure_text'  => 'Cuéntenos su caso y le decimos qué servicios le corresponden.',
+        'unsure_text'  => 'Cuéntenos qué quiere traer y le decimos qué servicios le corresponden.',
         'unsure_cta'   => 'Escribirnos',
     ],
 
     'cta_band' => [
-        'eyebrow' => 'Solicitar consulta',
-        'title'   => 'Empecemos con una conversación de 30 minutos.',
-        'lead'    => 'Sin costo y sin compromiso. Le respondemos con una propuesta concreta.',
+        'eyebrow' => 'Consulta',
+        'title'   => 'Cuéntenos qué quiere traer de China.',
+        'lead'    => 'Le respondemos con los pasos y los costos que corresponden a su caso.',
     ],
 
     'form' => [
-        'legend'          => 'Solicitar una consulta',
+        'legend'          => 'Hacer una consulta',
         'name'            => 'Nombre',
-        'company'         => 'Empresa o rubro',
+        'company'         => 'Empresa o rubro (opcional)',
         'phone'           => 'WhatsApp o teléfono',
         'phone_hint'      => 'Ej.: 0981 123 456',
         'email'           => 'Correo (opcional)',
-        'need'            => '¿Qué necesita?',
+        'need'            => '¿Sobre qué es su consulta?',
         'message'         => 'Cuéntenos brevemente',
-        'message_hint'    => 'Su situación actual, en dos líneas…',
-        'submit'          => 'Solicitar una consulta',
+        'message_hint'    => 'Qué producto, qué cantidad y para cuándo…',
+        'submit'          => 'Enviar consulta',
         'sending'         => 'Enviando…',
         'privacy_note'    => 'Usamos sus datos solo para responderle. Ver la política de privacidad.',
         'success_title'   => 'Recibimos su consulta.',
@@ -198,24 +198,24 @@ return [
         'required'        => 'obligatorio',
         'thanks_next'     => 'Qué sigue',
         'thanks_whatsapp' => 'Si prefiere no esperar, escríbanos ahora por WhatsApp.',
-        'remind_title'    => 'Que le avisemos antes de cada vencimiento',
-        'remind_text'     => 'Le anotamos su caso y le escribimos por WhatsApp unos días antes.',
+        'remind_title'    => 'Que le avisemos cuando cambie algo',
+        'remind_text'     => 'Le escribimos por WhatsApp si cambian las reglas que afectan su compra.',
         'remind_phone'    => 'Su WhatsApp',
-        'remind_submit'   => 'Quiero que me recuerden',
-        'remind_ok'       => 'Anotado. Le escribimos antes del próximo vencimiento.',
+        'remind_submit'   => 'Quiero que me avisen',
+        'remind_ok'       => 'Anotado. Le escribimos si hay novedades.',
     ],
 
-    // The chip selector in the lead form. Every key here needs a matching entry
-    // in content/lead-values.php's 'needs' — verify.sh checks that.
+    // Lead form chips. Every key needs a matching entry in lead-values 'needs'.
     'needs' => [
-        'servicio' => 'Un servicio puntual',
-        'mensual'  => 'Trabajo mensual',
-        'otro'     => 'Otro',
+        'compras'  => 'Comprar en Temu, Shein o Alibaba',
+        'importar' => 'Importar para vender',
+        'aduana'   => 'Despacho aduanero',
+        'viajes'   => 'Viaje, Feria de Cantón o visa',
     ],
 
     'contact' => [
         'eyebrow' => 'Contacto',
-        'title'   => 'Hablemos de su caso.',
+        'title'   => 'Cuéntenos qué quiere traer.',
         'lead'    => 'Escríbanos por WhatsApp o déjenos sus datos y le respondemos dentro '
                    . 'del siguiente día hábil.',
         'address' => 'Dirección',
@@ -225,8 +225,8 @@ return [
         'expect'  => 'Qué pasa después',
         'steps'   => [
             'Le respondemos dentro del siguiente día hábil.',
-            'Coordinamos una llamada de 30 minutos, sin costo ni compromiso.',
-            'Recibe una propuesta con el alcance y el precio por escrito.',
+            'Le pedimos los datos que faltan: producto, cantidad y destino.',
+            'Recibe los pasos y una cotización por escrito, sin compromiso.',
         ],
     ],
 
@@ -234,71 +234,85 @@ return [
         'includes'     => 'Qué incluye',
         'excludes'     => 'Qué no incluye',
         'we_need'      => 'Qué necesitamos de usted',
-        'benefits'     => 'Beneficios',
+        'benefits'     => 'Por qué conviene',
         'faq'          => 'Preguntas frecuentes',
         'related'      => 'Servicios relacionados',
         'guides'       => 'Guía relacionada',
         'articles'     => 'Artículo relacionado',
-        'form_eyebrow' => 'Presupuesto',
-        'form_lead'    => 'Déjenos sus datos y le respondemos con una propuesta concreta, '
-                        . 'sin costo y sin compromiso.',
+        'form_eyebrow' => 'Cotización',
+        'form_lead'    => 'Déjenos sus datos y le respondemos con los pasos y los costos de su caso, '
+                        . 'sin compromiso.',
         'breadcrumb'   => 'Ruta de navegación',
     ],
 
-    // Segment landing pages (content/segmentos.php).
     'segment' => [
-        'traps_title'  => 'Los errores que más le cuestan en su rubro',
-        'bundle_title' => 'Lo que armamos para su rubro',
-        'form_eyebrow' => 'Presupuesto para su rubro',
-        'form_lead'    => 'Cuéntenos su rubro y su volumen; le respondemos con una propuesta concreta.',
+        'traps_title'  => 'Los errores que más cuestan con este producto',
+        'bundle_title' => 'Lo que coordinamos para este producto',
+        'form_eyebrow' => 'Cotización',
+        'form_lead'    => 'Cuéntenos el producto, la cantidad y el destino; le respondemos con una propuesta concreta.',
     ],
 
-    // Shared microcopy across the tool pages. Calculator-specific labels live in
-    // each tool's own PHP/JS; only the repeated strings are here.
     'tools' => [
         'reviewed_prefix' => 'Datos revisados el',
-        'orientativo'     => 'Los resultados son orientativos y no reemplazan un cálculo oficial.',
+        'orientativo'     => 'Los resultados son orientativos y no reemplazan la liquidación oficial.',
         'calculate'       => 'Calcular',
         'result_title'    => 'Resultado',
-        'use_result'      => 'Usar este resultado en el formulario',
+        'use_result'      => 'Pedir una cotización con este resultado',
         'need_js'         => 'Esta calculadora necesita JavaScript activado en su navegador.',
         'restart'         => 'Volver a empezar',
     ],
 
-    // Shared microcopy across the guide pages.
     'guide' => [
         'reviewed_prefix'       => 'Revisado el',
-        'orientativo'           => 'Es una guía general: para su caso puntual, confírmelo con nosotros.',
+        'orientativo'           => 'Es una guía general: confirme montos y requisitos vigentes antes de comprar.',
         'delegate_eyebrow'      => 'Delegarlo',
-        'delegate_title'        => '¿Prefiere que lo hagamos nosotros?',
+        'delegate_title'        => '¿Prefiere que alguien se encargue?',
         'delegate_lead'         => 'Le respondemos dentro del siguiente día hábil con los pasos exactos '
                                  . 'para su caso.',
-        'delegate_form_heading' => 'Pedir que nos encarguemos',
+        'delegate_form_heading' => 'Pedir ayuda con esto',
         'related'               => 'Otras guías',
     ],
 
-    // Article chrome (templates/article.php). The long date itself is formatted
-    // by the market module's fmt_date_long().
+    // The official-source notice on aduana and visa pages (partials/disclaimer-oficial.php).
+    'disclaimer' => [
+        'title' => 'Sitio privado de información',
+        'text'  => 'China-Paraguay no es la Dirección Nacional de Aduanas, ni la DNIT, ni una '
+                 . 'embajada o consulado. Los montos y requisitos cambian: confírmelos siempre en '
+                 . 'la fuente oficial antes de actuar.',
+        'link'  => 'Fuente oficial',
+    ],
+
+    // The affiliate box (partials/affiliate-box.php).
+    'affiliate' => [
+        'title'      => 'Herramientas que recomendamos',
+        'disclosure' => 'Algunos enlaces son de afiliado: si compra a través de ellos, podemos recibir '
+                      . 'una comisión sin costo extra para usted.',
+        'more'       => 'Cómo funcionan los enlaces de afiliado',
+    ],
+
     'article' => [
         'reading_time' => 'min de lectura',
         'updated'      => 'Actualizado el',
         'read_more'    => 'Leer el artículo',
     ],
 
-    // Hub pages: the listings under /servicios/, /blog/, /herramientas/, /guias/.
     'hub' => [
-        'empty' => 'Todavía no hay nada publicado en esta sección.',
+        'empty'    => 'Todavía no hay nada publicado en esta sección.',
+        'guides'   => 'Guías',
+        'services' => 'Servicios',
+        'products' => 'Por producto',
+        'tools'    => 'Calculadoras',
+        'see_hub'  => 'Ver todo',
     ],
 
     'pricing' => [
-        'quote'    => 'A cotizar',
+        'quote'     => 'A cotizar',
         'per_month' => 'por mes',
-        'cta'      => 'Pedir presupuesto',
-        'note'     => 'Los planes se ajustan al volumen real; el precio final se acuerda por escrito.',
+        'cta'       => 'Pedir cotización',
+        'note'      => 'El precio final se acuerda por escrito.',
     ],
 
     'placeholder' => [
-        // Shown on a stub page until the phase that owns it writes the content.
         'notice' => 'Estamos preparando esta página.',
         'action' => 'Mientras tanto, escríbanos y le respondemos por WhatsApp.',
     ],
@@ -309,8 +323,10 @@ return [
     ],
 
     'footer' => [
-        'blurb'   => 'Una línea sobre el negocio y a quién atiende.',
+        'blurb'   => 'Guías y calculadoras para comprar, importar y viajar entre China y Paraguay. '
+                   . 'Sitio privado de información, no oficial.',
         'rights'  => 'Todos los derechos reservados.',
         'contact' => 'Contacto',
+        'topics'  => 'Temas',
     ],
 ];
