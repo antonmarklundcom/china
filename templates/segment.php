@@ -162,6 +162,19 @@ require ROOT_DIR . '/partials/header.php';
     </div>
   </section>
 
+  <?php $segOthers = array_filter(content('segmentos'), static fn (array $o): bool => $o['path'] !== $record['path']); ?>
+  <?php if ($segOthers !== []): ?>
+    <section class="section">
+      <div class="container">
+        <h2><?= e(ui('segment.others')) ?></h2>
+        <div class="chip-cloud mt-4">
+          <?php foreach ($segOthers as $segOther): ?>
+            <a class="chip-link" href="<?= e($segOther['path']) ?>"><?= e($segOther['navLabel']) ?></a>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </section>
+  <?php endif; ?>
   <?php require ROOT_DIR . '/partials/cta-band.php'; ?>
 </main>
 <?php require ROOT_DIR . '/partials/footer.php'; ?>

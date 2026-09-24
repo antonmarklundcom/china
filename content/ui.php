@@ -106,6 +106,9 @@ return [
         'aduana_lead'    => 'Qué se paga, quién firma el despacho y qué puede traer al cruzar. '
                           . 'Somos un sitio privado de información: siempre enlazamos la fuente oficial.',
 
+        'blog_eyebrow' => 'Blog',
+        'blog_title'   => 'Análisis y novedades',
+
         'unsure_title' => '¿No sabe por dónde empezar?',
         'unsure_text'  => 'Cuéntenos qué quiere traer y en qué cantidad. Le decimos qué camino le conviene.',
     ],
@@ -250,6 +253,7 @@ return [
         'bundle_title' => 'Lo que coordinamos para este producto',
         'form_eyebrow' => 'Cotización',
         'form_lead'    => 'Cuéntenos el producto, la cantidad y el destino; le respondemos con una propuesta concreta.',
+        'others'       => 'Otros productos que se importan de China',
     ],
 
     'tools' => [

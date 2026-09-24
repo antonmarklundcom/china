@@ -123,7 +123,7 @@ return [
         ],
         'related' => ['inspeccion-de-calidad', 'importacion-llave-en-mano', 'flete-maritimo-contenedor'],
         'guides' => ['proveedores-chinos-confiables', 'alibaba-paraguay', 'pagar-a-proveedores-chinos'],
-        'articles' => [],
+        'articles' => ['comercio-china-paraguay'],
         'toolLinks' => [
             ['path' => '/herramientas/calculadora-costo-importacion/', 'label' => 'Calculadora de costo de importación', 'text' => 'Estime cuánto le cuesta el producto puesto en Paraguay antes de negociar con el proveedor.'],
         ],
@@ -208,7 +208,7 @@ return [
         ],
         'related' => ['agente-de-compras-china', 'importacion-llave-en-mano', 'flete-maritimo-contenedor'],
         'guides' => ['proveedores-chinos-confiables', 'como-importar-de-china-a-paraguay'],
-        'articles' => [],
+        'articles' => ['errores-al-importar-de-china'],
         'toolLinks' => [
             ['path' => '/herramientas/calculadora-costo-importacion/', 'label' => 'Calculadora de costo de importación', 'text' => 'Sume la inspección a su costo total y vea cuánto pesa sobre el precio final.'],
         ],
@@ -477,7 +477,7 @@ return [
         ],
         'related' => ['agente-de-compras-china', 'flete-maritimo-contenedor', 'despacho-aduanero'],
         'guides' => ['como-importar-de-china-a-paraguay', 'como-ser-importador-paraguay', 'requisitos-para-importar-paraguay'],
-        'articles' => [],
+        'articles' => ['errores-al-importar-de-china'],
         'toolLinks' => [
             ['path' => '/herramientas/calculadora-costo-importacion/', 'label' => 'Calculadora de costo de importación', 'text' => 'Estime el costo total de su importación antes de pedir la propuesta.'],
         ],

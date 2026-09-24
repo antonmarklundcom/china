@@ -122,7 +122,7 @@ return [
         ],
         'related' => ['agente-de-compras-china', 'despacho-aduanero', 'flete-aereo-china'],
         'guides' => ['temu-paraguay', 'casillas-courier-paraguay', 'impuestos-compras-online-paraguay'],
-        'articles' => [],
+        'articles' => ['temu-shein-aliexpress-paraguay-comparacion'],
         'toolLinks' => [
             ['path' => '/herramientas/calculadora-compras-online/', 'label' => 'Calculadora de compras online', 'text' => 'Estime el costo final de su pedido puesto en Paraguay.'],
         ],

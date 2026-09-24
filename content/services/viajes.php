@@ -200,7 +200,7 @@ return [
         ],
         'related' => ['visa-china', 'agente-de-compras-china', 'inspeccion-de-calidad'],
         'guides' => ['feria-de-canton', 'viaje-de-negocios-a-china', 'visa-china-para-paraguayos'],
-        'articles' => [],
+        'articles' => ['preparar-visita-feria-de-canton'],
         'toolLinks' => [
             ['path' => '/herramientas/calculadora-costo-importacion/', 'label' => 'Calculadora de costo de importación', 'text' => 'Estime cuánto le cuesta en Paraguay lo que compre en la feria.'],
         ],
