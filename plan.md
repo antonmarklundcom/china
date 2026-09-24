@@ -53,10 +53,13 @@ keys are listed in its prompt). Model ids: Opus `claude-opus-5-5`, Sonnet `claud
    Pages ship with the template's typographic layout and the placeholder OG image.
 8. **Neutral politics.** Paraguay recognises Taiwan; the site states facts that matter to the
    reader (no PRC embassy in Asunción → visa via a third country) without commentary.
-9. **Domain:** `DOMAIN_TBD` in `content/site.php` until Anton names it (§7.1). Brand name
-   likewise `null` → T0 uses the working name "China Paraguay" and logs it.
-10. **aduna.com.py is not bought** (misspelling, no search volume). aduana.com.py is an open
-    question (§8), not part of this build.
+9. **Domain `china.com.py`, brand name "China-Paraguay"** (logo wordmark "China-Paraguay",
+   domain shown under it). `content/site.php`: name "China-Paraguay", domain `china.com.py`.
+10. **Other domains:** aduna.com.py — not bought. **aduana.com.py — bought**; at launch it 301s
+    to `https://china.com.py/aduana/` (Hostinger redirect, not a build phase). **courier.com.py**
+    — a separate sister site built later from the same template (courier comparison, Amazon/eBay/
+    AliExpress, Miami casillas, PayPal/Wise/Payoneer). This site keeps China-origin shopping only
+    and links to courier.com.py from the courier guides once it is live (Backlog).
 
 ## 2. Content model
 
@@ -88,6 +91,8 @@ Guides (`/comprar/<slug>/`, hub `/comprar/`): `temu-paraguay`, `shein-paraguay`,
 (comparison table, partner slots null), `impuestos-compras-online-paraguay`.
 Service: `asesoria-compras-online` (tier C — "le ayudamos con su primer pedido / casilla").
 Affiliates: temu, courier-1/2, wise. Each guide links the relevant tool (§3.T).
+Priority order by volume: temu 9,900 → shein 6,600 → aliexpress 2,400 (+81 % YoY) → alibaba
+~1,500 → 1688. `aliexpress-paraguay` gets the same depth as temu/shein.
 
 ### 3.T Herramientas (L2-B, Opus — money math)
 1. `calculadora-costo-importacion` — landed cost: FOB + flete + seguro → CIF → tributos (every
@@ -120,7 +125,9 @@ Hub `/aduana/` (page) with disclaimer. Guides (`/aduana/<slug>/`): `despachantes
 entries null until §7 — renders "próximamente" + lead form), `precio-despacho-aduanero-paraguay`,
 `regimen-de-turismo-paraguay`, `cruzar-frontera-argentina-paraguay` (880/mo: what you may bring,
 limits → facts-to-verify), `tributos-aduaneros-paraguay`, `ncm-nomenclatura-mercosur`,
-`aduana-ciudad-del-este-encarnacion` (practical, not official).
+`aduana-ciudad-del-este-encarnacion` (practical, not official), `aduana-clorinda` (480/mo,
++418 % YoY: Clorinda ↔ Puerto Falcón, puente San Ignacio de Loyola — hours, what you may bring,
+both sides' rules → facts-to-verify).
 Service: `despacho-aduanero` (via partner despachante, tier B).
 
 ### 3.D Viajar y negocios (L2-F)
@@ -183,8 +190,8 @@ Rules 1–15 of the `phased-autonomous-build` skill apply verbatim; summary:
 `phase/T0` off main: `git remote add template https://github.com/antonmarklundcom/php-site-template`,
 `git fetch template`, `git merge template/main --allow-unrelated-histories` (keep this repo's
 `plan.md`, `prompts/*` and `docs/*` on conflict, but take the template's `prompts/_handoff.md`,
-`prompts/_watcher.md`). Then README "Start a new site" steps 2–20 with: name "China Paraguay"
-(working), domain `DOMAIN_TBD`, slug `china-py`, market `py`, schemaType `['Organization']`,
+`prompts/_watcher.md`). Then README "Start a new site" steps 2–20 with: name "China-Paraguay",
+domain `china.com.py`, slug `china-py`, market `py`, schemaType `['Organization']`,
 contacts `null`. Delete the example content. Leave tokens/fonts as the template's (T1 swaps
 tokens). Exit: verify green on repo and zip, PR merged.
 
@@ -220,7 +227,7 @@ delete the watcher Routine; closing report to Anton including the facts-to-verif
 
 | # | Input | First needed | Fallback |
 |---|---|---|---|
-| 1 | Domain name + brand name | T0 | `DOMAIN_TBD`, "China Paraguay" |
+| 1 | Domain `china.com.py` registered + pointed at the Hostinger slot; aduana.com.py 301 → `/aduana/` | deploy | — |
 | 2 | Hostinger slot for the site | deploy (after LP) | zip only |
 | 3 | VenderCRM tenant API key → `config.php` | deploy | log fallback |
 | 4 | WhatsApp business number | T1 | WhatsApp hidden |
@@ -231,9 +238,11 @@ delete the watcher Routine; closing report to Anton including the facts-to-verif
 | 9 | Google Search Console + GA4 | deploy | — |
 
 ## 8. Open business questions (not build work)
-- Buy **aduana.com.py**? Recommendation: yes if ≤ ~USD 500 — "aduana paraguay" is 8,100/mo and an
-  exact-match domain can rank under the official site; start as a redirect to `/aduana/`, split
-  into its own site only if the cluster outgrows this one. Must never look official.
+- **aduana.com.py** (bought, USD 25): redirect now; split into its own site only if `/aduana/`
+  outgrows this one (signal: > 3k visits/mo to the cluster). Must never look official.
+- **courier.com.py**: sister site — "courier paraguay" 5,400/mo, amazon paraguay 4,400, paypal
+  paraguay 2,400, ebay paraguay 1,300. Monetised by couriers paying for leads/featured slots.
+  Own plan + build after this site's link pass.
 - Revenue share with partners: per-lead fee vs. % of freight/clearance. Start per-lead, move to %
   once volumes are known.
 - A paid "Importá de China" course / WhatsApp community — after 3 months of lead data.

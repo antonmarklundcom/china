@@ -24,7 +24,7 @@ Phase rules:
 - Fan-out §4.17: write ONE exemplar record fully, then parallel Sonnet subagents for the rest,
   each given the exemplar, the key shape and its target keywords; you review and run verify.
 - Targets (docs/keyword-research.md): temu paraguay 9,900 · shein paraguay 6,600 · alibaba
-  paraguay / alibaba en paraguay 720+720 · 1688 en español ~130 · courier china paraguay 40.
+  paraguay / alibaba en paraguay 720+720 · aliexpress paraguay 2,400 (+81 %) · 1688 en español ~130 · courier china paraguay 40.
   Search intent is "does it ship here, how long, how much tax, which casilla" — answer that.
 - Never imply partnership with Temu/Shein/Alibaba. Affiliate ids per plan §3.A via the
   record's `affiliates` key only. Link `/herramientas/calculadora-compras-online/`.

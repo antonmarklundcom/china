@@ -24,14 +24,14 @@ Phase rules:
 - Fan-out §4.17: write ONE exemplar record fully, then parallel Sonnet subagents for the rest,
   each given the exemplar, the key shape and its target keywords; you review and run verify.
 - Targets: aduana paraguay 8,100 (navigational — give the practical answer + link the official
-  DNA site), aduana argentina paraguay 880, despachante de aduana paraguay 110, lista de
+  DNA site), aduana argentina paraguay 880, aduana clorinda 480 (+418 % YoY), despachante de aduana paraguay 110, lista de
   despachantes 40, precio de despacho aduanero 30, regimen de turismo, NCM.
 - Every record sets `disclaimer => true` (plan §1.4). Never copy the DNA logo, colours or wording
   that implies we are the authority. Never state a limit, rate or fee without a source link.
 - The despachantes list renders "próximamente" + lead form until Anton supplies partners (§7.5).
 - Re-runnable: continue from the first record still marked `draft`.
 
-Exit: no `'draft' => true` left in your files; 7 guides + 1 service full, all with the official-source disclaimer; meta descriptions unique; verify green on
+Exit: no `'draft' => true` left in your files; 8 guides + 1 service full, all with the official-source disclaimer; meta descriptions unique; verify green on
 repo and zip; `docs/log/L2-E.md` written; PR merged green. Screenshots: CI artifact.
 
 ## After this phase
