@@ -240,6 +240,27 @@ require ROOT_DIR . '/partials/header.php';
     </section>
   <?php endif; ?>
 
+  <!-- Blog ---------------------------------------------------------------- -->
+  <?php $homeArticles = array_slice(content('blog'), 0, 3); ?>
+  <?php if ($homeArticles !== []): ?>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><?= e(ui('home.blog_eyebrow')) ?></p>
+          <h2><?= e(ui('home.blog_title')) ?></h2>
+        </div>
+        <div class="grid grid--3 mt-4">
+          <?php foreach ($homeArticles as $homeArticle): ?>
+            <a class="card card--link" href="/blog/<?= e($homeArticle['slug']) ?>/">
+              <h3 class="card-title"><?= e($homeArticle['title']) ?></h3>
+              <p class="card__text"><?= e($homeArticle['description']) ?></p>
+            </a>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </section>
+  <?php endif; ?>
+
   <!-- Process ------------------------------------------------------------- -->
   <?php require ROOT_DIR . '/partials/process.php'; ?>
 

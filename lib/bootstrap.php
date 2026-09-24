@@ -31,6 +31,13 @@ function cfg(string $key, ?string $default = null): ?string
 
     $value = $config[$key] ?? '';
 
+    /* Fallback: a server environment variable of the same name, for hosts
+       where secrets live in the panel instead of config.php. */
+    if ($value === '') {
+        $env = getenv($key);
+        $value = $env === false ? '' : $env;
+    }
+
     return $value === '' ? $default : (string) $value;
 }
 
