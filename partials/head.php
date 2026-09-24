@@ -73,6 +73,13 @@ $htmlLang    = $page['lang'] ?? market_locale();
   <?php if ($ads !== ''): ?>gtag('config', '<?= e($ads) ?>');<?php endif; ?>
 </script>
 <?php endif; ?>
+<?php $headCrm = cfg('VENDERCRM_URL'); ?>
+<?php if ($headCrm): ?>
+<!-- VenderCRM first-touch attribution: stores the arriving utm_/gclid/fbclid in
+     the vc_attr cookie, which enviar.php maps into the lead. -->
+<script src="<?= e(rtrim($headCrm, '/')) ?>/vc-attribution.js" defer></script>
+<?php endif; ?>
+<?php unset($headCrm); ?>
 </head>
 <body data-ga4="<?= e($ga4 ?? '') ?>">
 <a class="skip-link" href="#main"><?= e(ui('nav.skip')) ?></a>

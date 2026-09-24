@@ -61,7 +61,7 @@ require ROOT_DIR . '/partials/header.php';
     <div class="container stack">
       <p class="note tool-reviewed">
         <?= e(ui('tools.reviewed_prefix')) ?>
-        <?= e($lastReviewed) ?>. <?= e(ui('tools.orientativo')) ?>
+        <?= e(fmt_date_long($lastReviewed)) ?>. <?= e(ui('tools.orientativo')) ?>
       </p>
 
       <?= $toolCalcHtml ?>

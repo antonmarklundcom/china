@@ -74,6 +74,12 @@ jobs:
           cd tests
           node screenshots.mjs --phase ci --base http://127.0.0.1:8080 / $pages
 
+      - name: Calculator checks (known input → output cases)
+        run: |
+          php -S 127.0.0.1:8081 router.php &
+          for _ in $(seq 1 40); do curl -sf -o /dev/null http://127.0.0.1:8081/ && break; sleep 0.25; done
+          cd tests && node tools.mjs http://127.0.0.1:8081
+
       - uses: actions/upload-artifact@v4
         with:
           name: screenshots

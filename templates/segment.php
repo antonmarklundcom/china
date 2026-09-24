@@ -41,7 +41,7 @@ $page = [
 ];
 
 $segImage    = $record['image'] ?? null;
-$page['ogImage'] = $segImage['src'] ?? null;
+$page['ogImage'] = image_ready($segImage) ? $segImage['src'] : null;
 $hero        = $record['hero'];
 $ctaWhatsapp = whatsapp_text_for_page($page);
 
@@ -64,7 +64,7 @@ require ROOT_DIR . '/partials/header.php';
           <?php endif; ?>
         </div>
       </div>
-      <?php if (!empty($segImage['src'])): ?>
+      <?php if (image_ready($segImage)): ?>
         <figure class="page-hero__figure">
           <img src="<?= e(asset($segImage['src'])) ?>" alt="<?= e($segImage['alt'] ?? '') ?>"
                width="<?= e((string) ($segImage['width'] ?? 1600)) ?>" height="<?= e((string) ($segImage['height'] ?? 900)) ?>"

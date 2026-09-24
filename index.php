@@ -17,7 +17,7 @@ $page = [
     'title'       => $meta['title'],
     'description' => $meta['description'],
     'path'        => '/',
-    'ogImage'     => $homeImage['src'] ?? null,
+    'ogImage'     => image_ready($homeImage) ? $homeImage['src'] : null,
 ];
 
 $homeWhatsapp = whatsapp_link(whatsapp_text_for_page());
@@ -80,7 +80,7 @@ require ROOT_DIR . '/partials/header.php';
       </div>
 
       <div class="hero__visual">
-        <?php if (!empty($homeImage['src'])): ?>
+        <?php if (image_ready($homeImage)): ?>
           <img class="hero__img" src="<?= e(asset($homeImage['src'])) ?>" alt="<?= e($homeImage['alt'] ?? '') ?>"
                width="<?= e((string) ($homeImage['width'] ?? 1600)) ?>" height="<?= e((string) ($homeImage['height'] ?? 1200)) ?>"
                fetchpriority="high" decoding="async">
@@ -110,7 +110,7 @@ require ROOT_DIR . '/partials/header.php';
       <div class="doors mt-4">
         <?php foreach ($homeHubs as $homeCluster => $homeHub): ?>
           <article class="door door--<?= e($homeCluster) ?>">
-            <?php if (!empty($homeDoorImages[$homeCluster]['src'])): ?>
+            <?php if (image_ready($homeDoorImages[$homeCluster] ?? null)): ?>
               <img class="door__img" src="<?= e(asset($homeDoorImages[$homeCluster]['src'])) ?>"
                    alt="<?= e($homeDoorImages[$homeCluster]['alt'] ?? '') ?>" width="800" height="450" loading="lazy" decoding="async">
             <?php endif; ?>

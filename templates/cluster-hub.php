@@ -33,7 +33,7 @@ $page = [
     'title'       => $meta['title'],
     'description' => $meta['description'],
     'path'        => $hubRecord['path'],
-    'ogImage'     => $hubImage['src'] ?? null,
+    'ogImage'     => image_ready($hubImage) ? $hubImage['src'] : null,
     'leadSlug'    => $hubLeadSlug,
     'breadcrumbs' => [['label' => $hubRecord['label'], 'path' => $hubRecord['path']]],
 ];
@@ -51,7 +51,7 @@ require ROOT_DIR . '/partials/header.php';
         <h1><?= e($meta['h1']) ?></h1>
         <p class="lead"><?= e($meta['lead']) ?></p>
       </div>
-      <?php if (!empty($hubImage['src'])): ?>
+      <?php if (image_ready($hubImage)): ?>
         <figure class="page-hero__figure">
           <img src="<?= e(asset($hubImage['src'])) ?>" alt="<?= e($hubImage['alt'] ?? '') ?>"
                width="<?= e((string) ($hubImage['width'] ?? 1600)) ?>" height="<?= e((string) ($hubImage['height'] ?? 900)) ?>"

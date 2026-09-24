@@ -58,7 +58,7 @@ $guideHub = $guideHubRecord !== null
 $guideImage = $guide['image'] ?? null;
 
 $page = [
-    'ogImage'     => $guideImage['src'] ?? null,
+    'ogImage'     => image_ready($guideImage) ? $guideImage['src'] : null,
     'title'       => $guide['seoTitle'] !== '' ? $guide['seoTitle'] : $guide['title'],
     'description' => $guide['metaDescription'],
     'path'        => $guide['path'],
@@ -84,7 +84,7 @@ require ROOT_DIR . '/partials/header.php';
         <h1><?= e($guide['hero']['h1']) ?></h1>
         <p class="lead"><?= e($guide['hero']['lead']) ?></p>
       </div>
-      <?php if (!empty($guideImage['src'])): ?>
+      <?php if (image_ready($guideImage)): ?>
         <figure class="page-hero__figure">
           <img src="<?= e(asset($guideImage['src'])) ?>" alt="<?= e($guideImage['alt'] ?? '') ?>"
                width="<?= e((string) ($guideImage['width'] ?? 1600)) ?>" height="<?= e((string) ($guideImage['height'] ?? 900)) ?>"

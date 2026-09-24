@@ -34,8 +34,13 @@ return [
         'changefreq' => 'weekly',
         'priority' => '1.0',
         'popular' => ['temu-paraguay', 'como-importar-de-china-a-paraguay', 'shein-paraguay', 'aduana-clorinda', 'aliexpress-paraguay', 'feria-de-canton'],
-        'image' => null,
-        'doorImages' => [],
+        'image' => ['src' => '/assets/img/hero/puerto-fluvial-contenedores.webp', 'alt' => 'Contenedores apilados en un puerto fluvial al atardecer, con una barcaza sobre el río', 'width' => 1600, 'height' => 1195],
+        'doorImages' => [
+            'compras' => ['src' => '/assets/img/hubs/compras-online-entrega-paraguay.webp', 'alt' => 'Una mujer recibe en la puerta de su casa en Asunción varios paquetes de una compra online', 'width' => 1600, 'height' => 905],
+            'importar' => ['src' => '/assets/img/hubs/importar-de-china-deposito-fabrica.webp', 'alt' => 'Comprador y encargado revisan una lista junto a cajas de exportación en un depósito de fábrica en China', 'width' => 1600, 'height' => 905],
+            'aduana' => ['src' => '/assets/img/hubs/aduana-documentos-despacho.webp', 'alt' => 'Escritorio con facturas, lista de empaque y calculadora, con contenedores de fondo', 'width' => 1600, 'height' => 905],
+            'viajes' => ['src' => '/assets/img/hubs/viajar-a-china-estacion-tren.webp', 'alt' => 'Viajero de negocios con equipaje de mano en una estación de tren de alta velocidad en China', 'width' => 1600, 'height' => 905],
+        ],
         'stub' => false,
     ],
     '/comprar/' => [
@@ -45,6 +50,7 @@ return [
         'lead' => 'Cómo llega su pedido, cuánto tarda y cuánto termina pagando, tienda por tienda.',
         'changefreq' => 'weekly',
         'priority' => '0.9',
+        'image' => ['src' => '/assets/img/hubs/compras-online-entrega-paraguay.webp', 'alt' => 'Una mujer recibe en la puerta de su casa en Asunción varios paquetes de una compra online', 'width' => 1600, 'height' => 905],
         'stub' => false,
     ],
     '/importar/' => [
@@ -54,6 +60,7 @@ return [
         'lead' => 'Para quien compra en China para vender: del proveedor al depósito, con los costos a la vista.',
         'changefreq' => 'weekly',
         'priority' => '0.9',
+        'image' => ['src' => '/assets/img/hubs/importar-de-china-deposito-fabrica.webp', 'alt' => 'Comprador y encargado revisan una lista junto a cajas de exportación en un depósito de fábrica en China', 'width' => 1600, 'height' => 905],
         'stub' => false,
     ],
     '/aduana/' => [
@@ -63,6 +70,7 @@ return [
         'lead' => 'Despacho, tributos y fronteras. Somos un sitio privado de información: siempre enlazamos la fuente oficial.',
         'changefreq' => 'monthly',
         'priority' => '0.9',
+        'image' => ['src' => '/assets/img/hubs/aduana-documentos-despacho.webp', 'alt' => 'Escritorio con facturas, lista de empaque y calculadora, con contenedores de fondo', 'width' => 1600, 'height' => 905],
         'stub' => false,
     ],
     '/viajar-a-china/' => [
@@ -72,6 +80,7 @@ return [
         'lead' => 'Visa, Feria de Cantón y lo práctico para un primer viaje de negocios o de turismo.',
         'changefreq' => 'monthly',
         'priority' => '0.8',
+        'image' => ['src' => '/assets/img/hubs/viajar-a-china-estacion-tren.webp', 'alt' => 'Viajero de negocios con equipaje de mano en una estación de tren de alta velocidad en China', 'width' => 1600, 'height' => 905],
         'stub' => false,
     ],
     '/servicios/' => [
@@ -229,7 +238,7 @@ return [
             [
                 'h2' => 'Sitio privado, no oficial',
                 'body' => [
-                    'China-Paraguay es un sitio privado de información. No es la Dirección Nacional de Aduanas, ni la Dirección Nacional de Ingresos Tributarios (DNIT), ni una embajada o consulado, ni representa a ningún organismo público de Paraguay, de China ni de otro país.',
+                    'China-Paraguay es un sitio privado de información. No es la aduana —hoy la Gerencia General de Aduanas de la Dirección Nacional de Ingresos Tributarios (DNIT), antes Dirección Nacional de Aduanas—, ni la DNIT en ninguna de sus áreas, ni una embajada o consulado, ni representa a ningún organismo público de Paraguay, de China ni de otro país.',
                 ],
             ],
             [
@@ -247,7 +256,7 @@ return [
             [
                 'h2' => 'Fuentes oficiales',
                 'body' => [
-                    'Aduana: Dirección Nacional de Aduanas (aduana.gov.py). Impuestos: DNIT (dnit.gov.py). Visas para China: la misión diplomática china que corresponda a su residencia.',
+                    'Aduana: Gerencia General de Aduanas de la DNIT (aduana.gov.py). Impuestos: DNIT (dnit.gov.py). Visas para China: la misión diplomática china que corresponda a su residencia.',
                 ],
             ],
         ],

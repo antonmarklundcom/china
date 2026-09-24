@@ -42,7 +42,6 @@ declare(strict_types=1);
 return [
 
     'asesoria-compras-online' => [
-        'draft' => true,
         'path' => '/servicios/asesoria-compras-online/',
         'title' => 'Asesoría para compras online',
         'navLabel' => 'Asesoría compras online',
@@ -53,25 +52,83 @@ return [
         'hero' => [
             'eyebrow' => 'Servicios',
             'h1' => 'Asesoría para compras online',
-            'h2' => '',
-            'lead' => 'Le ayudamos con su primer pedido en Temu, Shein, AliExpress o Alibaba: casilla, courier, pago y costos hasta que el paquete llega a Paraguay.',
+            'h2' => 'Su primer pedido del exterior, con el costo claro antes de pagar',
+            'lead' => 'Le ayudamos con su primer pedido en Temu, Shein, AliExpress o Alibaba: casilla, courier, pago y costos hasta que el paquete llega a Paraguay. Usted compra en la plataforma oficial; nosotros revisamos el pedido, estimamos el costo final y lo acompañamos si hay demoras o retención.',
         ],
-        'includes' => [],
-        'excludes' => [],
-        'weNeed' => [],
-        'sections' => [],
-        'benefits' => [],
-        'faq' => [],
+        'includes' => [
+            'Revisión de su pedido antes de pagar: tienda, vendedor, talles o especificaciones y cantidad',
+            'Comparación entre envío directo de la tienda y casilla de courier para su caso',
+            'Estimación del costo final: precio, envío, flete, tributos y otros cargos',
+            'Orientación sobre medios de pago y protección al comprador de cada plataforma',
+            'Revisión de productos que pueden necesitar permiso o generar retención en aduana',
+            'Acompañamiento si el paquete se demora o queda retenido, con los pasos a seguir',
+            'Derivación a un agente de compras o a un despachante cuando la compra es comercial',
+        ],
+        'excludes' => [
+            'No compramos en su nombre ni manejamos su dinero ni su tarjeta',
+            'No hacemos trámites aduaneros: el despacho formal lo hace un despachante matriculado',
+            'No garantizamos plazos ni montos de tributos, que dependen de la tienda, el courier y la aduana',
+        ],
+        'weNeed' => [
+            'El enlace o captura de lo que quiere comprar',
+            'Su ciudad de entrega en Paraguay',
+            'Si la compra es para uso personal o para vender',
+            'Si ya tiene casilla de courier y con qué condiciones',
+        ],
+        'sections' => [
+            [
+                'h2' => 'Cómo trabajamos',
+                'body' => [
+                    'El miedo más común con el primer pedido en Temu, Shein, AliExpress o Alibaba no es el precio, es lo que no se ve: cuánto se paga al recibir, cuánto tarda, si conviene casilla y qué pasa si el paquete queda en aduana. La asesoría resuelve esas preguntas antes de pagar, con su pedido concreto.',
+                ],
+                'items' => [
+                    ['title' => 'Usted nos envía el pedido', 'text' => 'Por el formulario o WhatsApp, con el enlace o la captura del carrito y su ciudad.'],
+                    ['title' => 'Revisamos y estimamos', 'text' => 'Miramos vendedor, especificaciones y posibles restricciones, y armamos una estimación del costo final con las tarifas vigentes que usted o el courier nos confirmen.'],
+                    ['title' => 'Le recomendamos el camino', 'text' => 'Envío directo o casilla, qué medio de pago usar y qué datos cargar.'],
+                    ['title' => 'Usted compra', 'text' => 'La compra y el pago los hace usted, en la plataforma oficial.'],
+                    ['title' => 'Seguimos hasta la entrega', 'text' => 'Si hay demora o retención, le decimos qué pedir y a quién.'],
+                ],
+            ],
+            [
+                'h2' => 'Cuándo conviene pedir asesoría',
+                'body' => [
+                    'Conviene en su primera compra del exterior, cuando el pedido tiene un valor que no quiere arriesgar, cuando compra artículos voluminosos o electrónicos, o cuando piensa comprar cantidades para vender y no sabe si ya es una importación.',
+                    'Si su pedido es chico, con envío directo y seguimiento, probablemente no la necesite: nuestras guías de Temu, Shein y AliExpress cubren ese caso.',
+                ],
+            ],
+            [
+                'h2' => 'Quién hace qué',
+                'body' => [
+                    'Nosotros orientamos y coordinamos. La tienda vende y envía; el courier transporta, declara y cobra los tributos; la aduana (DNIT) libera el paquete. Si la compra pasa a ser comercial, lo conectamos con un agente de compras en China y con un despachante de aduana matriculado, que es quien hace el despacho formal. No somos una empresa oficial ni estamos afiliados a Temu, Shein, AliExpress ni Alibaba.',
+                ],
+            ],
+        ],
+        'benefits' => [
+            ['title' => 'Sabe cuánto paga antes de comprar', 'text' => 'Una estimación con todos los componentes, no solo el precio del carrito.'],
+            ['title' => 'Elige bien entre casilla y envío directo', 'text' => 'Según el tamaño, el valor y la urgencia de su pedido.'],
+            ['title' => 'Evita retenciones previsibles', 'text' => 'Revisamos productos con restricciones y cantidades que parecen comerciales.'],
+            ['title' => 'Un interlocutor si algo sale mal', 'text' => 'Le indicamos qué reclamar, a quién y con qué documentos.'],
+        ],
+        'faq' => [
+            ['q' => '¿Ustedes compran por mí en Temu o Shein?', 'a' => 'No. Usted compra y paga en la plataforma oficial; nosotros revisamos el pedido y le explicamos el costo final y la mejor forma de envío.'],
+            ['q' => '¿Me pueden decir exactamente cuánto voy a pagar de impuestos?', 'a' => 'Le damos una estimación con las reglas y tarifas vigentes que confirmamos con el courier o la DNIT. El monto final lo liquida la aduana a través del courier.'],
+            ['q' => '¿Me ayudan si el paquete quedó retenido?', 'a' => 'Sí, le indicamos qué documento falta y a quién presentarlo. Si hace falta un despacho formal, lo conectamos con un despachante de aduana matriculado.'],
+            ['q' => '¿Sirve para compras en Alibaba?', 'a' => 'Sí, para una muestra o un primer pedido chico. Para volumen comercial, lo derivamos a un agente de compras y a la guía de importación.'],
+            ['q' => '¿Trabajan con un courier en particular?', 'a' => 'Coordinamos con couriers socios, pero le explicamos cómo comparar casillas para que usted decida.'],
+        ],
         'cta' => [
-            'label' => 'Pedir cotización',
-            'whatsappText' => '',
+            'label' => 'Consultar mi pedido',
+            'whatsappText' => 'Hola, quiero ayuda con una compra online desde Paraguay.',
         ],
-        'related' => [],
-        'guides' => [],
+        'related' => ['agente-de-compras-china', 'despacho-aduanero', 'flete-aereo-china'],
+        'guides' => ['temu-paraguay', 'casillas-courier-paraguay', 'impuestos-compras-online-paraguay'],
         'articles' => [],
-        'toolLinks' => [],
+        'toolLinks' => [
+            ['path' => '/herramientas/calculadora-compras-online/', 'label' => 'Calculadora de compras online', 'text' => 'Estime el costo final de su pedido puesto en Paraguay.'],
+        ],
         'affiliates' => [],
         'disclaimer' => false,
+        'image' => ['src' => '/assets/img/guias/compra-online-desempaque.webp', 'alt' => 'Persona abre en la mesa de su cocina un paquete de una compra online y sostiene una prenda', 'width' => 1200, 'height' => 671],
     ],
 
 ];

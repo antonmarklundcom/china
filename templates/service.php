@@ -42,7 +42,7 @@ $page = [
 ];
 
 $svcImage    = $service['image'] ?? null;
-$page['ogImage'] = $svcImage['src'] ?? null;
+$page['ogImage'] = image_ready($svcImage) ? $svcImage['src'] : null;
 $hero        = $service['hero'];
 $ctaWhatsapp = whatsapp_text_for_page($page);
 
@@ -74,7 +74,7 @@ require ROOT_DIR . '/partials/header.php';
           <?php endif; ?>
         </div>
       </div>
-      <?php if (!empty($svcImage['src'])): ?>
+      <?php if (image_ready($svcImage)): ?>
         <figure class="page-hero__figure">
           <img src="<?= e(asset($svcImage['src'])) ?>" alt="<?= e($svcImage['alt'] ?? '') ?>"
                width="<?= e((string) ($svcImage['width'] ?? 1600)) ?>" height="<?= e((string) ($svcImage['height'] ?? 900)) ?>"
