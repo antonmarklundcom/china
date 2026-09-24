@@ -1,5 +1,9 @@
 # Keyword research — Google Keyword Planner, location Paraguay, Sept 2026
 
+> **Full raw data:** `docs/kwp-data.csv` — every keyword exported so far (keyword, avg monthly
+> searches, top-of-page bid low/high in SEK), deduplicated, sorted by volume. Append new KWP
+> exports there; this file is the summary.
+
 Monthly searches (avg). CPC = top-of-page bid range in SEK as exported. Only the terms that
 drive the plan are listed; everything at 10/mo is long tail and is covered by guide sections.
 
