@@ -78,14 +78,14 @@ return [
             [
                 'h2' => 'Por qué la visa china es distinta para un paraguayo',
                 'body' => [
-                    'Paraguay reconoce a Taiwán y no tiene relaciones diplomáticas con la República Popular China. Por eso no hay embajada ni consulado chino en Asunción, y el pasaporte paraguayo se presenta en una misión china de otro país. Cada misión decide si atiende a no residentes y qué documentos extra les pide.',
+                    'Paraguay reconoce a Taiwán y no tiene relaciones diplomáticas con la República Popular China. Por eso no hay embajada ni consulado chino en Asunción, y el pasaporte paraguayo se presenta en una misión china de otro país. Cada misión decide si atiende a no residentes y qué documentos extra les pide; lo explicamos en la guía de [visa para China para paraguayos](/viajar-a-china/visa-china-para-paraguayos/).',
                     'El riesgo está en los detalles: una misión que no acepta su caso, un formulario con un dato que no coincide o una invitación incompleta significan volver a empezar, con otro viaje y otro turno.',
                 ],
             ],
             [
                 'h2' => 'Cómo trabajamos',
                 'body' => [
-                    'Usted nos escribe con el motivo y las fechas del viaje. Revisamos su caso y lo conectamos con un gestor de viajes asociado, que le confirma qué misión corresponde, qué documentos necesita y el costo de su gestión antes de empezar.',
+                    'Usted nos escribe con el motivo y las fechas del viaje, sea turismo, un [viaje de negocios a China](/viajar-a-china/viaje-de-negocios-a-china/) o la [Feria de Cantón](/feria-de-canton/). Revisamos su caso y lo conectamos con un gestor de viajes asociado, que le confirma qué misión corresponde, qué documentos necesita y el costo de su gestión antes de empezar.',
                 ],
                 'items' => [
                     ['title' => '1. Diagnóstico', 'text' => 'Tipo de visa, misión posible y plazos según sus fechas.'],
@@ -111,7 +111,7 @@ return [
             ['q' => '¿Garantizan la aprobación de la visa?', 'a' => 'No. La decisión es exclusiva de la misión china. Lo que se hace es presentar una solicitud completa y coherente para reducir observaciones.'],
             ['q' => '¿Dónde se presenta la visa?', 'a' => 'En una misión china o centro de visas en el exterior que acepte solicitudes de paraguayos. El gestor le confirma cuál corresponde a su caso.'],
             ['q' => '¿Cuánto cuesta el servicio?', 'a' => 'El gestor asociado le pasa el presupuesto de su gestión antes de empezar. Las tasas consulares y los traslados se pagan aparte.'],
-            ['q' => '¿Con cuánta anticipación debo empezar?', 'a' => 'Idealmente dos o tres meses antes del viaje, sobre todo si va a una feria con fechas fijas.'],
+            ['q' => '¿Con cuánta anticipación debo empezar?', 'a' => 'Idealmente dos o tres meses antes del viaje, sobre todo si va a una feria con fechas fijas. Para el resto de la preparación, vea la [guía para viajar a China](/viajar-a-china/guia-para-viajar-a-china/).'],
             ['q' => '¿Tengo que viajar yo a la misión?', 'a' => 'Depende de la misión: algunas exigen presentación en persona, por ejemplo para huellas digitales, y otras aceptan un tercero. Se lo confirmamos en el diagnóstico.'],
         ],
         'cta' => [
@@ -164,14 +164,14 @@ return [
             [
                 'h2' => 'Cómo funciona la lista de interesados',
                 'body' => [
-                    'Todavía no hay fechas ni precio. Reunimos interesados de Paraguay para saber qué rubros y qué temporada tienen más demanda. Cuando haya un grupo suficiente, la agencia asociada arma el programa y el presupuesto, y le escribimos para que decida si viaja. Anotarse no lo compromete a nada.',
+                    'Todavía no hay fechas ni precio. Reunimos interesados de Paraguay para saber qué rubros y qué temporada de la [Feria de Cantón](/feria-de-canton/) tienen más demanda. Cuando haya un grupo suficiente, la agencia asociada arma el programa y el presupuesto, y le escribimos para que decida si viaja. Anotarse no lo compromete a nada.',
                 ],
             ],
             [
                 'h2' => 'Cuándo conviene ir en grupo',
                 'body' => [
                     'El viaje grupal sirve sobre todo a quien va por primera vez, no habla chino ni inglés con soltura, o compra volúmenes que todavía no justifican contratar un agente propio. Compartir intérprete, traslados y agenda de fábricas reduce el costo por persona y el margen de error.',
-                    'Si ya conoce China o necesita una agenda muy específica, puede convenirle un viaje individual con un agente local; también podemos conectarlo con uno.',
+                    'Si ya conoce China o necesita una agenda muy específica, puede convenirle un [viaje de negocios a China](/viajar-a-china/viaje-de-negocios-a-china/) individual con un agente local; con nuestro servicio de [agente de compras en China](/servicios/agente-de-compras-china/) también podemos conectarlo con uno.',
                 ],
             ],
             [
@@ -191,7 +191,7 @@ return [
             ['q' => '¿Cuándo es el próximo viaje?', 'a' => 'Todavía no hay fechas. Se definen cuando haya suficientes interesados, en función de las sesiones de primavera y otoño de la feria.'],
             ['q' => '¿Cuánto cuesta?', 'a' => 'No hay precio definido. Cuando el programa esté armado, la agencia asociada le envía el presupuesto completo antes de que decida.'],
             ['q' => '¿Anotarme me obliga a viajar?', 'a' => 'No. La lista de interesados es solo para avisarle cuando haya fechas y condiciones.'],
-            ['q' => '¿Incluye la visa?', 'a' => 'Se orienta sobre la visa de negocios y se lo conecta con un gestor. La decisión es de la misión china y el trámite debe empezar con tiempo.'],
+            ['q' => '¿Incluye la visa?', 'a' => 'Se orienta sobre la visa de negocios y se lo conecta con un gestor de nuestro servicio de [visa China](/servicios/visa-china/). La decisión es de la misión china y el trámite debe empezar con tiempo.'],
             ['q' => '¿Puedo ir si mi rubro es distinto al del grupo?', 'a' => 'Indíquenos su rubro al anotarse. La fase de la feria y las visitas se arman según los rubros de los interesados.'],
         ],
         'cta' => [
@@ -206,7 +206,7 @@ return [
         ],
         'affiliates' => ['trip', 'seguro-viaje'],
         'disclaimer' => false,
-        'image' => ['src' => '/assets/img/guias/feria-de-canton-pabellon.webp', 'alt' => 'Pasillos de un pabellón de feria comercial en Cantón con compradores y stands de productos', 'width' => 1600, 'height' => 905],
+        'image' => ['base' => '/assets/img/feria-de-canton-pabellon-guangzhou', 'widths' => [640, 1280, 1920], 'alt' => 'Pasillos de un pabellón de feria comercial en Cantón con compradores y stands de productos', 'width' => 1920, 'height' => 1086],
     ],
 
 ];
