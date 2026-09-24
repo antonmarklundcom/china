@@ -34,9 +34,9 @@ $sections = [
     [
         'h2'   => 'Criterio 2: método de envío hasta Paraguay',
         'body' => [
-            'Aquí está la diferencia más importante para un comprador paraguayo. Antes de comprar, verifique en la página de pago si la plataforma envía directamente a una dirección en Paraguay o si usted necesita una casilla de courier en Miami, en China o en otro país para recibir el paquete y reenviarlo.',
-            'El envío directo suele ser más simple, pero el paquete llega por el correo o por el operador logístico que elija la plataforma, y los tiempos pueden variar. Con una casilla de courier usted paga el tramo internacional al courier según el peso, a veces el peso volumétrico, y el courier se encarga de la entrega en Asunción o en su ciudad.',
-            'En ambos casos existen tributos de importación sobre las compras del exterior. Las reglas y montos vigentes para envíos de este tipo los publica la Dirección Nacional de Ingresos Tributarios (DNIT); su courier o la plataforma le indican cuánto le cobran por ese concepto. No compre pensando que "no paga nada" sin haberlo confirmado.',
+            'Aquí está la diferencia más importante para un comprador paraguayo. Antes de comprar, verifique en la página de pago si la plataforma envía directamente a una dirección en Paraguay o si usted necesita una [casilla de courier en Paraguay](/comprar/casillas-courier-paraguay/) con dirección en Miami, en China o en otro país para recibir el paquete y reenviarlo.',
+            'La situación no es igual en las tres. En AliExpress el envío directo depende de cada vendedor y se ve en la ficha del producto. En Temu, medios locales informaron en abril de 2026 que la plataforma suspendió los envíos directos a Paraguay tras meses de demoras en la entrega de última milla (detalles en [Temu en Paraguay](/comprar/temu-paraguay/)). En Shein, revise si la opción aparece al pagar; muchos compradores usan casilla. El envío directo, cuando existe, suele ser más simple, pero el paquete llega por el correo o por el operador logístico que elija la plataforma, y los tiempos pueden variar. Con una casilla de courier usted paga el tramo internacional al courier según el peso, a veces el peso volumétrico, y el courier se encarga de la entrega en Asunción o en su ciudad.',
+            'En ambos casos existen tributos de importación sobre las compras del exterior. Las reglas y montos vigentes para envíos de este tipo los publica la Dirección Nacional de Ingresos Tributarios (DNIT), que administra el régimen de remesa expresa para envíos por courier; su courier o la plataforma le indican cuánto le cobran por ese concepto. No compre pensando que "no paga nada" sin haberlo confirmado: le explicamos el mecanismo en [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/).',
         ],
     ],
     [
@@ -50,7 +50,7 @@ $sections = [
     [
         'h2'   => 'Criterio 4: formas de pago',
         'body' => [
-            'Las tres aceptan normalmente tarjetas de crédito y débito internacionales. Algunas ofrecen además billeteras como PayPal según el país de envío. Verifique en la pantalla de pago qué medios aparecen para una dirección en Paraguay, porque no siempre son los mismos que se ven en la publicidad.',
+            'Las tres aceptan normalmente tarjetas de crédito y débito internacionales. Los demás medios, como billeteras digitales, varían según el país y la dirección de envío. Verifique en la pantalla de pago qué medios aparecen para su dirección (o la de su casilla), porque no siempre son los mismos que se ven en la publicidad.',
             'Consulte con su banco si su tarjeta está habilitada para compras en el exterior, qué recargo aplica por operaciones en moneda extranjera y si el cobro se hace en dólares. Pagar siempre dentro de la plataforma, nunca por transferencia directa a un vendedor, es lo que le permite reclamar después.',
         ],
     ],
@@ -58,13 +58,13 @@ $sections = [
         'h2'   => 'Criterio 5: talles y medidas',
         'body' => [
             'Los talles asiáticos suelen ser más chicos que los que usted usa en Paraguay. No elija por la letra (S, M, L): mida una prenda propia que le quede bien y compárela con la tabla de medidas en centímetros de cada producto.',
-            'Shein muestra medidas por prenda y comentarios con altura y peso de quien compró, lo que ayuda bastante. En AliExpress y Temu la tabla depende del vendedor; si no hay tabla en centímetros, es una señal para buscar otro producto.',
+            'Shein muestra medidas por prenda y comentarios con altura y peso de quien compró, lo que ayuda bastante (vea cómo medir en Shein en Paraguay). En AliExpress y Temu la tabla depende del vendedor; si no hay tabla en centímetros, es una señal para buscar otro producto.',
         ],
     ],
     [
         'h2'   => 'Qué conviene según lo que quiere comprar',
         'body' => [
-            'Un resumen práctico, sin pretender que sea una regla fija:',
+            'Un resumen práctico, sin pretender que sea una regla fija. Si compra para revender, lea antes [Alibaba en Paraguay](/comprar/alibaba-paraguay/) y 1688 en español:',
         ],
         'items' => [
             ['title' => 'Ropa y accesorios de moda', 'text' => 'Shein, por la información de talles; AliExpress si busca algo muy específico.'],
@@ -89,8 +89,8 @@ $sections = [
 
 $faq = [
     ['q' => '¿Cuál es más barata, Temu, Shein o AliExpress?', 'a' => 'Depende del producto y de las promociones del momento. Compare el costo total, con envío y tributos incluidos, del mismo artículo en las tres antes de decidir.'],
-    ['q' => '¿Necesito una casilla de courier para comprar desde Paraguay?', 'a' => 'No siempre. Si la plataforma ofrece envío directo a Paraguay puede comprar sin casilla; si no lo ofrece para ese producto, necesita una casilla que reciba y reenvíe el paquete.'],
-    ['q' => '¿Pago impuestos por mis compras en estas plataformas?', 'a' => 'Las compras del exterior están sujetas a tributos de importación. Consulte las reglas vigentes en la DNIT y pregunte a su courier o a la plataforma cuánto le cobran por ese concepto.'],
+    ['q' => '¿Necesito una casilla de courier para comprar desde Paraguay?', 'a' => 'No siempre. Si la plataforma ofrece envío directo a Paraguay puede comprar sin casilla; si no lo ofrece para ese producto, necesita una casilla que reciba y reenvíe el paquete. Vea cómo funciona el [courier de China a Paraguay](/comprar/courier-china-paraguay/).'],
+    ['q' => '¿Pago impuestos por mis compras en estas plataformas?', 'a' => 'Las compras del exterior están sujetas a tributos de importación. Consulte las reglas vigentes en la DNIT, pregunte a su courier cuánto le cobran por ese concepto y sume todo con la [calculadora de compras online](/herramientas/calculadora-compras-online/).'],
     ['q' => '¿Puedo devolver un producto a China?', 'a' => 'Es posible según la política de cada sitio, pero rara vez conviene por el costo. Lo habitual es pedir un reembolso con fotos y videos como prueba.'],
 ];
 

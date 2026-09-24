@@ -128,12 +128,12 @@ require ROOT_DIR . '/partials/header.php';
               <h2><?= e($articleSection['h2']) ?></h2>
             <?php endif; ?>
             <?php foreach ($articleSection['body'] ?? [] as $paragraph): ?>
-              <p><?= e($paragraph) ?></p>
+              <p><?= rich($paragraph) ?></p>
             <?php endforeach; ?>
             <?php if (!empty($articleSection['items'])): ?>
               <ul class="checklist mt-4">
                 <?php foreach ($articleSection['items'] as $sectionItem): ?>
-                  <li><span><?php if (!empty($sectionItem['title'])): ?><strong><?= e($sectionItem['title']) ?>:</strong> <?php endif; ?><?= e($sectionItem['text'] ?? '') ?></span></li>
+                  <li><span><?php if (!empty($sectionItem['title'])): ?><strong><?= e($sectionItem['title']) ?>:</strong> <?php endif; ?><?= rich($sectionItem['text'] ?? '') ?></span></li>
                 <?php endforeach; ?>
               </ul>
             <?php endif; ?>

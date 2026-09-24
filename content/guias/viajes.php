@@ -50,37 +50,37 @@ return [
             'lead' => 'La Feria de Cantón (China Import and Export Fair) se realiza dos veces al año en Guangzhou, en primavera y en otoño, dividida en tres fases por sector. Para ir desde Paraguay necesita elegir la fase de su rubro, registrarse en línea como comprador, tramitar la visa china en una misión en el exterior y reservar vuelo y hotel con anticipación.',
         ],
         'intro' => [
-            'La Feria de Cantón es la feria comercial más conocida de China para compradores extranjeros: miles de fábricas y exportadoras exponen en el complejo de Pazhou, en Guangzhou (Cantón). Cada edición tiene una sesión de primavera, que suele caer entre abril y mayo, y una de otoño, entre octubre y noviembre. Cada sesión se divide en tres fases de pocos días, y cada fase reúne sectores distintos. Por eso lo primero es saber qué fase corresponde a los productos que usted busca.',
+            'La Feria de Cantón es la feria comercial más conocida de China para compradores extranjeros: miles de fábricas y exportadoras exponen en el complejo de Pazhou, en Guangzhou (Cantón). Cada año hay una sesión de primavera, que suele caer entre abril y mayo, y una de otoño, entre octubre y noviembre. Para la sesión de otoño de 2026 (140.ª edición), la organización anunció tres fases: del 15 al 19 de octubre, del 23 al 27 de octubre y del 31 de octubre al 4 de noviembre. Cada sesión se divide en tres fases de pocos días, y cada fase reúne sectores distintos. Por eso lo primero es saber qué fase corresponde a los productos que usted busca.',
             'Esta guía es para importadores, comerciantes y emprendedores de Paraguay que evalúan viajar a la Feria de Cantón por primera vez. Explica cómo elegir la fase, cómo funciona el registro de comprador y el gafete de ingreso, qué tener en cuenta con la visa (Paraguay no tiene embajada china), cómo organizar vuelos y hotel, y cómo aprovechar las reuniones con proveedores.',
-            'Las fechas exactas de cada fase se publican en el sitio oficial de la feria, cantonfair.org.cn. Confírmelas allí antes de comprar pasajes: esta guía no reemplaza la información oficial.',
+            'Las fechas de cada fase, incluidas las de las sesiones de 2027, se publican en el sitio oficial de la feria, cantonfair.org.cn. Confírmelas allí antes de comprar pasajes: esta guía no reemplaza la información oficial.',
         ],
         'steps' => [
             [
                 'title' => 'Elija la sesión y la fase según su rubro',
                 'body' => [
-                    'En términos generales, la primera fase reúne electrónica, electrodomésticos, maquinaria, herramientas, vehículos y repuestos; la segunda, artículos para el hogar, decoración, regalos, vajilla y materiales de construcción; y la tercera, textiles, ropa, calzado, juguetes, artículos de oficina, alimentos y salud. La distribución exacta de sectores cambia de una edición a otra.',
+                    'En términos generales, y según cómo la presentó la organización para 2026, la primera fase (manufactura avanzada) reúne electrónica y electrodomésticos, maquinaria y automatización industrial, vehículos y energía; la segunda (hogar), materiales de construcción y muebles, artículos para el hogar, regalos y decoración; y la tercera (bienestar), moda y textiles, juguetes y artículos infantiles, salud, recreación y alimentos. La distribución exacta de sectores cambia de una edición a otra.',
                     'Revise el listado de sectores y expositores de la edición que le interesa en cantonfair.org.cn. Si su negocio abarca varios rubros, puede quedarse más de una fase, pero calcule el costo extra de hotel y días fuera de Paraguay.',
                 ],
             ],
             [
                 'title' => 'Regístrese en línea como comprador',
                 'body' => [
-                    'Los compradores extranjeros se preinscriben en la plataforma oficial de la feria: crean una cuenta, cargan sus datos personales y de empresa, una foto y los datos del pasaporte. Con el registro aprobado se obtiene el gafete de comprador, que se retira en los mostradores de registro con el pasaporte o, según la edición, se puede imprimir con anticipación.',
-                    'Haga el registro con semanas de anticipación. La feria suele ofrecer además una carta de invitación electrónica para compradores registrados, que puede servir como respaldo para la visa de negocios. Confirme en el sitio oficial qué emite la edición actual y si el gafete tiene costo.',
+                    'Los compradores extranjeros se preinscriben en la plataforma oficial de la feria: crean una cuenta, cargan sus datos personales y de empresa, una foto y los datos del pasaporte. Según la guía oficial para compradores extranjeros, quien completa el prerregistro puede retirar el gafete de comprador sin costo, con el pasaporte, en los mostradores de registro, incluidos puntos habilitados en el aeropuerto de Baiyun, estaciones de tren y hoteles designados de Guangzhou.',
+                    'Haga el registro con semanas de anticipación. Desde su cuenta de comprador puede pedir además la carta de invitación de la feria (en papel o electrónica), pensada para tramitar la visa china de negocios. Confirme en el sitio oficial las condiciones de la edición a la que va.',
                 ],
             ],
             [
                 'title' => 'Tramite la visa con tiempo',
                 'body' => [
                     'Como Paraguay mantiene relaciones diplomáticas con Taiwán y no con la República Popular China, no hay embajada ni consulado chino en Asunción. El pasaporte paraguayo se presenta en una misión china o centro de visas en el exterior, lo que suma viaje, turno y tiempo de envío.',
-                    'Para un viaje a la feria se suele pedir la visa de negocios (tipo M) con la invitación de la feria o de un proveedor. Los detalles están en nuestra guía de visa para China para paraguayos. Empiece el trámite al menos dos o tres meses antes.',
+                    'Para un viaje a la feria se suele pedir la visa de negocios (tipo M) con la invitación de la feria o de un proveedor. Los detalles están en nuestra guía de [visa para China para paraguayos](/viajar-a-china/visa-china-para-paraguayos/). Empiece el trámite al menos dos o tres meses antes.',
                 ],
             ],
             [
                 'title' => 'Reserve vuelo y hotel temprano',
                 'body' => [
                     'No hay vuelos directos entre Paraguay y China; las rutas habituales conectan por São Paulo, Europa, Medio Oriente o Estados Unidos. Si una escala exige visa de tránsito para su pasaporte, confírmelo con la aerolínea antes de pagar.',
-                    'Durante la feria los hoteles de Guangzhou suben de precio y se llenan. Conviene alojarse cerca de una estación de la línea de metro que llega a Pazhou, así evita el tráfico de la mañana. Muchos hoteles ofrecen traslado a la feria en esos días.',
+                    'Durante la feria los hoteles de Guangzhou suben de precio y se llenan. Conviene alojarse cerca de la línea 8 del metro de Guangzhou, que tiene estaciones junto al complejo de Pazhou (Pazhou y Xingangdong), así evita el tráfico de la mañana. Varios hoteles ofrecen traslado a la feria en esos días; confírmelo al reservar.',
                 ],
             ],
             [
@@ -94,21 +94,21 @@ return [
                 'title' => 'Recorra la feria con método',
                 'body' => [
                     'El predio es muy grande. Use el mapa oficial para ubicar los pabellones de su sector y dedique el primer día a recorrer y anotar. Fotografíe el stand y la tarjeta de cada proveedor que le interese, y anote en la misma foto el producto y el precio que le dieron.',
-                    'Pregunte si el expositor es fábrica o empresa comercial, cuál es la cantidad mínima de pedido (MOQ), el plazo de producción y bajo qué Incoterm cotiza (FOB, CIF u otro). No cierre pedidos grandes en el stand sin comparar.',
+                    'Pregunte si el expositor es fábrica o empresa comercial (vea cómo reconocer [proveedores chinos confiables](/importar/proveedores-chinos-confiables/)), cuál es la cantidad mínima de pedido (MOQ), el plazo de producción y bajo qué Incoterm cotiza (FOB, CIF u otro). No cierre pedidos grandes en el stand sin comparar.',
                 ],
             ],
             [
                 'title' => 'Visite fábricas y pida muestras',
                 'body' => [
                     'Con los proveedores preseleccionados, pida muestras y, si el tiempo alcanza, visite la fábrica en Guangdong o en provincias cercanas. Una visita le muestra la escala real, el control de calidad y las condiciones de trabajo.',
-                    'Para visitas con intérprete y traslados, coordinar con un agente local ahorra tiempo. Nosotros podemos conectarlo con agentes y traductores de confianza.',
+                    'Para visitas con intérprete y traslados, coordinar con un agente local ahorra tiempo. Con nuestro servicio de [agente de compras en China](/servicios/agente-de-compras-china/) podemos conectarlo con agentes y traductores de confianza.',
                 ],
             ],
             [
                 'title' => 'Haga el seguimiento al volver',
                 'body' => [
                     'Dentro de la semana siguiente escriba a cada proveedor con la foto del stand, el producto y lo conversado. Pida la proforma (PI) por escrito con precio, Incoterm, plazo y forma de pago.',
-                    'Antes de pagar, calcule el costo puesto en Paraguay: flete, seguro, tributos aduaneros y honorarios del despachante. Nuestra calculadora de costo de importación le da una estimación orientativa.',
+                    'Antes de pagar, calcule el costo puesto en Paraguay: flete, seguro, tributos aduaneros y honorarios del [despachante de aduana](/aduana/despachantes-de-aduana-paraguay/). Nuestra [calculadora de costo de importación](/herramientas/calculadora-costo-importacion/) le da una estimación orientativa.',
                 ],
             ],
         ],
@@ -140,12 +140,12 @@ return [
             ],
         ],
         'faq' => [
-            ['q' => '¿Cuándo es la Feria de Cantón?', 'a' => 'Se realiza dos veces al año en Guangzhou: una sesión de primavera, en general entre abril y mayo, y una de otoño, entre octubre y noviembre, cada una en tres fases. Las fechas exactas de cada edición se publican en cantonfair.org.cn.'],
-            ['q' => '¿Cuánto cuesta entrar a la Feria de Cantón?', 'a' => 'El ingreso es con gafete de comprador, que se obtiene con el registro en línea. Si tiene costo y cuánto depende de la edición y de cómo se registre; consúltelo en el sitio oficial de la feria.'],
+            ['q' => '¿Cuándo es la Feria de Cantón?', 'a' => 'Se realiza dos veces al año en Guangzhou: una sesión de primavera, en general entre abril y mayo, y una de otoño, entre octubre y noviembre, cada una en tres fases. La sesión de otoño de 2026 va del 15 de octubre al 4 de noviembre, en tres fases. Las fechas de cada edición se publican en cantonfair.org.cn.'],
+            ['q' => '¿Cuánto cuesta entrar a la Feria de Cantón?', 'a' => 'El ingreso es con gafete de comprador. Según la guía oficial para compradores extranjeros, quien se preinscribe en línea lo retira sin costo con su pasaporte. Confirme las condiciones de la edición en cantonfair.org.cn.'],
             ['q' => '¿Qué visa necesito para ir a la feria desde Paraguay?', 'a' => 'En general se tramita la visa de negocios (tipo M) con una invitación de la feria o de un proveedor. Como no hay misión china en Paraguay, se presenta en una misión en el exterior; consulte en la misión china que corresponda.'],
             ['q' => '¿Puedo comprar en pequeñas cantidades en la feria?', 'a' => 'La feria está orientada a compras mayoristas y la mayoría de los expositores trabaja con cantidades mínimas de pedido. Algunos aceptan pedidos de prueba pequeños; pregunte el MOQ en cada stand.'],
             ['q' => '¿Necesito intérprete?', 'a' => 'Muchos expositores hablan inglés básico, pero pocos hablan español. Si usted no maneja inglés, un intérprete o un agente local facilita la negociación y las visitas a fábricas.'],
-            ['q' => '¿Hay viajes grupales desde Paraguay?', 'a' => 'Estamos armando una lista de interesados para un viaje grupal a la feria. Puede anotarse sin compromiso en la página del servicio.'],
+            ['q' => '¿Hay viajes grupales desde Paraguay?', 'a' => 'Estamos armando una lista de interesados para un viaje grupal a la feria. Puede anotarse sin compromiso en la página del [viaje grupal a la Feria de Cantón](/servicios/tour-negocios-china/).'],
         ],
         'relatedService' => 'tour-negocios-china',
         'toolLink' => [
@@ -156,7 +156,7 @@ return [
         'related' => ['viaje-de-negocios-a-china', 'visa-china-para-paraguayos', 'proveedores-chinos-confiables'],
         'affiliates' => ['trip', 'seguro-viaje'],
         'disclaimer' => false,
-        'image' => ['src' => '/assets/img/guias/feria-de-canton-pabellon.webp', 'alt' => 'Pasillos de un pabellón de feria comercial en Cantón con compradores y stands de productos', 'width' => 1600, 'height' => 905],
+        'image' => ['base' => '/assets/img/feria-de-canton-pabellon-guangzhou', 'widths' => [640, 1280, 1920], 'alt' => 'Pasillos de un pabellón de feria comercial en Cantón con compradores y stands de productos', 'width' => 1920, 'height' => 1086],
     ],
 
     'visa-china-para-paraguayos' => [
@@ -174,14 +174,14 @@ return [
         ],
         'intro' => [
             'Paraguay mantiene relaciones diplomáticas con Taiwán y no con la República Popular China. Por eso no existe una embajada ni un consulado de China continental en Asunción, y el paraguayo que quiere visitar China tiene que presentar su visa en una misión china de otro país. Esa es la diferencia principal con los vecinos de la región, y la razón por la que el trámite lleva más tiempo y más planificación.',
-            'Esta guía es para quien viaja a China por turismo, por negocios o para la Feria de Cantón con pasaporte paraguayo. Explica qué tipo de visa corresponde, cómo funciona el formulario en línea, qué documentos se suelen pedir, cómo elegir la misión y qué errores retrasan el trámite.',
+            'Esta guía es para quien viaja a China por turismo, por negocios o para la [Feria de Cantón](/feria-de-canton/) con pasaporte paraguayo. Explica qué tipo de visa corresponde, cómo funciona el formulario en línea, qué documentos se suelen pedir, cómo elegir la misión y qué errores retrasan el trámite.',
             'Los requisitos, las tasas consulares y las exenciones de visa cambian con frecuencia y los define cada misión china. Antes de iniciar el trámite, consulte en la misión china que corresponda: esta guía es orientativa.',
         ],
         'steps' => [
             [
                 'title' => 'Defina el tipo de visa según el motivo del viaje',
                 'body' => [
-                    'Para turismo se usa en general la visa tipo L. Para negocios, visitas a fábricas o ferias comerciales como la de Cantón, la visa tipo M, que requiere una carta de invitación de una empresa o entidad en China. Existen otros tipos para trabajo, estudio o tránsito.',
+                    'Para turismo se usa en general la visa tipo L. Para un [viaje de negocios a China](/viajar-a-china/viaje-de-negocios-a-china/), visitas a fábricas o ferias comerciales como la de Cantón, la visa tipo M, que requiere una carta de invitación de una empresa o entidad en China. Existen otros tipos para trabajo, estudio o tránsito.',
                     'Pida el tipo que corresponde al motivo real del viaje. Declarar turismo cuando el viaje es de negocios puede traer problemas en la entrevista o al ingresar.',
                 ],
             ],
@@ -195,14 +195,14 @@ return [
             [
                 'title' => 'Elija la misión donde va a presentar',
                 'body' => [
-                    'Los paraguayos suelen tramitar en misiones chinas de países vecinos, como Argentina o Brasil, o en el país donde residen. Cada misión decide si atiende a solicitantes no residentes y qué documentos adicionales les pide; algunas exigen demostrar residencia o estadía legal en ese país.',
+                    'Los paraguayos suelen tramitar en misiones chinas de países vecinos, como Argentina o Brasil, o en el país donde residen. Cada misión decide si atiende a solicitantes no residentes y qué documentos adicionales les pide; algunas exigen demostrar residencia o estadía legal en ese país. Por ejemplo, la embajada china en Argentina pide a los extranjeros que residen allí su DNI argentino.',
                     'Antes de viajar a presentar, confirme por escrito con la misión o su centro de visas que acepta solicitudes de ciudadanos paraguayos y qué agenda de turnos tiene.',
                 ],
             ],
             [
                 'title' => 'Complete el formulario en línea',
                 'body' => [
-                    'Las misiones chinas usan el sistema en línea de solicitud de visa del Ministerio de Relaciones Exteriores de China (COVA): se completa el formulario, se sube la foto digital y se adjuntan los documentos escaneados. Luego se imprime y firma la confirmación.',
+                    'La solicitud empieza con el formulario en línea del Ministerio de Relaciones Exteriores de China que indique la misión: la embajada en Argentina usa el sistema COVA, mientras que la embajada y los consulados en Brasil pasaron en 2025 a una nueva plataforma consular en línea. En general se completa el formulario, se sube la foto digital y se adjuntan los documentos escaneados; luego se imprime y firma la confirmación.',
                     'Revise que nombres, número de pasaporte y fechas coincidan exactamente con el pasaporte. Un error de tipeo obliga a rehacer el formulario.',
                 ],
             ],
@@ -224,7 +224,7 @@ return [
                 'title' => 'Retire el pasaporte y revise la visa',
                 'body' => [
                     'Al retirar el pasaporte, controle en la visa el tipo, la cantidad de entradas, la duración de cada estadía y la fecha límite de ingreso. Si algo no coincide con lo pedido, consúltelo en el momento.',
-                    'Con la visa emitida, recién ahí conviene pagar pasajes no reembolsables.',
+                    'Con la visa emitida, recién ahí conviene pagar pasajes no reembolsables. Para el resto de la preparación, vea nuestra [guía para viajar a China](/viajar-a-china/guia-para-viajar-a-china/).',
                 ],
             ],
         ],
@@ -256,7 +256,7 @@ return [
             ['q' => '¿Los paraguayos necesitan visa para China?', 'a' => 'En general sí. No hemos confirmado en una fuente oficial que el pasaporte paraguayo tenga exención o tránsito sin visa vigente; consulte en la misión china que corresponda antes de viajar.'],
             ['q' => '¿Dónde se tramita la visa china si no hay embajada en Paraguay?', 'a' => 'En una misión china o centro de visas en el exterior, habitualmente en un país vecino o en el país donde usted reside. Confirme antes que esa misión atiende a ciudadanos paraguayos.'],
             ['q' => '¿Cuánto tarda la visa china?', 'a' => 'El plazo lo define cada misión y puede ir de pocos días hábiles a varias semanas, más el tiempo de turno y de traslado. Empiece al menos dos o tres meses antes del viaje.'],
-            ['q' => '¿Cuánto cuesta la visa china para paraguayos?', 'a' => 'La tasa consular la publica cada misión y depende del tipo de visa y de la cantidad de entradas. A eso se suman el traslado a la misión y, si usa un gestor, sus honorarios.'],
+            ['q' => '¿Cuánto cuesta la visa china para paraguayos?', 'a' => 'La tasa consular la publica cada misión y depende del tipo de visa y de la cantidad de entradas. A eso se suman el traslado a la misión y, si usa un gestor como el de nuestro servicio de [gestión de visa China](/servicios/visa-china/), sus honorarios.'],
             ['q' => '¿La embajada de Taiwán en Asunción emite visa para China?', 'a' => 'No. La embajada de la República de China (Taiwán) emite visas para Taiwán, no para China continental.'],
         ],
         'relatedService' => 'visa-china',
@@ -282,7 +282,7 @@ return [
         ],
         'intro' => [
             'Viajar a China desde Paraguay es más sencillo de lo que parece, pero exige preparar algunas cosas que en otros destinos no hacen falta. La visa se tramita fuera del país porque no hay embajada china en Asunción. Google, WhatsApp, Instagram y otras apps de uso diario están bloqueadas en China continental, así que conviene resolver el acceso a internet antes de salir. Y en China casi todo se paga con el celular, con Alipay o WeChat Pay, más que con tarjeta o efectivo.',
-            'Esta guía es para quien viaja por primera vez, sea por turismo, para visitar proveedores o para ir a la Feria de Cantón. Cubre documentos, vuelos, internet y VPN, pagos, apps útiles, trenes, seguro y cómo manejarse en las ciudades. Al final encontrará una tabla con lo que conviene llevar resuelto desde Paraguay.',
+            'Esta guía es para quien viaja por primera vez, sea por turismo, para visitar proveedores o para ir a la [Feria de Cantón](/feria-de-canton/). Cubre documentos, vuelos, internet y VPN, pagos, apps útiles, trenes, seguro y cómo manejarse en las ciudades. Al final encontrará una tabla con lo que conviene llevar resuelto desde Paraguay.',
             'Los requisitos de entrada, las políticas de visa y las condiciones de las apps cambian. Donde un dato depende de un organismo o de una empresa, le indicamos dónde confirmarlo.',
         ],
         'steps' => [
@@ -290,13 +290,13 @@ return [
                 'title' => 'Revise el pasaporte y tramite la visa',
                 'body' => [
                     'Controle que el pasaporte tenga validez suficiente para todo el viaje y hojas libres; si está cerca del vencimiento, renuévelo primero. Luego tramite la visa: para turismo en general la tipo L, para negocios o ferias la tipo M con carta de invitación.',
-                    'Como no hay misión china en Paraguay, la solicitud se presenta en una misión china en el exterior. Los pasos están en nuestra guía de visa para China para paraguayos. Cuente con dos o tres meses de margen.',
+                    'Como no hay misión china en Paraguay, la solicitud se presenta en una misión china en el exterior. Los pasos están en nuestra guía de [visa para China para paraguayos](/viajar-a-china/visa-china-para-paraguayos/). Cuente con dos o tres meses de margen.',
                 ],
             ],
             [
                 'title' => 'Compre el vuelo con escala',
                 'body' => [
-                    'No hay vuelos directos de Paraguay a China. Las rutas habituales salen de Asunción con conexión en São Paulo y luego vía Europa, Medio Oriente o Estados Unidos, o parten de Buenos Aires o São Paulo. El viaje total suele superar las 30 horas.',
+                    'No hay vuelos directos de Paraguay a China. Las rutas habituales salen de Asunción con conexión en São Paulo y luego vía Europa, Medio Oriente o Estados Unidos, o parten de Buenos Aires o São Paulo. Con las escalas, el viaje total suele llevar más de un día; calcule el tiempo real con los horarios de la aerolínea.',
                     'Revise si alguna escala exige visa de tránsito para el pasaporte paraguayo (por ejemplo, Estados Unidos o algunos países europeos) y confírmelo con la aerolínea. Compre el pasaje no reembolsable recién con la visa china emitida.',
                 ],
             ],
@@ -368,7 +368,7 @@ return [
             [
                 'h2' => 'Cómo manejarse en las ciudades',
                 'body' => [
-                    'En las grandes ciudades chinas pocas personas hablan inglés fuera de hoteles y zonas turísticas, y casi nadie habla español. Un traductor en el celular resuelve la mayoría de las situaciones: pedir comida, indicar una dirección o preguntar un precio.',
+                    'En las grandes ciudades chinas pocas personas hablan inglés fuera de hoteles y zonas turísticas, y casi nadie habla español. Un traductor en el celular resuelve la mayoría de las situaciones: pedir comida, indicar una dirección o preguntar un precio. Si todavía no eligió destinos, vea [qué ver en China](/viajar-a-china/que-ver-en-china/).',
                     'China es un país con controles frecuentes. Lleve siempre el pasaporte, porque se pide para comprar pasajes de tren, entrar a algunos museos y alojarse. Respete las normas locales, no fotografíe instalaciones militares o de seguridad y evite temas políticos en conversaciones con desconocidos.',
                 ],
                 'items' => [
@@ -385,7 +385,7 @@ return [
                 'items' => [
                     ['title' => 'Llegar sin internet funcionando', 'text' => 'Sin WhatsApp ni Google Maps al aterrizar, cuesta hasta avisar que llegó. Pruebe la eSIM o la VPN antes de salir.'],
                     ['title' => 'Depender solo de la tarjeta', 'text' => 'Muchos comercios no tienen terminal para tarjetas extranjeras; cobran por QR.'],
-                    ['title' => 'Viajar en feriados chinos', 'text' => 'En Año Nuevo Chino y en la primera semana de octubre los trenes y hoteles se llenan y los precios suben.'],
+                    ['title' => 'Viajar en feriados chinos', 'text' => 'En Año Nuevo Chino y en la primera semana de octubre los trenes y hoteles se llenan y los precios suben. Vea la [mejor época para viajar a China](/viajar-a-china/mejor-epoca-para-viajar-a-china/).'],
                 ],
             ],
         ],
@@ -394,7 +394,7 @@ return [
             ['q' => '¿Funciona WhatsApp en China?', 'a' => 'No con una red o wifi chinos: WhatsApp, Google e Instagram están bloqueados en China continental. Muchos viajeros los usan con una eSIM internacional o roaming, o con una VPN instalada antes de viajar.'],
             ['q' => '¿Puedo pagar con mi tarjeta paraguaya en China?', 'a' => 'Algunos hoteles y comercios grandes aceptan Visa o Mastercard, pero la forma práctica es vincular su tarjeta a Alipay o WeChat Pay, que aceptan tarjetas internacionales, y pagar con QR.'],
             ['q' => '¿Qué eSIM conviene para China?', 'a' => 'Una que incluya China continental, dé datos suficientes para su estadía y permita usar las apps bloqueadas. Compare planes y confirme con el proveedor que su celular es compatible con eSIM.'],
-            ['q' => '¿Cuánto dura el vuelo de Paraguay a China?', 'a' => 'No hay vuelos directos; con una o dos escalas el viaje suele superar las 30 horas en total, según la ruta y el tiempo de conexión.'],
+            ['q' => '¿Cuánto dura el vuelo de Paraguay a China?', 'a' => 'No hay vuelos directos; con una o dos escalas el viaje suele llevar más de un día en total, según la ruta y el tiempo de conexión. Confirme la duración exacta con la aerolínea.'],
             ['q' => '¿Es seguro viajar a China?', 'a' => 'Las grandes ciudades chinas tienen fama de seguras para turistas en cuanto a delitos comunes. Aun así, cuide sus pertenencias en lugares concurridos y respete las normas locales.'],
         ],
         'relatedService' => 'tour-negocios-china',
@@ -402,7 +402,7 @@ return [
         'related' => ['visa-china-para-paraguayos', 'mejor-epoca-para-viajar-a-china', 'que-ver-en-china'],
         'affiliates' => ['holafly', 'airalo', 'vpn', 'seguro-viaje', 'trip', 'civitatis'],
         'disclaimer' => false,
-        'image' => ['src' => '/assets/img/hubs/viajar-a-china-estacion-tren.webp', 'alt' => 'Viajero de negocios con equipaje de mano en una estación de tren de alta velocidad en China', 'width' => 1600, 'height' => 905],
+        'image' => ['base' => '/assets/img/viaje-negocios-china-estacion-tren', 'widths' => [640, 1280, 1920], 'alt' => 'Viajero de negocios con equipaje de mano en una estación de tren de alta velocidad en China', 'width' => 1920, 'height' => 1086],
     ],
 
     'mejor-epoca-para-viajar-a-china' => [
@@ -426,7 +426,7 @@ return [
             [
                 'title' => 'Defina el motivo principal del viaje',
                 'body' => [
-                    'Si el viaje es por la Feria de Cantón, las fechas las fija la feria: primavera o otoño. Si es para visitar fábricas, lo que importa es evitar los feriados largos. Si es turismo, el clima de las ciudades que quiere ver es lo principal.',
+                    'Si el viaje es por la [Feria de Cantón](/feria-de-canton/), las fechas las fija la feria: primavera o otoño. Si es para visitar fábricas, lo que importa es evitar los feriados largos. Si es turismo, el clima de las ciudades que quiere ver es lo principal.',
                 ],
             ],
             [
@@ -453,14 +453,14 @@ return [
             [
                 'title' => 'Cruce el clima con el calendario de ferias',
                 'body' => [
-                    'La sesión de primavera de la Feria de Cantón suele ir de abril a principios de mayo y la de otoño de octubre a principios de noviembre. En esos días los hoteles de Guangzhou suben de precio.',
+                    'La sesión de primavera de la Feria de Cantón suele ir de abril a principios de mayo y la de otoño de octubre a principios de noviembre (en 2026, del 15 de octubre al 4 de noviembre). En esos días los hoteles de Guangzhou suben de precio.',
                     'Si va a la feria, reserve temprano. Si no va a la feria pero visita Guangzhou, puede convenirle evitar esas semanas.',
                 ],
             ],
             [
                 'title' => 'Reserve con anticipación',
                 'body' => [
-                    'Con la época elegida, tramite la visa y compre el vuelo con margen. En temporada alta, dos o tres meses de anticipación evitan precios altos y falta de disponibilidad en hoteles y trenes.',
+                    'Con la época elegida, tramite la [visa para China](/viajar-a-china/visa-china-para-paraguayos/) y compre el vuelo con margen. En temporada alta, dos o tres meses de anticipación evitan precios altos y falta de disponibilidad en hoteles y trenes.',
                 ],
             ],
         ],
@@ -480,7 +480,7 @@ return [
                 'h2' => 'Qué tener en cuenta desde Paraguay',
                 'body' => [
                     'Al estar en el hemisferio sur, lo que en China es otoño aquí es primavera. Eso importa para la ropa que lleva: en octubre en Pekín puede hacer frío aunque en Asunción haga calor.',
-                    'También importa para su propio negocio: si importa para la temporada de verano paraguaya, un viaje a la feria de primavera china (abril) le deja tiempo para producir y enviar la mercadería antes de fin de año. Consulte los plazos reales de producción y flete con su proveedor y su forwarder.',
+                    'También importa para su propio negocio: si importa para la temporada de verano paraguaya, un viaje a la feria de primavera china (abril) le deja tiempo para producir y enviar la mercadería antes de fin de año. Consulte los plazos reales de producción y de [flete marítimo desde China](/servicios/flete-maritimo-contenedor/) con su proveedor y su forwarder.',
                 ],
             ],
         ],
@@ -513,7 +513,7 @@ return [
         ],
         'intro' => [
             'China tiene tanto para ver que un primer viaje obliga a elegir. Para quien sale de Paraguay, con un vuelo largo y una visa que lleva tiempo tramitar, lo razonable es armar un recorrido de dos o tres ciudades bien conectadas en tren de alta velocidad, en lugar de intentar abarcar todo el país.',
-            'Esta guía propone las ciudades más visitadas en un primer viaje y explica qué ver en cada una, cómo combinarlas y cómo sumar días de turismo a un viaje de negocios o a la Feria de Cantón. No es una lista exhaustiva: es un punto de partida práctico.',
+            'Esta guía propone las ciudades más visitadas en un primer viaje y explica qué ver en cada una, cómo combinarlas y cómo sumar días de turismo a un viaje de negocios o a la [Feria de Cantón](/feria-de-canton/). No es una lista exhaustiva: es un punto de partida práctico.',
         ],
         'steps' => [
             [
@@ -547,7 +547,7 @@ return [
             [
                 'title' => 'Shenzhen: tecnología y fábricas',
                 'body' => [
-                    'Shenzhen, a poca distancia de Guangzhou en tren, es el centro de la electrónica china. El mercado de Huaqiangbei reúne miles de puestos de componentes y dispositivos. Es un buen lugar para entender la cadena de suministro de electrónica y visitar fábricas del rubro.',
+                    'Shenzhen, a poca distancia de Guangzhou en tren, es el centro de la electrónica china. El mercado de Huaqiangbei reúne miles de puestos de componentes y dispositivos. Es un buen lugar para entender la cadena de suministro de electrónica y visitar fábricas del rubro, por ejemplo si piensa [importar celulares de China](/importar/celulares-de-china/).',
                     'Desde Shenzhen se cruza a Hong Kong, que tiene su propio régimen de ingreso; confirme los requisitos para su pasaporte antes de planearlo.',
                 ],
             ],
@@ -561,7 +561,7 @@ return [
                 'title' => 'Arme el recorrido en tren',
                 'body' => [
                     'Un circuito clásico de 10 a 14 días es Pekín, Xi\'an y Shanghái. Si su viaje es de negocios en el sur, Guangzhou, Shenzhen y Guilin combinan bien. Los trenes de alta velocidad conectan todas estas ciudades y evitan traslados a aeropuertos.',
-                    'Deje un día libre entre ciudades para el cansancio del cambio de horario, que desde Paraguay es de muchas horas.',
+                    'Deje un día libre entre ciudades para el cansancio del cambio de horario, que desde Paraguay es de muchas horas. Para elegir el mes, vea la [mejor época para viajar a China](/viajar-a-china/mejor-epoca-para-viajar-a-china/).',
                 ],
             ],
         ],
@@ -582,7 +582,7 @@ return [
             [
                 'h2' => 'Cómo combinar turismo y negocios',
                 'body' => [
-                    'Muchos paraguayos viajan a China por trabajo y agregan unos días de turismo. Lo más práctico es hacer primero la parte de negocios, cuando llega descansado y con la agenda fija, y después el turismo. La visa debe corresponder al motivo principal del viaje; consulte en la misión china qué tipo pedir si combina ambos.',
+                    'Muchos paraguayos viajan a China por trabajo y agregan unos días de turismo. Lo más práctico es hacer primero la parte de negocios, cuando llega descansado y con la agenda fija, y después el turismo. La visa debe corresponder al motivo principal del viaje; vea nuestra guía de [visa para China para paraguayos](/viajar-a-china/visa-china-para-paraguayos/) y consulte en la misión china qué tipo pedir si combina ambos. Para la parte comercial, vea cómo preparar un [viaje de negocios a China](/viajar-a-china/viaje-de-negocios-a-china/).',
                     'Para las excursiones, las plataformas de actividades en línea permiten reservar visitas guiadas en español en las ciudades más turísticas, algo útil si no habla inglés.',
                 ],
             ],
@@ -623,20 +623,20 @@ return [
                 'title' => 'Defina objetivos concretos',
                 'body' => [
                     'Antes de sacar el pasaje, escriba qué productos busca, en qué cantidades, con qué especificaciones y a qué precio de venta en Paraguay. Con eso sabrá qué costo máximo puede pagar en China y qué proveedores descartar.',
-                    'Calcule el costo de importación completo (flete, seguro, tributos, despachante) para cada producto; nuestra calculadora le da una estimación orientativa.',
+                    'Calcule el costo de importación completo (flete, seguro, tributos, despachante) para cada producto; nuestra [calculadora de costo de importación](/herramientas/calculadora-costo-importacion/) le da una estimación orientativa.',
                 ],
             ],
             [
                 'title' => 'Preseleccione proveedores antes de viajar',
                 'body' => [
-                    'Busque proveedores en Alibaba, 1688 o en el catálogo de expositores de la feria, y contacte a varios. Pida catálogo, precios orientativos, MOQ y la ubicación de la fábrica. Descarte a quien no responda con claridad.',
+                    'Busque proveedores en [Alibaba](/comprar/alibaba-paraguay/), 1688 o en el catálogo de expositores de la feria, y contacte a varios. Pida catálogo, precios orientativos, MOQ y la ubicación de la fábrica. Descarte a quien no responda con claridad.',
                     'Agrupe a los preseleccionados por ciudad: en China las distancias son grandes y cada traslado consume medio día.',
                 ],
             ],
             [
                 'title' => 'Arme la agenda y tramite la visa',
                 'body' => [
-                    'Con fechas tentativas, confirme las citas con cada fábrica y pida a una de ellas, o a la feria, la carta de invitación para la visa de negocios tipo M. Como no hay misión china en Paraguay, el trámite se hace en el exterior y lleva tiempo.',
+                    'Con fechas tentativas, confirme las citas con cada fábrica y pida a una de ellas, o a la feria, la carta de invitación para la visa de negocios tipo M. Como no hay misión china en Paraguay, el trámite se hace en el exterior y lleva tiempo; vea nuestra guía de [visa para China para paraguayos](/viajar-a-china/visa-china-para-paraguayos/).',
                     'Deje un día de margen entre visitas para imprevistos y para volver a ver a un proveedor que le interesó.',
                 ],
             ],
@@ -644,7 +644,7 @@ return [
                 'title' => 'Contrate intérprete o agente local',
                 'body' => [
                     'Pocos proveedores hablan español y muchos manejan un inglés limitado. Un intérprete le evita malentendidos en precios, especificaciones y plazos. Un agente local puede además organizar traslados y verificar antecedentes de las empresas.',
-                    'Nosotros podemos conectarlo con agentes e intérpretes que trabajan con compradores de habla hispana.',
+                    'Con nuestro servicio de [agente de compras en China](/servicios/agente-de-compras-china/) podemos conectarlo con agentes e intérpretes que trabajan con compradores de habla hispana.',
                 ],
             ],
             [
@@ -665,7 +665,7 @@ return [
                 'title' => 'Negocie y pida muestras',
                 'body' => [
                     'Negocie precio, MOQ, plazo de producción, Incoterm, forma de pago y penalidades por retraso o defectos. Pida todo por escrito en una proforma (PI). Lo habitual es un anticipo y el saldo antes del embarque, pero cada proveedor tiene sus condiciones.',
-                    'Antes de un pedido grande, pida muestras de producción o una orden de prueba. Si no puede estar al momento del embarque, considere una inspección de calidad por un tercero.',
+                    'Antes de un pedido grande, pida muestras de producción o una orden de prueba. Si no puede estar al momento del embarque, considere una [inspección de calidad](/servicios/inspeccion-de-calidad/) por un tercero.',
                 ],
             ],
             [
@@ -706,7 +706,7 @@ return [
             ['q' => '¿Qué visa necesito para un viaje de negocios a China?', 'a' => 'En general la visa de negocios tipo M, con carta de invitación de una empresa china o de la feria. Desde Paraguay se tramita en una misión china en el exterior; consulte en la misión que corresponda.'],
             ['q' => '¿Cuántos días necesito para un viaje de negocios a China?', 'a' => 'Depende de la cantidad de proveedores y ciudades. Sin contar los días de vuelo, una agenda de una o dos semanas permite visitar varias fábricas en una misma región con margen.'],
             ['q' => '¿Conviene ir a la Feria de Cantón o visitar fábricas directamente?', 'a' => 'La feria le permite ver muchos proveedores en pocos días; las visitas a fábrica le muestran la capacidad real. Muchos compradores combinan ambas en el mismo viaje.'],
-            ['q' => '¿Cómo pago a un proveedor chino?', 'a' => 'Lo habitual es transferencia bancaria internacional con anticipo y saldo antes del embarque. Evite pagar a cuentas personales o de terceros que no coincidan con la empresa de la proforma.'],
+            ['q' => '¿Cómo pago a un proveedor chino?', 'a' => 'Lo habitual es transferencia bancaria internacional con anticipo y saldo antes del embarque. Evite pagar a cuentas personales o de terceros que no coincidan con la empresa de la proforma. Más detalles en [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/).'],
             ['q' => '¿Necesito un agente en China?', 'a' => 'No es obligatorio, pero ayuda si no habla chino ni inglés, si compra a varios proveedores o si necesita consolidar carga e inspeccionar calidad.'],
         ],
         'relatedService' => 'tour-negocios-china',

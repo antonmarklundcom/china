@@ -41,7 +41,7 @@ $page = [
 ];
 
 $segImage    = $record['image'] ?? null;
-$page['ogImage'] = image_ready($segImage) ? $segImage['src'] : null;
+$page['ogImage'] = image_og($segImage);
 $hero        = $record['hero'];
 $ctaWhatsapp = whatsapp_text_for_page($page);
 
@@ -65,11 +65,7 @@ require ROOT_DIR . '/partials/header.php';
         </div>
       </div>
       <?php if (image_ready($segImage)): ?>
-        <figure class="page-hero__figure">
-          <img src="<?= e(asset($segImage['src'])) ?>" alt="<?= e($segImage['alt'] ?? '') ?>"
-               width="<?= e((string) ($segImage['width'] ?? 1600)) ?>" height="<?= e((string) ($segImage['height'] ?? 900)) ?>"
-               fetchpriority="high" decoding="async">
-        </figure>
+        <figure class="page-hero__figure"><?= picture_html($segImage, '(max-width: 1280px) 100vw, 1200px', '', true) ?></figure>
       <?php endif; ?>
     </div>
   </section>
@@ -85,7 +81,7 @@ require ROOT_DIR . '/partials/header.php';
           <?php foreach ($record['traps'] as $trap): ?>
             <div class="card">
               <h3 class="card-title"><?= e($trap['title'] ?? '') ?></h3>
-              <p class="card__text"><?= e($trap['text'] ?? '') ?></p>
+              <p class="card__text"><?= rich($trap['text'] ?? '') ?></p>
             </div>
           <?php endforeach; ?>
         </div>
@@ -100,7 +96,7 @@ require ROOT_DIR . '/partials/header.php';
           <div class="prose">
             <h2><?= e($block['h2'] ?? '') ?></h2>
             <?php foreach ($block['body'] ?? [] as $paragraph): ?>
-              <p><?= e($paragraph) ?></p>
+              <p><?= rich($paragraph) ?></p>
             <?php endforeach; ?>
           </div>
         <?php endforeach; ?>

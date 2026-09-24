@@ -38,7 +38,7 @@ foreach ($guide['steps'] as $i => $guideStep) {
         '@type'    => 'HowToStep',
         'position' => $i + 1,
         'name'     => $guideStep['title'],
-        'text'     => implode(' ', $guideStep['body']),
+        'text'     => plain(implode(' ', $guideStep['body'])),
     ];
 }
 $howTo = [
@@ -58,7 +58,7 @@ $guideHub = $guideHubRecord !== null
 $guideImage = $guide['image'] ?? null;
 
 $page = [
-    'ogImage'     => image_ready($guideImage) ? $guideImage['src'] : null,
+    'ogImage'     => image_og($guideImage),
     'title'       => $guide['seoTitle'] !== '' ? $guide['seoTitle'] : $guide['title'],
     'description' => $guide['metaDescription'],
     'path'        => $guide['path'],
@@ -85,11 +85,7 @@ require ROOT_DIR . '/partials/header.php';
         <p class="lead"><?= e($guide['hero']['lead']) ?></p>
       </div>
       <?php if (image_ready($guideImage)): ?>
-        <figure class="page-hero__figure">
-          <img src="<?= e(asset($guideImage['src'])) ?>" alt="<?= e($guideImage['alt'] ?? '') ?>"
-               width="<?= e((string) ($guideImage['width'] ?? 1600)) ?>" height="<?= e((string) ($guideImage['height'] ?? 900)) ?>"
-               fetchpriority="high" decoding="async">
-        </figure>
+        <figure class="page-hero__figure"><?= picture_html($guideImage, '(max-width: 1280px) 100vw, 1200px', '', true) ?></figure>
       <?php endif; ?>
     </div>
   </section>
@@ -109,7 +105,7 @@ require ROOT_DIR . '/partials/header.php';
       <?php if ($guide['intro'] !== []): ?>
         <div class="prose">
           <?php foreach ($guide['intro'] as $guideParagraph): ?>
-            <p><?= e($guideParagraph) ?></p>
+            <p><?= rich($guideParagraph) ?></p>
           <?php endforeach; ?>
         </div>
       <?php endif; ?>
@@ -120,7 +116,7 @@ require ROOT_DIR . '/partials/header.php';
             <li class="steps__item">
               <h2><?= e($guideStep['title']) ?></h2>
               <?php foreach ($guideStep['body'] as $guideStepParagraph): ?>
-                <p><?= e($guideStepParagraph) ?></p>
+                <p><?= rich($guideStepParagraph) ?></p>
               <?php endforeach; ?>
             </li>
           <?php endforeach; ?>
@@ -154,12 +150,12 @@ require ROOT_DIR . '/partials/header.php';
           <div class="prose mt-4">
             <h2><?= e($guideSection['h2']) ?></h2>
             <?php foreach ($guideSection['body'] as $guideSectionParagraph): ?>
-              <p><?= e($guideSectionParagraph) ?></p>
+              <p><?= rich($guideSectionParagraph) ?></p>
             <?php endforeach; ?>
             <?php if (!empty($guideSection['items'])): ?>
               <ul class="checklist">
                 <?php foreach ($guideSection['items'] as $guideSectionItem): ?>
-                  <li><span><strong><?= e($guideSectionItem['title']) ?>.</strong> <?= e($guideSectionItem['text']) ?></span></li>
+                  <li><span><strong><?= e($guideSectionItem['title']) ?>.</strong> <?= rich($guideSectionItem['text']) ?></span></li>
                 <?php endforeach; ?>
               </ul>
             <?php endif; ?>

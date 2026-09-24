@@ -65,7 +65,7 @@ return [
             ],
             [
                 'title' => 'Etiquetas de composición y cuidado',
-                'text' => 'La ropa que se vende en Paraguay debe llevar información de composición, origen y cuidado. Es mucho más barato que la fábrica cosa la etiqueta correcta en origen que reetiquetar en su depósito. Confirme con su despachante qué datos debe tener.',
+                'text' => 'Paraguay incorporó por el Decreto 3383/2020 el reglamento técnico Mercosur de etiquetado textil (Resolución GMC 62/18): la etiqueta debe indicar, entre otros datos, el fabricante o importador con su identificación fiscal, el país de origen, la composición de fibras en porcentaje y las instrucciones de cuidado. Es mucho más barato que la fábrica cosa la etiqueta correcta en origen que reetiquetar en su depósito; confirme el detalle vigente con su despachante o el MIC.',
             ],
             [
                 'title' => 'Surtido de talles y colores',
@@ -81,14 +81,14 @@ return [
                 'h2' => 'Dónde conseguir proveedores de ropa',
                 'body' => [
                     'Para volúmenes chicos y surtidos variados, las plataformas mayoristas como 1688 y Alibaba permiten comprar pocas docenas por modelo, en general a través de un agente que consolida varios vendedores. Para volúmenes mayores o prendas con su marca, conviene ir directo a fábricas, que trabajan con mínimos más altos pero permiten elegir tela, color y etiqueta.',
-                    'Los polos textiles chinos están especializados por tipo de prenda (ropa femenina, jeans, ropa deportiva, ropa infantil). Un agente de compras en China puede visitar mayoristas, comparar precios y reunir el pedido en un solo depósito antes del embarque.',
+                    'Los polos textiles chinos están especializados por tipo de prenda (ropa femenina, jeans, ropa deportiva, ropa infantil). Un [agente de compras en China](/servicios/agente-de-compras-china/) puede visitar mayoristas, comparar precios y reunir el pedido en un solo depósito antes del embarque.',
                 ],
             ],
             [
                 'h2' => 'Cómo se forma el costo de una prenda puesta en su local',
                 'body' => [
                     'Al precio de fábrica se suman el flete interno en China, el flete internacional (la ropa ocupa volumen, por eso se cotiza por metro cúbico en carga consolidada), el seguro, los tributos de importación que el despachante calcula según la posición arancelaria NCM de cada prenda, los honorarios del despachante y el transporte hasta su depósito.',
-                    'La ropa pesa poco y ocupa espacio: prendas bien dobladas y comprimidas en bolsas reducen el volumen y el costo por unidad. Con la calculadora de costo de importación puede sumar cada componente antes de comprar.',
+                    'La ropa pesa poco y ocupa espacio: prendas bien dobladas y comprimidas en bolsas reducen el volumen y el costo por unidad. Con la [calculadora de costo de importación](/herramientas/calculadora-costo-importacion/) puede sumar cada componente antes de comprar. Antes de un primer pedido, un [inspección de calidad](/servicios/inspeccion-de-calidad/) sobre una muestra del lote evita sorpresas de talles y costuras, y el orden completo del proceso está en la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
         ],
@@ -105,7 +105,7 @@ return [
             ],
             [
                 'q' => '¿Conviene traer ropa por avión o por barco?',
-                'a' => 'Para muestras o reposiciones urgentes, el avión o un courier. Para stock de temporada, el flete marítimo consolidado suele ser más barato por prenda, aunque tarda más, por lo que hay que planificar con varios meses de anticipación.',
+                'a' => 'Para muestras o reposiciones urgentes, el avión o un courier. Para stock de temporada, el [flete marítimo en contenedor](/servicios/flete-maritimo-contenedor/) en carga consolidada suele ser más barato por prenda, aunque tarda más, por lo que hay que planificar con varios meses de anticipación.',
             ],
             [
                 'q' => '¿Puedo importar ropa de marcas conocidas?',
@@ -113,7 +113,7 @@ return [
             ],
             [
                 'q' => '¿Cuánto se paga de impuestos por importar ropa?',
-                'a' => 'Los tributos dependen de la posición arancelaria de cada prenda y del valor en aduana. El despachante le confirma la alícuota vigente antes de embarcar; puede ver los conceptos en la guía de tributos aduaneros.',
+                'a' => 'Los tributos dependen de la posición arancelaria de cada prenda y del valor en aduana. El despachante le confirma la alícuota vigente antes de embarcar; puede ver los conceptos en la guía de [tributos aduaneros](/aduana/tributos-aduaneros-paraguay/) y pedir el despacho con el servicio de [despacho aduanero](/servicios/despacho-aduanero/).',
             ],
         ],
         'image' => null,
@@ -159,14 +159,14 @@ return [
                 'h2' => 'Fábricas y mayoristas de calzado en China',
                 'body' => [
                     'China concentra la producción de calzado en polos industriales especializados, con fábricas de zapatillas deportivas, urbanas e infantiles. Las fábricas trabajan con un mínimo por modelo y color; los mayoristas de plataformas como 1688 permiten pedidos mixtos más chicos, a cambio de menos control sobre materiales.',
-                    'Si quiere su propia marca, la fábrica puede aplicar su logo en la lengüeta, la plantilla y la caja. Registre su marca en Paraguay antes de invertir en empaque personalizado.',
+                    'Si quiere su propia marca, la fábrica puede aplicar su logo en la lengüeta, la plantilla y la caja. Registre su marca en Paraguay antes de invertir en empaque personalizado. Un [agente de compras en China](/servicios/agente-de-compras-china/) puede comparar fábricas y seguir la producción, y el proceso general está en la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
             [
                 'h2' => 'Costo por par y logística',
                 'body' => [
-                    'El calzado viaja en cajas individuales dentro de cajas madre, así que ocupa bastante volumen. Pida a la fábrica las medidas y el peso de la caja madre y cuántos pares entran: con ese dato calcula los metros cúbicos y el flete por par con la calculadora CBM.',
-                    'Al precio FOB se suman flete, seguro, tributos según la posición arancelaria que el despachante asigne, honorarios y transporte local. Quitar la caja individual reduce volumen, pero deja el producto menos presentable para la venta.',
+                    'El calzado viaja en cajas individuales dentro de cajas madre, así que ocupa bastante volumen. Pida a la fábrica las medidas y el peso de la caja madre y cuántos pares entran: con ese dato calcula los metros cúbicos y el flete por par con la [calculadora CBM](/herramientas/calculadora-cbm-contenedor/) y cotiza el [flete marítimo en contenedor](/servicios/flete-maritimo-contenedor/).',
+                    'Al precio FOB se suman flete, seguro, tributos según la posición arancelaria que el despachante asigne, honorarios del [despacho aduanero](/servicios/despacho-aduanero/) y transporte local. Quitar la caja individual reduce volumen, pero deja el producto menos presentable para la venta.',
                 ],
             ],
         ],
@@ -187,11 +187,11 @@ return [
             ],
             [
                 'q' => '¿Cómo controlo la calidad si no viajo a China?',
-                'a' => 'Con muestras aprobadas antes de la producción y una inspección en fábrica antes del embarque, que revisa costuras, pegado, numeración y empaque sobre una muestra del lote.',
+                'a' => 'Con muestras aprobadas antes de la producción y una [inspección de calidad](/servicios/inspeccion-de-calidad/) en fábrica antes del embarque, que revisa costuras, pegado, numeración y empaque sobre una muestra del lote.',
             ],
             [
                 'q' => '¿Qué tributos pagan las zapatillas importadas?',
-                'a' => 'Dependen de la posición arancelaria (material de la capellada y la suela) y del valor en aduana. El despachante le confirma la alícuota vigente antes del embarque.',
+                'a' => 'Dependen de la posición arancelaria (material de la capellada y la suela) y del valor en aduana. Vea los conceptos en la guía de [tributos aduaneros](/aduana/tributos-aduaneros-paraguay/); el despachante le confirma la alícuota vigente antes del embarque.',
             ],
             [
                 'q' => '¿Puedo poner mi propia marca en las zapatillas?',
@@ -221,19 +221,19 @@ return [
         'traps' => [
             [
                 'title' => 'Versión china en lugar de versión global',
-                'text' => 'Muchos modelos tienen una versión para el mercado chino, con otras bandas de frecuencia, sin servicios de Google o con software solo en chino. Pida por escrito que sea la versión global y verifique las bandas LTE que usan las operadoras en Paraguay.',
+                'text' => 'Muchos modelos tienen una versión para el mercado chino, con otras bandas de frecuencia, sin servicios de Google o con software solo en chino. Pida por escrito que sea la versión global y compare sus bandas LTE con las que informan las operadoras que operan en Paraguay.',
             ],
             [
                 'title' => 'Homologación de equipos',
-                'text' => 'Los equipos que se conectan a redes móviles deben estar homologados ante el ente regulador de telecomunicaciones para comercializarse. Confirme con su despachante si el modelo ya está homologado y qué documentos pide el fabricante antes de comprar.',
+                'text' => 'Los celulares destinados al mercado paraguayo necesitan una licencia previa de importación del MIC, que exige el certificado de homologación de la CONATEL (Decreto 6832/2017, modificado por el Decreto 8839/2023); la CONATEL publica el procedimiento en conatel.gov.py. Confirme con la CONATEL o su despachante si el modelo ya está homologado y qué documentos técnicos debe pedir al fabricante antes de comprar.',
             ],
             [
                 'title' => 'Baterías de litio en el flete',
-                'text' => 'Las baterías de litio son mercancía peligrosa para el transporte. No todos los couriers ni aerolíneas las aceptan y exigen documentación y embalaje específicos. Consulte al transitario antes de elegir el medio de envío.',
+                'text' => 'Las baterías de litio son mercancía peligrosa para el transporte y viajan en avión según la Reglamentación de Mercancías Peligrosas de la IATA. No todos los couriers ni aerolíneas las aceptan y exigen documentación y embalaje específicos. Consulte al transitario de [flete aéreo desde China](/servicios/flete-aereo-china/) antes de elegir el medio de envío.',
             ],
             [
                 'title' => 'Equipos reacondicionados vendidos como nuevos',
-                'text' => 'Hay mayoristas que venden equipos reacondicionados o con piezas cambiadas. Exija que la factura indique el estado, controle números IMEI y haga una inspección que abra cajas al azar y pruebe los equipos.',
+                'text' => 'Hay mayoristas que venden equipos reacondicionados o con piezas cambiadas. Exija que la factura indique el estado, controle números IMEI y haga una [inspección de calidad](/servicios/inspeccion-de-calidad/) que abra cajas al azar y pruebe los equipos.',
             ],
             [
                 'title' => 'Accesorios con logos de marcas',
@@ -245,14 +245,14 @@ return [
                 'h2' => 'Equipos o accesorios: dos negocios distintos',
                 'body' => [
                     'Importar celulares completos exige más capital, controles de homologación, garantía y logística de baterías. Por eso muchos importadores empiezan con accesorios: fundas, protectores de pantalla, cables, auriculares y soportes, que tienen menos requisitos y márgenes interesantes.',
-                    'Para equipos, conviene trabajar con distribuidores de marcas chinas reconocidas o con el canal de exportación del propio fabricante, que entregan documentación técnica y garantía. Un agente de compras puede verificar al distribuidor antes del pago.',
+                    'Para equipos, conviene trabajar con distribuidores de marcas chinas reconocidas o con el canal de exportación del propio fabricante, que entregan documentación técnica y garantía. Un [agente de compras en China](/servicios/agente-de-compras-china/) puede verificar al distribuidor antes del pago. Si es su primera importación, siga el orden de la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
             [
                 'h2' => 'Logística y costos',
                 'body' => [
-                    'Los celulares tienen alto valor y poco volumen, por lo que el flete aéreo suele ser razonable por unidad y reduce el riesgo de robo o daño. El seguro de la carga es imprescindible. El transitario le indica cómo declarar y embalar las baterías según el medio elegido.',
-                    'Al costo del equipo se suman flete, seguro, tributos según la posición arancelaria, honorarios del despachante y los trámites de homologación si el modelo no está homologado.',
+                    'Los celulares tienen alto valor y poco volumen, por lo que el [flete aéreo](/servicios/flete-aereo-china/) suele ser razonable por unidad y reduce el riesgo de robo o daño. El seguro de la carga es imprescindible. El transitario le indica cómo declarar y embalar las baterías según el medio elegido.',
+                    'Al costo del equipo se suman flete, seguro, tributos según la posición arancelaria, honorarios del [despacho aduanero](/servicios/despacho-aduanero/) y los trámites de homologación si el modelo no está homologado.',
                 ],
             ],
         ],
@@ -265,7 +265,7 @@ return [
         'faq' => [
             [
                 'q' => '¿Necesito homologar los celulares que importo?',
-                'a' => 'Los equipos de telecomunicaciones deben estar homologados por el ente regulador para venderse en Paraguay. Su despachante le confirma el requisito vigente y si el modelo ya figura como homologado.',
+                'a' => 'Sí, si son para el mercado paraguayo: la licencia previa de importación que otorga el MIC exige el certificado de homologación de la CONATEL. La CONATEL o su despachante le confirman el procedimiento vigente y si el modelo ya figura como homologado.',
             ],
             [
                 'q' => '¿Puedo traer celulares por courier?',
@@ -281,7 +281,7 @@ return [
             ],
             [
                 'q' => '¿Cómo verifico que el celular funcione con las operadoras de Paraguay?',
-                'a' => 'Compare las bandas de frecuencia del modelo, que figuran en su ficha técnica, con las que usan las operadoras locales. Pida al proveedor la ficha de la versión exacta que le va a enviar, no la de otra variante del mismo modelo.',
+                'a' => 'Compare las bandas de frecuencia del modelo, que figuran en su ficha técnica, con las que informa cada operadora local. Pida al proveedor la ficha de la versión exacta que le va a enviar, no la de otra variante del mismo modelo.',
             ],
         ],
         'image' => null,
@@ -307,11 +307,11 @@ return [
         'traps' => [
             [
                 'title' => 'Sin certificados de seguridad',
-                'text' => 'Los juguetes suelen estar sujetos a requisitos de seguridad (materiales, piezas pequeñas, sustancias en pinturas). Pida a la fábrica los informes de ensayo que tenga y confirme con su despachante qué exige Paraguay antes de pagar.',
+                'text' => 'Los juguetes suelen estar sujetos a requisitos de seguridad (materiales, piezas pequeñas, sustancias en pinturas). Pida a la fábrica los informes de ensayo que tenga y confirme con su despachante qué norma y qué certificación exige hoy Paraguay para su producto antes de pagar.',
             ],
             [
                 'title' => 'Piezas pequeñas y edad indicada',
-                'text' => 'Un juguete con piezas que se desprenden no puede venderse para niños pequeños. El empaque debe indicar la edad recomendada y las advertencias en español. Revise esto en la muestra y en la inspección.',
+                'text' => 'Un juguete con piezas que se desprenden no puede venderse para niños pequeños. El empaque debe indicar la edad recomendada y las advertencias en español. Revise esto en la muestra y en la [inspección de calidad](/servicios/inspeccion-de-calidad/).',
             ],
             [
                 'title' => 'Pilas y baterías recargables',
@@ -323,7 +323,7 @@ return [
             ],
             [
                 'title' => 'Llegar tarde a la temporada',
-                'text' => 'Las ventas de juguetes se concentran en fechas puntuales como el Día del Niño y fin de año. Si la mercadería llega después, queda en stock un año. Planifique producción, flete y despacho hacia atrás desde la fecha de venta.',
+                'text' => 'Las ventas de juguetes se concentran en fechas puntuales como el Día del Niño (16 de agosto en Paraguay) y fin de año. Si la mercadería llega después, queda en stock un año. Planifique producción, flete y despacho hacia atrás desde la fecha de venta.',
             ],
         ],
         'sections' => [
@@ -331,14 +331,14 @@ return [
                 'h2' => 'Cómo elegir una fábrica de juguetes',
                 'body' => [
                     'China tiene polos industriales dedicados a juguetes y artículos de regalo, con fábricas que exportan a mercados exigentes. Priorice proveedores que muestren informes de ensayos de laboratorio vigentes y que acepten una inspección antes del embarque.',
-                    'En la Feria de Cantón hay pabellones de juguetes donde puede ver producto y comparar fábricas en persona. Para pedidos chicos y variados, un agente puede consolidar compras de varios mayoristas.',
+                    'En la [Feria de Cantón](/feria-de-canton/) hay pabellones de juguetes donde puede ver producto y comparar fábricas en persona. Para pedidos chicos y variados, un [agente de compras en China](/servicios/agente-de-compras-china/) puede consolidar compras de varios mayoristas.',
                 ],
             ],
             [
                 'h2' => 'Empaque, volumen y costos',
                 'body' => [
                     'Muchos juguetes viajan con mucho aire dentro de la caja. Compare cuántas unidades entran por caja madre, porque el flete marítimo consolidado se cobra por volumen. Pida que el empaque de venta tenga textos en español o prevea etiquetas adicionales.',
-                    'El costo final suma precio de fábrica, flete, seguro, tributos según la posición arancelaria, honorarios del despachante y, si corresponden, los trámites de certificación que le indique el despachante.',
+                    'El costo final suma precio de fábrica, flete, seguro, tributos según la posición arancelaria, honorarios del [despacho aduanero](/servicios/despacho-aduanero/) y, si corresponden, los trámites de certificación que le indique el despachante. El orden completo está en la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
         ],
@@ -355,7 +355,7 @@ return [
             ],
             [
                 'q' => '¿Cuándo tengo que comprar para vender en el Día del Niño o en fin de año?',
-                'a' => 'Con varios meses de margen: hay que sumar producción, inspección, tránsito marítimo y despacho. El agente y el transitario le arman un calendario hacia atrás desde la fecha de venta.',
+                'a' => 'Con varios meses de margen: hay que sumar producción, inspección, tránsito por [flete marítimo en contenedor](/servicios/flete-maritimo-contenedor/) y despacho. El agente y el transitario le arman un calendario hacia atrás desde la fecha de venta.',
             ],
             [
                 'q' => '¿Puedo importar juguetes de personajes famosos?',
@@ -405,7 +405,7 @@ return [
             ],
             [
                 'title' => 'Fallas dentro del rollo',
-                'text' => 'Manchas, hilos corridos o fallas de tejido aparecen en el interior del rollo. Una inspección que desenrolla una muestra de rollos sobre mesa de revisión detecta el problema antes del embarque.',
+                'text' => 'Manchas, hilos corridos o fallas de tejido aparecen en el interior del rollo. Una [inspección de calidad](/servicios/inspeccion-de-calidad/) que desenrolla una muestra de rollos sobre mesa de revisión detecta el problema antes del embarque.',
             ],
         ],
         'sections' => [
@@ -413,13 +413,13 @@ return [
                 'h2' => 'Dónde comprar telas en China',
                 'body' => [
                     'China tiene grandes mercados mayoristas de telas y polos productivos especializados en tejidos de punto, tejido plano, seda sintética o tapicería. Los mercados mayoristas permiten comprar rollos en stock en cantidades chicas; las fábricas tiñen o estampan a pedido con mínimos por diseño y color.',
-                    'Un agente puede recorrer mercados, pedir muestras de varios proveedores, enviarle un muestrario físico y consolidar las compras en un solo embarque.',
+                    'Un [agente de compras en China](/servicios/agente-de-compras-china/) puede recorrer mercados, pedir muestras de varios proveedores, enviarle un muestrario físico y consolidar las compras en un solo embarque. El proceso completo está en la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
             [
                 'h2' => 'Flete y costos de la tela',
                 'body' => [
-                    'La tela es densa: un contenedor puede llenarse por peso antes que por volumen. Pida el peso por rollo y compare el flete por kilo y por metro cúbico. Para pocos rollos, la carga consolidada es la opción habitual; el aéreo solo se justifica para muestras.',
+                    'La tela es densa: un contenedor puede llenarse por peso antes que por volumen. Pida el peso por rollo y compare el flete por kilo y por metro cúbico. Para pocos rollos, el [contenedor compartido](/importar/contenedor-compartido-desde-china/) es la opción habitual y el [flete marítimo en contenedor](/servicios/flete-maritimo-contenedor/) cotiza ambas modalidades; el aéreo solo se justifica para muestras.',
                     'Al precio por metro o por kilo se suman flete, seguro, tributos según la posición arancelaria (que depende de la composición y del tipo de tejido), honorarios del despachante y transporte hasta su taller.',
                 ],
             ],
@@ -441,7 +441,7 @@ return [
             ],
             [
                 'q' => '¿Qué tributos paga la tela importada?',
-                'a' => 'Dependen de la posición arancelaria, que varía según fibra y tipo de tejido. El despachante le confirma la alícuota vigente con la ficha técnica del proveedor.',
+                'a' => 'Dependen de la posición arancelaria, que varía según fibra y tipo de tejido. Vea los conceptos en la guía de [tributos aduaneros](/aduana/tributos-aduaneros-paraguay/); el despachante del servicio de [despacho aduanero](/servicios/despacho-aduanero/) le confirma la alícuota vigente con la ficha técnica del proveedor.',
             ],
             [
                 'q' => '¿Conviene comprar la tela o la prenda terminada?',
@@ -483,7 +483,7 @@ return [
             ],
             [
                 'title' => 'Piezas de seguridad',
-                'text' => 'Frenos, dirección y suspensión no admiten calidad dudosa. Pida informes de ensayo del fabricante y certificaciones de calidad de la fábrica, y concentre la inspección en estas líneas.',
+                'text' => 'Frenos, dirección y suspensión no admiten calidad dudosa. Pida informes de ensayo del fabricante y certificaciones de calidad de la fábrica, confirme con su despachante si Paraguay exige alguna certificación para esa pieza, y concentre la [inspección de calidad](/servicios/inspeccion-de-calidad/) en estas líneas.',
             ],
             [
                 'title' => 'Lista larga, pocas unidades por ítem',
@@ -495,14 +495,14 @@ return [
                 'h2' => 'Cómo encontrar proveedores de autopartes',
                 'body' => [
                     'Hay fábricas especializadas por línea (filtros, frenos, iluminación, suspensión, piezas eléctricas) y distribuidores que reúnen muchas líneas para marcas japonesas, coreanas, europeas y chinas. Las fábricas dan mejor precio en su línea; los distribuidores simplifican pedidos surtidos.',
-                    'Un agente de compras puede enviar su lista de códigos a varios proveedores, comparar cotizaciones ítem por ítem y consolidar el pedido. Para vehículos de marcas chinas, los proveedores de la cadena del propio fabricante suelen tener mejor disponibilidad de códigos.',
+                    'Un [agente de compras en China](/servicios/agente-de-compras-china/) puede enviar su lista de códigos a varios proveedores, comparar cotizaciones ítem por ítem y consolidar el pedido. Para vehículos de marcas chinas, los proveedores de la cadena del propio fabricante suelen tener mejor disponibilidad de códigos.',
                 ],
             ],
             [
                 'h2' => 'Peso, embalaje y costos',
                 'body' => [
                     'Discos, tambores y piezas de suspensión son pesados y pueden definir el flete por peso. Las piezas frágiles como faros y parabrisas necesitan embalaje reforzado. Pida peso y medidas por caja de cada código para calcular bien el flete.',
-                    'El costo final suma precio FOB, flete, seguro, tributos que el despachante asigna a cada posición arancelaria (un pedido surtido puede tener muchas), honorarios y transporte local.',
+                    'El costo final suma precio FOB, [flete marítimo en contenedor](/servicios/flete-maritimo-contenedor/), seguro, tributos que el despachante asigna a cada posición arancelaria (un pedido surtido puede tener muchas), honorarios del [despacho aduanero](/servicios/despacho-aduanero/) y transporte local. El orden de todo el proceso está en la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
         ],
@@ -557,7 +557,7 @@ return [
         'traps' => [
             [
                 'title' => 'Voltaje y frecuencia equivocados',
-                'text' => 'La red paraguaya trabaja a 50 Hz, igual que China, pero la tensión trifásica y monofásica de su planta debe coincidir con la del motor y el tablero. Indique la tensión exacta de su instalación en la orden de compra y verifíquela en la placa durante la inspección.',
+                'text' => 'La red paraguaya trabaja a 50 Hz, igual que China, con 220 V monofásico y 380 V trifásico en baja tensión, pero la tensión de su planta debe coincidir con la del motor y el tablero. Confirme la tensión exacta de su instalación con su electricista, indíquela en la orden de compra y verifíquela en la placa durante la [inspección de calidad](/servicios/inspeccion-de-calidad/).',
             ],
             [
                 'title' => 'Sin repuestos ni manuales en español',
@@ -581,14 +581,14 @@ return [
                 'h2' => 'Cómo elegir el fabricante',
                 'body' => [
                     'Diferencie fábricas de revendedores: la fábrica puede adaptar la máquina y dar soporte técnico directo. Pida referencias de equipos exportados a Sudamérica, fotos o video de la línea de producción y verifique la licencia comercial de la empresa.',
-                    'En equipos de mayor inversión conviene una visita a la fábrica o la Feria de Cantón, donde se ven máquinas funcionando. Un servicio de importación llave en mano coordina la búsqueda, la verificación, la inspección, el flete y el despacho con partners en China y en Paraguay.',
+                    'En equipos de mayor inversión conviene una visita a la fábrica o la [Feria de Cantón](/feria-de-canton/), donde se ven máquinas funcionando. Un servicio de [importación llave en mano](/servicios/importacion-llave-en-mano/) coordina la búsqueda, la verificación, la inspección, el flete y el despacho con profesionales independientes en China y en Paraguay. El orden de cada paso está en la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
             [
                 'h2' => 'Costos, pagos y logística',
                 'body' => [
-                    'El esquema habitual es un anticipo al firmar y el saldo contra inspección o contra documentos de embarque. Defina el Incoterm (FOB o CIF, por ejemplo) para saber quién paga cada tramo. El embalaje de exportación, con base de madera tratada y protección anticorrosiva, debe estar incluido en el precio.',
-                    'Al valor de la máquina se suman flete, seguro, tributos según la posición arancelaria que determine el despachante, honorarios, grúa o montacargas para la descarga y transporte hasta la planta. Algunos bienes de capital pueden tener tratamientos arancelarios particulares: consúltelo con el despachante.',
+                    'El esquema habitual es un anticipo al firmar y el saldo contra inspección o contra documentos de embarque. Defina el Incoterm (FOB o CIF, por ejemplo) para saber quién paga cada tramo; la guía sobre [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/) compara los medios de pago. El embalaje de exportación, con base de madera tratada y protección anticorrosiva, debe estar incluido en el precio.',
+                    'Al valor de la máquina se suman flete, seguro, tributos según la posición arancelaria que determine el despachante, honorarios, grúa o montacargas para la descarga y transporte hasta la planta. Si la máquina forma parte de un proyecto de inversión, la Ley 60/90 de incentivos fiscales, que administra el MIC, prevé exoneraciones de tributos a la importación de bienes de capital para proyectos aprobados, en general cuando no hay fabricación nacional similar: consulte con el MIC y su despachante si aplica a su caso antes de importar.',
                 ],
             ],
         ],
@@ -609,7 +609,7 @@ return [
             ],
             [
                 'q' => '¿La maquinaria paga impuestos de importación?',
-                'a' => 'Sí, según su posición arancelaria. Algunos bienes de capital pueden tener beneficios o regímenes especiales; el despachante le confirma lo que aplica a su caso.',
+                'a' => 'Sí, según su posición arancelaria. Los bienes de capital de un proyecto aprobado bajo la Ley 60/90 pueden quedar exonerados; el despachante del servicio de [despacho aduanero](/servicios/despacho-aduanero/) le confirma lo que aplica a su caso.',
             ],
             [
                 'q' => '¿Quién instala la máquina?',
@@ -639,7 +639,7 @@ return [
         'traps' => [
             [
                 'title' => 'Documentación de chasis y motor',
-                'text' => 'Para inscribir cada moto hace falta que los números de chasis y motor coincidan con la factura y los documentos de embarque. Un número mal grabado o mal transcrito puede frenar la inscripción. Verifíquelos unidad por unidad en la inspección.',
+                'text' => 'Para inscribir cada moto hace falta que los números de chasis y motor coincidan con la factura y los documentos de embarque. Un número mal grabado o mal transcrito puede frenar la inscripción. Verifíquelos unidad por unidad en la [inspección de calidad](/servicios/inspeccion-de-calidad/).',
             ],
             [
                 'title' => 'Requisitos para importar y registrar',
@@ -659,14 +659,14 @@ return [
                 'h2' => 'Elegir el fabricante y el modelo',
                 'body' => [
                     'China tiene muchos fabricantes de motos, desde grandes marcas exportadoras hasta ensambladoras chicas. Priorice fábricas con experiencia exportando a Sudamérica, que conocen la documentación que se pide en la región y pueden ofrecer respaldo técnico y de repuestos.',
-                    'Evalúe cilindradas y tipos de moto que ya tienen demanda en su zona. Una importación llave en mano coordina la búsqueda de fábrica, la verificación de documentos, la inspección, el flete y el despacho con partners en China y en Paraguay.',
+                    'Evalúe cilindradas y tipos de moto que ya tienen demanda en su zona. Una [importación llave en mano](/servicios/importacion-llave-en-mano/) coordina la búsqueda de fábrica, la verificación de documentos, la inspección, el flete y el despacho con profesionales independientes en China y en Paraguay. El orden de cada paso está en la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
             [
                 'h2' => 'Contenedor, costos y plazos',
                 'body' => [
-                    'La cantidad de motos por contenedor depende del modelo y del grado de desarmado del cajón; pida a la fábrica cuántas unidades entran en un contenedor de 20 o de 40 pies. Las baterías y el combustible residual requieren precauciones de transporte que la fábrica y el transitario deben coordinar.',
-                    'El costo por moto suma precio de fábrica, flete, seguro, tributos según la posición arancelaria, honorarios del despachante, armado, y los gastos de inscripción que le informe el despachante o el registro.',
+                    'La cantidad de motos por contenedor depende del modelo y del grado de desarmado del cajón; pida a la fábrica cuántas unidades entran en un contenedor de 20 o de 40 pies y cotice el [flete marítimo en contenedor](/servicios/flete-maritimo-contenedor/). Las baterías y el combustible residual requieren precauciones de transporte que la fábrica y el transitario deben coordinar.',
+                    'El costo por moto suma precio de fábrica, flete, seguro, tributos según la posición arancelaria, honorarios del [despacho aduanero](/servicios/despacho-aduanero/), armado, y los gastos de inscripción que le informe el despachante o el registro.',
                 ],
             ],
         ],
@@ -680,11 +680,11 @@ return [
         'faq' => [
             [
                 'q' => '¿Qué necesito para importar motos de China a Paraguay?',
-                'a' => 'Estar habilitado como importador, un fabricante que entregue documentación completa de cada unidad y cumplir los requisitos vigentes de aduana y registro automotor, que le confirma su despachante antes de la compra.',
+                'a' => 'Estar [habilitado como importador](/importar/como-ser-importador-paraguay/), un fabricante que entregue documentación completa de cada unidad y cumplir los requisitos vigentes de aduana y registro automotor, que le confirma su despachante antes de la compra.',
             ],
             [
                 'q' => '¿Puedo importar una sola moto para uso personal?',
-                'a' => 'Es posible, pero el costo de flete, despacho y trámites por unidad es alto. Consulte con un despachante si su caso es viable antes de pagar.',
+                'a' => 'No lo damos por hecho: si una persona puede importar una sola moto para uso propio, y con qué requisitos, lo define la normativa vigente de aduana y del registro automotor. Consulte con un despachante antes de pagar; tenga en cuenta además que el flete, el despacho y los trámites por unidad son altos.',
             ],
             [
                 'q' => '¿Las motos llegan armadas?',
@@ -730,26 +730,26 @@ return [
             ],
             [
                 'title' => 'Madera y humedad',
-                'text' => 'La madera mal secada se agrieta o se deforma al cambiar de clima, y la humedad del viaje genera moho. Pida el contenido de humedad de la madera y desecantes en el contenedor. Los embalajes de madera deben estar tratados según la norma fitosanitaria internacional.',
+                'text' => 'La madera mal secada se agrieta o se deforma al cambiar de clima, y la humedad del viaje genera moho. Pida el contenido de humedad de la madera y desecantes en el contenedor. Los embalajes de madera deben estar tratados según la norma fitosanitaria internacional NIMF 15, cuyo cumplimiento controla en Paraguay el SENAVE.',
             ],
             [
                 'title' => 'Terminación diferente a la muestra',
-                'text' => 'Color de laca, tapizado y herrajes pueden cambiar entre la muestra y la producción. Deje fotos y códigos de terminación en la orden e inspeccione una muestra del lote antes del embarque.',
+                'text' => 'Color de laca, tapizado y herrajes pueden cambiar entre la muestra y la producción. Deje fotos y códigos de terminación en la orden y contrate una [inspección de calidad](/servicios/inspeccion-de-calidad/) sobre una muestra del lote antes del embarque.',
             ],
         ],
         'sections' => [
             [
                 'h2' => 'Dónde comprar muebles en China',
                 'body' => [
-                    'Hay polos de fabricación de muebles con grandes zonas de exhibición donde se recorren cientos de fábricas en pocos días, y la Feria de Cantón tiene sectores de muebles y decoración. Para compras a distancia, un agente puede visitar fábricas, pedir fotos de producción y consolidar piezas de varios proveedores.',
+                    'Hay polos de fabricación de muebles con grandes zonas de exhibición donde se recorren cientos de fábricas en pocos días, y la Feria de Cantón tiene sectores de muebles y decoración. Para compras a distancia, un [agente de compras en China](/servicios/agente-de-compras-china/) puede visitar fábricas, pedir fotos de producción y consolidar piezas de varios proveedores.',
                     'Los muebles desarmables (tipo flat pack) permiten traer más unidades por contenedor. Los muebles tapizados o de madera maciza suelen viajar armados y conviene calcular muy bien cuántos entran.',
                 ],
             ],
             [
                 'h2' => 'Contenedor completo o compartido',
                 'body' => [
-                    'Si su pedido llena buena parte de un contenedor, el contenedor completo suele salir más barato por metro cúbico y reduce la manipulación de la carga. Para pedidos chicos, el contenedor compartido (consolidado) permite empezar con menos inversión, con más manipulación y riesgo de golpes.',
-                    'El costo final suma precio de fábrica, embalaje, flete, seguro, tributos según la posición arancelaria de cada tipo de mueble, honorarios del despachante, descarga y transporte hasta su local. Use la calculadora CBM para estimar cuánto volumen ocupa su pedido.',
+                    'Si su pedido llena buena parte de un contenedor, el contenedor completo suele salir más barato por metro cúbico y reduce la manipulación de la carga; el servicio de [flete marítimo en contenedor](/servicios/flete-maritimo-contenedor/) cotiza ambas opciones. Para pedidos chicos, el [contenedor compartido](/importar/contenedor-compartido-desde-china/) (consolidado) permite empezar con menos inversión, con más manipulación y riesgo de golpes.',
+                    'El costo final suma precio de fábrica, embalaje, flete, seguro, tributos según la posición arancelaria de cada tipo de mueble, honorarios del despachante, descarga y transporte hasta su local. Use la [calculadora CBM](/herramientas/calculadora-cbm-contenedor/) para estimar cuánto volumen ocupa su pedido, y siga el orden de la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/). Si prefiere delegar todo, la [importación llave en mano](/servicios/importacion-llave-en-mano/) lo coordina.',
                 ],
             ],
         ],
@@ -778,7 +778,7 @@ return [
             ],
             [
                 'q' => '¿Qué pasa con los embalajes de madera?',
-                'a' => 'Los pallets y cajones de madera deben estar tratados y marcados según la norma fitosanitaria internacional para embalajes. Pídalo a la fábrica en la orden de compra, porque un embalaje sin tratar puede generar demoras en el ingreso.',
+                'a' => 'Los pallets y cajones de madera deben estar tratados y marcados según la norma NIMF 15 (ISPM 15), que en Paraguay controla el SENAVE. Pídalo a la fábrica en la orden de compra, porque un embalaje sin tratar puede generar demoras en el ingreso.',
             ],
         ],
         'image' => null,
@@ -812,7 +812,7 @@ return [
             ],
             [
                 'title' => 'Tintas, marcadores y adhesivos',
-                'text' => 'Algunos productos de papelería para niños pueden estar alcanzados por requisitos de seguridad sobre sustancias. Pida la ficha técnica al proveedor y confirme con su despachante si el producto necesita certificación.',
+                'text' => 'Algunos productos de papelería para niños pueden estar alcanzados por requisitos de seguridad sobre sustancias. Pida la ficha técnica al proveedor y confirme con su despachante qué certificación exige hoy Paraguay para ese producto, si exige alguna.',
             ],
             [
                 'title' => 'Personajes sin licencia',
@@ -827,15 +827,15 @@ return [
             [
                 'h2' => 'Proveedores de papelería y útiles',
                 'body' => [
-                    'China tiene grandes mercados mayoristas de artículos de papelería y bazar donde se compran surtidos en cantidades chicas, y fábricas especializadas en cuadernos, bolígrafos, mochilas o artículos de arte. Plataformas como 1688 y Alibaba sirven para comparar precios antes de decidir.',
-                    'Un agente de compras puede reunir productos de muchos proveedores en un solo depósito, controlar cantidades por código y preparar una lista de empaque ordenada para el despacho.',
+                    'China tiene grandes mercados mayoristas de artículos de papelería y bazar donde se compran surtidos en cantidades chicas, y fábricas especializadas en cuadernos, bolígrafos, mochilas o artículos de arte. Plataformas como [1688](/comprar/1688-en-espanol/) y [Alibaba](/comprar/alibaba-paraguay/) sirven para comparar precios antes de decidir.',
+                    'Un [agente de compras en China](/servicios/agente-de-compras-china/) puede reunir productos de muchos proveedores en un solo depósito, controlar cantidades por código y preparar una lista de empaque ordenada para el [despacho aduanero](/servicios/despacho-aduanero/).',
                 ],
             ],
             [
                 'h2' => 'Calendario y costos',
                 'body' => [
-                    'Planifique hacia atrás desde la fecha de venta: tiempo de despacho y transporte local, tránsito marítimo hasta Paraguay, inspección, producción y el cierre por Año Nuevo chino. Para la temporada escolar, eso suele significar cerrar pedidos en la segunda mitad del año anterior.',
-                    'El costo puesto en depósito suma precio de fábrica, flete consolidado por volumen o peso (el papel es pesado), seguro, tributos según la posición arancelaria de cada código, honorarios del despachante y transporte local.',
+                    'Planifique hacia atrás desde la fecha de venta: tiempo de despacho y transporte local, tránsito marítimo hasta Paraguay, inspección, producción y el cierre por Año Nuevo chino. Confirme la fecha de inicio de clases en el calendario escolar que publica el MEC y cuente hacia atrás; para la temporada escolar, eso suele significar cerrar pedidos en la segunda mitad del año anterior. El orden de cada paso está en la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
+                    'El costo puesto en depósito suma precio de fábrica, [flete marítimo en contenedor](/servicios/flete-maritimo-contenedor/) consolidado por volumen o peso (el papel es pesado), seguro, tributos según la posición arancelaria de cada código, honorarios del despachante y transporte local.',
                 ],
             ],
         ],
@@ -864,7 +864,7 @@ return [
             ],
             [
                 'q' => '¿Conviene traer mochilas junto con los útiles?',
-                'a' => 'Sí, se pueden consolidar en el mismo embarque. Las mochilas ocupan volumen, así que calcule los metros cúbicos del pedido completo y revise costuras y cierres en la inspección.',
+                'a' => 'Sí, se pueden consolidar en el mismo embarque. Las mochilas ocupan volumen, así que calcule los metros cúbicos del pedido completo y revise costuras y cierres en la [inspección de calidad](/servicios/inspeccion-de-calidad/).',
             ],
         ],
         'image' => null,

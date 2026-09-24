@@ -348,11 +348,75 @@ function lead_label(string $slug): string
 /**
  * True when an image record points at a file that exists on disk. Content may
  * name an image before its file has been localised (docs/imagery-manifest.json,
- * deploy/fetch-images.sh); the slot then renders nothing instead of a broken
+ * the localize-images workflow); the slot then renders nothing instead of a broken
  * image, and switches on by itself once the file lands.
  */
 function image_ready(?array $image): bool
 {
+    if (!empty($image['base'])) {
+        $first = (int) (((array) ($image['widths'] ?? [640]))[0] ?? 640);
+        return is_file(ROOT_DIR . $image['base'] . '-' . $first . '.webp');
+    }
     $src = (string) ($image['src'] ?? '');
     return $src !== '' && str_starts_with($src, '/') && is_file(ROOT_DIR . $src);
+}
+
+/**
+ * Body copy with inline links. Content strings may carry markdown-style links
+ * to site pages, "[la guía de aduana](/aduana/)"; the text is escaped first and
+ * only root-relative hrefs become anchors, so content can never inject markup
+ * or link off-site through this.
+ */
+function rich(?string $text): string
+{
+    return (string) preg_replace_callback(
+        '~\[([^\]\[]+)\]\((/[a-z0-9\-/#]*)\)~i',
+        static fn (array $m): string => '<a href="' . $m[2] . '">' . $m[1] . '</a>',
+        e($text)
+    );
+}
+
+/** The same copy with the link syntax removed, for JSON-LD and meta text. */
+function plain(?string $text): string
+{
+    return (string) preg_replace('~\[([^\]\[]+)\]\((/[a-z0-9\-/#]*)\)~i', '$1', (string) $text);
+}
+
+/**
+ * A responsive <picture> for an image record produced by webimg:
+ *   ['base' => '/assets/img/<slug>', 'widths' => [640, 1280, 1920],
+ *    'alt' => ..., 'width' => ..., 'height' => ...]
+ * Files are <base>-<w>.avif / .webp. Returns '' until the files exist.
+ */
+function picture_html(?array $image, string $sizes = '100vw', string $class = '', bool $eager = false): string
+{
+    if (!image_ready($image)) {
+        return '';
+    }
+    $base   = (string) $image['base'];
+    $widths = array_map('intval', (array) ($image['widths'] ?? [640, 1280]));
+    $srcset = static fn (string $ext): string => implode(', ', array_map(
+        static fn (int $w): string => asset($base . '-' . $w . '.' . $ext) . ' ' . $w . 'w',
+        $widths
+    ));
+    $fallback = $base . '-' . $widths[intdiv(count($widths), 2)] . '.webp';
+
+    return '<picture>'
+        . '<source type="image/avif" srcset="' . e($srcset('avif')) . '" sizes="' . e($sizes) . '">'
+        . '<source type="image/webp" srcset="' . e($srcset('webp')) . '" sizes="' . e($sizes) . '">'
+        . '<img' . ($class !== '' ? ' class="' . e($class) . '"' : '')
+        . ' src="' . e(asset($fallback)) . '" alt="' . e((string) ($image['alt'] ?? '')) . '"'
+        . ' width="' . (int) ($image['width'] ?? 1600) . '" height="' . (int) ($image['height'] ?? 900) . '"'
+        . ($eager ? ' fetchpriority="high"' : ' loading="lazy"') . ' decoding="async">'
+        . '</picture>';
+}
+
+/** Absolute-path OG image for an image record, or null. */
+function image_og(?array $image): ?string
+{
+    if (!image_ready($image)) {
+        return null;
+    }
+    $widths = array_map('intval', (array) ($image['widths'] ?? [1280]));
+    return $image['base'] . '-' . (in_array(1280, $widths, true) ? 1280 : max($widths)) . '.webp';
 }

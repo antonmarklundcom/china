@@ -42,7 +42,7 @@ $page = [
 ];
 
 $svcImage    = $service['image'] ?? null;
-$page['ogImage'] = image_ready($svcImage) ? $svcImage['src'] : null;
+$page['ogImage'] = image_og($svcImage);
 $hero        = $service['hero'];
 $ctaWhatsapp = whatsapp_text_for_page($page);
 
@@ -75,11 +75,7 @@ require ROOT_DIR . '/partials/header.php';
         </div>
       </div>
       <?php if (image_ready($svcImage)): ?>
-        <figure class="page-hero__figure">
-          <img src="<?= e(asset($svcImage['src'])) ?>" alt="<?= e($svcImage['alt'] ?? '') ?>"
-               width="<?= e((string) ($svcImage['width'] ?? 1600)) ?>" height="<?= e((string) ($svcImage['height'] ?? 900)) ?>"
-               fetchpriority="high" decoding="async">
-        </figure>
+        <figure class="page-hero__figure"><?= picture_html($svcImage, '(max-width: 1280px) 100vw, 1200px', '', true) ?></figure>
       <?php endif; ?>
     </div>
   </section>
@@ -146,14 +142,14 @@ require ROOT_DIR . '/partials/header.php';
           <div class="prose">
             <h2><?= e($block['h2'] ?? '') ?></h2>
             <?php foreach ($block['body'] ?? [] as $paragraph): ?>
-              <p><?= e($paragraph) ?></p>
+              <p><?= rich($paragraph) ?></p>
             <?php endforeach; ?>
             <?php if (!empty($block['items'])): ?>
               <div class="grid grid--2 mt-4">
                 <?php foreach ($block['items'] as $item): ?>
                   <div class="card">
                     <h3 class="card-title"><?= e($item['title'] ?? '') ?></h3>
-                    <p class="card__text"><?= e($item['text'] ?? '') ?></p>
+                    <p class="card__text"><?= rich($item['text'] ?? '') ?></p>
                   </div>
                 <?php endforeach; ?>
               </div>
@@ -172,7 +168,7 @@ require ROOT_DIR . '/partials/header.php';
           <?php foreach ($service['benefits'] as $benefit): ?>
             <div class="card">
               <h3 class="card-title"><?= e($benefit['title'] ?? '') ?></h3>
-              <p class="card__text"><?= e($benefit['text'] ?? '') ?></p>
+              <p class="card__text"><?= rich($benefit['text'] ?? '') ?></p>
             </div>
           <?php endforeach; ?>
         </div>

@@ -9,7 +9,7 @@ $sections = [
         'h2'   => 'Un comercio sin relaciones diplomáticas',
         'body' => [
             'Paraguay mantiene relaciones diplomáticas con Taiwán (República de China) y no con la República Popular China. Aun así, China continental es uno de los principales orígenes de los productos que Paraguay importa. Para quien importa, esto no impide comprar, pero sí cambia algunos aspectos prácticos: dónde se tramita la visa, cómo se paga a los proveedores y por qué rutas llega la mercadería.',
-            'En este artículo explicamos, sin entrar en valoraciones políticas, cómo funciona en la práctica el comercio entre China y Paraguay y qué debe tener en cuenta un importador paraguayo. No incluimos estadísticas de comercio: si necesita cifras actualizadas, consulte las publicaciones del Banco Central del Paraguay (BCP), de la Dirección Nacional de Ingresos Tributarios (DNIT), que tiene a su cargo la aduana, o de bases internacionales como UN Comtrade.',
+            'En este artículo explicamos, sin entrar en valoraciones políticas, cómo funciona en la práctica el comercio entre China y Paraguay y qué debe tener en cuenta un importador paraguayo. No incluimos estadísticas de comercio: si necesita cifras actualizadas, consulte las publicaciones del Banco Central del Paraguay (BCP), de la Dirección Nacional de Ingresos Tributarios (DNIT), que desde la Ley 7143/2023 reúne a la antigua Subsecretaría de Tributación y a la Dirección Nacional de Aduanas, o de bases internacionales como UN Comtrade.',
         ],
     ],
     [
@@ -33,29 +33,29 @@ $sections = [
     [
         'h2'   => 'Qué significa esto en la práctica',
         'body' => [
-            'Para usted, la ruta se traduce en tiempo y costo. El tránsito por un tercer país agrega un tramo, un transbordo y documentos adicionales. Su forwarder le puede indicar qué ruta conviene según el puerto de origen, el tipo de carga y la época del año, y la cotización debe detallar cada tramo hasta el destino final en Paraguay.',
-            'Al comparar cotizaciones de flete, verifique que todas incluyan el mismo recorrido: por ejemplo, hasta el puerto de tránsito o hasta la terminal en Paraguay. Una cotización barata que termina en Montevideo o Paranaguá puede resultar más cara cuando se suma el tramo final.',
+            'Para usted, la ruta se traduce en tiempo y costo. El tránsito por un tercer país agrega un tramo, un transbordo y documentos adicionales. Su forwarder le puede indicar qué ruta conviene según el puerto de origen, el tipo de carga y la época del año, y la cotización debe detallar cada tramo hasta el destino final en Paraguay. Vea las opciones en [flete marítimo en contenedor](/servicios/flete-maritimo-contenedor/) y flete aéreo desde China.',
+            'Al comparar cotizaciones de flete, verifique que todas incluyan el mismo recorrido: por ejemplo, hasta el puerto de tránsito o hasta la terminal en Paraguay. Una cotización barata que termina en un puerto de tránsito puede resultar más cara cuando se suma el tramo final. Puede estimar el total con la [calculadora de costo de importación](/herramientas/calculadora-costo-importacion/).',
         ],
     ],
     [
         'h2'   => 'Visas para viajar a China',
         'body' => [
-            'Como no hay embajada ni consulado de la República Popular China en Asunción, un paraguayo que quiere viajar a China continental, por ejemplo para visitar fábricas o la Feria de Cantón, debe tramitar la visa en una representación china de otro país o por el procedimiento que esté vigente para ciudadanos paraguayos. Confirme los requisitos en el sitio oficial de la representación a la que vaya a presentar su solicitud, ya que cambian con el tiempo.',
-            'Planifique con meses de anticipación: el trámite puede requerir enviar el pasaporte al exterior o viajar para presentarlo.',
+            'Como no hay embajada ni consulado de la República Popular China en Asunción, un paraguayo que quiere viajar a China continental, por ejemplo para visitar fábricas o la Feria de Cantón, debe tramitar la visa en una representación china de otro país o por el procedimiento que esté vigente para ciudadanos paraguayos. Confirme los requisitos en el sitio oficial de la representación a la que vaya a presentar su solicitud, ya que cambian con el tiempo; le explicamos las opciones en [visa china para paraguayos](/viajar-a-china/visa-china-para-paraguayos/).',
+            'Planifique con anticipación: como la solicitud se presenta fuera de Paraguay y el pasaporte queda retenido durante el trámite, conviene iniciarlo mucho antes del viaje.',
         ],
     ],
     [
         'h2'   => 'Pagos a proveedores chinos',
         'body' => [
             'Los pagos de Paraguay a proveedores chinos se hacen en general en dólares estadounidenses, por transferencia bancaria internacional o por medio de plataformas de pago. Pagar en yuanes es posible en algunos casos, pero depende de su banco y del proveedor.',
-            'Antes de transferir, verifique que la cuenta de destino esté a nombre de la misma empresa que figura en la proforma y en el contrato. Un cambio de cuenta de último momento, pedido por correo, es una forma conocida de fraude: confírmelo siempre por otro canal. Consulte con su banco las comisiones, el tiempo de acreditación y la documentación que le piden para justificar el pago.',
+            'Antes de transferir, verifique que la cuenta de destino esté a nombre de la misma empresa que figura en la proforma y en el contrato. Un cambio de cuenta de último momento, pedido por correo, es una forma conocida de fraude: confírmelo siempre por otro canal. Consulte con su banco las comisiones, el tiempo de acreditación y la documentación que le piden para justificar el pago. Más detalle en [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/).',
         ],
     ],
     [
         'h2'   => 'Ciudad del Este y la reexportación',
         'body' => [
             'Ciudad del Este es conocida por su comercio de productos importados, muchos de ellos fabricados en China, que se venden a compradores de Brasil y Argentina además del mercado local. Una parte de ese comercio funciona como reexportación: la mercadería entra a Paraguay y luego sale hacia países vecinos.',
-            'Si su negocio apunta a ese mercado, tenga en cuenta que existen regímenes aduaneros específicos, con requisitos propios, y que las reglas de los países de destino también se aplican a sus clientes. Consulte con un despachante de aduana qué régimen corresponde a su operación antes de hacer el primer pedido.',
+            'Si su negocio apunta a ese mercado, tenga en cuenta que existen regímenes aduaneros específicos, como el [régimen de turismo](/aduana/regimen-de-turismo-paraguay/), con requisitos propios, y que las reglas de los países de destino también se aplican a sus clientes. Consulte con un [despachante de aduana](/aduana/despachantes-de-aduana-paraguay/) qué régimen corresponde a su operación antes de hacer el primer pedido.',
         ],
     ],
     [
@@ -74,7 +74,7 @@ $sections = [
 ];
 
 $faq = [
-    ['q' => '¿Se puede importar de China si Paraguay no tiene relaciones con la RPC?', 'a' => 'Sí. Las relaciones diplomáticas no impiden el comercio privado; un importador paraguayo puede comprar a proveedores chinos cumpliendo las normas de importación de Paraguay.'],
+    ['q' => '¿Se puede importar de China si Paraguay no tiene relaciones con la RPC?', 'a' => 'Sí. Las relaciones diplomáticas no impiden el comercio privado; un importador paraguayo puede comprar a proveedores chinos cumpliendo las normas de importación de Paraguay. Vea cómo importar de China a Paraguay.'],
     ['q' => '¿Hay embajada de China en Asunción?', 'a' => 'No hay embajada de la República Popular China en Asunción. Paraguay tiene relaciones con Taiwán, que sí tiene representación en el país.'],
     ['q' => '¿Por qué puerto llega un contenedor de China a Paraguay?', 'a' => 'Normalmente llega primero a un puerto de Brasil, Uruguay o Argentina y sigue por río o por tierra. Su forwarder le indica la ruta según el caso.'],
     ['q' => '¿En qué moneda se paga a los proveedores chinos?', 'a' => 'Lo más habitual es en dólares estadounidenses por transferencia internacional. Consulte con su banco comisiones y documentación requerida.'],

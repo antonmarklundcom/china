@@ -18,3 +18,4 @@ deploy/node_modules/
 # previous build's tree 97% PNGs by size, and every later session paid to read them.
 docs/screenshots/*
 !docs/screenshots/.gitkeep
+.secrets/

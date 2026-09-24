@@ -53,7 +53,7 @@ return [
             'eyebrow' => 'Servicios',
             'h1' => 'Agente de compras en China',
             'h2' => 'Alguien de su lado en China, que habla con la fábrica en chino y ve la mercadería antes de que usted pague el saldo.',
-            'lead' => 'Un agente de compras en China verifica que el proveedor sea realmente una fábrica, negocia precio y cantidad mínima en chino y controla el pedido antes del embarque. Nosotros coordinamos a un agente asociado en China y usted recibe una propuesta escrita antes de comprometer dinero.',
+            'lead' => 'Un agente de compras en China verifica que el proveedor sea realmente una fábrica, negocia precio y cantidad mínima en chino y controla el pedido antes del embarque. Nosotros coordinamos a un agente independiente en China y usted recibe una propuesta escrita antes de comprometer dinero.',
         ],
         'includes' => [
             'Búsqueda y comparación de 3 o más proveedores para su producto',
@@ -81,26 +81,26 @@ return [
                 'h2' => 'El riesgo de comprar a distancia',
                 'body' => [
                     'Muchos importadores de Paraguay descubren tarde que su «fábrica» en Alibaba era una empresa comercial que revende con margen, o que la mercadería que llegó no coincide con la muestra. Desde Asunción es difícil saber quién está del otro lado, y reclamar después del pago casi nunca funciona.',
-                    'Un agente local reduce ese riesgo porque está en el lugar: puede visitar la planta, pedir la licencia comercial y compararla con los registros públicos chinos, y negociar directamente en chino con quien produce.',
+                    'Un agente local reduce ese riesgo porque está en el lugar: puede visitar la planta, pedir la licencia comercial y compararla con el registro público de empresas de China (gsxt.gov.cn), y negociar directamente en chino con quien produce. La guía sobre [proveedores chinos confiables](/importar/proveedores-chinos-confiables/) explica cada verificación.',
                 ],
             ],
             [
                 'h2' => 'Cómo trabajamos',
                 'body' => [
-                    'Usted nos describe el producto y nosotros coordinamos con un agente asociado en China. El trabajo se ordena en etapas, y usted aprueba cada una antes de pasar a la siguiente.',
+                    'Usted nos describe el producto y nosotros coordinamos con un agente independiente en China, elegido para su pedido y nombrado en la propuesta. El trabajo se ordena en etapas, y usted aprueba cada una antes de pasar a la siguiente.',
                 ],
                 'items' => [
                     ['title' => '1. Brief y propuesta', 'text' => 'Revisamos su pedido y le enviamos una propuesta escrita con el alcance y el costo del servicio.'],
                     ['title' => '2. Búsqueda y verificación', 'text' => 'El agente identifica proveedores, verifica su licencia y le presenta una comparación.'],
                     ['title' => '3. Muestras y negociación', 'text' => 'Se piden muestras, se negocian precio, MOQ, plazos y forma de pago.'],
-                    ['title' => '4. Producción y control', 'text' => 'Seguimiento de la producción y, si usted lo contrata, inspección antes del embarque.'],
-                    ['title' => '5. Entrega al transporte', 'text' => 'La mercadería se consolida y se entrega al forwarder que la trae a Paraguay.'],
+                    ['title' => '4. Producción y control', 'text' => 'Seguimiento de la producción y, si usted lo contrata, [inspección de calidad](/servicios/inspeccion-de-calidad/) antes del embarque.'],
+                    ['title' => '5. Entrega al transporte', 'text' => 'La mercadería se consolida y se entrega al forwarder que la trae a Paraguay por [flete marítimo](/servicios/flete-maritimo-contenedor/) o aéreo.'],
                 ],
             ],
             [
                 'h2' => 'Quién hace qué',
                 'body' => [
-                    'El agente asociado ejecuta el trabajo en China: visitas, negociación y seguimiento. Nosotros somos su interlocutor en español desde Paraguay y le coordinamos, si lo necesita, el flete y el despachante. El contrato de compra y el pago son siempre entre su empresa y el proveedor, sin intermediarios que retengan su dinero.',
+                    'El agente independiente ejecuta el trabajo en China: visitas, negociación y seguimiento. Nosotros somos su interlocutor en español desde Paraguay y le coordinamos, si lo necesita, el flete y el [despacho aduanero](/servicios/despacho-aduanero/). El contrato de compra y el pago son siempre entre su empresa y el proveedor, sin intermediarios que retengan su dinero; vea cómo hacerlo en la guía sobre [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/).',
                 ],
             ],
         ],
@@ -114,8 +114,8 @@ return [
             ['q' => '¿Cuánto cobra un agente de compras en China?', 'a' => 'Depende del producto, la cantidad de proveedores y las etapas que contrate. Le enviamos una cotización escrita después de revisar su pedido.'],
             ['q' => '¿Cómo sé si un proveedor es fábrica o empresa comercial?', 'a' => 'El agente revisa el alcance de la licencia comercial y, cuando corresponde, visita la planta. Una empresa comercial no es necesariamente mala, pero usted debe saberlo para negociar.'],
             ['q' => '¿Le pago a ustedes o al proveedor?', 'a' => 'El producto se paga directamente al proveedor, a nombre de su empresa. El servicio del agente se factura por separado.'],
-            ['q' => '¿Hay un monto mínimo de compra?', 'a' => 'No fijamos un mínimo propio, pero cada fábrica tiene su cantidad mínima (MOQ). Para pedidos muy chicos a veces conviene comprar por plataforma y usar courier.'],
-            ['q' => '¿Necesito RUC para importar?', 'a' => 'Para importar como empresa sí necesita estar inscripto como importador. El despachante de aduana le confirma los requisitos vigentes para su caso.'],
+            ['q' => '¿Hay un monto mínimo de compra?', 'a' => 'No fijamos un mínimo propio, pero cada fábrica tiene su cantidad mínima (MOQ). Para pedidos muy chicos a veces conviene comprar por plataforma y usar un [courier de China a Paraguay](/comprar/courier-china-paraguay/).'],
+            ['q' => '¿Necesito RUC para importar?', 'a' => 'Para importar con regularidad necesita RUC y la habilitación como importador en el registro de la DNIT, que prevé también un trámite para importadores ocasionales. Los pasos están en la guía sobre [cómo ser importador en Paraguay](/importar/como-ser-importador-paraguay/) y el despachante le confirma los requisitos vigentes para su caso.'],
         ],
         'cta' => [
             'label' => 'Pedir propuesta de agente de compras',
@@ -129,7 +129,7 @@ return [
         ],
         'affiliates' => [],
         'disclaimer' => false,
-        'image' => ['src' => '/assets/img/hubs/importar-de-china-deposito-fabrica.webp', 'alt' => 'Comprador y encargado revisan una lista junto a cajas de exportación en un depósito de fábrica en China', 'width' => 1600, 'height' => 905],
+        'image' => ['base' => '/assets/img/importar-de-china-deposito-fabrica', 'widths' => [640, 1280, 1920], 'alt' => 'Comprador y encargado revisan una lista junto a cajas de exportación en un depósito de fábrica en China', 'width' => 1920, 'height' => 1086],
     ],
 
     'inspeccion-de-calidad' => [
@@ -144,7 +144,7 @@ return [
             'eyebrow' => 'Servicios',
             'h1' => 'Inspección de calidad en China',
             'h2' => 'Vea su mercadería con fotos e informe antes de pagar el saldo al proveedor.',
-            'lead' => 'Una inspección de calidad en China controla su pedido en la fábrica antes del pago final: cantidades, medidas, terminaciones, funcionamiento y empaque, con informe y fotos. Coordinamos a un inspector asociado en China y usted decide con el informe en mano si paga, pide correcciones o frena el embarque.',
+            'lead' => 'Una inspección de calidad en China controla su pedido en la fábrica antes del pago final: cantidades, medidas, terminaciones, funcionamiento y empaque, con informe y fotos. Coordinamos a un inspector independiente en China y usted decide con el informe en mano si paga, pide correcciones o frena el embarque.',
         ],
         'includes' => [
             'Inspección antes del embarque (pre-shipment) con muestreo según AQL',
@@ -169,7 +169,7 @@ return [
             [
                 'h2' => 'Por qué inspeccionar antes de pagar',
                 'body' => [
-                    'Lo habitual es pagar un anticipo y el saldo antes del embarque. Si el saldo se paga sin ver la mercadería, el problema aparece recién en Paraguay, cuando ya no hay forma práctica de reclamar. Una inspección en origen le da evidencia para exigir correcciones mientras la fábrica todavía espera su pago.',
+                    'Lo habitual es pagar un anticipo y el saldo antes del embarque. Si el saldo se paga sin ver la mercadería, el problema aparece recién en Paraguay, cuando ya no hay forma práctica de reclamar. Una inspección en origen le da evidencia para exigir correcciones mientras la fábrica todavía espera su pago. Es uno de los pasos de la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
             [
@@ -186,7 +186,7 @@ return [
             [
                 'h2' => 'Quién hace qué',
                 'body' => [
-                    'La inspección la realiza un inspector o una empresa de inspección asociada en China. Nosotros acordamos con usted los criterios, coordinamos la visita con la fábrica y le entregamos el informe en español con una recomendación clara. La decisión de pagar o no siempre es suya.',
+                    'La inspección la realiza un inspector o una empresa de inspección independiente en China, que le nombramos en la cotización. Nosotros acordamos con usted los criterios, coordinamos la visita con la fábrica y le entregamos el informe en español con una recomendación clara. La decisión de pagar o no siempre es suya.',
                 ],
             ],
         ],
@@ -197,10 +197,10 @@ return [
         ],
         'faq' => [
             ['q' => '¿Qué es el muestreo AQL?', 'a' => 'Es un método estándar para decidir cuántas unidades revisar de un lote y cuántos defectos se toleran. Permite aceptar o rechazar el lote con criterios acordados.'],
-            ['q' => '¿Cuándo conviene la inspección durante la producción?', 'a' => 'Con productos nuevos, pedidos grandes o proveedores sin historial con usted, porque los errores se corrigen antes de que todo el lote esté hecho.'],
+            ['q' => '¿Cuándo conviene la inspección durante la producción?', 'a' => 'Con productos nuevos, pedidos grandes o proveedores sin historial con usted, porque los errores se corrigen antes de que todo el lote esté hecho. Si además necesita quien siga la producción, sume un [agente de compras en China](/servicios/agente-de-compras-china/).'],
             ['q' => '¿Qué pasa si la inspección no aprueba?', 'a' => 'Usted recibe el informe con los defectos y puede pedir retrabajo, reposición o una nueva inspección antes de pagar el saldo.'],
             ['q' => '¿Cuánto cuesta una inspección?', 'a' => 'Depende de la ciudad de la fábrica, el tipo de inspección y los días de trabajo. Le enviamos la cotización escrita antes de programarla.'],
-            ['q' => '¿El proveedor tiene que aceptar la inspección?', 'a' => 'Conviene dejarla escrita en la orden de compra. Un proveedor serio no se opone a que un tercero revise el pedido.'],
+            ['q' => '¿El proveedor tiene que aceptar la inspección?', 'a' => 'Conviene dejarla escrita en la orden de compra. Un proveedor serio no se opone a que un tercero revise el pedido; si pone trabas, es una de las señales de alerta de la guía sobre [proveedores chinos confiables](/importar/proveedores-chinos-confiables/).'],
         ],
         'cta' => [
             'label' => 'Pedir cotización de inspección',
@@ -214,7 +214,7 @@ return [
         ],
         'affiliates' => [],
         'disclaimer' => false,
-        'image' => ['src' => '/assets/img/servicios/inspeccion-de-calidad-prenda.webp', 'alt' => 'Inspector de calidad mide una prenda con cinta métrica en una mesa de control en una fábrica', 'width' => 1200, 'height' => 671],
+        'image' => ['base' => '/assets/img/inspeccion-de-calidad-fabrica-china', 'widths' => [640, 1280], 'alt' => 'Inspector de calidad mide una prenda con cinta métrica en una mesa de control en una fábrica', 'width' => 1280, 'height' => 716],
     ],
 
     'flete-maritimo-contenedor' => [
@@ -229,7 +229,7 @@ return [
             'eyebrow' => 'Servicios',
             'h1' => 'Flete marítimo desde China: contenedor y carga consolidada',
             'h2' => 'Contenedor completo o espacio compartido, cotizado por un forwarder que conoce la ruta a Paraguay.',
-            'lead' => 'El flete marítimo desde China a Paraguay se hace en contenedor completo (FCL) o en carga consolidada (LCL), con transbordo en un puerto de la región y llegada por barcaza fluvial o por camión. Lo conectamos con un forwarder asociado que le cotiza por escrito la ruta, el plazo estimado y lo que incluye cada precio.',
+            'lead' => 'El flete marítimo desde China a Paraguay se hace en contenedor completo (FCL) o en carga consolidada (LCL), con transbordo en un puerto de la región y llegada por barcaza fluvial o por camión. Lo conectamos con un forwarder independiente que le cotiza por escrito la ruta, el plazo estimado y lo que incluye cada precio.',
         ],
         'includes' => [
             'Cotización de contenedor completo (FCL) de 20 o 40 pies',
@@ -256,7 +256,7 @@ return [
             [
                 'h2' => 'Contenedor completo o carga consolidada',
                 'body' => [
-                    'Con pocos metros cúbicos se paga por el espacio que usa dentro de un contenedor compartido (LCL). A partir de cierto volumen, un contenedor propio (FCL) sale más barato por unidad y reduce manipulación y riesgo de daño. El punto exacto depende de las tarifas del momento; el forwarder le cotiza ambas opciones para que compare.',
+                    'Con pocos metros cúbicos se paga por el espacio que usa dentro de un [contenedor compartido](/importar/contenedor-compartido-desde-china/) (LCL). A partir de cierto volumen, un contenedor propio (FCL) sale más barato por unidad y reduce manipulación y riesgo de daño. El punto exacto depende de las tarifas del momento; el forwarder le cotiza ambas opciones para que compare, y la [calculadora de CBM y contenedor](/herramientas/calculadora-cbm-contenedor/) le da el volumen de su carga.',
                 ],
                 'items' => [
                     ['title' => 'LCL (consolidado)', 'text' => 'Para primeros pedidos y volúmenes chicos. Se cobra por metro cúbico o peso, lo que resulte mayor.'],
@@ -267,14 +267,14 @@ return [
             [
                 'h2' => 'Cómo llega la carga a Paraguay',
                 'body' => [
-                    'Paraguay no tiene costa, así que la carga sale de un puerto chino, viaja hasta un puerto de la región y hace transbordo. Desde ahí sigue en barcaza por la hidrovía Paraná-Paraguay hasta un puerto paraguayo, o por camión desde un puerto de Brasil, Uruguay o Argentina. Cada ruta tiene distinto plazo, costo y riesgo según la época del año y el nivel del río.',
-                    'El forwarder asociado le indica la ruta recomendada para su carga y el plazo estimado vigente al momento de cotizar.',
+                    'Paraguay no tiene costa, así que la carga sale de un puerto chino, viaja hasta un puerto de la región y hace transbordo, hoy sobre todo en Buenos Aires y también en Montevideo. Desde ahí sigue en barcaza por la hidrovía Paraná-Paraguay hasta las terminales de Asunción o Villeta. Otra vía es el puerto brasileño de Paranaguá, donde Paraguay tiene depósitos francos, y desde ahí camión hasta Ciudad del Este. Cada ruta tiene distinto plazo, costo y riesgo según la época del año y el nivel del río.',
+                    'El forwarder le indica qué rutas ofrece para su carga, cuál recomienda y el plazo estimado vigente al momento de cotizar. No publicamos días de tránsito porque cambian con las escalas de las navieras y el nivel del río.',
                 ],
             ],
             [
                 'h2' => 'Quién hace qué',
                 'body' => [
-                    'El transporte lo ejecuta un forwarder asociado, que contrata a la naviera y al transporte fluvial o terrestre. Nosotros le ayudamos a preparar la solicitud, comparamos la cotización con usted y lo conectamos con un despachante de aduana matriculado para la llegada.',
+                    'El transporte lo ejecuta un forwarder independiente, que contrata a la naviera y al transporte fluvial o terrestre. Nosotros le ayudamos a preparar la solicitud, comparamos la cotización con usted y lo conectamos con un despachante de aduana matriculado para la llegada, a través del servicio de [despacho aduanero](/servicios/despacho-aduanero/).',
                 ],
             ],
         ],
@@ -287,7 +287,7 @@ return [
             ['q' => '¿Cuánto tarda un contenedor de China a Paraguay?', 'a' => 'Depende del puerto de salida, del transbordo y de la ruta final. El forwarder le da el plazo estimado vigente en la cotización.'],
             ['q' => '¿Desde cuántos metros cúbicos conviene un contenedor propio?', 'a' => 'No hay un número fijo: depende de las tarifas del momento. Pida ambas cotizaciones y compare el costo por unidad de producto.'],
             ['q' => '¿Qué es mejor, ruta fluvial o terrestre?', 'a' => 'La fluvial suele usarse para contenedores; la terrestre puede ser útil cuando el río está bajo o el plazo apremia. Se decide caso por caso.'],
-            ['q' => '¿Qué Incoterm me conviene?', 'a' => 'Con FOB usted controla el flete internacional y elige su forwarder. Con EXW también se encarga del retiro en fábrica y los trámites de exportación en China.'],
+            ['q' => '¿Qué Incoterm me conviene?', 'a' => 'Con FOB usted controla el flete internacional y elige su forwarder. Con EXW también se encarga del retiro en fábrica y los trámites de exportación en China. Lo explicamos en la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).'],
             ['q' => '¿El flete incluye el despacho en Paraguay?', 'a' => 'No. El despacho lo hace un despachante de aduana matriculado; se lo coordinamos si lo necesita.'],
         ],
         'cta' => [
@@ -303,7 +303,7 @@ return [
         ],
         'affiliates' => [],
         'disclaimer' => false,
-        'image' => ['src' => '/assets/img/servicios/flete-maritimo-buque-portacontenedores.webp', 'alt' => 'Buque portacontenedores saliendo de un puerto chino al amanecer, con un remolcador al costado', 'width' => 1200, 'height' => 671],
+        'image' => ['base' => '/assets/img/flete-maritimo-buque-portacontenedores', 'widths' => [640, 1280], 'alt' => 'Buque portacontenedores saliendo de un puerto chino al amanecer, con un remolcador al costado', 'width' => 1280, 'height' => 716],
     ],
 
     'flete-aereo-china' => [
@@ -318,7 +318,7 @@ return [
             'eyebrow' => 'Servicios',
             'h1' => 'Flete aéreo desde China a Paraguay',
             'h2' => 'Para muestras, repuestos y pedidos urgentes que no pueden esperar al barco.',
-            'lead' => 'El flete aéreo desde China a Paraguay conviene para muestras, pedidos urgentes y mercadería de alto valor y poco peso, porque llega mucho antes que por mar aunque cuesta más por kilo. Lo conectamos con un forwarder asociado que le cotiza por escrito según el peso cobrable de su carga.',
+            'lead' => 'El flete aéreo desde China a Paraguay conviene para muestras, pedidos urgentes y mercadería de alto valor y poco peso, porque llega mucho antes que por mar aunque cuesta más por kilo. Lo conectamos con un forwarder independiente que le cotiza por escrito según el peso cobrable de su carga.',
         ],
         'includes' => [
             'Cotización de carga aérea desde el aeropuerto o la fábrica en China',
@@ -343,7 +343,7 @@ return [
             [
                 'h2' => 'Cuándo el aéreo le gana al marítimo',
                 'body' => [
-                    'El avión cobra mucho más por kilo que el barco, pero ahorra semanas. Conviene cuando el tiempo vale más que el flete: una muestra para aprobar la producción, un repuesto que tiene parada una máquina, o productos chicos y caros donde el flete pesa poco sobre el precio.',
+                    'El avión cobra mucho más por kilo que el [flete marítimo](/servicios/flete-maritimo-contenedor/), pero ahorra semanas. Conviene cuando el tiempo vale más que el flete: una muestra para aprobar la producción, un repuesto que tiene parada una máquina, o productos chicos y caros donde el flete pesa poco sobre el precio.',
                 ],
                 'items' => [
                     ['title' => 'Muestras', 'text' => 'Para aprobar un producto antes de ordenar la producción completa.'],
@@ -354,14 +354,14 @@ return [
             [
                 'h2' => 'Cómo se cotiza: el peso cobrable',
                 'body' => [
-                    'Las aerolíneas cobran por el mayor entre el peso real y el peso volumétrico, que se calcula a partir de las medidas de las cajas. Una carga liviana pero voluminosa paga por su volumen. Por eso el forwarder le pide medidas y peso de cada caja, y un buen embalaje puede bajar el costo.',
-                    'A ese flete se suman gastos en origen (retiro, trámites de exportación), gastos en el aeropuerto de destino y el despacho en Paraguay. Pida que la cotización los detalle por separado, así puede comparar ofertas de igual a igual y sumarlos en la calculadora de costo de importación.',
+                    'Las aerolíneas cobran por el mayor entre el peso real y el peso volumétrico, que se calcula a partir de las medidas de las cajas: en carga aérea, la referencia que recomienda la IATA es dividir los centímetros cúbicos por 6000 (unos 167 kg por metro cúbico), aunque algunos couriers usan 5000. Una carga liviana pero voluminosa paga por su volumen. Por eso el forwarder le pide medidas y peso de cada caja, y un buen embalaje puede bajar el costo.',
+                    'A ese flete se suman gastos en origen (retiro, trámites de exportación), gastos en el aeropuerto de destino y el despacho en Paraguay. Pida que la cotización los detalle por separado, así puede comparar ofertas de igual a igual y sumarlos en la [calculadora de costo de importación](/herramientas/calculadora-costo-importacion/).',
                 ],
             ],
             [
                 'h2' => 'Quién hace qué',
                 'body' => [
-                    'El transporte lo ejecuta un forwarder asociado, que reserva el espacio con la aerolínea. Nosotros ordenamos su solicitud, revisamos la cotización con usted y lo conectamos con un despachante de aduana matriculado para liberar la carga en Paraguay.',
+                    'El transporte lo ejecuta un forwarder independiente, que reserva el espacio con la aerolínea. Nosotros ordenamos su solicitud, revisamos la cotización con usted y lo conectamos con un despachante de aduana matriculado, a través del servicio de [despacho aduanero](/servicios/despacho-aduanero/), para liberar la carga en Paraguay.',
                 ],
             ],
         ],
@@ -373,9 +373,9 @@ return [
         'faq' => [
             ['q' => '¿Cuánto tarda el flete aéreo de China a Paraguay?', 'a' => 'Depende de las conexiones disponibles y del trámite en destino. El forwarder le indica el plazo estimado en la cotización.'],
             ['q' => '¿Qué es el peso volumétrico?', 'a' => 'Es un peso calculado según las medidas de la caja. Se cobra el mayor entre ese valor y el peso real.'],
-            ['q' => '¿Cuál es la diferencia con un courier?', 'a' => 'El courier está pensado para paquetes y compras online. La carga aérea es para envíos comerciales más grandes, con despacho formal de importación.'],
+            ['q' => '¿Cuál es la diferencia con un courier?', 'a' => 'El [courier de China a Paraguay](/comprar/courier-china-paraguay/) está pensado para paquetes y compras online. La carga aérea es para envíos comerciales más grandes, con despacho formal de importación.'],
             ['q' => '¿Conviene mandar una parte por avión y el resto por barco?', 'a' => 'Es una práctica común: se envía por avión lo necesario para empezar a vender o para aprobar la calidad, y el resto viaja en el marítimo, más económico.'],
-            ['q' => '¿Puedo enviar productos con baterías de litio?', 'a' => 'Muchas veces sí, pero con embalaje y documentación específicos. Indíquelo al pedir la cotización para que el forwarder confirme las condiciones.'],
+            ['q' => '¿Puedo enviar productos con baterías de litio?', 'a' => 'Las baterías de litio son mercancía peligrosa y viajan según la Reglamentación de Mercancías Peligrosas de la IATA, con embalaje, etiquetado y documentación específicos; algunas no se aceptan en avión de pasajeros. Indíquelo al pedir la cotización para que el forwarder confirme si puede llevarlas y en qué condiciones.'],
         ],
         'cta' => [
             'label' => 'Pedir cotización de flete aéreo',
@@ -403,13 +403,13 @@ return [
             'eyebrow' => 'Servicios',
             'h1' => 'Importación llave en mano desde China',
             'h2' => 'Un solo interlocutor en español, desde la fábrica en China hasta su depósito en Paraguay.',
-            'lead' => 'La importación llave en mano desde China reúne en un solo interlocutor la búsqueda del proveedor, la inspección, el flete, el seguro y el despacho en Paraguay. Nosotros coordinamos a los socios que ejecutan cada etapa, y usted recibe una propuesta escrita que dice quién hace qué antes de empezar.',
+            'lead' => 'La importación llave en mano desde China reúne en un solo interlocutor la búsqueda del proveedor, la inspección, el flete, el seguro y el despacho en Paraguay. Nosotros coordinamos a los profesionales independientes que ejecutan cada etapa, y usted recibe una propuesta escrita que dice quién hace qué antes de empezar.',
         ],
         'includes' => [
-            'Búsqueda y verificación de proveedores con un agente asociado en China',
+            'Búsqueda y verificación de proveedores con un agente independiente en China',
             'Negociación, muestras y seguimiento de la producción',
             'Inspección de calidad antes del embarque',
-            'Flete marítimo o aéreo con un forwarder asociado, con seguro opcional',
+            'Flete marítimo o aéreo con un forwarder independiente, con seguro opcional',
             'Despacho aduanero por un despachante de aduana matriculado',
             'Entrega en su depósito en Paraguay',
             'Un calendario y un informe de avance por etapa',
@@ -429,18 +429,18 @@ return [
             [
                 'h2' => 'El problema de coordinar cinco partes',
                 'body' => [
-                    'Una importación desde China involucra a un proveedor, un agente o inspector, una naviera o aerolínea, un forwarder y un despachante. Cuando cada uno responde por separado, los errores quedan entre medio: documentos que no coinciden, cargas que esperan en puerto, costos que nadie anticipó. Con un solo interlocutor, alguien sigue el pedido de punta a punta.',
+                    'Una importación desde China involucra a un proveedor, un agente o inspector, una naviera o aerolínea, un forwarder y un despachante. Cuando cada uno responde por separado, los errores quedan entre medio: documentos que no coinciden, cargas que esperan en puerto, costos que nadie anticipó. Con un solo interlocutor, alguien sigue el pedido de punta a punta, en el orden que describe la guía sobre [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
             [
                 'h2' => 'Quién hace qué',
                 'body' => [
-                    'No somos despachantes ni transportistas. Coordinamos a socios que ejecutan cada etapa y le respondemos a usted por el conjunto.',
+                    'No somos despachantes ni transportistas. Coordinamos a profesionales independientes que ejecutan cada etapa, elegidos para su pedido y nombrados en la propuesta, y le respondemos a usted por el conjunto.',
                 ],
                 'items' => [
-                    ['title' => 'Agente asociado en China', 'text' => 'Busca y verifica proveedores, negocia y sigue la producción.'],
-                    ['title' => 'Inspector asociado', 'text' => 'Controla la mercadería antes del embarque y emite el informe.'],
-                    ['title' => 'Forwarder asociado', 'text' => 'Contrata el transporte internacional y el tramo hasta Paraguay.'],
+                    ['title' => 'Agente independiente en China', 'text' => 'Busca y verifica proveedores, negocia y sigue la producción.'],
+                    ['title' => 'Inspector independiente', 'text' => 'Controla la mercadería antes del embarque y emite el informe.'],
+                    ['title' => 'Forwarder independiente', 'text' => 'Contrata el transporte internacional y el tramo hasta Paraguay.'],
                     ['title' => 'Despachante de aduana matriculado', 'text' => 'Clasifica la mercadería, liquida los tributos y hace el despacho ante la aduana.'],
                     ['title' => 'Nosotros', 'text' => 'Su interlocutor en español: propuesta, calendario, seguimiento y coordinación entre las partes.'],
                 ],
@@ -448,13 +448,13 @@ return [
             [
                 'h2' => 'Cuándo conviene',
                 'body' => [
-                    'El servicio llave en mano tiene sentido cuando usted no tiene tiempo ni equipo para seguir cada etapa, cuando es su primera importación desde China, o cuando el producto exige control de calidad y documentación cuidadosa. Si ya tiene un proveedor de confianza y un despachante habitual, quizás solo necesite contratar el flete o la inspección por separado.',
+                    'El servicio llave en mano tiene sentido cuando usted no tiene tiempo ni equipo para seguir cada etapa, cuando es su primera importación desde China, o cuando el producto exige control de calidad y documentación cuidadosa. Si ya tiene un proveedor de confianza y un despachante habitual, quizás solo necesite contratar por separado el [flete marítimo](/servicios/flete-maritimo-contenedor/) o la [inspección de calidad](/servicios/inspeccion-de-calidad/).',
                 ],
             ],
             [
                 'h2' => 'Cómo empezamos',
                 'body' => [
-                    'Usted nos describe el producto y la cantidad. Le enviamos una propuesta escrita con las etapas, los socios que intervienen y el costo del servicio de coordinación, separado de lo que pagará al proveedor, al transporte y en la aduana. Nada avanza sin su aprobación.',
+                    'Usted nos describe el producto y la cantidad. Le enviamos una propuesta escrita con las etapas, los profesionales que intervienen y el costo del servicio de coordinación, separado de lo que pagará al proveedor, al transporte y en la aduana. Nada avanza sin su aprobación.',
                 ],
             ],
         ],
@@ -467,9 +467,9 @@ return [
         'faq' => [
             ['q' => '¿Ustedes hacen el despacho aduanero?', 'a' => 'No. El despacho lo realiza un despachante de aduana matriculado con el que lo conectamos. Nosotros coordinamos que tenga los documentos a tiempo.'],
             ['q' => '¿La importación queda a mi nombre?', 'a' => 'Sí. Su empresa es la importadora, paga al proveedor y los tributos, y recibe la mercadería.'],
-            ['q' => '¿Sirve para una primera importación?', 'a' => 'Sí, es la opción que más acompañamiento da. Si todavía no está inscripto como importador, el despachante le indica los requisitos vigentes.'],
+            ['q' => '¿Sirve para una primera importación?', 'a' => 'Sí, es la opción que más acompañamiento da. Si todavía no está inscripto como importador, la guía sobre [cómo ser importador en Paraguay](/importar/como-ser-importador-paraguay/) resume los pasos y el despachante le indica los requisitos vigentes.'],
             ['q' => '¿Cuánto cuesta el servicio llave en mano?', 'a' => 'Depende del producto, el volumen y las etapas. Le enviamos una propuesta escrita con cada costo separado.'],
-            ['q' => '¿Puedo contratar solo algunas etapas?', 'a' => 'Sí. Puede pedir solo el agente de compras, la inspección, el flete o el despacho por separado.'],
+            ['q' => '¿Puedo contratar solo algunas etapas?', 'a' => 'Sí. Puede pedir por separado el [agente de compras en China](/servicios/agente-de-compras-china/), la inspección, el flete o el [despacho aduanero](/servicios/despacho-aduanero/).'],
         ],
         'cta' => [
             'label' => 'Pedir propuesta llave en mano',
@@ -483,7 +483,7 @@ return [
         ],
         'affiliates' => [],
         'disclaimer' => false,
-        'image' => ['src' => '/assets/img/guias/como-importar-de-china-plan.webp', 'alt' => 'Cuaderno con una ruta de envío dibujada, muestras de productos, un contenedor en miniatura y un pasaporte', 'width' => 1200, 'height' => 671],
+        'image' => ['base' => '/assets/img/como-importar-de-china-plan-ruta', 'widths' => [640, 1280], 'alt' => 'Cuaderno con una ruta de envío dibujada, muestras de productos, un contenedor en miniatura y un pasaporte', 'width' => 1280, 'height' => 716],
     ],
 
 ];

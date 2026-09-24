@@ -1,0 +1,479 @@
+{
+  "generated_at": "2026-09-24T21:45:26.621Z",
+  "images": [
+    {
+      "filename_base": "puerto-fluvial-contenedores-paraguay",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_411eb175-aef3-42ea-a7f9-c3f5660e7f5c.png",
+      "prompt": "home-hero",
+      "alt_text": "Contenedores apilados en un puerto fluvial al atardecer, con una barcaza sobre el río",
+      "naming_source": "fallback",
+      "aspect_ratio": "source",
+      "files": [
+        {
+          "file": "puerto-fluvial-contenedores-paraguay-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 478,
+          "kb": 25.1
+        },
+        {
+          "file": "puerto-fluvial-contenedores-paraguay-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 478,
+          "kb": 35.9
+        },
+        {
+          "file": "puerto-fluvial-contenedores-paraguay-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 956,
+          "kb": 76.1
+        },
+        {
+          "file": "puerto-fluvial-contenedores-paraguay-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 956,
+          "kb": 112.5
+        },
+        {
+          "file": "puerto-fluvial-contenedores-paraguay-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1433,
+          "kb": 133.4
+        },
+        {
+          "file": "puerto-fluvial-contenedores-paraguay-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1433,
+          "kb": 204.3
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/puerto-fluvial-contenedores-paraguay-640.avif 640w, assets/img/puerto-fluvial-contenedores-paraguay-1280.avif 1280w, assets/img/puerto-fluvial-contenedores-paraguay-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/puerto-fluvial-contenedores-paraguay-640.webp 640w, assets/img/puerto-fluvial-contenedores-paraguay-1280.webp 1280w, assets/img/puerto-fluvial-contenedores-paraguay-1920.webp 1920w\">\n  <img src=\"assets/img/puerto-fluvial-contenedores-paraguay-1280.webp\" alt=\"Contenedores apilados en un puerto fluvial al atardecer, con una barcaza sobre el río\" width=\"1280\" height=\"956\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "compras-online-entrega-asuncion",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_361df2fe-3298-4cdc-9203-d28c6c14fea8.png",
+      "prompt": "hub-compras",
+      "alt_text": "Una mujer recibe en la puerta de su casa en Asunción varios paquetes de una compra online",
+      "naming_source": "fallback",
+      "aspect_ratio": "source",
+      "files": [
+        {
+          "file": "compras-online-entrega-asuncion-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 362,
+          "kb": 12
+        },
+        {
+          "file": "compras-online-entrega-asuncion-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 362,
+          "kb": 16.4
+        },
+        {
+          "file": "compras-online-entrega-asuncion-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 724,
+          "kb": 25.3
+        },
+        {
+          "file": "compras-online-entrega-asuncion-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 724,
+          "kb": 40.3
+        },
+        {
+          "file": "compras-online-entrega-asuncion-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1086,
+          "kb": 38.4
+        },
+        {
+          "file": "compras-online-entrega-asuncion-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1086,
+          "kb": 66.2
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/compras-online-entrega-asuncion-640.avif 640w, assets/img/compras-online-entrega-asuncion-1280.avif 1280w, assets/img/compras-online-entrega-asuncion-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/compras-online-entrega-asuncion-640.webp 640w, assets/img/compras-online-entrega-asuncion-1280.webp 1280w, assets/img/compras-online-entrega-asuncion-1920.webp 1920w\">\n  <img src=\"assets/img/compras-online-entrega-asuncion-1280.webp\" alt=\"Una mujer recibe en la puerta de su casa en Asunción varios paquetes de una compra online\" width=\"1280\" height=\"724\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "importar-de-china-deposito-fabrica",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_6c08b746-5f37-41fe-bc6b-ec0115173060.png",
+      "prompt": "hub-importar",
+      "alt_text": "Comprador y encargado revisan una lista junto a cajas de exportación en un depósito de fábrica en China",
+      "naming_source": "fallback",
+      "aspect_ratio": "source",
+      "files": [
+        {
+          "file": "importar-de-china-deposito-fabrica-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 362,
+          "kb": 25.5
+        },
+        {
+          "file": "importar-de-china-deposito-fabrica-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 362,
+          "kb": 32.3
+        },
+        {
+          "file": "importar-de-china-deposito-fabrica-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 724,
+          "kb": 56.4
+        },
+        {
+          "file": "importar-de-china-deposito-fabrica-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 724,
+          "kb": 79.6
+        },
+        {
+          "file": "importar-de-china-deposito-fabrica-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1086,
+          "kb": 87.5
+        },
+        {
+          "file": "importar-de-china-deposito-fabrica-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1086,
+          "kb": 133.1
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/importar-de-china-deposito-fabrica-640.avif 640w, assets/img/importar-de-china-deposito-fabrica-1280.avif 1280w, assets/img/importar-de-china-deposito-fabrica-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/importar-de-china-deposito-fabrica-640.webp 640w, assets/img/importar-de-china-deposito-fabrica-1280.webp 1280w, assets/img/importar-de-china-deposito-fabrica-1920.webp 1920w\">\n  <img src=\"assets/img/importar-de-china-deposito-fabrica-1280.webp\" alt=\"Comprador y encargado revisan una lista junto a cajas de exportación en un depósito de fábrica en China\" width=\"1280\" height=\"724\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "despacho-aduanero-documentos-puerto",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_e2dcbb30-1d3e-424c-be4e-b17b4291cdf5.png",
+      "prompt": "hub-aduana",
+      "alt_text": "Escritorio con facturas, lista de empaque y calculadora, con contenedores de fondo",
+      "naming_source": "fallback",
+      "aspect_ratio": "source",
+      "files": [
+        {
+          "file": "despacho-aduanero-documentos-puerto-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 362,
+          "kb": 16.3
+        },
+        {
+          "file": "despacho-aduanero-documentos-puerto-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 362,
+          "kb": 23.2
+        },
+        {
+          "file": "despacho-aduanero-documentos-puerto-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 724,
+          "kb": 36.6
+        },
+        {
+          "file": "despacho-aduanero-documentos-puerto-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 724,
+          "kb": 59.4
+        },
+        {
+          "file": "despacho-aduanero-documentos-puerto-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1086,
+          "kb": 57
+        },
+        {
+          "file": "despacho-aduanero-documentos-puerto-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1086,
+          "kb": 99
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/despacho-aduanero-documentos-puerto-640.avif 640w, assets/img/despacho-aduanero-documentos-puerto-1280.avif 1280w, assets/img/despacho-aduanero-documentos-puerto-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/despacho-aduanero-documentos-puerto-640.webp 640w, assets/img/despacho-aduanero-documentos-puerto-1280.webp 1280w, assets/img/despacho-aduanero-documentos-puerto-1920.webp 1920w\">\n  <img src=\"assets/img/despacho-aduanero-documentos-puerto-1280.webp\" alt=\"Escritorio con facturas, lista de empaque y calculadora, con contenedores de fondo\" width=\"1280\" height=\"724\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "viaje-negocios-china-estacion-tren",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_0268a49a-af02-4f9b-bcf9-d62eb751a5ab.png",
+      "prompt": "hub-viajes",
+      "alt_text": "Viajero de negocios con equipaje de mano en una estación de tren de alta velocidad en China",
+      "naming_source": "fallback",
+      "aspect_ratio": "source",
+      "files": [
+        {
+          "file": "viaje-negocios-china-estacion-tren-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 362,
+          "kb": 22
+        },
+        {
+          "file": "viaje-negocios-china-estacion-tren-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 362,
+          "kb": 30
+        },
+        {
+          "file": "viaje-negocios-china-estacion-tren-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 724,
+          "kb": 46.1
+        },
+        {
+          "file": "viaje-negocios-china-estacion-tren-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 724,
+          "kb": 70.2
+        },
+        {
+          "file": "viaje-negocios-china-estacion-tren-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1086,
+          "kb": 68.9
+        },
+        {
+          "file": "viaje-negocios-china-estacion-tren-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1086,
+          "kb": 112.5
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/viaje-negocios-china-estacion-tren-640.avif 640w, assets/img/viaje-negocios-china-estacion-tren-1280.avif 1280w, assets/img/viaje-negocios-china-estacion-tren-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/viaje-negocios-china-estacion-tren-640.webp 640w, assets/img/viaje-negocios-china-estacion-tren-1280.webp 1280w, assets/img/viaje-negocios-china-estacion-tren-1920.webp 1920w\">\n  <img src=\"assets/img/viaje-negocios-china-estacion-tren-1280.webp\" alt=\"Viajero de negocios con equipaje de mano en una estación de tren de alta velocidad en China\" width=\"1280\" height=\"724\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "feria-de-canton-pabellon-guangzhou",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_9d9cbb57-27cb-4290-97d2-f182aa0e2608.png",
+      "prompt": "guia-feria-canton",
+      "alt_text": "Pasillos de un pabellón de feria comercial en Cantón con compradores y stands de productos",
+      "naming_source": "fallback",
+      "aspect_ratio": "source",
+      "files": [
+        {
+          "file": "feria-de-canton-pabellon-guangzhou-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 362,
+          "kb": 27.5
+        },
+        {
+          "file": "feria-de-canton-pabellon-guangzhou-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 362,
+          "kb": 34.9
+        },
+        {
+          "file": "feria-de-canton-pabellon-guangzhou-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 724,
+          "kb": 73.5
+        },
+        {
+          "file": "feria-de-canton-pabellon-guangzhou-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 724,
+          "kb": 98.3
+        },
+        {
+          "file": "feria-de-canton-pabellon-guangzhou-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1086,
+          "kb": 120.1
+        },
+        {
+          "file": "feria-de-canton-pabellon-guangzhou-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1086,
+          "kb": 169.8
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/feria-de-canton-pabellon-guangzhou-640.avif 640w, assets/img/feria-de-canton-pabellon-guangzhou-1280.avif 1280w, assets/img/feria-de-canton-pabellon-guangzhou-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/feria-de-canton-pabellon-guangzhou-640.webp 640w, assets/img/feria-de-canton-pabellon-guangzhou-1280.webp 1280w, assets/img/feria-de-canton-pabellon-guangzhou-1920.webp 1920w\">\n  <img src=\"assets/img/feria-de-canton-pabellon-guangzhou-1280.webp\" alt=\"Pasillos de un pabellón de feria comercial en Cantón con compradores y stands de productos\" width=\"1280\" height=\"724\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "como-importar-de-china-plan-ruta",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210815_4ecce26d-ab7e-4035-8ed1-79149c003752.png",
+      "prompt": "guia-como-importar",
+      "alt_text": "Cuaderno con una ruta de envío dibujada, muestras de productos, un contenedor en miniatura y un pasaporte",
+      "naming_source": "fallback",
+      "aspect_ratio": "source",
+      "files": [
+        {
+          "file": "como-importar-de-china-plan-ruta-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 358,
+          "kb": 22
+        },
+        {
+          "file": "como-importar-de-china-plan-ruta-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 358,
+          "kb": 30.8
+        },
+        {
+          "file": "como-importar-de-china-plan-ruta-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 716,
+          "kb": 64.9
+        },
+        {
+          "file": "como-importar-de-china-plan-ruta-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 716,
+          "kb": 98.7
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/como-importar-de-china-plan-ruta-640.avif 640w, assets/img/como-importar-de-china-plan-ruta-1280.avif 1280w\">\n  <source type=\"image/webp\" srcset=\"assets/img/como-importar-de-china-plan-ruta-640.webp 640w, assets/img/como-importar-de-china-plan-ruta-1280.webp 1280w\">\n  <img src=\"assets/img/como-importar-de-china-plan-ruta-640.webp\" alt=\"Cuaderno con una ruta de envío dibujada, muestras de productos, un contenedor en miniatura y un pasaporte\" width=\"640\" height=\"358\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "inspeccion-de-calidad-fabrica-china",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_892bc09a-1814-447d-a7ea-1dea26155e03.png",
+      "prompt": "servicio-inspeccion",
+      "alt_text": "Inspector de calidad mide una prenda con cinta métrica en una mesa de control en una fábrica",
+      "naming_source": "fallback",
+      "aspect_ratio": "source",
+      "files": [
+        {
+          "file": "inspeccion-de-calidad-fabrica-china-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 358,
+          "kb": 13.9
+        },
+        {
+          "file": "inspeccion-de-calidad-fabrica-china-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 358,
+          "kb": 19.6
+        },
+        {
+          "file": "inspeccion-de-calidad-fabrica-china-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 716,
+          "kb": 27.2
+        },
+        {
+          "file": "inspeccion-de-calidad-fabrica-china-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 716,
+          "kb": 43.8
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/inspeccion-de-calidad-fabrica-china-640.avif 640w, assets/img/inspeccion-de-calidad-fabrica-china-1280.avif 1280w\">\n  <source type=\"image/webp\" srcset=\"assets/img/inspeccion-de-calidad-fabrica-china-640.webp 640w, assets/img/inspeccion-de-calidad-fabrica-china-1280.webp 1280w\">\n  <img src=\"assets/img/inspeccion-de-calidad-fabrica-china-640.webp\" alt=\"Inspector de calidad mide una prenda con cinta métrica en una mesa de control en una fábrica\" width=\"640\" height=\"358\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "flete-maritimo-buque-portacontenedores",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_8012ed15-aef5-4653-89ad-97d0e6dd7121.png",
+      "prompt": "servicio-flete-maritimo",
+      "alt_text": "Buque portacontenedores saliendo de un puerto chino al amanecer, con un remolcador al costado",
+      "naming_source": "fallback",
+      "aspect_ratio": "source",
+      "files": [
+        {
+          "file": "flete-maritimo-buque-portacontenedores-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 358,
+          "kb": 17.7
+        },
+        {
+          "file": "flete-maritimo-buque-portacontenedores-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 358,
+          "kb": 25
+        },
+        {
+          "file": "flete-maritimo-buque-portacontenedores-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 716,
+          "kb": 53.4
+        },
+        {
+          "file": "flete-maritimo-buque-portacontenedores-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 716,
+          "kb": 79.4
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/flete-maritimo-buque-portacontenedores-640.avif 640w, assets/img/flete-maritimo-buque-portacontenedores-1280.avif 1280w\">\n  <source type=\"image/webp\" srcset=\"assets/img/flete-maritimo-buque-portacontenedores-640.webp 640w, assets/img/flete-maritimo-buque-portacontenedores-1280.webp 1280w\">\n  <img src=\"assets/img/flete-maritimo-buque-portacontenedores-640.webp\" alt=\"Buque portacontenedores saliendo de un puerto chino al amanecer, con un remolcador al costado\" width=\"640\" height=\"358\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "compra-online-desempaque-paraguay",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_9f224eaf-65c3-4c31-9959-53154a26b423.png",
+      "prompt": "guia-shein",
+      "alt_text": "Persona abre en la mesa de su cocina un paquete de una compra online y sostiene una prenda",
+      "naming_source": "fallback",
+      "aspect_ratio": "source",
+      "files": [
+        {
+          "file": "compra-online-desempaque-paraguay-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 358,
+          "kb": 17
+        },
+        {
+          "file": "compra-online-desempaque-paraguay-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 358,
+          "kb": 23.4
+        },
+        {
+          "file": "compra-online-desempaque-paraguay-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 716,
+          "kb": 36.4
+        },
+        {
+          "file": "compra-online-desempaque-paraguay-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 716,
+          "kb": 56.4
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/compra-online-desempaque-paraguay-640.avif 640w, assets/img/compra-online-desempaque-paraguay-1280.avif 1280w\">\n  <source type=\"image/webp\" srcset=\"assets/img/compra-online-desempaque-paraguay-640.webp 640w, assets/img/compra-online-desempaque-paraguay-1280.webp 1280w\">\n  <img src=\"assets/img/compra-online-desempaque-paraguay-640.webp\" alt=\"Persona abre en la mesa de su cocina un paquete de una compra online y sostiene una prenda\" width=\"640\" height=\"358\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    }
+  ]
+}

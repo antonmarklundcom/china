@@ -47,18 +47,18 @@ return [
         'hero' => [
             'eyebrow' => 'Comprar online',
             'h1' => 'Temu en Paraguay: cómo comprar y cuánto se paga',
-            'lead' => 'Sí, se puede comprar en Temu desde Paraguay: la tienda ofrece entrega a direcciones paraguayas y usted también puede enviar el pedido a una casilla de courier. Lo que paga al final es el precio del carrito, más el envío si corresponde, más los tributos y cargos que se generen al ingresar el paquete al país.',
+            'lead' => 'Se puede comprar en Temu desde Paraguay, pero conviene saber cómo llega el pedido. En abril de 2026 medios locales informaron que Temu suspendió los envíos directos al país tras meses de demoras en la entrega, así que hoy el camino más previsible es enviar el pedido a una casilla de courier. Lo que paga al final es el precio del carrito, más el envío, más el flete del courier y los tributos que correspondan al ingresar el paquete.',
         ],
         'intro' => [
-            'Temu en Paraguay funciona de dos maneras. La primera es el envío directo: usted carga su dirección paraguaya en la aplicación, paga con tarjeta y el paquete llega por el canal logístico que Temu tenga contratado para el país. La segunda es enviar el pedido a una casilla de courier (en China o en Estados Unidos) y que el courier lo traiga y se lo entregue. Cuál conviene depende del tamaño del pedido, de la urgencia y de lo que la aplicación le muestre al momento de pagar.',
-            'El plazo y el costo de envío no son fijos: Temu los muestra en la pantalla de pago según su dirección y el contenido del carrito. Esa pantalla es la referencia válida, no lo que diga un video o un comentario en redes. En comunicados públicos, el Correo Paraguayo informó que realiza la entrega de última milla de pedidos de Temu en el país; si su pedido va por esa vía, el seguimiento termina en el sistema del correo.',
-            'Esta guía es para quien compra para uso personal y quiere saber qué se paga, cuánto puede demorar y qué hacer si el paquete queda retenido. Si piensa revender, lea también la guía de importación, porque las compras de cantidades comerciales no se tratan igual en aduana.',
+            'Temu en Paraguay se puede usar de dos maneras. La primera es el envío directo: usted carga su dirección paraguaya y el paquete llega por el operador que Temu tenga contratado para el país, siempre que la aplicación le ofrezca esa opción al pagar. La segunda es enviar el pedido a una [casilla de courier en Paraguay](/comprar/casillas-courier-paraguay/) con dirección en China o en Estados Unidos, y que el courier lo traiga y se lo entregue.',
+            'El envío directo tuvo problemas. El Correo Paraguayo fue anunciado como operador de última milla de Temu en el país, pero entre fines de 2025 y marzo de 2026 se acumularon reclamos por paquetes demorados, y en abril de 2026 medios locales informaron que Temu dejó de enviar a Paraguay; según el propio correo, los pedidos afectados fueron reembolsados. Antes de comprar, fíjese si la pantalla de pago le ofrece entrega a una dirección paraguaya. Si no aparece, o si prefiere un único responsable del transporte, use una casilla.',
+            'Esta guía es para quien compra para uso personal y quiere saber qué se paga, cuánto puede demorar y qué hacer si el paquete queda retenido. Si piensa revender, lea también la guía [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/), porque las compras de cantidades comerciales no se tratan igual en aduana.',
         ],
         'steps' => [
             [
                 'title' => 'Cree la cuenta y verifique su dirección',
                 'body' => [
-                    'Descargue la aplicación o entre al sitio oficial de Temu, cree la cuenta y elija Paraguay como país. Cargue la dirección completa con ciudad, barrio, referencias y un número de celular activo, porque quien entrega suele contactar por teléfono o WhatsApp.',
+                    'Descargue la aplicación o entre al sitio oficial de Temu y cree la cuenta. Si usa casilla, cargue como dirección de envío la que le dio el courier, con su número de casilla. Si la aplicación le ofrece entrega en Paraguay, cargue la dirección completa con ciudad, barrio, referencias y un número de celular activo, porque quien entrega suele contactar por teléfono o WhatsApp.',
                     'Use el mismo nombre que figura en su cédula. Si el paquete necesita algún trámite en aduana o en el correo, le pedirán documento y el nombre debe coincidir.',
                 ],
             ],
@@ -72,14 +72,14 @@ return [
             [
                 'title' => 'Compare envío directo contra casilla',
                 'body' => [
-                    'En la pantalla de pago, anote el costo de envío y la fecha estimada que Temu le muestra para su dirección en Paraguay. Luego calcule lo que costaría enviar el mismo pedido a una casilla de courier: el courier cobra por kilo (o por peso volumétrico) y le entrega el paquete en su oficina o a domicilio.',
-                    'Para pedidos chicos y livianos, el envío directo suele ser lo más simple. Para varios pedidos juntos o artículos voluminosos, la casilla permite consolidar y tener un solo interlocutor si algo se demora.',
+                    'Si la pantalla de pago le ofrece envío a su dirección en Paraguay, anote el costo y la fecha estimada. Luego calcule lo que costaría enviar el mismo pedido a una casilla: el [courier de China a Paraguay](/comprar/courier-china-paraguay/) cobra por kilo (o por peso volumétrico) y le entrega el paquete en su oficina o a domicilio.',
+                    'Si el envío directo no aparece, la casilla es la opción. Aun cuando aparezca, la casilla permite consolidar varios pedidos y tener un solo interlocutor si algo se demora.',
                 ],
             ],
             [
                 'title' => 'Pague con un medio que le permita reclamar',
                 'body' => [
-                    'Temu acepta tarjetas de crédito y débito internacionales y otros medios que la aplicación muestra según el país. Antes de pagar, consulte con su banco si la tarjeta está habilitada para compras en el exterior y qué recargo aplica por operación en moneda extranjera.',
+                    'En general se paga con tarjeta de crédito o débito internacional; la aplicación muestra los medios disponibles al momento de pagar. Antes de pagar, consulte con su banco si la tarjeta está habilitada para compras en el exterior y qué recargo aplica por operación en moneda extranjera.',
                     'Pagar dentro de la plataforma es lo que le da acceso a la política de reembolsos de Temu. No acepte pagar por fuera de la aplicación a nadie que diga ser vendedor de Temu.',
                 ],
             ],
@@ -103,11 +103,12 @@ return [
             'head' => ['Aspecto', 'Envío directo de Temu', 'Casilla de courier'],
             'rows' => [
                 ['Dónde se carga la dirección', 'Su dirección en Paraguay', 'La dirección de la casilla en China o EE. UU.'],
+                ['Disponibilidad', 'Suspendido según medios locales (abril de 2026); verifique al pagar', 'Disponible con cualquier courier que tenga casilla'],
                 ['Costo de envío', 'El que muestra Temu al pagar', 'Tarifa del courier por kilo o peso volumétrico'],
                 ['Plazo', 'Fecha estimada de Temu para su dirección', 'Tránsito a la casilla más el tránsito del courier'],
                 ['Tributos al ingresar', 'Según el régimen que aplique al paquete', 'El courier los calcula y los cobra antes de entregar'],
                 ['A quién reclamar', 'A Temu y al operador de entrega', 'A Temu por el producto y al courier por el transporte'],
-                ['Conviene para', 'Pedidos chicos y livianos', 'Varios pedidos juntos o artículos voluminosos'],
+                ['Conviene para', 'Pedidos chicos, si la opción aparece al pagar', 'Cualquier pedido, sobre todo varios juntos o voluminosos'],
             ],
             'note' => 'Los plazos y costos cambian según la dirección y el carrito. Confírmelos siempre en la pantalla de pago de Temu y en la tarifa vigente del courier.',
         ],
@@ -116,7 +117,7 @@ return [
                 'h2' => 'Qué hacer si el paquete queda retenido en aduana',
                 'body' => [
                     'Un paquete puede quedar retenido por varios motivos: falta de factura o valor declarado, sospecha de subvaluación, mercadería que necesita permiso previo o una cantidad que parece comercial. En esos casos le van a pedir datos o documentos antes de liberar el envío.',
-                    'Si llegó por casilla, el courier le dice qué falta y lo gestiona con usted. Si llegó por envío directo, siga las instrucciones del aviso que reciba y tenga a mano cédula y comprobante de compra. Si la aduana exige un despacho formal, ese trámite lo hace un despachante de aduana matriculado.',
+                    'Si llegó por casilla, el courier le dice qué falta y lo gestiona con usted. Si llegó por envío directo, siga las instrucciones del aviso que reciba y tenga a mano cédula y comprobante de compra. Si la aduana exige un despacho formal, ese trámite lo hace un [despachante de aduana matriculado](/aduana/despachantes-de-aduana-paraguay/).',
                 ],
                 'items' => [
                     ['title' => 'Productos que suelen generar demoras', 'text' => 'Medicamentos y suplementos, alimentos, cosméticos en cantidad, equipos con radio o antena, baterías sueltas y réplicas de armas.'],
@@ -128,13 +129,13 @@ return [
                 'h2' => 'Cuánto se paga de más sobre el precio de Temu',
                 'body' => [
                     'Al precio del carrito se pueden sumar tres cosas: el envío (si no es gratis), los tributos que correspondan al ingresar a Paraguay y, si usa casilla, el flete del courier. El recargo del banco por compra en el exterior es un cuarto costo que muchos olvidan.',
-                    'La forma de calcular los tributos, los montos exentos y los topes de valor los fija la aduana y pueden cambiar. Consulte el monto vigente en el portal de la DNIT o con su courier antes de comprar, y use la calculadora de compras online para sumar todos los componentes.',
+                    'La forma de calcular los tributos, los montos exentos y los topes de valor los fija la DNIT y pueden cambiar. Consulte el monto vigente en el portal de la DNIT o con su courier antes de comprar (le explicamos el mecanismo en [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/)), y use la [calculadora de compras online](/herramientas/calculadora-compras-online/) para sumar todos los componentes.',
                 ],
             ],
         ],
         'faq' => [
-            ['q' => '¿Temu envía directo a Paraguay?', 'a' => 'Sí, Temu permite cargar una dirección en Paraguay y muestra el costo y la fecha estimada de envío en la pantalla de pago. También puede enviar el pedido a una casilla de courier si lo prefiere.'],
-            ['q' => '¿Cuánto tarda un pedido de Temu en llegar a Paraguay?', 'a' => 'Depende del método de envío y de su dirección. La referencia válida es la fecha estimada que Temu le muestra al pagar; si usa casilla, sume el tránsito del courier.'],
+            ['q' => '¿Temu envía directo a Paraguay?', 'a' => 'No de forma confiable en este momento. En abril de 2026 medios locales informaron que Temu suspendió los envíos directos a Paraguay tras demoras en la entrega de última milla, y el Correo Paraguayo indicó que los pedidos afectados fueron reembolsados. Revise si la pantalla de pago ofrece entrega a Paraguay; si no, use una casilla de courier.'],
+            ['q' => '¿Cuánto tarda un pedido de Temu en llegar a Paraguay?', 'a' => 'Depende del método de envío. Con casilla, sume la fecha estimada de entrega en la casilla que muestra Temu y el tránsito que le informe el courier por escrito.'],
             ['q' => '¿Hay que pagar impuestos por compras en Temu?', 'a' => 'Puede corresponder pagar tributos al ingresar el paquete, según su valor y el régimen que aplique. Los montos y topes vigentes se consultan en la DNIT o con el courier.'],
             ['q' => '¿Dónde retiro mi paquete de Temu?', 'a' => 'Si llegó por envío directo, el operador de entrega lo lleva a su dirección o le indica dónde retirarlo. Si usó casilla, lo retira en la oficina del courier o pide entrega a domicilio.'],
             ['q' => '¿Qué hago si mi pedido de Temu no llega?', 'a' => 'Revise el seguimiento y, si el plazo estimado ya pasó, abra un reclamo dentro de la aplicación. Guarde capturas del pedido y de la conversación con soporte.'],
@@ -149,7 +150,7 @@ return [
         'related' => ['casillas-courier-paraguay', 'impuestos-compras-online-paraguay', 'shein-paraguay'],
         'affiliates' => ['temu'],
         'disclaimer' => false,
-        'image' => ['src' => '/assets/img/hubs/compras-online-entrega-paraguay.webp', 'alt' => 'Una mujer recibe en la puerta de su casa en Asunción varios paquetes de una compra online', 'width' => 1600, 'height' => 905],
+        'image' => ['base' => '/assets/img/compras-online-entrega-asuncion', 'widths' => [640, 1280, 1920], 'alt' => 'Una mujer recibe en la puerta de su casa en Asunción varios paquetes de una compra online', 'width' => 1920, 'height' => 1086],
     ],
 
     'shein-paraguay' => [
@@ -166,7 +167,7 @@ return [
             'lead' => 'Para comprar en Shein desde Paraguay tiene dos caminos: el envío que Shein ofrezca a su dirección, si al pagar le aparece disponible, o una casilla de courier en Estados Unidos o China. En los dos casos el costo final es el precio de la ropa más el envío, el flete del courier si lo usa y los tributos que correspondan al entrar al país.',
         ],
         'intro' => [
-            'Shein en Paraguay es una de las tiendas más buscadas para ropa, calzado y accesorios. La pregunta práctica no es si se puede comprar, sino cómo llega el pedido. Lo primero es entrar al sitio o la aplicación, elegir Paraguay como país de envío y ver qué opciones y plazos le muestra la pantalla de pago. Si el envío directo no aparece, o el plazo no le sirve, la alternativa habitual es enviar el pedido a una casilla de courier.',
+            'Shein en Paraguay es una de las tiendas más buscadas para ropa, calzado y accesorios. La pregunta práctica no es si se puede comprar, sino cómo llega el pedido. Lo primero es entrar al sitio o la aplicación, elegir Paraguay como país de envío y ver qué opciones y plazos le muestra la pantalla de pago. Si el envío directo no aparece, o el plazo no le sirve, la alternativa habitual es enviar el pedido a una [casilla de courier en Paraguay](/comprar/casillas-courier-paraguay/).',
             'La segunda pregunta es el talle. Una devolución desde Paraguay a Shein suele ser lenta y, si usó casilla, el flete de ida ya está pagado y no se recupera. Por eso vale la pena medir antes de comprar, y esta guía le explica cómo.',
             'Aquí encontrará los pasos para comprar, cómo elegir entre envío directo y casilla, qué costos se suman al precio de la etiqueta, cómo acertar con el talle y qué hacer si el paquete queda retenido.',
         ],
@@ -188,7 +189,7 @@ return [
             [
                 'title' => 'Decida entre envío directo y casilla',
                 'body' => [
-                    'Si la pantalla de pago le ofrece envío a su dirección en Paraguay, anote el costo y la fecha estimada. Compare con el costo de mandar el pedido a una casilla: el courier cobra por kilo o por peso volumétrico y le entrega en su oficina o en su domicilio.',
+                    'Si la pantalla de pago le ofrece envío a su dirección en Paraguay, anote el costo y la fecha estimada. No dé por hecho que la opción existe: muchos compradores paraguayos usan casilla porque el envío directo no aparece o es muy lento. Compare con el costo de mandar el pedido a una casilla: el courier cobra por kilo o por peso volumétrico y le entrega en su oficina o en su domicilio.',
                     'La ropa pesa poco, pero algunos artículos (carteras rígidas, calzado en caja, artículos para el hogar) ocupan volumen. En esos casos el courier puede cobrar por peso volumétrico y conviene saberlo antes.',
                 ],
             ],
@@ -229,23 +230,23 @@ return [
                 'h2' => 'Cuánto se paga de más sobre el precio de Shein',
                 'body' => [
                     'El precio de la etiqueta no es el costo final. Se pueden sumar el envío de Shein (si no alcanza el monto para envío gratis), el flete del courier si usa casilla, los tributos que correspondan al ingresar a Paraguay y el recargo del banco por compra en el exterior.',
-                    'Los montos exentos, los topes de valor y las alícuotas los fija la aduana y pueden cambiar. Consulte el valor vigente en el portal de la DNIT o pídale a su courier una estimación antes de comprar.',
+                    'Los montos exentos, los topes de valor y las alícuotas los fija la DNIT y pueden cambiar. Consulte el valor vigente en el portal de la DNIT o pídale a su courier una estimación antes de comprar; el mecanismo está explicado en [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/) y puede sumar todo con la [calculadora de compras online](/herramientas/calculadora-compras-online/).',
                 ],
             ],
             [
                 'h2' => 'Si el paquete queda retenido',
                 'body' => [
                     'Los paquetes de ropa rara vez tienen restricciones, pero pueden retenerse si el valor declarado no coincide con lo pagado o si hay muchas unidades iguales. Tenga a mano el comprobante del pedido y su cédula. Si usó casilla, el courier le indica qué documento falta.',
-                    'Si compra para revender, planifíquelo como importación: una cantidad comercial puede requerir despacho formal con despachante de aduana.',
+                    'Si compra para revender, planifíquelo como importación: una cantidad comercial puede requerir despacho formal con [despachante de aduana](/aduana/despachantes-de-aduana-paraguay/). Si duda entre plataformas, vea nuestra [comparación de Temu, Shein y AliExpress](/blog/temu-shein-aliexpress-paraguay-comparacion/).',
                 ],
             ],
         ],
         'faq' => [
-            ['q' => '¿Shein envía a Paraguay?', 'a' => 'Elija Paraguay como país en el sitio o la aplicación y revise las opciones de envío en la pantalla de pago. Si no aparece envío directo o el plazo no le sirve, puede usar una casilla de courier.'],
+            ['q' => '¿Shein envía a Paraguay?', 'a' => 'Elija Paraguay como país en el sitio o la aplicación y revise las opciones de envío en la pantalla de pago. Si no aparece envío directo o el plazo no le sirve, puede usar una [casilla de courier](/comprar/casillas-courier-paraguay/).'],
             ['q' => '¿Cuánto tarda Shein en llegar a Paraguay?', 'a' => 'Depende del método de envío. Tome como referencia la fecha estimada que Shein muestra al pagar y, si usa casilla, sume el tránsito del courier.'],
             ['q' => '¿Cómo sé mi talle en Shein?', 'a' => 'Mida busto, cintura y cadera en centímetros y compárelos con la tabla de talles de esa prenda en particular. Las reseñas con fotos ayudan a saber si talla chico o grande.'],
             ['q' => '¿Se pagan impuestos por compras en Shein?', 'a' => 'Puede corresponder pagar tributos al ingresar el paquete. Los montos y topes vigentes se consultan en la DNIT o con el courier.'],
-            ['q' => '¿Puedo devolver ropa de Shein desde Paraguay?', 'a' => 'La política de devoluciones de Shein define plazos y condiciones. Desde Paraguay la devolución suele ser lenta y el flete de ida no se recupera, por eso conviene acertar con el talle.'],
+            ['q' => '¿Puedo devolver ropa de Shein desde Paraguay?', 'a' => 'La política de devoluciones vigente en el centro de ayuda de Shein define plazos y condiciones; léala antes de comprar. Desde Paraguay la devolución suele ser lenta y el flete de ida no se recupera, por eso conviene acertar con el talle.'],
         ],
         'relatedService' => 'asesoria-compras-online',
         'toolLink' => [
@@ -256,7 +257,7 @@ return [
         'related' => ['temu-paraguay', 'casillas-courier-paraguay', 'impuestos-compras-online-paraguay'],
         'affiliates' => [],
         'disclaimer' => false,
-        'image' => ['src' => '/assets/img/guias/compra-online-desempaque.webp', 'alt' => 'Persona abre en la mesa de su cocina un paquete de una compra online y sostiene una prenda', 'width' => 1200, 'height' => 671],
+        'image' => ['base' => '/assets/img/compra-online-desempaque-paraguay', 'widths' => [640, 1280], 'alt' => 'Persona abre en la mesa de su cocina un paquete de una compra online y sostiene una prenda', 'width' => 1280, 'height' => 716],
     ],
 
     'aliexpress-paraguay' => [
@@ -273,8 +274,8 @@ return [
             'lead' => 'En AliExpress se puede comprar desde Paraguay con envío a su dirección o a una casilla de courier; el método y el plazo los define cada vendedor y se ven en la ficha del producto. El costo final es el precio, más el envío, más el flete del courier si lo usa, más los tributos que correspondan al ingresar.',
         ],
         'intro' => [
-            'AliExpress en Paraguay es una buena opción para repuestos pequeños, electrónica menor, herramientas y accesorios que no se consiguen en el mercado local. A diferencia de Temu o Shein, en AliExpress cada vendedor es una tienda distinta: el precio, el método de envío, el plazo y la calidad dependen de ese vendedor, no de la plataforma.',
-            'Por eso la clave es leer la ficha del producto con Paraguay seleccionado como destino. Ahí aparece si el vendedor envía a Paraguay, con qué método, cuánto cuesta y la fecha estimada. Si no envía, o el plazo es demasiado largo, puede mandar el pedido a una casilla de courier en China o en Estados Unidos.',
+            'AliExpress en Paraguay es una buena opción para repuestos pequeños, electrónica menor, herramientas y accesorios que no se consiguen en el mercado local. A diferencia de [Temu en Paraguay](/comprar/temu-paraguay/) o Shein, en AliExpress cada vendedor es una tienda distinta: el precio, el método de envío, el plazo y la calidad dependen de ese vendedor, no de la plataforma.',
+            'Por eso la clave es leer la ficha del producto con Paraguay seleccionado como destino. Ahí aparece si el vendedor envía a Paraguay, con qué método, cuánto cuesta y la fecha estimada. Si no envía, o el plazo es demasiado largo, puede mandar el pedido a una casilla de [courier de China a Paraguay](/comprar/courier-china-paraguay/) o de Estados Unidos.',
             'Esta guía le muestra cómo elegir vendedor, cómo comparar envío directo con casilla, cómo pagar con protección y qué hacer si el paquete no llega o queda retenido.',
         ],
         'steps' => [
@@ -309,7 +310,7 @@ return [
                 'title' => 'Siga el envío y confirme la recepción recién al recibir',
                 'body' => [
                     'Desde "Mis pedidos" verá el número de seguimiento. No confirme la recepción antes de tener el paquete en la mano: al confirmar, el pago se libera al vendedor.',
-                    'Si el plazo de protección está por vencer y el paquete no llegó, puede pedir una extensión al vendedor o abrir una disputa.',
+                    'Si el plazo de protección que muestra el pedido está por vencer y el paquete no llegó, puede solicitar desde el pedido una extensión de la protección (el vendedor debe aceptarla) o abrir una disputa. Las condiciones vigentes están en la página de protección al comprador de AliExpress.',
                 ],
             ],
             [
@@ -337,7 +338,7 @@ return [
                 'h2' => 'Qué hacer si el paquete no llega o queda retenido',
                 'body' => [
                     'Si el seguimiento no avanza, primero escriba al vendedor por el chat de AliExpress. Si no hay respuesta y el plazo de protección está por vencer, abra una disputa con capturas del seguimiento.',
-                    'Si el paquete quedó retenido en aduana, suele ser por falta de factura, por mercadería que necesita permiso previo o por cantidad comercial. Si llegó por casilla, el courier le indica qué falta. Si la aduana exige despacho formal, lo hace un despachante de aduana matriculado.',
+                    'Si el paquete quedó retenido en aduana, suele ser por falta de factura, por mercadería que necesita permiso previo o por cantidad comercial. Si llegó por casilla, el courier le indica qué falta. Si la aduana exige despacho formal, lo hace un [despachante de aduana matriculado](/aduana/despachantes-de-aduana-paraguay/).',
                 ],
                 'items' => [
                     ['title' => 'Artículos con restricciones frecuentes', 'text' => 'Baterías sueltas, equipos con radio o antena, medicamentos, suplementos y productos para la salud.'],
@@ -347,7 +348,7 @@ return [
             [
                 'h2' => 'Cuánto se paga de más sobre el precio de AliExpress',
                 'body' => [
-                    'Al precio del producto se suman el envío del vendedor (si no es gratis), el flete del courier si usa casilla, los tributos que correspondan al ingresar a Paraguay y el recargo de su banco por compra en moneda extranjera. Los montos exentos y las alícuotas los fija la aduana; consulte el valor vigente en el portal de la DNIT o con su courier, y use la calculadora de compras online para sumar todo antes de pagar.',
+                    'Al precio del producto se suman el envío del vendedor (si no es gratis), el flete del courier si usa casilla, los tributos que correspondan al ingresar a Paraguay y el recargo de su banco por compra en moneda extranjera. Los montos exentos y las alícuotas los fija la DNIT; consulte el valor vigente en el portal de la DNIT o con su courier (vea [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/)), y use la [calculadora de compras online](/herramientas/calculadora-compras-online/) para sumar todo antes de pagar.',
                 ],
             ],
         ],
@@ -398,7 +399,7 @@ return [
             [
                 'title' => 'Busque y filtre proveedores',
                 'body' => [
-                    'Use los filtros de Alibaba para proveedores verificados y con Trade Assurance. Revise años en la plataforma, tasa de respuesta, si es fábrica o empresa comercial y las fotos de la planta si las publica.',
+                    'Use los filtros de Alibaba para proveedores verificados y con Trade Assurance. Nuestra guía de [proveedores chinos confiables](/importar/proveedores-chinos-confiables/) detalla cómo verificarlos. Revise años en la plataforma, tasa de respuesta, si es fábrica o empresa comercial y las fotos de la planta si las publica.',
                     'Pida cotización a tres a cinco proveedores con la misma especificación. Una diferencia de precio muy grande suele indicar otra calidad, otro material o un problema.',
                 ],
             ],
@@ -418,20 +419,20 @@ return [
             [
                 'title' => 'Pague con protección',
                 'body' => [
-                    'Pague dentro de Alibaba con Trade Assurance cuando sea posible, porque cubre incumplimientos de plazo o calidad según las condiciones de la plataforma. Si el proveedor pide transferencia bancaria internacional fuera de Alibaba, evalúe el riesgo y verifique que la cuenta esté a nombre de la empresa con la que firmó.',
-                    'Para transferencias internacionales puede comparar el costo de su banco con servicios de pago internacionales; mire siempre el tipo de cambio aplicado y las comisiones.',
+                    'Pague dentro de Alibaba con Trade Assurance cuando sea posible: según Alibaba, cubre el incumplimiento de la fecha de envío pactada y la calidad o cantidad que no coincide con lo acordado en el pedido, con plazos para reclamar que fija la plataforma. Solo protege pagos hechos dentro de Alibaba y sobre lo que quedó escrito en la orden. Si el proveedor pide transferencia bancaria internacional fuera de Alibaba, evalúe el riesgo y verifique que la cuenta esté a nombre de la empresa con la que firmó.',
+                    'Para transferencias internacionales puede comparar el costo de su banco con servicios de pago internacionales; mire siempre el tipo de cambio aplicado y las comisiones. Más detalle en [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/).',
                 ],
             ],
             [
                 'title' => 'Controle la producción antes del embarque',
                 'body' => [
-                    'Para pedidos de cierto valor, conviene una inspección en fábrica antes de pagar el saldo. Un inspector revisa cantidades, medidas y defectos contra la muestra aprobada y le envía un informe con fotos.',
+                    'Para pedidos de cierto valor, conviene una [inspección de calidad en China](/servicios/inspeccion-de-calidad/) antes de pagar el saldo. Un inspector revisa cantidades, medidas y defectos contra la muestra aprobada y le envía un informe con fotos.',
                 ],
             ],
             [
                 'title' => 'Organice el envío y el despacho hasta Asunción',
                 'body' => [
-                    'Para cajas chicas, el proveedor puede enviar por courier a su casilla. Para volumen comercial, el flete es aéreo o marítimo con un agente de carga, y el ingreso al país requiere despacho aduanero con despachante matriculado.',
+                    'Para cajas chicas, el proveedor puede enviar por courier a su casilla. Para volumen comercial, el flete es aéreo o marítimo con un agente de carga, y el ingreso al país requiere [despacho aduanero](/servicios/despacho-aduanero/) con despachante matriculado.',
                     'Pida cotizaciones de flete con el peso y el volumen reales de las cajas, que el proveedor le informa en la lista de empaque.',
                 ],
             ],
@@ -466,7 +467,7 @@ return [
                 'h2' => 'Cuando su compra en Alibaba ya es una importación',
                 'body' => [
                     'Si compra para revender, en cantidad o por un valor que supera lo que admite el régimen de compras por courier, lo que está haciendo es importar. Eso implica figurar como importador ante la DNIT, contratar un despachante de aduana, clasificar la mercadería por su posición arancelaria y pagar los tributos de importación correspondientes.',
-                    'Le explicamos el proceso completo, paso a paso, en la guía Cómo importar de China a Paraguay (/importar/como-importar-de-china-a-paraguay/). Si prefiere que alguien busque y verifique proveedores por usted en China, podemos conectarlo con un agente de compras.',
+                    'Le explicamos el proceso completo, paso a paso, en la guía [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/). Si prefiere que alguien busque y verifique proveedores por usted en China, podemos conectarlo con un [agente de compras en China](/servicios/agente-de-compras-china/).',
                 ],
             ],
         ],
@@ -505,8 +506,8 @@ return [
         ],
         'intro' => [
             '1688 en español es una búsqueda frecuente de quienes ya compraron en Alibaba o AliExpress y descubrieron que los mismos productos aparecen más baratos en 1688. La razón es simple: 1688 es el mercado mayorista interno de China, donde fábricas y distribuidores venden a comerciantes chinos, sin la estructura orientada al comprador extranjero que tiene Alibaba.com.',
-            'Esa ventaja de precio viene con obstáculos: el sitio está en chino, los pagos se hacen con medios de pago chinos, los proveedores envían solo a direcciones dentro de China y la atención es en mandarín. Por eso el camino habitual desde Paraguay es trabajar con un agente de compras o un almacén en China que haga de puente.',
-            'Esta guía le explica cómo navegar 1688 en español, cómo evaluar proveedores, cómo funciona el esquema con agente y cuándo conviene frente a Alibaba.',
+            'Esa ventaja de precio viene con obstáculos: el sitio está en chino, los pagos se hacen con medios de pago chinos, los proveedores envían solo a direcciones dentro de China y la atención es en mandarín. Por eso el camino habitual desde Paraguay es trabajar con un [agente de compras en China](/servicios/agente-de-compras-china/) o un almacén que haga de puente.',
+            'Esta guía le explica cómo navegar 1688 en español, cómo evaluar proveedores, cómo funciona el esquema con agente y cuándo conviene frente a [Alibaba en Paraguay](/comprar/alibaba-paraguay/).',
         ],
         'steps' => [
             [
@@ -538,13 +539,13 @@ return [
             [
                 'title' => 'Pague al agente con un medio trazable',
                 'body' => [
-                    'Al agente se le paga normalmente por transferencia internacional o por un servicio de pagos internacionales. Compare comisiones y tipo de cambio, y pida siempre comprobante.',
+                    'Al agente se le paga normalmente por transferencia internacional o por un servicio de pagos internacionales. Compare comisiones y tipo de cambio, y pida siempre comprobante; vea [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/).',
                 ],
             ],
             [
                 'title' => 'Defina el envío hacia Paraguay',
                 'body' => [
-                    'Para cantidades chicas, el agente puede enviar por courier a su casilla. Para volumen comercial, el envío es aéreo o marítimo con agente de carga y requiere despacho aduanero en Paraguay con despachante matriculado.',
+                    'Para cantidades chicas, el agente puede enviar por [courier de China a Paraguay](/comprar/courier-china-paraguay/). Para volumen comercial, el envío es aéreo o marítimo con agente de carga (por ejemplo, en [contenedor compartido desde China](/importar/contenedor-compartido-desde-china/)) y requiere despacho aduanero en Paraguay con despachante matriculado.',
                 ],
             ],
         ],
@@ -616,14 +617,14 @@ return [
         ],
         'intro' => [
             'El courier de China a Paraguay resuelve un problema concreto: muchas tiendas y proveedores chinos no envían a Paraguay, o lo hacen con plazos largos y poco seguimiento. Con una casilla en China, el proveedor entrega en una dirección local china y el courier se ocupa del resto: transporte internacional, declaración ante la aduana paraguaya y entrega en Asunción o en su ciudad.',
-            'El costo se calcula sobre el peso real o el peso volumétrico del paquete, el que sea mayor, a la tarifa por kilo del courier. A eso se suman los tributos aduaneros si corresponden y, a veces, cargos por seguro, reempaque o entrega a domicilio.',
+            'El costo se calcula sobre el peso real o el peso volumétrico del paquete, el que sea mayor, a la tarifa por kilo del courier. El peso volumétrico es largo por ancho por alto (en centímetros) dividido por un factor que fija cada courier; en el transporte aéreo son habituales factores de 5.000 o 6.000, así que pídale el suyo por escrito. A eso se suman los tributos aduaneros si corresponden y, a veces, cargos por seguro, reempaque o entrega a domicilio.',
             'Esta guía explica el proceso paso a paso, cómo se calcula el peso volumétrico, qué cargos pueden aparecer y qué hacer si el paquete se demora.',
         ],
         'steps' => [
             [
                 'title' => 'Abra una casilla en China',
                 'body' => [
-                    'Regístrese en un courier que tenga depósito en China y servicio a Paraguay. Le asignan un número de casilla y una dirección en China (en chino y en letras latinas) que usted usa como dirección de envío en sus compras.',
+                    'Regístrese en un courier que tenga depósito en China y servicio a Paraguay (vea cómo comparar [casillas de courier en Paraguay](/comprar/casillas-courier-paraguay/)). Le asignan un número de casilla y una dirección en China (en chino y en letras latinas) que usted usa como dirección de envío en sus compras.',
                 ],
             ],
             [
@@ -675,11 +676,11 @@ return [
                 'h2' => 'Qué hacer si el paquete se demora',
                 'body' => [
                     'Primero verifique en qué tramo está: si todavía no llegó al depósito en China, el problema es del vendedor; si ya llegó, el responsable del transporte es el courier. Pida al courier el estado con el número de casilla y el seguimiento.',
-                    'Si el paquete está retenido en aduana, suele faltar la factura o el valor no coincide, o la mercadería necesita un permiso previo. El courier le indica qué documento presentar. Si el envío se trata como comercial, el despacho lo hace un despachante de aduana matriculado.',
+                    'Si el paquete está retenido en aduana, suele faltar la factura o el valor no coincide, o la mercadería necesita un permiso previo. El courier le indica qué documento presentar. Si el envío se trata como comercial, el despacho lo hace un [despachante de aduana matriculado](/aduana/despachantes-de-aduana-paraguay/).',
                 ],
                 'items' => [
                     ['title' => 'Mercadería que suele complicar el envío aéreo', 'text' => 'Baterías sueltas, líquidos, aerosoles, imanes potentes y productos inflamables. Consulte la lista de prohibidos de su courier.'],
-                    ['title' => 'Mercadería que puede necesitar permiso', 'text' => 'Medicamentos, alimentos, cosméticos en cantidad y equipos de telecomunicaciones.'],
+                    ['title' => 'Mercadería que puede necesitar permiso', 'text' => 'Medicamentos, suplementos y cosméticos (registro sanitario de DINAVISA), alimentos, equipos de telecomunicaciones (homologación de CONATEL) y productos veterinarios (SENACSA). Consulte con su courier antes de comprar.'],
                 ],
             ],
             [
@@ -690,8 +691,8 @@ return [
                 'items' => [
                     ['title' => 'Envío directo por correo o por la tienda', 'text' => 'Para un paquete chico con seguimiento, cuando la tienda ofrece entrega en Paraguay. Es el más simple, con menos control sobre el tramo final.'],
                     ['title' => 'Courier con casilla en China', 'text' => 'Para compras personales de varias tiendas, artículos que la tienda no envía a Paraguay o cuando quiere un único responsable del transporte y la declaración.'],
-                    ['title' => 'Carga aérea con agente de carga', 'text' => 'Para mercadería comercial liviana y urgente. Requiere despacho aduanero con despachante matriculado.'],
-                    ['title' => 'Carga marítima', 'text' => 'Para volumen comercial, en contenedor completo o compartido. Es más lenta, pero el costo por unidad baja mucho.'],
+                    ['title' => 'Carga aérea con agente de carga', 'text' => 'Para mercadería comercial liviana y urgente, con [flete aéreo desde China](/servicios/flete-aereo-china/). Requiere despacho aduanero con despachante matriculado.'],
+                    ['title' => 'Carga marítima', 'text' => 'Para volumen comercial, en contenedor completo o [contenedor compartido desde China](/importar/contenedor-compartido-desde-china/). Es más lenta, pero el costo por unidad baja mucho.'],
                 ],
             ],
         ],
@@ -699,7 +700,7 @@ return [
             ['q' => '¿Cuánto cuesta el courier de China a Paraguay?', 'a' => 'Cada courier fija su tarifa por kilo y sus cargos adicionales. Compare el costo total de un mismo paquete, incluidos tributos y otros cargos.'],
             ['q' => '¿Cuánto tarda un courier de China a Paraguay?', 'a' => 'Depende de la frecuencia de envíos de cada courier y del tiempo de liberación en aduana. Pida el plazo por escrito al contratar.'],
             ['q' => '¿Qué es el peso volumétrico?', 'a' => 'Es un peso calculado a partir de las medidas de la caja. Si el paquete es liviano pero grande, se cobra por ese peso en lugar del peso real.'],
-            ['q' => '¿El courier paga los impuestos por mí?', 'a' => 'El courier declara el paquete ante la aduana, paga los tributos que correspondan y se los cobra a usted antes de entregar.'],
+            ['q' => '¿El courier paga los impuestos por mí?', 'a' => 'El courier declara el paquete ante la aduana, paga los tributos que correspondan y se los cobra a usted antes de entregar. Vea cómo funciona en [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/).'],
             ['q' => '¿Puedo traer mercadería para vender por courier?', 'a' => 'El courier sirve para compras personales y cantidades chicas. Una carga comercial puede requerir despacho formal con despachante.'],
         ],
         'relatedService' => 'asesoria-compras-online',
@@ -736,7 +737,7 @@ return [
             [
                 'title' => 'Defina de dónde compra',
                 'body' => [
-                    'Si compra sobre todo en tiendas de Estados Unidos (Amazon, eBay, tiendas de marcas), necesita casilla en Miami. Si compra en tiendas o proveedores chinos, una casilla en China evita el tramo China–Estados Unidos. Algunos couriers ofrecen ambas.',
+                    'Si compra sobre todo en tiendas de Estados Unidos (Amazon, eBay, tiendas de marcas), necesita casilla en Miami. Si compra en tiendas o proveedores chinos, una casilla en China evita el tramo China–Estados Unidos (vea [courier de China a Paraguay](/comprar/courier-china-paraguay/)). Algunos couriers ofrecen ambas.',
                 ],
             ],
             [
@@ -748,7 +749,7 @@ return [
             [
                 'title' => 'Simule el costo de un paquete real',
                 'body' => [
-                    'Tome una compra típica suya (por ejemplo, una caja de zapatillas o un paquete de ropa) y pida a dos o tres couriers el costo total hasta la entrega. Esa comparación vale más que cualquier promoción.',
+                    'Tome una compra típica suya (por ejemplo, una caja de zapatillas o un paquete de ropa) y pida a dos o tres couriers el costo total hasta la entrega, o simúlelo con la [calculadora de compras online](/herramientas/calculadora-compras-online/). Esa comparación vale más que cualquier promoción.',
                 ],
             ],
             [
@@ -791,7 +792,7 @@ return [
             [
                 'h2' => 'Casilla o envío directo de la tienda',
                 'body' => [
-                    'Algunas tiendas, como Temu o AliExpress, ofrecen envío directo a Paraguay. Para un paquete chico con seguimiento, el envío directo suele ser suficiente. La casilla conviene cuando la tienda no envía al país, cuando junta varias compras o cuando quiere un único responsable del transporte y del trámite aduanero.',
+                    'Algunas tiendas ofrecen envío directo a Paraguay; en [AliExpress en Paraguay](/comprar/aliexpress-paraguay/) depende de cada vendedor, y [Temu en Paraguay](/comprar/temu-paraguay/) suspendió sus envíos directos en 2026, según medios locales. Para un paquete chico con seguimiento, el envío directo suele ser suficiente cuando la tienda lo ofrece. La casilla conviene cuando la tienda no envía al país, cuando junta varias compras o cuando quiere un único responsable del transporte y del trámite aduanero.',
                 ],
             ],
             [
@@ -813,7 +814,7 @@ return [
             ['q' => '¿Cuánto cuesta abrir una casilla en Paraguay?', 'a' => 'En muchos couriers el registro es gratuito y se paga por cada envío. Confirme si hay cuota o cargos fijos en las condiciones del courier.'],
             ['q' => '¿Casilla en Miami o en China?', 'a' => 'Depende de dónde compra. Para tiendas chinas, una casilla en China evita el tramo por Estados Unidos; para tiendas estadounidenses, la de Miami.'],
             ['q' => '¿Cuál es el courier más barato de Paraguay?', 'a' => 'Depende del paquete. Simule el costo total de una compra real con dos o tres couriers, incluidos peso volumétrico y cargos adicionales.'],
-            ['q' => '¿La casilla incluye los impuestos?', 'a' => 'El courier suele cobrar los tributos aparte del flete. Pida que se los detalle en la factura.'],
+            ['q' => '¿La casilla incluye los impuestos?', 'a' => 'El courier suele cobrar los tributos aparte del flete. Pida que se los detalle en la factura; le explicamos el mecanismo en [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/).'],
         ],
         'relatedService' => 'asesoria-compras-online',
         'toolLink' => [
@@ -841,34 +842,34 @@ return [
             'lead' => 'Las compras online del exterior que ingresan a Paraguay por courier se declaran ante la aduana bajo un régimen simplificado y pueden pagar tributos según su valor y el tipo de mercadería. El courier calcula el monto, lo paga en su nombre y se lo cobra antes de entregar; los topes y alícuotas vigentes los publica la DNIT.',
         ],
         'intro' => [
-            'Los impuestos de compras online en Paraguay no son un único porcentaje fijo. Lo que usted paga depende de cómo ingresa el paquete (courier o correo), del valor declarado, de si la compra es para uso personal o comercial y del tipo de producto. La aduana, hoy dentro de la Dirección Nacional de Ingresos Tributarios (DNIT), administra un régimen simplificado para envíos de courier, conocido como remesa expresa.',
-            'En la práctica, usted rara vez trata directamente con la aduana: el courier declara el paquete, se calculan los tributos, el courier los paga y se los cobra junto con el flete. Por eso la factura del courier debería separar flete, tributos y otros cargos.',
+            'Los impuestos de compras online en Paraguay no son un único porcentaje fijo. Lo que usted paga depende de cómo ingresa el paquete (courier o correo), del valor declarado, de si la compra es para uso personal o comercial y del tipo de producto. La aduana forma parte hoy de la Dirección Nacional de Ingresos Tributarios (DNIT), creada por la Ley 7143/2023 al fusionar la Subsecretaría de Estado de Tributación y la Dirección Nacional de Aduanas. La DNIT administra el régimen de remesa expresa, el régimen para envíos que ingresan por empresas de courier habilitadas.',
+            'En la práctica, usted rara vez trata directamente con la aduana: el courier declara el paquete, se calculan los tributos, el courier los paga y se los cobra junto con el flete. Por eso la factura del courier debería separar flete, tributos y otros cargos. Si todavía no eligió courier, vea cómo comparar [casillas de courier en Paraguay](/comprar/casillas-courier-paraguay/).',
             'Esta guía explica el mecanismo, qué componentes forman el costo final y dónde confirmar los montos vigentes. No publicamos alícuotas ni topes porque cambian por resolución y deben consultarse en la fuente oficial.',
         ],
         'steps' => [
             [
                 'title' => 'Identifique cómo va a ingresar el paquete',
                 'body' => [
-                    'Si usa casilla de courier, el paquete entra por el régimen de courier. Si la tienda envía directo por correo o por un operador propio, el ingreso y el cobro de tributos pueden seguir otro procedimiento. Pregunte a quien entrega cómo se liquidan los cargos.',
+                    'Si usa casilla de courier, el paquete entra por el régimen de remesa expresa. Si la tienda envía directo por correo o por un operador propio, el ingreso y el cobro de tributos pueden seguir otro procedimiento. Pregunte a quien entrega cómo se liquidan los cargos.',
                 ],
             ],
             [
                 'title' => 'Tenga claro el valor de la compra',
                 'body' => [
-                    'Los tributos se calculan sobre el valor de la mercadería, y en muchos casos también se considera el flete y el seguro. Guarde la factura o el detalle del pedido: es lo que respalda el valor declarado.',
+                    'Los tributos se calculan sobre el valor declarado del envío, según la base que fija la normativa aduanera; esa base no siempre se limita al precio del producto. Pida al courier que le indique sobre qué valor liquidó. Guarde la factura o el detalle del pedido: es lo que respalda el valor declarado.',
                     'Declarar un valor menor al pagado es una infracción y puede terminar en retención, multa o valoración de oficio.',
                 ],
             ],
             [
                 'title' => 'Verifique si la compra es personal o comercial',
                 'body' => [
-                    'El régimen simplificado está pensado para compras personales. Muchas unidades iguales, un valor alto o mercadería claramente para reventa pueden sacar el envío de ese régimen y exigir despacho formal con despachante de aduana.',
+                    'El régimen de remesa expresa está pensado para compras de uso personal, no para fines comerciales. Muchas unidades iguales, un valor alto o mercadería claramente para reventa pueden sacar el envío de ese régimen y exigir despacho formal con [despachante de aduana](/aduana/despachantes-de-aduana-paraguay/). Si ese es su caso, lea [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).',
                 ],
             ],
             [
                 'title' => 'Revise si el producto necesita permiso',
                 'body' => [
-                    'Algunos productos requieren autorización previa de otra institución, por ejemplo medicamentos, alimentos, cosméticos, equipos de telecomunicaciones o productos veterinarios. Sin ese permiso, el paquete puede quedar retenido aunque los tributos estén pagos.',
+                    'Algunos productos requieren autorización o registro de otra institución: medicamentos, suplementos y cosméticos ante DINAVISA, equipos de telecomunicaciones con homologación de CONATEL, productos veterinarios ante SENACSA, y alimentos según su tipo. Sin ese permiso, el paquete puede quedar retenido aunque los tributos estén pagos.',
                 ],
             ],
             [
@@ -913,17 +914,17 @@ return [
                 'h2' => 'Si la liquidación le parece alta o el paquete queda retenido',
                 'body' => [
                     'Pida al courier la liquidación detallada y compárela con su factura de compra. Revise que el valor declarado sea el que usted pagó, que el peso facturado coincida con el paquete y que no haya cargos duplicados. Si encuentra un error, reclame por escrito antes de pagar.',
-                    'Si el paquete queda retenido, el motivo más común es la falta de factura, un valor que no coincide, un producto que necesita permiso previo o una cantidad que parece comercial. El courier le indica qué documento presentar. Cuando la aduana exige despacho formal, el trámite lo hace un despachante de aduana matriculado, que le confirma la alícuota según la posición arancelaria de la mercadería.',
-                    'Este sitio no es la aduana ni un despachante. Si necesita ayuda para entender una liquidación o para destrabar un paquete, podemos orientarlo y conectarlo con un despachante.',
+                    'Si el paquete queda retenido, el motivo más común es la falta de factura, un valor que no coincide, un producto que necesita permiso previo o una cantidad que parece comercial. El courier le indica qué documento presentar. Cuando la aduana exige despacho formal, el trámite lo hace un despachante de aduana matriculado, que le confirma la alícuota según la [posición arancelaria NCM](/aduana/ncm-nomenclatura-mercosur/) de la mercadería. Los tributos de una importación formal se explican en [tributos aduaneros en Paraguay](/aduana/tributos-aduaneros-paraguay/).',
+                    'Este sitio no es la aduana ni un despachante. Si necesita ayuda para entender una liquidación o para destrabar un paquete, nuestra [asesoría para compras online](/servicios/asesoria-compras-online/) puede orientarlo y conectarlo con un despachante.',
                 ],
             ],
         ],
         'faq' => [
             ['q' => '¿Se pagan impuestos por compras online en Paraguay?', 'a' => 'Puede corresponder pagar tributos al ingresar el paquete, según su valor, el régimen y el tipo de mercadería. El courier los calcula y se los cobra antes de entregar.'],
             ['q' => '¿Cuál es el monto libre de impuestos para compras por internet?', 'a' => 'Los topes y exenciones se fijan por normativa y pueden cambiar. Consulte el monto vigente en la sección de remesa expresa del portal de la DNIT o con su courier.'],
-            ['q' => '¿Qué es la remesa expresa?', 'a' => 'Es el régimen aduanero simplificado para envíos que ingresan por empresas de courier. Permite declarar y liberar paquetes sin un despacho aduanero formal.'],
-            ['q' => '¿Los impuestos se calculan sobre el precio o también sobre el envío?', 'a' => 'La base de cálculo puede incluir flete y seguro además del precio. El courier o la DNIT le confirman la base aplicable.'],
-            ['q' => '¿Qué pasa si compro varias unidades para vender?', 'a' => 'Una compra comercial puede quedar fuera del régimen simplificado y requerir despacho formal con despachante de aduana.'],
+            ['q' => '¿Qué es la remesa expresa?', 'a' => 'Es el régimen aduanero que administra la DNIT para envíos transportados por empresas de courier habilitadas, que se despachan de forma prioritaria y simplificada. Está pensado para compras de uso personal, no para mercadería comercial.'],
+            ['q' => '¿Los impuestos se calculan sobre el precio o también sobre el envío?', 'a' => 'La base de cálculo la define la normativa aduanera y no siempre se limita al precio del producto. Pida al courier que le muestre sobre qué valor liquidó, o consulte a la DNIT.'],
+            ['q' => '¿Qué pasa si compro varias unidades para vender?', 'a' => 'Una compra comercial puede quedar fuera del régimen de remesa expresa y requerir despacho formal con despachante de aduana.'],
         ],
         'relatedService' => 'asesoria-compras-online',
         'toolLink' => [

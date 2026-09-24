@@ -80,8 +80,8 @@ return [
             [
                 'h2' => 'Por qué conviene resolver el despacho antes de que llegue la carga',
                 'body' => [
-                    'La mayoría de los problemas en aduana no aparecen en el despacho sino antes: una factura con datos incompletos, un producto clasificado de forma distinta a lo esperado o un permiso previo que nadie tramitó. Cuando eso se descubre con la carga ya en depósito, el almacenaje corre por día y el costo final sube.',
-                    'Por eso trabajamos con anticipación: si nos consulta antes de pagar al proveedor, el despachante puede revisar la proforma, estimar la posición NCM y avisarle qué documentos o registros necesita.',
+                    'La mayoría de los problemas en aduana no aparecen en el despacho sino antes: una factura con datos incompletos, un producto clasificado de forma distinta a lo esperado o un permiso previo que nadie tramitó (vea los [requisitos para importar en Paraguay](/importar/requisitos-para-importar-paraguay/)). Cuando eso se descubre con la carga ya en depósito, el almacenaje corre por día y el costo final sube.',
+                    'Por eso trabajamos con anticipación: si nos consulta antes de pagar al proveedor, el despachante puede revisar la proforma, estimar la [posición arancelaria NCM](/aduana/ncm-nomenclatura-mercosur/) y avisarle qué documentos o registros necesita.',
                 ],
             ],
             [
@@ -90,14 +90,14 @@ return [
                 'items' => [
                     ['title' => '1. Consulta', 'text' => 'Nos cuenta qué trae, cuánto y por dónde. Le decimos qué información falta.'],
                     ['title' => '2. Contacto con el despachante', 'text' => 'Lo ponemos en contacto con un despachante matriculado adecuado para su carga.'],
-                    ['title' => '3. Cotización', 'text' => 'El despachante le envía su presupuesto desglosado. Usted decide si avanza.'],
+                    ['title' => '3. Cotización', 'text' => 'El despachante le envía su presupuesto desglosado; vea de qué depende el [precio del despacho aduanero](/aduana/precio-despacho-aduanero-paraguay/). Usted decide si avanza.'],
                     ['title' => '4. Despacho', 'text' => 'El despachante presenta la declaración, gestiona la liquidación y la verificación y le avisa cuándo puede retirar.'],
                 ],
             ],
             [
                 'h2' => 'Quién hace qué',
                 'body' => [
-                    'Nosotros somos un sitio privado de información que coordina el contacto. El despachante asociado es un profesional matriculado ante la aduana y es quien presenta la declaración y responde por su actuación profesional. Usted es el importador: aporta los documentos, paga los tributos y responde por la veracidad de lo declarado.',
+                    'Nosotros somos un sitio privado de información que coordina el contacto. El despachante asociado es un profesional matriculado ante la aduana (vea cómo verificar a los [despachantes de aduana en Paraguay](/aduana/despachantes-de-aduana-paraguay/)) y es quien presenta la declaración y responde por su actuación profesional. Usted es el importador: aporta los documentos, paga los tributos y responde por la veracidad de lo declarado.',
                     'No tenemos vínculo con la aduana paraguaya (Gerencia General de Aduanas de la DNIT) ni hablamos en su nombre. La información oficial está en aduana.gov.py y dnit.gov.py.',
                 ],
             ],
@@ -111,8 +111,8 @@ return [
         'faq' => [
             ['q' => '¿Ustedes son despachantes de aduana?', 'a' => 'No. Lo conectamos con un despachante de aduana matriculado, que es quien realiza el despacho y firma la declaración.'],
             ['q' => '¿Cuánto cuesta el despacho?', 'a' => 'Depende de su mercadería, del valor y de la vía de ingreso. El despachante le envía una cotización desglosada antes de empezar; pedirla no le compromete a contratar.'],
-            ['q' => '¿Pueden ayudarme si es mi primera importación?', 'a' => 'Sí. Le indicamos qué necesita para empezar y el despachante le orienta con la inscripción y los documentos que correspondan a su producto.'],
-            ['q' => '¿Trabajan con cargas que llegan por Ciudad del Este o Encarnación?', 'a' => 'Cuéntenos por qué aduana ingresará su carga y buscamos un despachante que opere allí.'],
+            ['q' => '¿Pueden ayudarme si es mi primera importación?', 'a' => 'Sí. Le indicamos qué necesita para empezar (vea [cómo ser importador en Paraguay](/importar/como-ser-importador-paraguay/)) y el despachante le orienta con la inscripción y los documentos que correspondan a su producto.'],
+            ['q' => '¿Trabajan con cargas que llegan por Ciudad del Este o Encarnación?', 'a' => 'Cuéntenos por qué aduana ingresará su carga y buscamos un despachante que opere allí. Vea también nuestra guía de la [aduana de Ciudad del Este y Encarnación](/aduana/aduana-ciudad-del-este-encarnacion/).'],
             ['q' => '¿Qué pasa si mi carga ya está en depósito?', 'a' => 'Escríbanos cuanto antes con el documento de transporte y la factura; cuanto antes empiece el despacho, menos almacenaje pagará.'],
         ],
         'cta' => [
@@ -127,7 +127,7 @@ return [
         ],
         'affiliates' => [],
         'disclaimer' => true,
-        'image' => ['src' => '/assets/img/hubs/aduana-documentos-despacho.webp', 'alt' => 'Escritorio con facturas, lista de empaque y calculadora, con contenedores de fondo', 'width' => 1600, 'height' => 905],
+        'image' => ['base' => '/assets/img/despacho-aduanero-documentos-puerto', 'widths' => [640, 1280, 1920], 'alt' => 'Escritorio con facturas, lista de empaque y calculadora, con contenedores de fondo', 'width' => 1920, 'height' => 1086],
     ],
 
 ];

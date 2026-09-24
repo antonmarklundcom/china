@@ -1,0 +1,42 @@
+name: localize-images
+
+# Manual only (Actions → localize-images → Run workflow). Downloads the
+# Higgsfield results listed in docs/imagery-jobs-*.csv — a host the Claude
+# cloud sandbox cannot reach — converts them with webimg (AVIF + WebP at the
+# listed widths, SEO names and alt text from the CSV) and commits assets/img/
+# back to the branch it ran on. Costs nothing unless someone clicks Run.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: localize-images-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  localize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Convert with webimg
+        run: |
+          npx --yes github:antonmarklundcom/webimg batch . --manifest docs/imagery-jobs-large.csv --out assets/img
+          npx --yes github:antonmarklundcom/webimg batch . --manifest docs/imagery-jobs-small.csv --out assets/img --widths 640,1280
+          ls -la assets/img
+
+      - name: Commit the images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/img
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "Add localized images (webimg via localize-images workflow)"
+          git push

@@ -59,20 +59,20 @@ return [
                 'title' => 'Defina qué va a despachar',
                 'body' => [
                     'Antes de llamar a nadie, tenga claro qué producto trae, en qué cantidad, por qué vía (marítima, aérea, terrestre o courier) y con qué valor de factura. Con esos datos el despachante puede darle una primera idea de la clasificación arancelaria y de los costos.',
-                    'Si es su primera importación, indíquelo. Algunos despachantes también le orientan con la inscripción como importador y los registros previos que exige su tipo de producto.',
+                    'Si es su primera importación, indíquelo. Algunos despachantes también le orientan con la [inscripción como importador](/importar/como-ser-importador-paraguay/) y los registros previos que exige su tipo de producto.',
                 ],
             ],
             [
                 'title' => 'Verifique la matrícula del despachante',
                 'body' => [
-                    'Pida al despachante su nombre completo y su número de matrícula, y compruébelo en la fuente oficial: la aduana (aduana.gov.py o dnit.gov.py) o consultando directamente en sus oficinas. También puede preguntar al Centro de Despachantes de Aduana del Paraguay si la persona figura como asociada, aunque no todos los despachantes matriculados están obligados a ser socios.',
+                    'Pida al despachante su nombre completo y su número de matrícula, y compruébelo en la fuente oficial: la DNIT lleva el registro de Personas Vinculadas a la Actividad Aduanera (PVAA), donde se habilita a los despachantes; consulte en dnit.gov.py o en las oficinas de la aduana cómo verificar una matrícula. También puede preguntar al Centro de Despachantes de Aduana del Paraguay si la persona es socia, pero recuerde que la habilitación la otorga la aduana, no el gremio.',
                     'Desconfíe de gestores que ofrecen "sacar" mercadería sin declaración, sin factura o por un monto cerrado que no detalla nada. El despachante firma una declaración oficial; si alguien le propone saltarse ese paso, no es un despachante serio.',
                 ],
             ],
             [
                 'title' => 'Pregunte por su experiencia con su tipo de carga',
                 'body' => [
-                    'No es lo mismo despachar ropa que repuestos, celulares, alimentos o maquinaria. Algunos productos necesitan registros o autorizaciones de otros organismos antes del despacho. Pregunte si el despachante ya trabajó con productos similares y con qué frecuencia opera en la aduana por donde entrará su carga (puerto de Asunción, Villeta, Ciudad del Este, Encarnación, aeropuerto u otra).',
+                    'No es lo mismo despachar ropa que repuestos, celulares, alimentos o maquinaria. Algunos productos necesitan registros o autorizaciones de otros organismos antes del despacho; vea los [requisitos para importar en Paraguay](/importar/requisitos-para-importar-paraguay/). Pregunte si el despachante ya trabajó con productos similares y con qué frecuencia opera en la aduana por donde entrará su carga (puerto de Asunción, Villeta, Ciudad del Este, Encarnación, aeropuerto u otra).',
                 ],
             ],
             [
@@ -85,8 +85,8 @@ return [
             [
                 'title' => 'Pida una cotización detallada por escrito',
                 'body' => [
-                    'La cotización debe separar los honorarios del despachante, los tributos aduaneros estimados, las tasas y servicios, el depósito o almacenaje y los gastos operativos. Si le dan un solo monto global, pida el desglose. Así puede comparar dos presupuestos de verdad y saber qué parte depende del despachante y qué parte no.',
-                    'En la guía sobre el precio del despacho aduanero explicamos cada componente y qué preguntar.',
+                    'La cotización debe separar los honorarios del despachante, los [tributos aduaneros](/aduana/tributos-aduaneros-paraguay/) estimados, las tasas y servicios, el depósito o almacenaje y los gastos operativos. Si le dan un solo monto global, pida el desglose. Así puede comparar dos presupuestos de verdad y saber qué parte depende del despachante y qué parte no.',
+                    'En la guía sobre el [precio del despacho aduanero](/aduana/precio-despacho-aduanero-paraguay/) explicamos cada componente y qué preguntar.',
                 ],
             ],
             [
@@ -135,8 +135,8 @@ return [
             ],
         ],
         'faq' => [
-            ['q' => '¿Es obligatorio usar un despachante de aduana en Paraguay?', 'a' => 'Para una importación comercial, en la práctica el despacho se tramita mediante un despachante matriculado. Las excepciones (por ejemplo, ciertos envíos por courier o equipaje de viajeros) las define la aduana; confírmelas en aduana.gov.py.'],
-            ['q' => '¿Dónde encuentro la lista de despachantes de aduana del Paraguay?', 'a' => 'Consulte a la aduana (aduana.gov.py o dnit.gov.py) para verificar la matrícula, y al Centro de Despachantes de Aduana del Paraguay (cdap.org.py) para información sobre sus socios. Nuestra propia lista de despachantes asociados estará disponible próximamente; mientras tanto podemos conectarlo con uno.'],
+            ['q' => '¿Es obligatorio usar un despachante de aduana en Paraguay?', 'a' => 'Como regla general, sí: el Código Aduanero (Ley 2422/2004, art. 22) establece que el importador actúe en las operaciones aduaneras a través de un despachante de aduana habilitado. Los casos con régimen propio, como ciertos [envíos por courier](/comprar/courier-china-paraguay/) o el equipaje de viajeros, los define la normativa; confírmelos con la DNIT.'],
+            ['q' => '¿Dónde encuentro la lista de despachantes de aduana del Paraguay?', 'a' => 'Para verificar la habilitación, consulte el registro de Personas Vinculadas a la Actividad Aduanera (PVAA) de la DNIT (dnit.gov.py), y al Centro de Despachantes de Aduana del Paraguay (cdap.org.py) para información sobre sus socios. Nuestra propia lista de despachantes asociados estará disponible próximamente; mientras tanto, con nuestro servicio de [despacho aduanero](/servicios/despacho-aduanero/) podemos conectarlo con uno.'],
             ['q' => '¿El Centro de Despachantes es la aduana?', 'a' => 'No. Es una asociación profesional privada del gremio. La aduana es la Gerencia General de Aduanas de la DNIT.'],
             ['q' => '¿Cuánto cobra un despachante de aduana?', 'a' => 'Depende del valor y del tipo de mercadería, de la vía de ingreso y de lo que incluya el servicio. Pida siempre un presupuesto desglosado por escrito y compárelo con otro.'],
             ['q' => '¿Puedo usar el mismo despachante para todas mis importaciones?', 'a' => 'Sí, y suele convenir: conoce sus productos, sus documentos y su historial, lo que agiliza los despachos siguientes.'],
@@ -150,7 +150,7 @@ return [
         'related' => ['precio-despacho-aduanero-paraguay', 'tributos-aduaneros-paraguay', 'requisitos-para-importar-paraguay'],
         'affiliates' => [],
         'disclaimer' => true,
-        'image' => ['src' => '/assets/img/hubs/aduana-documentos-despacho.webp', 'alt' => 'Escritorio con facturas, lista de empaque y calculadora, con contenedores de fondo', 'width' => 1600, 'height' => 905],
+        'image' => ['base' => '/assets/img/despacho-aduanero-documentos-puerto', 'widths' => [640, 1280, 1920], 'alt' => 'Escritorio con facturas, lista de empaque y calculadora, con contenedores de fondo', 'width' => 1920, 'height' => 1086],
     ],
 
     'precio-despacho-aduanero-paraguay' => [
@@ -167,9 +167,9 @@ return [
             'lead' => 'El precio del despacho aduanero en Paraguay no es una tarifa única: suma los honorarios del despachante, los tributos de importación, las tasas y servicios aduaneros, el depósito o almacenaje y otros gastos operativos. Cada parte depende del valor, del tipo de mercadería y de la vía de ingreso.',
         ],
         'intro' => [
-            'Cuando alguien pregunta cuánto cuesta despachar en aduana, suele mezclar dos cosas: lo que cobra el despachante por su trabajo y lo que se paga al Estado y a terceros. Los honorarios suelen ser la parte menor; los tributos, que dependen de la posición arancelaria y del valor CIF, suelen ser la mayor.',
+            'Cuando alguien pregunta cuánto cuesta despachar en aduana, suele mezclar dos cosas: lo que cobra el despachante por su trabajo y lo que se paga al Estado y a terceros. Los honorarios suelen ser la parte menor; los [tributos de importación](/aduana/tributos-aduaneros-paraguay/), que dependen de la posición arancelaria y del valor CIF, suelen ser la mayor.',
             'En esta guía verá cada componente del costo, qué preguntar para que la cotización sea comparable y cómo evitar gastos que aparecen al final, como el almacenaje por demoras. No publicamos montos porque cambian con cada operación y con la normativa; el despachante se los confirma para su caso.',
-            'Si quiere una cifra concreta, lo más rápido es pedir una cotización con su factura proforma en la mano. Podemos conectarlo con un despachante matriculado para eso.',
+            'Si quiere una cifra concreta, lo más rápido es pedir una cotización con su factura proforma en la mano. Podemos conectarlo con un [despachante de aduana matriculado](/servicios/despacho-aduanero/) para eso.',
         ],
         'steps' => [
             [
@@ -181,7 +181,7 @@ return [
             [
                 'title' => 'Pida la clasificación arancelaria estimada',
                 'body' => [
-                    'El despachante le indica la posición NCM probable de su producto. De ella depende el arancel y si hay requisitos adicionales. Una clasificación distinta puede cambiar mucho el total, por eso conviene saberla antes de comprar.',
+                    'El despachante le indica la [posición arancelaria NCM](/aduana/ncm-nomenclatura-mercosur/) probable de su producto. De ella depende el arancel y si hay requisitos adicionales. Una clasificación distinta puede cambiar mucho el total, por eso conviene saberla antes de comprar.',
                 ],
             ],
             [
@@ -211,7 +211,7 @@ return [
             [
                 'title' => 'Guarde la liquidación final',
                 'body' => [
-                    'Al terminar, pida la liquidación oficial de tributos y la factura del despachante. Con ellas puede calcular su costo real por unidad y comparar con lo presupuestado para la próxima compra.',
+                    'Al terminar, pida la liquidación oficial de tributos y la factura del despachante. Con ellas puede calcular su costo real por unidad en la [calculadora de costo de importación](/herramientas/calculadora-costo-importacion/) y comparar con lo presupuestado para la próxima compra.',
                 ],
             ],
         ],
@@ -258,7 +258,7 @@ return [
             ['q' => '¿Cuánto cuesta un despacho aduanero en Paraguay?', 'a' => 'No hay un precio único. Suma honorarios, tributos, tasas, depósito y gastos, y cada uno depende de su mercadería. Pida un presupuesto desglosado con su factura proforma.'],
             ['q' => '¿Los tributos cambian según el despachante?', 'a' => 'No deberían: se calculan sobre la misma base y la misma clasificación. Lo que cambia entre despachantes son los honorarios y los servicios incluidos.'],
             ['q' => '¿Por qué me cobraron almacenaje si el despacho era rápido?', 'a' => 'El almacenaje corre desde que la carga entra al depósito, no desde que empieza el despacho. Enviar los documentos antes de que llegue la carga reduce ese costo.'],
-            ['q' => '¿Conviene más una importación por courier?', 'a' => 'Para envíos pequeños puede ser más simple. Para volúmenes comerciales, el despacho formal suele ser el camino que corresponde; compare ambos con el mismo producto.'],
+            ['q' => '¿Conviene más una importación por courier?', 'a' => 'Para envíos pequeños, la [importación por courier desde China](/comprar/courier-china-paraguay/) puede ser más simple. Para volúmenes comerciales, el despacho formal suele ser el camino que corresponde; compare ambos con el mismo producto.'],
         ],
         'relatedService' => 'despacho-aduanero',
         'toolLink' => [
@@ -287,7 +287,7 @@ return [
         ],
         'intro' => [
             'Buena parte del comercio de Ciudad del Este, Encarnación, Pedro Juan Caballero y otras ciudades de frontera funciona bajo el régimen de turismo. Los comercios inscriptos importan bienes (electrónica, perfumes, relojes y otros) con condiciones tributarias propias, a cambio de venderlos a compradores extranjeros no domiciliados en Paraguay.',
-            'En 2024 el Poder Ejecutivo estableció un nuevo régimen de turismo de compras, según informó la DNIT en su portal (dnit.gov.py). Las condiciones concretas —qué bienes incluye, en qué ciudades, qué tributos y qué obligaciones tienen los comercios— están en la norma vigente y sus reglamentaciones; aquí explicamos el concepto sin citar cifras, que conviene leer en la fuente.',
+            'En 2024 el Poder Ejecutivo creó el Régimen de Turismo de Compras (RTC) por el Decreto 2063/2024, según informó la DNIT en su portal (dnit.gov.py). En su texto original, el decreto habilita a comercios inscriptos con locales en Asunción, Ciudad del Este, Encarnación, Pedro Juan Caballero, Pilar y Salto del Guairá a importar bienes de una lista anexa de posiciones arancelarias y venderlos a personas físicas extranjeras sin domicilio ni residencia en Paraguay. El régimen tuvo ajustes posteriores; la lista de bienes, los tributos y las obligaciones vigentes conviene leerlos en la normativa que publica la DNIT.',
             'Esta guía sirve a tres perfiles: al turista que compra en la frontera, al residente que quiere entender por qué no puede usar ese régimen para su negocio, y a quien evalúa abrir un comercio de frontera.',
         ],
         'steps' => [
@@ -300,13 +300,13 @@ return [
             [
                 'title' => 'Si es turista: compre en comercios habilitados y guarde la factura',
                 'body' => [
-                    'Pida siempre factura o comprobante. Al volver a su país, la aduana de ese país aplicará sus propias reglas de franquicia para viajeros: el régimen paraguayo no le exime de declarar en Argentina, Brasil u otro destino.',
+                    'Pida siempre factura o comprobante. Al volver a su país, la aduana de ese país aplicará sus propias reglas de franquicia para viajeros: el régimen paraguayo no le exime de declarar en Argentina, Brasil u otro destino. Vea [qué puede llevar al cruzar entre Argentina y Paraguay](/aduana/cruzar-frontera-argentina-paraguay/).',
                 ],
             ],
             [
                 'title' => 'Si es residente: no confunda compra en frontera con importación',
                 'body' => [
-                    'Comprar en Ciudad del Este siendo residente no convierte la mercadería en importada a su nombre. Si quiere traer mercadería para revender, el camino es una importación a su nombre con despacho aduanero, o comprar a un importador local.',
+                    'Comprar en Ciudad del Este siendo residente no convierte la mercadería en importada a su nombre. Si quiere traer mercadería para revender, el camino es una importación a su nombre con [despacho aduanero](/servicios/despacho-aduanero/), o comprar a una de las [importadoras en Paraguay](/importar/importadoras-en-paraguay/).',
                 ],
             ],
             [
@@ -318,7 +318,7 @@ return [
             [
                 'title' => 'Compare con el régimen general de importación',
                 'body' => [
-                    'Para la mayoría de los negocios que venden a clientes paraguayos, el camino es la importación bajo el régimen general: arancel según NCM, IVA y demás tributos. La tabla de abajo resume las diferencias.',
+                    'Para la mayoría de los negocios que venden a clientes paraguayos, el camino es la importación bajo el régimen general: arancel según la [nomenclatura NCM](/aduana/ncm-nomenclatura-mercosur/), IVA y demás tributos. La tabla de abajo resume las diferencias.',
                 ],
             ],
         ],
@@ -344,7 +344,7 @@ return [
                 'h2' => 'Por qué importa entender el régimen si usted compra para su negocio',
                 'body' => [
                     'Es común escuchar que en Ciudad del Este "todo es más barato" y pensar en comprar allí para revender en Asunción o en el interior. El precio de venta al turista refleja un tratamiento tributario pensado para mercadería que sale del país. Si esa mercadería se queda en Paraguay y se revende, puede no estar amparada por la documentación que exige un comercio formal.',
-                    'Para un negocio, lo seguro es comprar a un importador local que le entregue factura legal, o importar directamente desde China a su nombre con despacho aduanero. Así puede justificar el origen de su stock, usar el IVA como crédito fiscal y vender sin riesgo de decomiso.',
+                    'Para un negocio, lo seguro es comprar a un importador local que le entregue factura legal, o [importar directamente desde China a Paraguay](/importar/como-importar-de-china-a-paraguay/) a su nombre con despacho aduanero. Así puede justificar el origen de su stock, usar el IVA como crédito fiscal y vender sin riesgo de decomiso.',
                     'Si está evaluando importar por su cuenta, podemos conectarlo con un despachante matriculado que le explique los costos reales para su producto, incluidos los tributos y los gastos de depósito.',
                 ],
             ],
@@ -360,9 +360,9 @@ return [
         ],
         'faq' => [
             ['q' => '¿Qué es el régimen de turismo en Paraguay?', 'a' => 'Un régimen especial por el que comercios habilitados importan ciertos bienes con tratamiento tributario diferenciado para venderlos a turistas extranjeros, principalmente en ciudades de frontera.'],
-            ['q' => '¿Un paraguayo puede comprar bajo el régimen de turismo?', 'a' => 'El régimen está pensado para compradores no domiciliados en Paraguay. Las condiciones de venta a residentes las define la norma vigente; consúltelas en dnit.gov.py.'],
-            ['q' => '¿Dónde leo la norma del régimen de turismo?', 'a' => 'En el portal de la DNIT (dnit.gov.py), que publicó información sobre el régimen de turismo de compras establecido en 2024.'],
-            ['q' => '¿Cuánto puedo llevar a Argentina o Brasil desde Ciudad del Este?', 'a' => 'Lo define la aduana de su país. Consulte la franquicia vigente en ARCA para Argentina o en la Receita Federal para Brasil antes de viajar.'],
+            ['q' => '¿Un paraguayo puede comprar bajo el régimen de turismo?', 'a' => 'No. Según el Decreto 2063/2024, los compradores del régimen son personas físicas extranjeras, sin domicilio ni residencia en Paraguay. Un paraguayo o un extranjero residente compra con el régimen general; ante cualquier cambio, consulte la normativa vigente en dnit.gov.py.'],
+            ['q' => '¿Dónde leo la norma del régimen de turismo?', 'a' => 'En el portal de la DNIT (dnit.gov.py), que publica el Decreto 2063/2024 y la normativa del régimen de turismo de compras.'],
+            ['q' => '¿Cuánto puedo llevar a Argentina o Brasil desde Ciudad del Este?', 'a' => 'Lo define la aduana de su país. Consulte la franquicia vigente en ARCA para Argentina o en la Receita Federal para Brasil antes de viajar; en nuestra guía de la [aduana de Ciudad del Este y Encarnación](/aduana/aduana-ciudad-del-este-encarnacion/) le indicamos dónde.'],
             ['q' => '¿Puedo comprar en Ciudad del Este para revender en Asunción?', 'a' => 'Para revender necesita mercadería con respaldo legal: compre a un importador con factura o importe a su nombre con despacho aduanero.'],
         ],
         'relatedService' => 'despacho-aduanero',
@@ -387,7 +387,7 @@ return [
             'lead' => 'Al cruzar entre Argentina y Paraguay pasa por dos controles: el del país que deja y el del país al que entra. Cada país fija su propia franquicia para viajeros; lo que exceda o no sea de uso personal debe declararse y puede pagar tributos. Consulte los montos vigentes en ARCA (Argentina) y en la aduana paraguaya antes de viajar.',
         ],
         'intro' => [
-            'La búsqueda "aduana Argentina Paraguay" suele venir de personas que cruzan a comprar o a visitar familia por Posadas–Encarnación, Clorinda–Puerto Falcón o la zona de Puerto Iguazú. La regla práctica es la misma en todos los pasos: documentos en regla, compras con factura, y declarar lo que no sea equipaje personal o supere la franquicia del país de entrada.',
+            'La búsqueda "aduana Argentina Paraguay" suele venir de personas que cruzan a comprar o a visitar familia por Posadas–Encarnación (vea la [aduana de Ciudad del Este y Encarnación](/aduana/aduana-ciudad-del-este-encarnacion/)), Clorinda–Puerto Falcón (vea la [aduana de Clorinda](/aduana/aduana-clorinda/)) o la zona de Puerto Iguazú. La regla práctica es la misma en todos los pasos: documentos en regla, compras con factura, y declarar lo que no sea equipaje personal o supere la franquicia del país de entrada.',
             'La franquicia no es común a los dos países. Argentina la regula a través de ARCA (ex AFIP), con información en arca.gob.ar y argentina.gob.ar; Paraguay, a través de la Gerencia General de Aduanas de la DNIT, con información en aduana.gov.py. Los montos y condiciones cambian, por eso no los repetimos aquí: léalos en esas fuentes el día que viaje.',
             'Este sitio es privado e informativo. No representa a ninguna aduana ni publica el estado de los puentes en vivo.',
         ],
@@ -434,9 +434,9 @@ return [
             'caption' => 'Principales pasos entre Argentina y Paraguay',
             'head' => ['Paso', 'Lado argentino', 'Lado paraguayo', 'Nota práctica'],
             'rows' => [
-                ['Puente San Roque González de Santa Cruz', 'Posadas (Misiones)', 'Encarnación (Itapúa)', 'Paso urbano muy transitado; también hay tren internacional entre ambas ciudades.'],
+                ['Puente San Roque González de Santa Cruz', 'Posadas (Misiones)', 'Encarnación (Itapúa)', 'Paso urbano muy transitado; también hay un tren internacional entre ambas ciudades, con suspensiones temporales ocasionales.'],
                 ['Puente San Ignacio de Loyola', 'Clorinda (Formosa)', 'Puerto Falcón (Presidente Hayes)', 'El paso más cercano a Asunción por tierra.'],
-                ['Zona de Puerto Iguazú', 'Puerto Iguazú (Misiones)', 'Ciudad del Este / Presidente Franco', 'El camino habitual pasa por Foz do Iguaçu (Brasil), con controles brasileños además de los dos países.'],
+                ['Zona de Puerto Iguazú', 'Puerto Iguazú (Misiones)', 'Ciudad del Este / Presidente Franco', 'Por tierra se pasa por Foz do Iguaçu (Brasil), con controles brasileños; también hay una balsa sobre el río Paraná entre Puerto Iguazú y Presidente Franco.'],
             ],
             'note' => 'Horarios, servicios y pasos fluviales cambian. Confirme en los sitios oficiales de migraciones y aduana de cada país antes de viajar.',
         ],
@@ -445,16 +445,16 @@ return [
                 'h2' => 'Dónde consultar la información oficial',
                 'body' => [],
                 'items' => [
-                    ['title' => 'Argentina', 'text' => 'ARCA (arca.gob.ar) para franquicia y equipaje; Dirección Nacional de Migraciones (argentina.gob.ar/interior/migraciones) para documentos.'],
-                    ['title' => 'Paraguay', 'text' => 'Gerencia General de Aduanas de la DNIT (aduana.gov.py, dnit.gov.py) para equipaje y mercadería; Dirección General de Migraciones (migraciones.gov.py) para documentos.'],
+                    ['title' => 'Argentina', 'text' => 'ARCA (arca.gob.ar) para franquicia y equipaje; Dirección Nacional de Migraciones de Argentina (en argentina.gob.ar) para documentos.'],
+                    ['title' => 'Paraguay', 'text' => 'Gerencia General de Aduanas de la DNIT (aduana.gov.py, dnit.gov.py) para equipaje y mercadería; Dirección Nacional de Migraciones (migraciones.gov.py) para documentos.'],
                 ],
             ],
             [
                 'h2' => 'Compras frecuentes y mercadería comercial',
                 'body' => [
                     'Quien cruza seguido a comprar debe saber que la aduana puede tener en cuenta la frecuencia de los viajes y la cantidad de productos iguales. Lo que para usted es una compra grande para la familia puede parecer mercadería para la venta si son muchas unidades del mismo artículo. En ese caso, lo razonable es separar las compras o declarar.',
-                    'Si su intención es revender, la franquicia no es la herramienta. La mercadería comercial se importa formalmente, con factura, declaración y despacho aduanero. Para volúmenes chicos puede convenir comprar a un importador local; para volúmenes mayores, importar directamente, por ejemplo desde China, suele dar mejor margen. Podemos conectarlo con un despachante matriculado para evaluarlo.',
-                    'Tenga en cuenta también el dinero en efectivo: ambos países exigen declarar las sumas que superen el límite que fija cada uno. Consulte ese límite en las fuentes oficiales antes de viajar.',
+                    'Si su intención es revender, la franquicia no es la herramienta. La mercadería comercial se importa formalmente, con factura, declaración y despacho aduanero. Para volúmenes chicos puede convenir comprar a una de las [importadoras en Paraguay](/importar/importadoras-en-paraguay/); para volúmenes mayores, [importar directamente desde China](/importar/como-importar-de-china-a-paraguay/) suele dar mejor margen. Con nuestro servicio de [despacho aduanero](/servicios/despacho-aduanero/) podemos conectarlo con un despachante matriculado para evaluarlo.',
+                    'Tenga en cuenta también el dinero en efectivo: ambos países exigen declarar las sumas que superen el límite que fija cada uno. En Paraguay, la DNIT exige la declaración electrónica de viajeros cuando se ingresa o se sale con más de USD 10.000 o su equivalente; el límite argentino se consulta en arca.gob.ar.',
                 ],
             ],
         ],
@@ -488,7 +488,7 @@ return [
         ],
         'intro' => [
             'El cruce por Clorinda se usa mucho para viajes de compras en ambos sentidos: argentinos que van a Asunción y paraguayos que compran en Clorinda, según qué lado resulte más conveniente por el tipo de cambio. Por eso el control aduanero se concentra en qué se lleva, en qué cantidad y si es para uso personal.',
-            'En el puente hay controles de migraciones y aduana de los dos países. Del lado argentino interviene ARCA (ex AFIP) y del lado paraguayo la Gerencia General de Aduanas de la DNIT. Cada uno aplica su propia franquicia para viajeros; consulte los montos vigentes en arca.gob.ar y aduana.gov.py.',
+            'En el puente hay controles de migraciones y aduana de los dos países. Del lado argentino interviene ARCA (ex AFIP) y del lado paraguayo la Gerencia General de Aduanas de la DNIT. Cada uno aplica su propia franquicia para viajeros; consulte los montos vigentes en arca.gob.ar y aduana.gov.py, y vea [qué puede llevar al cruzar entre Argentina y Paraguay](/aduana/cruzar-frontera-argentina-paraguay/).',
             'Esta guía reúne lo práctico: documentos, qué se controla, cuándo suele haber más espera y dónde está la información oficial. Somos un sitio privado; no publicamos el estado del puente en vivo.',
         ],
         'steps' => [
@@ -513,7 +513,7 @@ return [
             [
                 'title' => 'Conozca qué se controla con más atención',
                 'body' => [
-                    'Además del valor total, se controlan alimentos, carnes, frutas y verduras (controles sanitarios), medicamentos, bebidas alcohólicas y cigarrillos, electrónica en cantidad y el dinero en efectivo por encima del límite de declaración. Si trae alguno de estos productos, consulte las reglas antes.',
+                    'Además del valor total, se controlan alimentos, carnes, frutas y verduras (controles sanitarios), medicamentos, bebidas alcohólicas y cigarrillos, electrónica en cantidad y el dinero en efectivo por encima del límite de declaración (en Paraguay, más de USD 10.000 o su equivalente). Si trae alguno de estos productos, consulte las reglas antes.',
                 ],
             ],
             [
@@ -545,7 +545,7 @@ return [
             [
                 'h2' => 'Compras para revender',
                 'body' => [
-                    'Si su idea es comprar en Asunción o en Clorinda para revender, la franquicia de viajero no es el camino: la mercadería comercial se importa formalmente, con declaración y despacho aduanero. Si quiere evaluar esa opción, podemos conectarlo con un despachante matriculado que le explique costos y requisitos.',
+                    'Si su idea es comprar en Asunción o en Clorinda para revender, la franquicia de viajero no es el camino: la mercadería comercial se importa formalmente, con declaración y despacho aduanero; vea [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/). Si quiere evaluar esa opción, podemos conectarlo con un [despachante de aduana matriculado](/servicios/despacho-aduanero/) que le explique costos y requisitos.',
                 ],
             ],
             [
@@ -558,11 +558,11 @@ return [
             ],
         ],
         'faq' => [
-            ['q' => '¿Dónde queda la aduana de Clorinda?', 'a' => 'En el cruce del puente San Ignacio de Loyola sobre el río Pilcomayo, entre Clorinda (Formosa) y Puerto Falcón (Paraguay). Confirme horarios y servicios en los sitios oficiales.'],
+            ['q' => '¿Dónde queda la aduana de Clorinda?', 'a' => 'En el cruce del puente San Ignacio de Loyola sobre el río Pilcomayo, entre Clorinda (Formosa) y Puerto Falcón (departamento de Presidente Hayes, Paraguay). Confirme horarios y servicios en los sitios oficiales.'],
             ['q' => '¿Cuánto puedo traer de Paraguay por Clorinda?', 'a' => 'Lo define ARCA para quienes entran a Argentina. Consulte el monto vigente para pasos terrestres en arca.gob.ar.'],
             ['q' => '¿Qué necesito para cruzar de Clorinda a Asunción?', 'a' => 'Documento de identidad o pasaporte vigente y, si viaja en vehículo, sus papeles. Para menores y ciudadanos de fuera del Mercosur hay requisitos adicionales.'],
             ['q' => '¿Se puede ver la fila del puente en vivo?', 'a' => 'Este sitio no publica esa información. Revise los canales oficiales de las autoridades de frontera antes de salir.'],
-            ['q' => '¿Qué pasa si me detienen con compras que superan la franquicia?', 'a' => 'Deberá declarar y pagar los tributos; si no declaró, puede haber multa y retención de la mercadería.'],
+            ['q' => '¿Qué pasa si me detienen con compras que superan la franquicia?', 'a' => 'Deberá declarar y pagar los tributos; si no declaró, puede haber multa y retención de la mercadería. Si compra seguido por internet en lugar de cruzar, vea los [impuestos de las compras online](/comprar/impuestos-compras-online-paraguay/).'],
             ['q' => '¿Cuándo hay menos fila en el puente San Ignacio de Loyola?', 'a' => 'Como tendencia general, en días hábiles y temprano por la mañana. Los fines de semana, los feriados de Argentina o de Paraguay y las épocas en que el tipo de cambio favorece las compras suelen traer más espera.'],
             ['q' => '¿Puedo pasar mercadería para vender en mi negocio?', 'a' => 'No como equipaje. La mercadería para reventa se importa con declaración y despacho aduanero; podemos conectarlo con un despachante matriculado.'],
         ],
@@ -590,19 +590,19 @@ return [
         'intro' => [
             'Para estimar lo que pagará en aduana necesita tres datos: el valor CIF de la mercadería, su posición arancelaria en la Nomenclatura Común del Mercosur (NCM) y los tributos y tasas vigentes para esa posición. Con eso, el cálculo es una suma en cascada.',
             'En esta guía explicamos el mecanismo paso a paso. No publicamos alícuotas porque dependen de cada posición NCM y de la normativa vigente; su despachante se las confirma, y la aduana las publica en aduana.gov.py y dnit.gov.py.',
-            'Si compra por internet en Temu, Shein o AliExpress para uso personal, las reglas de los envíos por courier pueden ser distintas; vea nuestra guía de impuestos de compras online.',
+            'Si compra por internet en Temu, Shein o AliExpress para uso personal, las reglas de los envíos por courier pueden ser distintas; vea nuestra guía de [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/).',
         ],
         'steps' => [
             [
                 'title' => 'Calcule el valor CIF',
                 'body' => [
-                    'CIF es el valor de la mercadería más el seguro y el flete internacional hasta el punto de ingreso. Si compró en FOB o EXW, sume usted el flete y el seguro. Si no contrató seguro, la normativa puede prever un valor presunto; consúltelo con su despachante.',
+                    'CIF es el valor de la mercadería más el seguro y el flete internacional hasta el punto de ingreso. Si compró en FOB o EXW, sume usted el flete y el seguro. Si no contrató seguro, pregunte a su despachante cómo se determina ese componente del valor en aduana.',
                 ],
             ],
             [
                 'title' => 'Determine la posición NCM',
                 'body' => [
-                    'La NCM de ocho dígitos identifica su producto. Cada posición tiene asignado su arancel y, a veces, requisitos adicionales. Una clasificación incorrecta cambia el cálculo y puede generar multas.',
+                    'La [NCM de ocho dígitos](/aduana/ncm-nomenclatura-mercosur/) identifica su producto. Cada posición tiene asignado su arancel y, a veces, requisitos adicionales. Una clasificación incorrecta cambia el cálculo y puede generar multas.',
                 ],
             ],
             [
@@ -620,7 +620,7 @@ return [
             [
                 'title' => 'Calcule el IVA de importación',
                 'body' => [
-                    'El IVA se aplica sobre una base que, en general, incluye el valor en aduana más el arancel y otros tributos. La tasa depende del tipo de bien. Si su empresa está inscripta en el IVA, ese impuesto pagado en aduana suele poder usarse como crédito fiscal; confírmelo con su contador.',
+                    'El IVA se aplica sobre una base que, en general, incluye el valor en aduana más el arancel y otros tributos. La tasa general del IVA en Paraguay es del 10 % y existe una tasa reducida del 5 % para ciertos bienes (Ley 6380/2019); cuál corresponde depende del bien. Si su empresa está inscripta en el IVA, ese impuesto pagado en aduana suele poder usarse como crédito fiscal; confírmelo con su contador.',
                 ],
             ],
             [
@@ -657,7 +657,7 @@ return [
                 'body' => [
                     'Supongamos que compra un lote de productos en condición FOB en un puerto de China. A ese valor le suma el flete marítimo hasta Paraguay y el seguro: eso es el CIF. Sobre ese CIF se aplica el arancel de la posición NCM de su producto. Luego se suman las tasas y demás cargos que correspondan, y sobre la base resultante se calcula el IVA de importación.',
                     'Si el producto fuera otro, con otra NCM, cambiaría el arancel y posiblemente los requisitos, aunque el valor de compra fuera el mismo. Por eso dos importaciones de igual valor pueden pagar tributos muy distintos.',
-                    'Para tener el número real de su operación, el despachante hace esta cuenta con las alícuotas vigentes. Si quiere una estimación antes, use la calculadora con la alícuota que le indique el despachante y trate el resultado como orientativo.',
+                    'Para tener el número real de su operación, el [despachante de aduana](/aduana/despachantes-de-aduana-paraguay/) hace esta cuenta con las alícuotas vigentes. Si quiere una estimación antes, use la [calculadora de costo de importación](/herramientas/calculadora-costo-importacion/) con la alícuota que le indique el despachante y trate el resultado como orientativo.',
                 ],
             ],
         ],
@@ -666,7 +666,7 @@ return [
             ['q' => '¿Sobre qué valor se calculan los tributos?', 'a' => 'Sobre el valor en aduana, que parte del valor CIF: mercadería más seguro y flete internacional.'],
             ['q' => '¿Dónde consulto el arancel de mi producto?', 'a' => 'En el arancel vigente publicado por la aduana (aduana.gov.py) o preguntando a un despachante, que confirma la posición NCM.'],
             ['q' => '¿El IVA de importación se recupera?', 'a' => 'Si su empresa está inscripta en el IVA, en general puede usarlo como crédito fiscal. Confírmelo con su contador.'],
-            ['q' => '¿Los tributos son iguales para compras por courier?', 'a' => 'Los envíos por courier pueden tener un régimen propio. Consulte nuestra guía de impuestos de compras online y la información de la DNIT.'],
+            ['q' => '¿Los tributos son iguales para compras por courier?', 'a' => 'Los envíos por courier pueden tener un régimen propio. Consulte nuestra guía de [impuestos de compras online](/comprar/impuestos-compras-online-paraguay/) y la información de la DNIT.'],
             ['q' => '¿Qué pasa si declaro un valor menor al real?', 'a' => 'La aduana puede ajustar el valor, cobrar la diferencia y aplicar multas. El importador es responsable de lo declarado, aunque el trámite lo haga el despachante.'],
         ],
         'relatedService' => 'despacho-aduanero',
@@ -732,13 +732,13 @@ return [
             [
                 'title' => 'Consulte el arancel de esa posición',
                 'body' => [
-                    'Con la NCM completa, busque en el arancel vigente la alícuota y los requisitos que se aplican. Recuerde que Paraguay tiene excepciones al Arancel Externo Común del Mercosur, así que no tome como válida la alícuota de otro país.',
+                    'Con la NCM completa, busque en el arancel vigente la alícuota y los requisitos que se aplican; en la guía de [tributos aduaneros](/aduana/tributos-aduaneros-paraguay/) verá cómo entra en el cálculo. Recuerde que Paraguay tiene excepciones al Arancel Externo Común del Mercosur, así que no tome como válida la alícuota de otro país.',
                 ],
             ],
             [
                 'title' => 'Confirme con su despachante antes de comprar',
                 'body' => [
-                    'El despachante es quien declara la posición ante la aduana. Si le envía la ficha técnica, fotos y la composición del producto antes de comprar, le puede confirmar la NCM y el costo con mucha más precisión.',
+                    'El [despachante de aduana](/aduana/despachantes-de-aduana-paraguay/) es quien declara la posición ante la aduana. Si le envía la ficha técnica, fotos y la composición del producto antes de comprar, le puede confirmar la NCM y el costo con mucha más precisión.',
                 ],
             ],
         ],
@@ -758,14 +758,14 @@ return [
             [
                 'h2' => 'Por qué una mala clasificación sale cara',
                 'body' => [
-                    'Si la aduana considera que su producto va en otra posición con un arancel más alto, deberá pagar la diferencia y puede recibir una multa. Si la posición correcta exige un permiso previo que usted no tramitó, la carga puede quedar retenida mientras lo consigue, con almacenaje corriendo. Clasificar bien desde el principio es la forma más barata de evitarlo.',
+                    'Si la aduana considera que su producto va en otra posición con un arancel más alto, deberá pagar la diferencia y puede recibir una multa. Si la posición correcta exige un permiso previo que usted no tramitó (vea los [requisitos para importar en Paraguay](/importar/requisitos-para-importar-paraguay/)), la carga puede quedar retenida mientras lo consigue, con almacenaje corriendo. Clasificar bien desde el principio es la forma más barata de evitarlo.',
                 ],
             ],
             [
                 'h2' => 'Cómo preparar la información para clasificar',
                 'body' => [
                     'Para que el despachante confirme la NCM con precisión, envíe una descripción técnica y no solo el nombre comercial: qué es, para qué sirve, de qué material está hecho y en qué proporción, cómo funciona (si es eléctrico, con qué voltaje y potencia) y cómo viene presentado.',
-                    'Sume fotos, el catálogo o la ficha técnica del proveedor y el código HS que el proveedor usa en China. Ese código ayuda como punto de partida, pero no reemplaza la clasificación en la NCM, que puede diferir desde el séptimo dígito o incluso antes si el proveedor lo eligió por conveniencia propia.',
+                    'Sume fotos, el catálogo o la ficha técnica del proveedor y el código HS que usa en China su proveedor (vea cómo elegir [proveedores chinos confiables](/importar/proveedores-chinos-confiables/)). Ese código ayuda como punto de partida, pero no reemplaza la clasificación en la NCM, que puede diferir desde el séptimo dígito o incluso antes si el proveedor lo eligió por conveniencia propia.',
                 ],
             ],
         ],
@@ -816,19 +816,19 @@ return [
             [
                 'title' => 'Si compra en Ciudad del Este como turista',
                 'body' => [
-                    'Muchos comercios operan bajo el régimen de turismo y venden a compradores no domiciliados en Paraguay. Pida factura. Al volver a Brasil o a Argentina, la aduana de su país aplica su propia franquicia; lo que la exceda debe declararlo allí.',
+                    'Muchos comercios operan bajo el [régimen de turismo](/aduana/regimen-de-turismo-paraguay/) y venden a compradores no domiciliados en Paraguay. Pida factura. Al volver a Brasil o a Argentina, la aduana de su país aplica su propia franquicia; lo que la exceda debe declararlo allí.',
                 ],
             ],
             [
                 'title' => 'Si cruza por Encarnación',
                 'body' => [
-                    'El paso Posadas–Encarnación es urbano y muy transitado en ambos sentidos. Rigen los mismos principios: documento vigente, compras con factura, uso personal y declaración de lo que supere la franquicia del país de entrada. Vea nuestra guía sobre la aduana entre Argentina y Paraguay.',
+                    'El paso Posadas–Encarnación es urbano y muy transitado en ambos sentidos. Rigen los mismos principios: documento vigente, compras con factura, uso personal y declaración de lo que supere la franquicia del país de entrada. Vea nuestra guía sobre la [aduana entre Argentina y Paraguay](/aduana/cruzar-frontera-argentina-paraguay/).',
                 ],
             ],
             [
                 'title' => 'Si importa mercadería comercial por la zona',
                 'body' => [
-                    'La carga comercial entra con documento de transporte, factura, declaración y despacho aduanero. Consulte con su despachante por qué aduana conviene ingresar y qué depósito se usa, porque influye en tiempos y costos.',
+                    'La carga comercial entra con documento de transporte, factura, declaración y [despacho aduanero](/servicios/despacho-aduanero/). Consulte con su despachante por qué aduana conviene ingresar y qué depósito se usa, porque influye en tiempos y costos.',
                 ],
             ],
             [
@@ -863,7 +863,7 @@ return [
             [
                 'h2' => 'Del lado del importador: la zona como puerta de entrada',
                 'body' => [
-                    'Además del comercio de frontera, la región recibe carga comercial que entra por vía terrestre o fluvial. Si importa desde China, su carga puede llegar por distintos puertos y aduanas; la elección influye en el flete interno, los tiempos y los gastos de depósito.',
+                    'Además del comercio de frontera, la región recibe carga comercial que entra por vía terrestre o fluvial. Si [importa desde China](/importar/como-importar-de-china-a-paraguay/), su carga puede llegar por distintos puertos y aduanas; la elección influye en el flete interno, los tiempos y los gastos de depósito.',
                     'Antes de decidir, pida a su agente de carga y a su despachante que comparen las opciones para su caso concreto. Un despachante que opere habitualmente en la aduana de ingreso conoce los procedimientos locales y puede anticipar demoras.',
                     'Si todavía no tiene despachante, podemos conectarlo con uno matriculado que trabaje en la zona por la que va a ingresar su mercadería.',
                 ],
@@ -881,7 +881,7 @@ return [
             ['q' => '¿Puedo importar mercadería para mi negocio comprando en Ciudad del Este?', 'a' => 'Si es residente, lo que corresponde es comprar a un importador local con factura o importar a su nombre con despacho aduanero. El régimen de turismo está pensado para compradores extranjeros.'],
             ['q' => '¿Dónde está la información oficial?', 'a' => 'Del lado paraguayo, en aduana.gov.py y dnit.gov.py. Del lado brasileño, en la Receita Federal, y del argentino, en ARCA.'],
             ['q' => '¿Qué es la aduana de Encarnación para un importador?', 'a' => 'Además del control de viajeros, es una de las aduanas por donde puede ingresar carga comercial. Su despachante le indica si conviene usarla según el origen y el destino de su mercadería.'],
-            ['q' => '¿Hay que declarar el dinero en efectivo al cruzar?', 'a' => 'Sí, cuando supera el límite que fija cada país. Consulte el monto vigente en las fuentes oficiales antes de viajar.'],
+            ['q' => '¿Hay que declarar el dinero en efectivo al cruzar?', 'a' => 'Sí, cuando supera el límite que fija cada país. En Paraguay, la DNIT exige la declaración electrónica cuando se ingresa o se sale con más de USD 10.000 o su equivalente; para Brasil y Argentina, consulte el monto vigente en la Receita Federal y en ARCA.'],
         ],
         'relatedService' => 'despacho-aduanero',
         'toolLink' => null,

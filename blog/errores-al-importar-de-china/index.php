@@ -16,7 +16,7 @@ $sections = [
         'h2'   => '1. Pagarle a una trading creyendo que es la fábrica',
         'body' => [
             'Muchos perfiles en Alibaba se presentan como fabricantes pero son empresas comerciales (trading companies) que compran a una fábrica y revenden. No es ilegal ni siempre es malo, pero usted paga un margen adicional y pierde control sobre la calidad y los plazos.',
-            'Pida la licencia comercial (business license) y verifique el alcance de actividades, solicite fotos o video de la línea de producción y pregunte cuántos operarios y máquinas tiene. Si el proveedor ofrece productos de categorías muy distintas, probablemente no fabrica todo lo que vende.',
+            'Pida la licencia comercial (business license) y verifique el alcance de actividades (le explicamos cómo en [proveedores chinos confiables](/importar/proveedores-chinos-confiables/)), solicite fotos o video de la línea de producción y pregunte cuántos operarios y máquinas tiene. Si el proveedor ofrece productos de categorías muy distintas, probablemente no fabrica todo lo que vende.',
         ],
     ],
     [
@@ -37,21 +37,21 @@ $sections = [
         'h2'   => '4. No inspeccionar antes del embarque',
         'body' => [
             'Una vez que la mercadería sale de China, reclamar es difícil y lento. Una inspección antes del embarque verifica cantidades, medidas, funcionamiento, embalaje y etiquetado contra la muestra aprobada, mientras todavía queda un saldo por pagar al proveedor.',
-            'Negocie la forma de pago de modo que el saldo se pague después de la inspección. Así el proveedor tiene un motivo concreto para corregir los defectos.',
+            'Negocie la forma de pago de modo que el saldo se pague después de la [inspección de calidad](/servicios/inspeccion-de-calidad/). Así el proveedor tiene un motivo concreto para corregir los defectos.',
         ],
     ],
     [
         'h2'   => '5. Clasificar mal la mercadería (NCM)',
         'body' => [
-            'Cada producto tiene una posición arancelaria en la Nomenclatura Común del Mercosur (NCM), y de ella dependen los tributos, las licencias previas y los registros que exige cada organismo. Una clasificación incorrecta puede significar pagar de más, pagar de menos y ser observado, o descubrir en la aduana que el producto necesitaba un permiso que usted no tramitó.',
-            'Consulte la clasificación con su despachante antes de comprar, no cuando la carga ya está en camino. El despachante le confirma la alícuota y los requisitos según la posición arancelaria.',
+            'Cada producto tiene una posición arancelaria en la [Nomenclatura Común del Mercosur (NCM)](/aduana/ncm-nomenclatura-mercosur/), y de ella dependen los tributos, las licencias previas y los registros que exige cada organismo. Una clasificación incorrecta puede significar pagar de más, pagar de menos y ser observado, o descubrir en la aduana que el producto necesitaba un permiso que usted no tramitó.',
+            'Consulte la clasificación con su [despachante de aduana](/aduana/despachantes-de-aduana-paraguay/) antes de comprar, no cuando la carga ya está en camino. El despachante le confirma la alícuota y los requisitos según la posición arancelaria.',
         ],
     ],
     [
         'h2'   => '6. Subfacturar o declarar menos de lo pagado',
         'body' => [
-            'Algunos proveedores ofrecen emitir una factura por un valor menor "para que pague menos impuestos". Declarar un valor inferior al real es ilegal y la aduana cuenta con herramientas para controlar valores. Si se detecta, usted se expone a multas, a la retención o al comiso de la mercadería y a problemas legales como importador.',
-            'Declare siempre el valor real, con factura, comprobante de pago y documentos coherentes entre sí. Su despachante le explica las consecuencias concretas según la normativa aduanera vigente.',
+            'Algunos proveedores ofrecen emitir una factura por un valor menor "para que pague menos impuestos". Declarar un valor inferior al real es una infracción aduanera y la aduana cuenta con herramientas para controlar valores. El Código Aduanero (Ley 2422/2004) prevé sanciones para estas infracciones; según la gravedad del caso, usted se expone a la retención de la mercadería, a multas y a otras consecuencias como importador.',
+            'Declare siempre el valor real, con factura, comprobante de pago y documentos coherentes entre sí. Su despachante le explica las consecuencias concretas según la normativa aduanera vigente, y en [tributos aduaneros en Paraguay](/aduana/tributos-aduaneros-paraguay/) verá cómo se calcula lo que corresponde pagar.',
         ],
     ],
     [
@@ -65,7 +65,7 @@ $sections = [
         'h2'   => '8. Ignorar el peso volumétrico',
         'body' => [
             'En flete aéreo y courier, lo que se cobra es el mayor entre el peso real y el peso volumétrico, que se calcula con las medidas de la caja. Productos livianos pero voluminosos, como almohadas, juguetes de plástico o lámparas, pueden costar varias veces más de lo que usted calculó con la balanza.',
-            'Pida al proveedor las medidas y el peso de cada caja maestra antes de cerrar la compra y calcule el volumen. A partir de cierto volumen, el flete marítimo en contenedor compartido suele convenir más que el aéreo.',
+            'Pida al proveedor las medidas y el peso de cada caja maestra antes de cerrar la compra y calcule el volumen. A partir de cierto volumen, el flete marítimo en contenedor compartido desde China suele convenir más que el aéreo.',
         ],
     ],
     [
@@ -99,8 +99,8 @@ $sections = [
 
 $faq = [
     ['q' => '¿Cómo sé si un proveedor chino es fábrica o trading?', 'a' => 'Pida la licencia comercial y revise su alcance de actividades, solicite un video de la línea de producción y desconfíe si ofrece productos de categorías sin relación entre sí.'],
-    ['q' => '¿Qué Incoterm conviene para importar a Paraguay?', 'a' => 'FOB en un puerto chino es lo más común, porque el proveedor se encarga de la exportación y usted controla el flete internacional con su forwarder.'],
-    ['q' => '¿Es legal pedir una factura por menos valor?', 'a' => 'No. Declarar menos de lo pagado es una infracción aduanera que puede terminar en multas y en el comiso de la mercadería.'],
+    ['q' => '¿Qué Incoterm conviene para importar a Paraguay?', 'a' => 'FOB en un puerto chino es lo más común, porque el proveedor se encarga de la exportación y usted controla el flete internacional con su forwarder. El proceso completo está en [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/).'],
+    ['q' => '¿Es legal pedir una factura por menos valor?', 'a' => 'No. Declarar menos de lo pagado es una infracción aduanera sancionada por el Código Aduanero, que puede terminar en la retención de la mercadería y en multas.'],
     ['q' => '¿Cuándo conviene una inspección de calidad?', 'a' => 'En cualquier pedido cuyo valor haría daño perder, y sobre todo en la primera compra con un proveedor nuevo. Se hace antes de pagar el saldo.'],
 ];
 

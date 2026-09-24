@@ -60,7 +60,9 @@ function seo_canonical(array $page): string
  */
 function seo_og_image(array $page): string
 {
-    $image = $page['ogImage'] ?? '/assets/img/og-default.png';
+    /* Default share image: the homepage hero once it is on disk, else the
+       neutral placeholder. */
+    $image = $page['ogImage'] ?? image_og(page_meta('/')['image'] ?? null) ?? '/assets/img/og-default.png';
 
     return str_starts_with($image, 'http') ? $image : url($image);
 }
@@ -93,7 +95,8 @@ function jsonld_organization(): array
         '@id'        => url('/') . '#organization',
         'name'       => (string) site('name'),
         'url'        => url('/'),
-        'image'      => url('/assets/img/og-default.png'),
+        'image'      => seo_og_image([]),
+        'logo'       => url('/assets/img/favicon.svg'),
         'areaServed' => ['@type' => 'Country', 'name' => site('country') ?? market_country()],
     ];
 
@@ -102,6 +105,15 @@ function jsonld_organization(): array
     }
     if (site('phone')) {
         $data['telephone'] = site('phone');
+    }
+    if (site('whatsapp')) {
+        $data['contactPoint'] = [
+            '@type'             => 'ContactPoint',
+            'contactType'       => 'customer service',
+            'telephone'         => site('whatsapp'),
+            'availableLanguage' => ['es'],
+            'areaServed'        => 'PY',
+        ];
     }
     if (site('email')) {
         $data['email'] = site('email');
@@ -177,7 +189,7 @@ function jsonld_faq(array $faq): ?array
         $items[] = [
             '@type'          => 'Question',
             'name'           => $entry['q'],
-            'acceptedAnswer' => ['@type' => 'Answer', 'text' => $entry['a']],
+            'acceptedAnswer' => ['@type' => 'Answer', 'text' => plain($entry['a'])],
         ];
     }
 
@@ -226,6 +238,18 @@ function jsonld_article(array $article, array $page): ?array
 function seo_jsonld(array $page): array
 {
     $blocks = [jsonld_organization()];
+
+    if (($page['path'] ?? '') === '/') {
+        $blocks[] = [
+            '@context'   => 'https://schema.org',
+            '@type'      => 'WebSite',
+            '@id'        => url('/') . '#website',
+            'name'       => (string) site('name'),
+            'url'        => url('/'),
+            'inLanguage' => market_locale(),
+            'publisher'  => ['@id' => url('/') . '#organization'],
+        ];
+    }
 
     foreach ([
         jsonld_breadcrumbs($page['breadcrumbs'] ?? []),
