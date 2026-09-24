@@ -1,0 +1,183 @@
+{
+  "_notes": {
+    "generated": "2026-09-24",
+    "cost_preflight": "medium 2k 16:9 = 1 credit, medium 1k 16:9 = 0.5 credit",
+    "actual_spend_credits": 7.5,
+    "ledger_checked": "2026-09-24: 10 lines \"GPT Image 2.5 Sunburst\", 6×1 + 4×0.5",
+    "resolution_rule": "2k for hero/hub slots rendered ≥1200 px wide, 1k for service/guide figures",
+    "high_slots": [],
+    "download_status": "awaiting-download: this cloud environment blocks *.cloudfront.net (CONNECT 403). Run deploy/fetch-images.sh where the CDN is reachable."
+  },
+  "images": [
+    {
+      "id": "home-hero",
+      "file": "/assets/img/hero/puerto-fluvial-contenedores.webp",
+      "alt_es": "Contenedores apilados en un puerto fluvial al atardecer, con una barcaza sobre el río",
+      "ratio": "4:3",
+      "px": [
+        2336,
+        1744
+      ],
+      "out_width": 1600,
+      "model": "gpt_image_2_5/sunburst",
+      "quality": "medium",
+      "resolution": "2k",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_411eb175-aef3-42ea-a7f9-c3f5660e7f5c.png",
+      "job_id": "411eb175-aef3-42ea-a7f9-c3f5660e7f5c",
+      "used_on": "/ (hero)"
+    },
+    {
+      "id": "hub-compras",
+      "file": "/assets/img/hubs/compras-online-entrega-paraguay.webp",
+      "alt_es": "Una mujer recibe en la puerta de su casa en Asunción varios paquetes de una compra online",
+      "ratio": "16:9",
+      "px": [
+        2688,
+        1520
+      ],
+      "out_width": 1600,
+      "model": "gpt_image_2_5/sunburst",
+      "quality": "medium",
+      "resolution": "2k",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_361df2fe-3298-4cdc-9203-d28c6c14fea8.png",
+      "job_id": "361df2fe-3298-4cdc-9203-d28c6c14fea8",
+      "used_on": "/comprar/ + home door + /comprar/temu-paraguay/"
+    },
+    {
+      "id": "hub-importar",
+      "file": "/assets/img/hubs/importar-de-china-deposito-fabrica.webp",
+      "alt_es": "Comprador y encargado revisan una lista junto a cajas de exportación en un depósito de fábrica en China",
+      "ratio": "16:9",
+      "px": [
+        2688,
+        1520
+      ],
+      "out_width": 1600,
+      "model": "gpt_image_2_5/sunburst",
+      "quality": "medium",
+      "resolution": "2k",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_6c08b746-5f37-41fe-bc6b-ec0115173060.png",
+      "job_id": "6c08b746-5f37-41fe-bc6b-ec0115173060",
+      "used_on": "/importar/ + home door + /servicios/agente-de-compras-china/"
+    },
+    {
+      "id": "hub-aduana",
+      "file": "/assets/img/hubs/aduana-documentos-despacho.webp",
+      "alt_es": "Escritorio con facturas, lista de empaque y calculadora, con contenedores de fondo",
+      "ratio": "16:9",
+      "px": [
+        2688,
+        1520
+      ],
+      "out_width": 1600,
+      "model": "gpt_image_2_5/sunburst",
+      "quality": "medium",
+      "resolution": "2k",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_e2dcbb30-1d3e-424c-be4e-b17b4291cdf5.png",
+      "job_id": "e2dcbb30-1d3e-424c-be4e-b17b4291cdf5",
+      "used_on": "/aduana/ + home door + /servicios/despacho-aduanero/"
+    },
+    {
+      "id": "hub-viajes",
+      "file": "/assets/img/hubs/viajar-a-china-estacion-tren.webp",
+      "alt_es": "Viajero de negocios con equipaje de mano en una estación de tren de alta velocidad en China",
+      "ratio": "16:9",
+      "px": [
+        2688,
+        1520
+      ],
+      "out_width": 1600,
+      "model": "gpt_image_2_5/sunburst",
+      "quality": "medium",
+      "resolution": "2k",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_0268a49a-af02-4f9b-bcf9-d62eb751a5ab.png",
+      "job_id": "0268a49a-af02-4f9b-bcf9-d62eb751a5ab",
+      "used_on": "/viajar-a-china/ + home door + /viajar-a-china/guia-para-viajar-a-china/"
+    },
+    {
+      "id": "guia-feria-canton",
+      "file": "/assets/img/guias/feria-de-canton-pabellon.webp",
+      "alt_es": "Pasillos de un pabellón de feria comercial en Cantón con compradores y stands de productos",
+      "ratio": "16:9",
+      "px": [
+        2688,
+        1520
+      ],
+      "out_width": 1600,
+      "model": "gpt_image_2_5/sunburst",
+      "quality": "medium",
+      "resolution": "2k",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_9d9cbb57-27cb-4290-97d2-f182aa0e2608.png",
+      "job_id": "9d9cbb57-27cb-4290-97d2-f182aa0e2608",
+      "used_on": "/feria-de-canton/ + /servicios/tour-negocios-china/"
+    },
+    {
+      "id": "guia-como-importar",
+      "file": "/assets/img/guias/como-importar-de-china-plan.webp",
+      "alt_es": "Cuaderno con una ruta de envío dibujada, muestras de productos, un contenedor en miniatura y un pasaporte",
+      "ratio": "16:9",
+      "px": [
+        1344,
+        752
+      ],
+      "out_width": 1200,
+      "model": "gpt_image_2_5/sunburst",
+      "quality": "medium",
+      "resolution": "1k",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210815_4ecce26d-ab7e-4035-8ed1-79149c003752.png",
+      "job_id": "4ecce26d-ab7e-4035-8ed1-79149c003752",
+      "used_on": "/importar/como-importar-de-china-a-paraguay/ + /servicios/importacion-llave-en-mano/"
+    },
+    {
+      "id": "servicio-inspeccion",
+      "file": "/assets/img/servicios/inspeccion-de-calidad-prenda.webp",
+      "alt_es": "Inspector de calidad mide una prenda con cinta métrica en una mesa de control en una fábrica",
+      "ratio": "16:9",
+      "px": [
+        1344,
+        752
+      ],
+      "out_width": 1200,
+      "model": "gpt_image_2_5/sunburst",
+      "quality": "medium",
+      "resolution": "1k",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_892bc09a-1814-447d-a7ea-1dea26155e03.png",
+      "job_id": "892bc09a-1814-447d-a7ea-1dea26155e03",
+      "used_on": "/servicios/inspeccion-de-calidad/"
+    },
+    {
+      "id": "servicio-flete-maritimo",
+      "file": "/assets/img/servicios/flete-maritimo-buque-portacontenedores.webp",
+      "alt_es": "Buque portacontenedores saliendo de un puerto chino al amanecer, con un remolcador al costado",
+      "ratio": "16:9",
+      "px": [
+        1344,
+        752
+      ],
+      "out_width": 1200,
+      "model": "gpt_image_2_5/sunburst",
+      "quality": "medium",
+      "resolution": "1k",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_8012ed15-aef5-4653-89ad-97d0e6dd7121.png",
+      "job_id": "8012ed15-aef5-4653-89ad-97d0e6dd7121",
+      "used_on": "/servicios/flete-maritimo-contenedor/ + /importar/contenedor-compartido-desde-china/"
+    },
+    {
+      "id": "guia-shein",
+      "file": "/assets/img/guias/compra-online-desempaque.webp",
+      "alt_es": "Persona abre en la mesa de su cocina un paquete de una compra online y sostiene una prenda",
+      "ratio": "16:9",
+      "px": [
+        1344,
+        752
+      ],
+      "out_width": 1200,
+      "model": "gpt_image_2_5/sunburst",
+      "quality": "medium",
+      "resolution": "1k",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260924_210814_9f224eaf-65c3-4c31-9959-53154a26b423.png",
+      "job_id": "9f224eaf-65c3-4c31-9959-53154a26b423",
+      "used_on": "/comprar/shein-paraguay/ + /servicios/asesoria-compras-online/"
+    }
+  ]
+}

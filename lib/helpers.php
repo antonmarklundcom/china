@@ -344,3 +344,15 @@ function lead_label(string $slug): string
 
     return (string) ($page['navLabel'] ?? $page['title'] ?? $slug);
 }
+
+/**
+ * True when an image record points at a file that exists on disk. Content may
+ * name an image before its file has been localised (docs/imagery-manifest.json,
+ * deploy/fetch-images.sh); the slot then renders nothing instead of a broken
+ * image, and switches on by itself once the file lands.
+ */
+function image_ready(?array $image): bool
+{
+    $src = (string) ($image['src'] ?? '');
+    return $src !== '' && str_starts_with($src, '/') && is_file(ROOT_DIR . $src);
+}

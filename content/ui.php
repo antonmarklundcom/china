@@ -276,8 +276,8 @@ return [
     // The official-source notice on aduana and visa pages (partials/disclaimer-oficial.php).
     'disclaimer' => [
         'title' => 'Sitio privado de información',
-        'text'  => 'China-Paraguay no es la Dirección Nacional de Aduanas, ni la DNIT, ni una '
-                 . 'embajada o consulado. Los montos y requisitos cambian: confírmelos siempre en '
+        'text'  => 'China-Paraguay no es la aduana (Gerencia General de Aduanas de la DNIT, antes '
+                 . 'DNA), ni la DNIT, ni una embajada o consulado. Los montos y requisitos cambian: confírmelos siempre en '
                  . 'la fuente oficial antes de actuar.',
         'link'  => 'Fuente oficial',
     ],

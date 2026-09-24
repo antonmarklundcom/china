@@ -2724,3 +2724,4 @@ a.industries__item:focus-visible {
 }
 .section--ink .section-head__aside { color: var(--on-ink-muted); }
 .route::before { bottom: 30px; }
+.tool-form__row { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
