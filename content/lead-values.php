@@ -134,6 +134,18 @@ return [
             'crmTag' => 'importar-flete-aereo-china',
             'nextLink' => null,
         ],
+        'agente-de-carga-internacional' => [
+            'menuLabel' => 'Agente de carga internacional',
+            'need' => 'importar',
+            'tier' => 'B',
+            'whatsappText' => 'Hola, vi la página de agente de carga internacional en china.com.py y quisiera cotizar un envío desde China.',
+            'nextStep' => [
+                'Le respondemos dentro del siguiente día hábil.',
+                'Tenga a mano el volumen (CBM), el peso bruto, el Incoterm y la ciudad de retiro en China.',
+            ],
+            'crmTag' => 'importar-agente-de-carga-internacional',
+            'nextLink' => ['path' => '/herramientas/calculadora-cbm-contenedor/', 'label' => 'Calcular el volumen de su carga'],
+        ],
         'importacion-llave-en-mano' => [
             'menuLabel' => 'Importación llave en mano',
             'need' => 'importar',

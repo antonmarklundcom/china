@@ -274,7 +274,7 @@ return [
             [
                 'h2' => 'Quién hace qué',
                 'body' => [
-                    'El transporte lo ejecuta un forwarder independiente, que contrata a la naviera y al transporte fluvial o terrestre. Nosotros le ayudamos a preparar la solicitud, comparamos la cotización con usted y lo conectamos con un despachante de aduana matriculado para la llegada, a través del servicio de [despacho aduanero](/servicios/despacho-aduanero/).',
+                    'El transporte lo ejecuta un [agente de carga internacional](/servicios/agente-de-carga-internacional/) independiente, que contrata a la naviera y al transporte fluvial o terrestre. Nosotros le ayudamos a preparar la solicitud, comparamos la cotización con usted y lo conectamos con un despachante de aduana matriculado para la llegada, a través del servicio de [despacho aduanero](/servicios/despacho-aduanero/).',
                 ],
             ],
         ],
@@ -361,7 +361,7 @@ return [
             [
                 'h2' => 'Quién hace qué',
                 'body' => [
-                    'El transporte lo ejecuta un forwarder independiente, que reserva el espacio con la aerolínea. Nosotros ordenamos su solicitud, revisamos la cotización con usted y lo conectamos con un despachante de aduana matriculado, a través del servicio de [despacho aduanero](/servicios/despacho-aduanero/), para liberar la carga en Paraguay.',
+                    'El transporte lo ejecuta un [agente de carga internacional](/servicios/agente-de-carga-internacional/) independiente (forwarder), que reserva el espacio con la aerolínea. Nosotros ordenamos su solicitud, revisamos la cotización con usted y lo conectamos con un despachante de aduana matriculado, a través del servicio de [despacho aduanero](/servicios/despacho-aduanero/), para liberar la carga en Paraguay.',
                 ],
             ],
         ],
@@ -389,6 +389,126 @@ return [
         ],
         'affiliates' => [],
         'disclaimer' => false,
+    ],
+
+    'agente-de-carga-internacional' => [
+        'path' => '/servicios/agente-de-carga-internacional/',
+        'title' => 'Agente de carga internacional (forwarder) para importar de China',
+        'navLabel' => 'Agente de carga internacional',
+        'cluster' => 'importar',
+        'parent' => null,
+        'seoTitle' => 'Agente de carga y forwarder en Paraguay',
+        'metaDescription' => 'Qué hace un agente de carga (forwarder) al traer mercadería de China a Paraguay, en qué se diferencia de un courier y qué comparar en su cotización.',
+        'hero' => [
+            'eyebrow' => 'Servicios',
+            'h1' => 'Agente de carga internacional para importar de China a Paraguay',
+            'h2' => 'El forwarder organiza el transporte de su carga desde la fábrica en China hasta Paraguay; usted debe saber qué contrata y qué comparar.',
+            'lead' => 'Un agente de carga internacional, o freight forwarder, organiza el transporte de su mercadería desde China hasta Paraguay: reserva espacio en el barco o el avión, consolida su carga con la de otros importadores, emite los documentos de embarque y coordina el transbordo y el tramo por río o por tierra. Nosotros coordinamos su envío con un forwarder independiente, elegido para su carga y nombrado en la cotización escrita.',
+        ],
+        'includes' => [
+            'Revisión de su carga (volumen, peso, producto e Incoterm) antes de pedir precios',
+            'Cotización escrita de un forwarder independiente, nombrado en el documento',
+            'Opciones de flete marítimo (contenedor completo o consolidado) y de flete aéreo',
+            'Comparación de rutas: transbordo en un puerto de la región y tramo fluvial o terrestre hasta Paraguay',
+            'Lectura de la cotización con usted: qué incluye, qué no y qué gastos aparecen en destino',
+            'Coordinación de documentos de embarque con su proveedor y el forwarder',
+            'Seguimiento del envío y aviso de llegada a su despachante',
+        ],
+        'excludes' => [
+            'El despacho aduanero en Paraguay, que hace un despachante de aduana matriculado',
+            'El pago de tributos aduaneros, que corresponde al importador',
+            'La compra y el pago de la mercadería al proveedor',
+            'Plazos o precios garantizados: dependen de navieras, aerolíneas y del nivel del río',
+        ],
+        'weNeed' => [
+            'Descripción del producto e indicación de si lleva baterías, líquidos u otra carga especial',
+            'Volumen en metros cúbicos (CBM), peso bruto y cantidad de cajas',
+            'Incoterm acordado con el proveedor y ciudad de retiro en China',
+            'Ciudad de destino en Paraguay y fecha en que la mercadería estará lista',
+        ],
+        'sections' => [
+            [
+                'h2' => 'Qué hace un agente de carga en un envío de China a Paraguay',
+                'body' => [
+                    'El forwarder no suele ser dueño del barco ni del avión: compra espacio a navieras y aerolíneas y arma el recorrido completo de su carga. En un envío desde China a Paraguay eso significa varias etapas, y en cada una hay costos y documentos que conviene entender antes de firmar.',
+                ],
+                'items' => [
+                    ['title' => 'Retiro y exportación en China', 'text' => 'Si el Incoterm es EXW, retira en fábrica y gestiona la salida de China; con FOB, el proveedor entrega la carga en el puerto de salida.'],
+                    ['title' => 'Consolidación', 'text' => 'Con poco volumen, junta su mercadería con la de otros importadores en un [contenedor compartido](/importar/contenedor-compartido-desde-china/) (LCL) y le cobra por el espacio que ocupa.'],
+                    ['title' => 'Reserva marítima o aérea', 'text' => 'Reserva el espacio con la naviera, para [flete marítimo](/servicios/flete-maritimo-contenedor/), o con la aerolínea, para [flete aéreo](/servicios/flete-aereo-china/).'],
+                    ['title' => 'Documentos de embarque', 'text' => 'En marítimo, el conocimiento de embarque (BL): la naviera emite el BL principal (master) y, en carga consolidada, el forwarder emite un BL propio (house) para cada importador. En aéreo, la guía aérea (AWB), con la misma lógica.'],
+                    ['title' => 'Transbordo y tramo final', 'text' => 'Paraguay no tiene costa: la carga marítima hace transbordo en un puerto de la región, sobre todo Buenos Aires y también Montevideo, y sigue en barcaza por la hidrovía Paraná-Paraguay hasta Asunción o Villeta; otra vía es Paranaguá, en Brasil, y camión hasta Ciudad del Este.'],
+                    ['title' => 'Llegada y entrega', 'text' => 'Avisa la llegada, entrega los documentos a su despachante y, si lo contrata, lleva la carga hasta su depósito.'],
+                ],
+            ],
+            [
+                'h2' => 'Forwarder, courier y despachante: quién es quién',
+                'body' => [
+                    'Los tres aparecen en una importación, pero hacen trabajos distintos. Confundirlos es una causa frecuente de costos que nadie cotizó.',
+                ],
+                'items' => [
+                    ['title' => 'Agente de carga (forwarder)', 'text' => 'Mueve carga comercial por mar o aire, con documentos de embarque a nombre de su empresa. No hace el despacho en Paraguay.'],
+                    ['title' => 'Courier', 'text' => 'Trae paquetes y compras online bajo un régimen aduanero propio, pensado para uso personal. Para mercadería comercial en cantidad no es la vía; vea el [courier de China a Paraguay](/comprar/courier-china-paraguay/).'],
+                    ['title' => 'Despachante de aduana', 'text' => 'Clasifica la mercadería, liquida los tributos y hace el despacho ante la aduana. En Paraguay la importación comercial se despacha por un despachante matriculado; vea el servicio de [despacho aduanero](/servicios/despacho-aduanero/).'],
+                ],
+            ],
+            [
+                'h2' => 'Qué preguntar y comparar en una cotización de flete internacional',
+                'body' => [
+                    'Dos cotizaciones con el mismo total pueden cubrir cosas muy distintas. Antes de elegir, revise esta lista punto por punto y pida por escrito lo que falte. Para tener el volumen exacto de su carga, use la [calculadora de CBM y contenedor](/herramientas/calculadora-cbm-contenedor/).',
+                ],
+                'items' => [
+                    ['title' => 'Tramo cubierto', 'text' => '¿Desde dónde y hasta dónde? Fábrica, puerto chino, puerto de transbordo, terminal en Paraguay o su depósito.'],
+                    ['title' => 'Ruta y transbordo', 'text' => '¿En qué puerto se hace el transbordo y el tramo final va por barcaza o por camión?'],
+                    ['title' => 'Base de cobro', 'text' => 'En LCL, por metro cúbico o por peso, lo que resulte mayor; en aéreo, por peso cobrable (real o volumétrico). ¿Hay un mínimo cobrable?'],
+                    ['title' => 'Gastos en origen y en destino', 'text' => 'Retiro, trámites de exportación, gastos de terminal, desconsolidación y entrega: ¿cuáles están incluidos y cuáles se pagan aparte?'],
+                    ['title' => 'Plazo estimado', 'text' => 'El plazo vigente para esa ruta y fecha, y qué pasa si la naviera cambia la escala.'],
+                    ['title' => 'Seguro de carga', 'text' => '¿Está incluido, qué cubre y sobre qué valor?'],
+                    ['title' => 'Documentos', 'text' => '¿Quién emite el BL o la guía aérea, y a nombre de quién? El consignatario debe ser su empresa.'],
+                    ['title' => 'Carga especial', 'text' => 'Baterías, líquidos o productos que necesitan permisos: ¿los acepta y en qué condiciones?'],
+                    ['title' => 'Validez', 'text' => '¿Hasta qué fecha vale el precio? Las tarifas de flete cambian con frecuencia.'],
+                ],
+            ],
+            [
+                'h2' => 'Cómo funciona nuestro servicio',
+                'body' => [
+                    'No somos transportistas ni forwarder. Ordenamos su solicitud, la enviamos a un forwarder independiente elegido para su carga y su ruta, y revisamos la cotización con usted. El forwarder aparece nombrado en la cotización escrita, así sabe con quién contrata. Si lo necesita, lo conectamos con un despachante matriculado para la llegada, o puede contratar todo el recorrido con la [importación llave en mano](/servicios/importacion-llave-en-mano/).',
+                ],
+                'items' => [
+                    ['title' => '1. Datos de la carga', 'text' => 'Usted nos pasa producto, volumen, peso, Incoterm y fechas.'],
+                    ['title' => '2. Cotización escrita', 'text' => 'Recibe la cotización del forwarder, con ruta, plazo estimado y gastos detallados. Precio según cotización.'],
+                    ['title' => '3. Revisión con usted', 'text' => 'Repasamos juntos la lista de arriba antes de que confirme.'],
+                    ['title' => '4. Embarque y seguimiento', 'text' => 'Seguimos el envío y coordinamos los documentos con su despachante hasta la llegada.'],
+                ],
+            ],
+        ],
+        'benefits' => [
+            ['title' => 'Sabe con quién contrata', 'text' => 'El forwarder está nombrado en la cotización escrita.'],
+            ['title' => 'Cotización que se entiende', 'text' => 'Qué incluye, qué no y qué se paga en destino, revisado con usted.'],
+            ['title' => 'Ruta pensada para Paraguay', 'text' => 'Transbordo y tramo fluvial o terrestre explicados antes de embarcar.'],
+            ['title' => 'Conexión con el despacho', 'text' => 'Documentos listos para su despachante cuando llega la carga.'],
+        ],
+        'faq' => [
+            ['q' => '¿Qué es un freight forwarder?', 'a' => 'Es un agente de carga internacional: organiza el transporte de su mercadería comprando espacio a navieras y aerolíneas, consolida cargas chicas y emite o coordina los documentos de embarque.'],
+            ['q' => '¿Cuánto cobra un agente de carga de China a Paraguay?', 'a' => 'Depende del volumen, el peso, la ruta, el Incoterm y las tarifas del momento. No publicamos precios: le enviamos la cotización escrita del forwarder para su carga.'],
+            ['q' => '¿El forwarder hace el despacho aduanero?', 'a' => 'No necesariamente. En Paraguay la importación comercial la despacha un despachante de aduana matriculado. Lo conectamos con uno si lo necesita.'],
+            ['q' => '¿Conviene un forwarder o un courier?', 'a' => 'Para paquetes y compras online, el courier. Para mercadería comercial en cajas o pallets, un forwarder con carga consolidada o contenedor, y despacho formal.'],
+            ['q' => '¿Trabajan con un forwarder fijo?', 'a' => 'No. Elegimos un forwarder independiente según su carga y su ruta, y lo nombramos en la cotización escrita.'],
+        ],
+        'cta' => [
+            'label' => 'Pedir cotización de agente de carga',
+            'whatsappText' => '',
+        ],
+        'related' => ['flete-maritimo-contenedor', 'flete-aereo-china', 'despacho-aduanero'],
+        'guides' => ['contenedor-compartido-desde-china', 'como-importar-de-china-a-paraguay', 'courier-china-paraguay'],
+        'articles' => [],
+        'toolLinks' => [
+            ['path' => '/herramientas/calculadora-cbm-contenedor/', 'label' => 'Calculadora de CBM y contenedor', 'text' => 'Calcule los metros cúbicos de su carga antes de pedir la cotización al forwarder.'],
+            ['path' => '/herramientas/calculadora-costo-importacion/', 'label' => 'Calculadora de costo de importación', 'text' => 'Sume flete, seguro y tributos estimados para ver el costo de su producto puesto en Paraguay.'],
+        ],
+        'affiliates' => [],
+        'disclaimer' => false,
+        'image' => ['base' => '/assets/img/puerto-fluvial-contenedores-paraguay', 'widths' => [640, 1280, 1920], 'alt' => 'Contenedores apilados en un puerto fluvial al atardecer, con una barcaza sobre el río', 'width' => 1920, 'height' => 1434],
     ],
 
     'importacion-llave-en-mano' => [
