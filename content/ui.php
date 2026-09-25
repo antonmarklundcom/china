@@ -247,6 +247,8 @@ return [
         'submit'          => 'Enviar consulta',
         'sending'         => 'Enviando…',
         'privacy_note'    => 'Usamos sus datos solo para responderle. Ver la política de privacidad.',
+        'privacy_short'   => 'Usamos sus datos solo para responderle.',
+        'privacy_link'    => 'Ver la política de privacidad',
         'success_title'   => 'Recibimos su consulta.',
         'success_text'    => 'Le respondemos dentro del siguiente día hábil. Si prefiere, escríbanos ahora.',
         'error_title'     => 'No pudimos enviar el formulario.',
@@ -307,6 +309,8 @@ return [
         'price_note'    => 'Alcance y costo por escrito antes de empezar.',
         'aside_reply'   => 'Respuesta dentro del siguiente día hábil',
         'aside_more'    => 'Ver todo lo que incluye',
+        'reads_eyebrow' => 'Para leer',
+        'reads_title'   => 'Guías y artículos relacionados',
     ],
 
     'segment' => [

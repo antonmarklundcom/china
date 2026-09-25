@@ -31,6 +31,7 @@
     var desktop = window.matchMedia("(min-width: 1081px)");
     var hoverable = window.matchMedia("(hover: hover) and (pointer: fine)");
     var closeTimer = null;
+    var hoverOpenedAt = 0;
 
     /* Shrink on scroll. rAF-throttled; a class, so the CSS owns the look. */
     var ticking = false;
@@ -64,6 +65,7 @@
         return;
       }
       mega.hidden = !open;
+      mega.classList.toggle("is-open", open);
       megaButton.setAttribute("aria-expanded", open ? "true" : "false");
       header.classList.toggle("has-mega", open && desktop.matches);
     };
@@ -86,6 +88,10 @@
 
     if (megaButton) {
       megaButton.addEventListener("click", function () {
+        /* A mouse that just hovered the panel open is not asking to close it. */
+        if (!mega.hidden && Date.now() - hoverOpenedAt < 500) {
+          return;
+        }
         setMega(mega.hidden);
       });
     }
@@ -97,6 +103,9 @@
       megaItem.addEventListener("mouseenter", function () {
         if (desktop.matches && hoverable.matches) {
           window.clearTimeout(closeTimer);
+          if (mega.hidden) {
+            hoverOpenedAt = Date.now();
+          }
           setMega(true);
         }
       });
@@ -193,7 +202,14 @@
         return;
       }
       if (handoff.parentElement !== result) {
-        result.appendChild(handoff);
+        /* Right under the figures, above the fine print: the handoff is the
+           next step, not a footnote. */
+        var lines = result.querySelector(".tool-result__lines");
+        if (lines && lines.parentElement === result) {
+          result.insertBefore(handoff, lines.nextSibling);
+        } else {
+          result.appendChild(handoff);
+        }
       }
       handoff.hidden = false;
     };

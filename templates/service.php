@@ -216,11 +216,11 @@ require ROOT_DIR . '/partials/header.php';
           <?php if ($service['includes'] !== []): ?>
             <p class="summary__label"><?= e(ui('service.includes')) ?></p>
             <ul class="summary__list">
-              <?php foreach (array_slice($service['includes'], 0, 4) as $item): ?>
+              <?php foreach (array_slice($service['includes'], 0, 3) as $item): ?>
                 <li><?= e($item) ?></li>
               <?php endforeach; ?>
             </ul>
-            <?php if (count($service['includes']) > 4): ?>
+            <?php if (count($service['includes']) > 3): ?>
               <a class="summary__more" href="#incluye"><?= e(ui('service.aside_more')) ?></a>
             <?php endif; ?>
           <?php endif; ?>
@@ -273,8 +273,8 @@ require ROOT_DIR . '/partials/header.php';
     <section class="section">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow"><?= e(ui('nav.guides')) ?></p>
-          <h2><?= e(($service['guides'] ?? []) !== [] ? ui('service.guides') : ui('service.articles')) ?></h2>
+          <p class="eyebrow"><?= e(ui('service.reads_eyebrow')) ?></p>
+          <h2><?= e(count($svcReads) > 1 ? ui('service.reads_title') : (($service['guides'] ?? []) !== [] ? ui('service.guides') : ui('service.articles'))) ?></h2>
         </div>
         <div class="grid grid--3">
           <?php foreach ($svcReads as $svcRead): ?>

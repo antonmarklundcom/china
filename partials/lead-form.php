@@ -133,8 +133,8 @@ $utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content
   </p>
 
   <p class="note">
-    <?= e(ui('form.privacy_note')) ?>
-    <a href="/privacidad/"><?= e(ui('nav.privacy')) ?></a>.
+    <?= e(ui('form.privacy_short')) ?>
+    <a href="/privacidad/"><?= e(ui('form.privacy_link')) ?></a>.
   </p>
 
   <?php

@@ -28,6 +28,7 @@ $navName     = (string) (site('name') ?: site('domain'));
 $navNameBits = explode('-', $navName, 2);
 $navWaIcon   = wa_icon();
 ?>
+<script>document.documentElement.classList.add("js");</script>
 <header class="site-header" data-header>
   <div class="container site-header__bar">
 

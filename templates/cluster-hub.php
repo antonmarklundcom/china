@@ -54,7 +54,7 @@ require ROOT_DIR . '/partials/header.php';
           <div class="btn-row">
             <a class="btn btn--primary btn--lg" href="<?= e(quote_path($hubLeadSlug, $cluster)) ?>"><?= e(ui('cta.quote')) ?> <span aria-hidden="true">→</span></a>
             <?php if ($hubGuides !== []): ?>
-              <a class="btn btn--on-ink btn--lg" href="#guias"><?= e(ui('hub.guides')) ?></a>
+              <a class="btn btn--on-ink btn--lg" href="#guias"><?= e(ui('home.popular_all')) ?></a>
             <?php endif; ?>
           </div>
         </div>
@@ -81,7 +81,6 @@ require ROOT_DIR . '/partials/header.php';
         <div class="grid grid--3 mt-4">
           <?php foreach ($hubGuides as $hubGuide): ?>
             <a class="card card--link card--guide" href="<?= e($hubGuide['path']) ?>">
-              <span class="card__kicker"><?= e(ui('nav.guides')) ?></span>
               <h3 class="card-title"><?= e($hubGuide['navLabel']) ?></h3>
               <p class="card__text"><?= e($hubGuide['metaDescription']) ?></p>
               <span class="card__arrow" aria-hidden="true">→</span>

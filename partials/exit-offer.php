@@ -30,11 +30,11 @@ $exitSlug = current_lead_slug() ?? '';
 
     <div class="exit-offer__art" aria-hidden="true">
       <svg viewBox="0 0 320 120" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <path d="M34 92C80 20 220 8 286 34" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.5" stroke-dasharray="3 6"/>
-        <path d="M34 92C80 20 220 8 286 34" fill="none" stroke="#f2994a" stroke-width="3" stroke-linecap="round" pathLength="100" stroke-dasharray="62 100"/>
+        <path d="M34 92C80 24 190 14 250 42" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.5" stroke-dasharray="3 6"/>
+        <path d="M34 92C80 24 190 14 250 42" fill="none" stroke="#f2994a" stroke-width="3" stroke-linecap="round" pathLength="100" stroke-dasharray="62 100"/>
         <circle cx="34" cy="92" r="7" fill="#0b3a44" stroke="#fff" stroke-width="3"/>
-        <circle cx="286" cy="34" r="13" fill="#f2994a" fill-opacity=".22"/>
-        <circle cx="286" cy="34" r="7" fill="#f2994a"/>
+        <circle cx="250" cy="42" r="13" fill="#f2994a" fill-opacity=".22"/>
+        <circle cx="250" cy="42" r="7" fill="#f2994a"/>
       </svg>
     </div>
 
