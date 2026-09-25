@@ -43,7 +43,7 @@ return [
         'cluster' => 'aduana',
         'seoTitle' => 'Despachantes de aduana en Paraguay',
         'metaDescription' => 'Qué hace un despachante de aduana en Paraguay, cómo verificar que esté matriculado, qué documentos le pide y cómo pedir cotización.',
-        'lastReviewed' => '2026-09-24',
+        'lastReviewed' => '2026-09-25',
         'hero' => [
             'eyebrow' => 'Aduana',
             'h1' => 'Despachantes de aduana en Paraguay: cómo elegir y verificar uno',
@@ -120,8 +120,10 @@ return [
             [
                 'h2' => 'Centro de Despachantes de Aduana del Paraguay',
                 'body' => [
-                    'El Centro de Despachantes de Aduana del Paraguay (CDAP) es la asociación profesional que agrupa a despachantes de aduana del país. Ofrece capacitación y representa al gremio; no es la aduana ni despacha mercadería por usted. Su sitio es cdap.org.py.',
-                    'Si busca una "lista de despachantes de aduana en Paraguay", la fuente más confiable para saber si alguien está habilitado es la propia aduana. El CDAP puede orientarle sobre sus socios. No publicamos teléfonos ni direcciones de estas entidades porque cambian; consulte los datos de contacto en sus sitios oficiales.',
+                    'El Centro de Despachantes de Aduana del Paraguay (CDAP) es la asociación profesional que agrupa a despachantes de aduana del país, con más de un siglo de historia. Representa al gremio ante las autoridades y, a través de su instituto, ofrece formación en la carrera aduanera; no es la aduana ni despacha mercadería por usted. Su sitio es cdap.org.py.',
+                    'Si buscó "cámara aduana paraguaya", tenga en cuenta que no existe una cámara que sea la aduana. La aduana es la Gerencia General de Aduanas de la DNIT; el CDAP es el gremio de los despachantes, y las cámaras empresariales, como la Cámara Paraguaya de Exportadores (CAPEX), representan a las empresas que comercian.',
+                    'Si busca una "lista de despachantes de aduana en Paraguay", la fuente que acredita quién está habilitado es la propia DNIT, a través del registro de Personas Vinculadas a la Actividad Aduanera (PVAA). Desde agosto de 2025 ese registro se gestiona en línea en el sistema Marangatu, y la habilitación se renueva cada año. El CDAP puede orientarle sobre sus socios. No publicamos teléfonos ni direcciones de estas entidades porque cambian; consulte los datos de contacto en sus sitios oficiales.',
+                    'También verá el término "auxiliar de despachante de aduana". Es la persona que trabaja con un despachante y, con habilitación de la aduana, solo puede hacer actos de mero trámite: examinar expedientes, presentar documentos firmados por el despachante y asistir a la verificación de la mercadería. Según el Código Aduanero (Ley 2422/2004), el despachante responde por los actos de sus auxiliares; el auxiliar no firma el despacho ni reemplaza al despachante.',
                 ],
             ],
             [
@@ -137,7 +139,8 @@ return [
         'faq' => [
             ['q' => '¿Es obligatorio usar un despachante de aduana en Paraguay?', 'a' => 'Como regla general, sí: el Código Aduanero (Ley 2422/2004, art. 22) establece que el importador actúe en las operaciones aduaneras a través de un despachante de aduana habilitado. Los casos con régimen propio, como ciertos [envíos por courier](/comprar/courier-china-paraguay/) o el equipaje de viajeros, los define la normativa; confírmelos con la DNIT.'],
             ['q' => '¿Dónde encuentro la lista de despachantes de aduana del Paraguay?', 'a' => 'Para verificar la habilitación, consulte el registro de Personas Vinculadas a la Actividad Aduanera (PVAA) de la DNIT (dnit.gov.py), y al Centro de Despachantes de Aduana del Paraguay (cdap.org.py) para información sobre sus socios. Nuestra propia lista de despachantes asociados estará disponible próximamente; mientras tanto, con nuestro servicio de [despacho aduanero](/servicios/despacho-aduanero/) podemos conectarlo con uno.'],
-            ['q' => '¿El Centro de Despachantes es la aduana?', 'a' => 'No. Es una asociación profesional privada del gremio. La aduana es la Gerencia General de Aduanas de la DNIT.'],
+            ['q' => '¿El Centro de Despachantes es la aduana?', 'a' => 'No. Es una asociación profesional privada del gremio. La aduana es la Gerencia General de Aduanas de la DNIT, cuyas oficinas en la capital resumimos en la guía de la [aduana en Asunción](/aduana/aduana-asuncion/).'],
+            ['q' => '¿Qué es un auxiliar de despachante de aduana?', 'a' => 'Un colaborador del despachante habilitado por la aduana para actos de mero trámite, como presentar documentos o asistir a la verificación. El despachante responde por sus actos y es quien firma el despacho.'],
             ['q' => '¿Cuánto cobra un despachante de aduana?', 'a' => 'Depende del valor y del tipo de mercadería, de la vía de ingreso y de lo que incluya el servicio. Pida siempre un presupuesto desglosado por escrito y compárelo con otro.'],
             ['q' => '¿Puedo usar el mismo despachante para todas mis importaciones?', 'a' => 'Sí, y suele convenir: conoce sus productos, sus documentos y su historial, lo que agiliza los despachos siguientes.'],
         ],
@@ -147,7 +150,7 @@ return [
             'label' => 'Calcule el costo aproximado de su importación',
             'text' => 'Antes de hablar con el despachante, estime flete, tributos y gastos para saber de qué orden de costo se trata.',
         ],
-        'related' => ['precio-despacho-aduanero-paraguay', 'tributos-aduaneros-paraguay', 'requisitos-para-importar-paraguay'],
+        'related' => ['aduana-asuncion', 'precio-despacho-aduanero-paraguay', 'tributos-aduaneros-paraguay'],
         'affiliates' => [],
         'disclaimer' => true,
         'image' => ['base' => '/assets/img/despacho-aduanero-documentos-puerto', 'widths' => [640, 1280, 1920], 'alt' => 'Escritorio con facturas, lista de empaque y calculadora, con contenedores de fondo', 'width' => 1920, 'height' => 1086],
@@ -480,7 +483,7 @@ return [
         'cluster' => 'aduana',
         'seoTitle' => 'Aduana de Clorinda: cruce a Paraguay',
         'metaDescription' => 'Cómo es el cruce por Clorinda y el puente San Ignacio de Loyola hacia Puerto Falcón: controles, documentos y qué puede llevar.',
-        'lastReviewed' => '2026-09-24',
+        'lastReviewed' => '2026-09-25',
         'hero' => [
             'eyebrow' => 'Aduana',
             'h1' => 'Aduana de Clorinda y puente San Ignacio de Loyola',
@@ -568,7 +571,7 @@ return [
         ],
         'relatedService' => 'despacho-aduanero',
         'toolLink' => null,
-        'related' => ['cruzar-frontera-argentina-paraguay', 'aduana-ciudad-del-este-encarnacion', 'impuestos-compras-online-paraguay'],
+        'related' => ['cruzar-frontera-argentina-paraguay', 'aduana-asuncion', 'aduana-ciudad-del-este-encarnacion'],
         'affiliates' => [],
         'disclaimer' => true,
         'image' => null,
@@ -920,7 +923,7 @@ return [
             [
                 'title' => 'Ubique la administración de aduana que le corresponde',
                 'body' => [
-                    'La sede central de la aduana está sobre El Paraguayo Independiente, en el microcentro de Asunción, cerca del puerto. Allí funcionan las oficinas centrales de la Gerencia General de Aduanas, pero el despacho de una carga concreta se hace en la administración de aduana del lugar donde llega la mercadería.',
+                    'La sede central de la aduana está sobre El Paraguayo Independiente, en el microcentro de Asunción. Allí funcionan las oficinas centrales de la Gerencia General de Aduanas, pero el despacho de una carga concreta se hace en la administración de aduana del lugar donde llega la mercadería.',
                     'La carga aérea se despacha en la aduana del aeropuerto internacional Silvio Pettirossi, en Luque. La carga que llega por el río Paraguay suele descargarse en puertos del área metropolitana, muchos de ellos privados, como Caacupemí en Asunción o Terport en San Antonio, además del puerto de Villeta. La DNIT publica sus dependencias; su despachante o su agente de carga le dirá en qué administración queda su mercadería.',
                 ],
             ],
@@ -928,7 +931,7 @@ return [
                 'title' => 'Use los canales oficiales de contacto',
                 'body' => [
                     'Para consultas, entre a dnit.gov.py, sección Contáctenos. Allí están los teléfonos y horarios vigentes y el formulario "Envíenos aquí su consulta", que tiene una opción de Consultas/Sugerencias Aduaneras y otra para el Sistema Sofía. No copiamos números de teléfono en esta página porque cambian; tome siempre los datos del sitio oficial.',
-                    'Desconfíe de perfiles o números que ofrecen "liberar" mercadería a cambio de un pago por fuera del trámite. La aduana no gestiona despachos por WhatsApp de particulares.',
+                    'Desconfíe de perfiles o números que ofrecen "liberar" mercadería a cambio de un pago por fuera del trámite.',
                 ],
             ],
             [
