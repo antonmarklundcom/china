@@ -98,7 +98,7 @@ return [
                 'h2' => 'Quién hace qué',
                 'body' => [
                     'Nosotros somos un sitio privado de información que coordina el contacto. El despachante asociado es un profesional matriculado ante la aduana (vea cómo verificar a los [despachantes de aduana en Paraguay](/aduana/despachantes-de-aduana-paraguay/)) y es quien presenta la declaración y responde por su actuación profesional. Usted es el importador: aporta los documentos, paga los tributos y responde por la veracidad de lo declarado.',
-                    'No tenemos vínculo con la aduana paraguaya (Gerencia General de Aduanas de la DNIT) ni hablamos en su nombre. La información oficial está en aduana.gov.py y dnit.gov.py.',
+                    'No tenemos vínculo con la aduana paraguaya (Gerencia General de Aduanas de la DNIT) ni hablamos en su nombre. La información oficial está en [aduana.gov.py](https://www.aduana.gov.py/) y [dnit.gov.py](https://www.dnit.gov.py/).',
                 ],
             ],
         ],

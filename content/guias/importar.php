@@ -211,7 +211,7 @@ return [
             [
                 'title' => 'Habilitarse como importador ante la aduana',
                 'body' => [
-                    'Además del RUC, el importador debe estar habilitado en el Registro de Personas Vinculadas a la Actividad Aduanera (PVAA) de la DNIT. Desde agosto de 2025 la habilitación y su actualización se hacen en línea desde el sistema Marangatu, con un procedimiento para importador habitual y otro para importador ocasional; la DNIT publica guías paso a paso en su portal (dnit.gov.py).',
+                    'Además del RUC, el importador debe estar habilitado en el Registro de Personas Vinculadas a la Actividad Aduanera (PVAA) de la DNIT. Desde agosto de 2025 la habilitación y su actualización se hacen en línea desde el sistema Marangatu, con un procedimiento para importador habitual y otro para importador ocasional; la DNIT publica guías paso a paso en su portal ([dnit.gov.py](https://www.dnit.gov.py/)).',
                     'Los documentos exactos, los plazos y si hay algún costo los confirma la DNIT o su despachante, que suele guiarlo en este trámite porque lo hace con frecuencia. El paso a paso completo está en la guía sobre [cómo ser importador en Paraguay](/importar/como-ser-importador-paraguay/).',
                 ],
             ],
@@ -304,7 +304,7 @@ return [
         'intro' => [
             'Ser importador en Paraguay significa poder traer mercadería a su propio nombre y declararla ante la aduana. El camino tiene tres partes: ordenar su situación tributaria (RUC, actividad y régimen), inscribirse en el registro de importadores y contar con un despachante matriculado. Con eso resuelto, cada importación se vuelve un trámite repetible.',
             'Esta guía es para quien hoy compra a través de terceros y quiere pasar a importar en forma directa, o para quien arranca un negocio de reventa. Explica los pasos en orden, qué cambia entre persona física y empresa, cómo preparar la primera operación y los errores más comunes.',
-            'Desde la Ley 7143/2023, la administración tributaria y la aduana funcionan bajo la Dirección Nacional de Ingresos Tributarios (DNIT); la aduana opera como su Gerencia General de Aduanas. Los formularios y requisitos exactos cambian: confírmelos en dnit.gov.py o con su despachante antes de iniciar. Si le falta el panorama general, empiece por los [requisitos para importar en Paraguay](/importar/requisitos-para-importar-paraguay/).',
+            'Desde la Ley 7143/2023, la administración tributaria y la aduana funcionan bajo la Dirección Nacional de Ingresos Tributarios (DNIT); la aduana opera como su Gerencia General de Aduanas. Los formularios y requisitos exactos cambian: confírmelos en [dnit.gov.py](https://www.dnit.gov.py/) o con su despachante antes de iniciar. Si le falta el panorama general, empiece por los [requisitos para importar en Paraguay](/importar/requisitos-para-importar-paraguay/).',
         ],
         'steps' => [
             [
@@ -387,7 +387,7 @@ return [
             ],
         ],
         'faq' => [
-            ['q' => '¿Cuánto tarda la inscripción como importador?', 'a' => 'Depende de la documentación y de la revisión de la DNIT. Consulte el plazo vigente con su despachante o en dnit.gov.py.'],
+            ['q' => '¿Cuánto tarda la inscripción como importador?', 'a' => 'Depende de la documentación y de la revisión de la DNIT. Consulte el plazo vigente con su despachante o en [dnit.gov.py](https://www.dnit.gov.py/).'],
             ['q' => '¿Una persona física puede ser importadora?', 'a' => 'Sí, con RUC activo y la inscripción correspondiente. Conviene revisar con un contador el régimen tributario más adecuado.'],
             ['q' => '¿Necesito un capital mínimo para ser importador?', 'a' => 'No indicamos montos mínimos legales; confírmelo en la DNIT. En la práctica, el capital lo define el pedido mínimo del proveedor más flete, tributos y gastos.'],
             ['q' => '¿Puedo importar mientras hago el registro?', 'a' => 'Puede hacerlo por medio de una [importadora](/importar/importadoras-en-paraguay/) que actúe como importador formal hasta que su registro esté aprobado.'],
@@ -441,7 +441,7 @@ return [
             [
                 'title' => 'Verificar la empresa',
                 'body' => [
-                    'Pida la licencia comercial (营业执照). El nombre en chino y el código unificado de crédito social (18 caracteres) deben coincidir con el registro público de empresas de China, el Sistema Nacional de Publicidad de Información Crediticia Empresarial (gsxt.gov.cn), y con el titular de la cuenta bancaria. Confirme si es fábrica o comerciante: ambos pueden servir, pero el comerciante agrega un margen y menos control sobre la producción.',
+                    'Pida la licencia comercial (营业执照). El nombre en chino y el código unificado de crédito social (18 caracteres) deben coincidir con el registro público de empresas de China, el Sistema Nacional de Publicidad de Información Crediticia Empresarial ([gsxt.gov.cn](https://www.gsxt.gov.cn/)), y con el titular de la cuenta bancaria. Confirme si es fábrica o comerciante: ambos pueden servir, pero el comerciante agrega un margen y menos control sobre la producción.',
                     'Pregunte por clientes en Sudamérica, certificaciones de producto y capacidad de producción. Una videollamada recorriendo la planta dice mucho.',
                 ],
             ],
@@ -487,7 +487,7 @@ return [
         'faq' => [
             ['q' => '¿Los proveedores verificados de Alibaba son confiables?', 'a' => 'La verificación indica que un tercero revisó ciertos datos de la empresa, no que la calidad esté garantizada. Úsela como filtro inicial y verifique igual.'],
             ['q' => '¿Es mejor comprar a una fábrica o a un comerciante?', 'a' => 'La fábrica suele dar mejor precio y control; el comerciante acepta pedidos más chicos y mezcla productos. Depende de su volumen.'],
-            ['q' => '¿Cómo compruebo la licencia de un proveedor chino?', 'a' => 'Coteje el nombre en chino y el código unificado de crédito social en el Sistema Nacional de Publicidad de Información Crediticia Empresarial (gsxt.gov.cn), el registro oficial que administra la autoridad de regulación del mercado de China, o pida a un agente local que lo haga.'],
+            ['q' => '¿Cómo compruebo la licencia de un proveedor chino?', 'a' => 'Coteje el nombre en chino y el código unificado de crédito social en el Sistema Nacional de Publicidad de Información Crediticia Empresarial ([gsxt.gov.cn](https://www.gsxt.gov.cn/)), el registro oficial que administra la autoridad de regulación del mercado de China, o pida a un agente local que lo haga.'],
             ['q' => '¿Cuántos proveedores debo contactar?', 'a' => 'Entre tres y cinco con la misma especificación es un buen número para comparar sin perder tiempo.'],
             ['q' => '¿Vale la pena viajar a China para conocer proveedores?', 'a' => 'Para relaciones de largo plazo o pedidos grandes, sí: la Feria de Cantón y las visitas a fábrica ahorran meses de correos.'],
         ],
@@ -818,13 +818,13 @@ return [
         'intro' => [
             'Payoneer funciona en Paraguay. Paraguay tiene su propia sección en la comunidad oficial de Payoneer, y allí la empresa confirma que acepta cuentas bancarias paraguayas para retirar fondos. La cuenta está pensada para cobrar trabajos y ventas al exterior (freelancers, vendedores en marketplaces, exportadores de servicios) y para pagar a proveedores y colaboradores con ese dinero. No sirve para mandar plata a familiares ni para transferencias personales.',
             'Para quien importa de China, Payoneer sirve sobre todo si ya cobra en dólares por Payoneer: puede usar ese saldo para pagar a un proveedor sin pasar antes por su banco. Si su dinero está en guaraníes en un banco paraguayo, lo habitual sigue siendo la transferencia bancaria internacional. Las demás vías se comparan en la guía sobre [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/).',
-            'Quien busca alternativas a PayPal en Paraguay para cobrar del exterior suele comparar Payoneer, Wise y la transferencia bancaria directa. Wise tiene límites importantes para residentes en Paraguay, que explicamos en la guía de [Wise en Paraguay](/importar/wise-paraguay/). No indicamos comisiones porque cambian y dependen de cada operación: están en la página oficial de precios de Payoneer (payoneer.com/pricing) y en su cuenta antes de confirmar cada pago. No tenemos relación comercial con Payoneer.',
+            'Quien busca alternativas a PayPal en Paraguay para cobrar del exterior suele comparar Payoneer, Wise y la transferencia bancaria directa. Wise tiene límites importantes para residentes en Paraguay, que explicamos en la guía de [Wise en Paraguay](/importar/wise-paraguay/). No indicamos comisiones porque cambian y dependen de cada operación: están en la página oficial de precios de Payoneer ([payoneer.com/pricing](https://www.payoneer.com/pricing/)) y en su cuenta antes de confirmar cada pago. No tenemos relación comercial con Payoneer.',
         ],
         'steps' => [
             [
                 'title' => 'Registrarse con los datos correctos',
                 'body' => [
-                    'El registro se hace en payoneer.com. Elija el tipo de perfil (freelancer, vendedor en línea, empresa) e indique si abre la cuenta como persona o como empresa. Si va a pagar a proveedores a nombre de su empresa, conviene que la cuenta esté a nombre de esa empresa, con el mismo nombre que figura en la proforma y en los documentos del despacho.',
+                    'El registro se hace en [payoneer.com](https://www.payoneer.com/). Elija el tipo de perfil (freelancer, vendedor en línea, empresa) e indique si abre la cuenta como persona o como empresa. Si va a pagar a proveedores a nombre de su empresa, conviene que la cuenta esté a nombre de esa empresa, con el mismo nombre que figura en la proforma y en los documentos del despacho.',
                     'Use su nombre exactamente como figura en su cédula o pasaporte y la dirección donde vive. Si los datos no coinciden con los documentos, la aprobación se demora o se rechaza.',
                 ],
             ],
@@ -883,7 +883,7 @@ return [
         ],
         'faq' => [
             ['q' => '¿Payoneer funciona en Paraguay?', 'a' => 'Sí. Un residente en Paraguay puede abrir la cuenta, cobrar del exterior y retirar a un banco paraguayo. Paraguay tiene su propia sección en la comunidad oficial de Payoneer. La cuenta está pensada para uso comercial, no para transferencias personales.'],
-            ['q' => '¿Cuánto cobra Payoneer en Paraguay?', 'a' => 'Depende de la operación: recibir, convertir, pagar y retirar tienen costos distintos. Consulte la página oficial payoneer.com/pricing y el detalle que su cuenta muestra antes de confirmar cada operación.'],
+            ['q' => '¿Cuánto cobra Payoneer en Paraguay?', 'a' => 'Depende de la operación: recibir, convertir, pagar y retirar tienen costos distintos. Consulte la página oficial [payoneer.com/pricing](https://www.payoneer.com/pricing/) y el detalle que su cuenta muestra antes de confirmar cada operación.'],
             ['q' => '¿Puedo pagar a un proveedor chino con Payoneer?', 'a' => 'Si la opción aparece en su cuenta, sí: a una cuenta bancaria del proveedor o, si él también tiene Payoneer, dentro de la red. Verifique moneda y costo antes de acordarlo, y pague siempre a la cuenta a nombre de la empresa de la proforma.'],
             ['q' => '¿Puedo retirar en guaraníes?', 'a' => 'Sí, a una cuenta bancaria paraguaya a su nombre. Payoneer convierte al retirar a una cuenta en guaraníes. Su banco también puede descontar gastos.'],
             ['q' => '¿Es mejor Payoneer o Wise desde Paraguay?', 'a' => 'Para un residente en Paraguay, Payoneer permite abrir cuenta y operar; Wise no permite tener saldo a residentes en Paraguay. Wise sí puede servir para que alguien del exterior le envíe dinero a su banco paraguayo. Vea la guía de [Wise en Paraguay](/importar/wise-paraguay/).'],
@@ -916,13 +916,13 @@ return [
         'intro' => [
             'Wise distingue dos cosas que suelen confundirse. Una es dónde tiene que vivir usted para abrir una cuenta y tener saldo en ella. La otra es a qué países puede llegar una transferencia que otra persona envía con Wise. Paraguay está en la segunda lista y no en la primera.',
             'En la práctica, al revisar el centro de ayuda de Wise el 25 de septiembre de 2026, Paraguay no aparecía entre los países donde un residente puede tener dinero en Wise. Otros países de la región, como Brasil, Chile y Uruguay, sí aparecían. Paraguay sí figura como destino: quien envía desde el exterior puede mandar guaraníes a una cuenta bancaria paraguaya, y el destinatario no necesita cuenta Wise. Las listas cambian, así que conviene verificarlas antes de decidir.',
-            'Esta guía explica qué significa eso para quien importa de China o cobra del exterior, qué haría falta para pagar a China con Wise y qué alternativas tiene. No indicamos comisiones: Wise las publica en wise.com/pricing y las muestra antes de confirmar cada envío. No tenemos relación comercial con Wise.',
+            'Esta guía explica qué significa eso para quien importa de China o cobra del exterior, qué haría falta para pagar a China con Wise y qué alternativas tiene. No indicamos comisiones: Wise las publica en [wise.com/pricing](https://wise.com/pricing) y las muestra antes de confirmar cada envío. No tenemos relación comercial con Wise.',
         ],
         'steps' => [
             [
                 'title' => 'Confirmar si Wise está disponible para usted',
                 'body' => [
-                    'Lo que cuenta es su país de residencia, no su nacionalidad. En el centro de ayuda de Wise (wise.com/help) están los artículos «¿Dónde necesito vivir para tener dinero en Wise?» y «¿Dónde puedo usar Wise?». Revíselos con su país de residencia. Si vive en Paraguay y Paraguay no está en la lista, Wise no le va a abrir una cuenta con saldo aunque tenga documentos de otro país.',
+                    'Lo que cuenta es su país de residencia, no su nacionalidad. En el centro de ayuda de Wise ([wise.com/help](https://wise.com/help)) están los artículos «¿Dónde necesito vivir para tener dinero en Wise?» y «¿Dónde puedo usar Wise?». Revíselos con su país de residencia. Si vive en Paraguay y Paraguay no está en la lista, Wise no le va a abrir una cuenta con saldo aunque tenga documentos de otro país.',
                     'No declare otra residencia para poder registrarse. Wise verifica el domicilio, y una cuenta abierta con datos falsos se puede bloquear con su dinero adentro.',
                 ],
             ],
@@ -971,7 +971,7 @@ return [
             ['q' => '¿Wise funciona en Paraguay?', 'a' => 'Solo en parte. Un residente en Paraguay no puede tener saldo en Wise, porque Paraguay no figura en la lista de países de residencia de su centro de ayuda. Sí puede recibir en su banco paraguayo, en guaraníes, dinero que alguien le envía por Wise desde otro país.'],
             ['q' => '¿Puedo abrir una cuenta Wise con mi cédula paraguaya?', 'a' => 'Lo que cuenta es dónde vive, no el documento. Si vive en otro país de la lista de Wise, puede registrarse con su domicilio real allí. Si vive en Paraguay, no.'],
             ['q' => '¿Cómo pago a un proveedor chino si no puedo usar Wise?', 'a' => 'Por transferencia bancaria internacional desde su banco, por Alibaba con Trade Assurance si el proveedor está en la plataforma, o con saldo de Payoneer si ya cobra por ahí. Vea la guía sobre [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/).'],
-            ['q' => '¿Cuánto cobra Wise?', 'a' => 'Depende de la moneda, el monto y la forma de pago. Wise publica sus precios en wise.com/pricing y muestra el costo antes de confirmar cada envío.'],
+            ['q' => '¿Cuánto cobra Wise?', 'a' => 'Depende de la moneda, el monto y la forma de pago. Wise publica sus precios en [wise.com/pricing](https://wise.com/pricing) y muestra el costo antes de confirmar cada envío.'],
             ['q' => '¿Puedo recibir pagos de clientes del exterior en Paraguay con Wise?', 'a' => 'Sí, si el cliente usa Wise desde un país donde opera y le envía a su cuenta bancaria paraguaya. Usted recibe guaraníes en su banco sin necesidad de cuenta Wise.'],
         ],
         'relatedService' => 'agente-de-compras-china',

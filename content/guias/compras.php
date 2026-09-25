@@ -513,7 +513,7 @@ return [
             [
                 'title' => 'Abra 1688 con traducción automática',
                 'body' => [
-                    'Entre a 1688.com desde un navegador con traducción automática (por ejemplo, Chrome) y traduzca la página al español. La traducción no es perfecta, pero alcanza para navegar categorías, precios y fichas.',
+                    'Entre a [1688.com](https://www.1688.com/) desde un navegador con traducción automática (por ejemplo, Chrome) y traduzca la página al español. La traducción no es perfecta, pero alcanza para navegar categorías, precios y fichas.',
                     'También puede buscar por imagen: subir la foto de un producto suele dar mejores resultados que escribir el nombre traducido.',
                 ],
             ],
@@ -875,7 +875,7 @@ return [
             [
                 'title' => 'Consulte los montos vigentes',
                 'body' => [
-                    'Los topes de valor, los montos exentos y las alícuotas se fijan por ley y resoluciones y se actualizan. Consulte la sección de remesa expresa del portal de la DNIT (dnit.gov.py) o pídale a su courier la liquidación estimada antes de comprar.',
+                    'Los topes de valor, los montos exentos y las alícuotas se fijan por ley y resoluciones y se actualizan. Consulte la sección de remesa expresa del portal de la DNIT ([dnit.gov.py](https://www.dnit.gov.py/)) o pídale a su courier la liquidación estimada antes de comprar.',
                 ],
             ],
             [
