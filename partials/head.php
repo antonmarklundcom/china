@@ -55,6 +55,9 @@ $htmlLang    = $page['lang'] ?? market_locale();
 <link rel="preload" href="<?= e(asset('/assets/fonts/onest-latin.woff2')) ?>" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="<?= e(asset('/assets/fonts/bricolage-grotesque-latin.woff2')) ?>" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="<?= e(asset('/assets/css/site.css')) ?>">
+<?php /* TEMP-PARTS (director removes after merge): per-builder CSS while work is in flight. */ foreach (glob(ROOT_DIR . '/assets/css/parts/*.css') ?: [] as $cssPart): ?>
+<link rel="stylesheet" href="<?= e(asset('/assets/css/parts/' . basename($cssPart))) ?>">
+<?php endforeach; unset($cssPart); ?>
 
 <?php foreach (seo_jsonld($page) as $block): ?>
 <script type="application/ld+json"><?= json_ld($block) ?></script>
