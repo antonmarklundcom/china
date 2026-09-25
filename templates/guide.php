@@ -10,6 +10,12 @@
  * straight from content/guias.php the way templates/service.php builds a
  * service page straight from content/services.php.
  *
+ * Reading layout: a ~68ch article column beside a sticky sidebar from 1024px
+ * (partials/guide-toc.php, partials/sidebar-lead.php, the tool card), a
+ * collapsible TOC below that, and partials/inline-cta.php after step 3 (5+
+ * steps) and after the last step. Styles in assets/css/parts/reading.css,
+ * scroll-spy / progress bar / back-to-top in assets/js/reading.js.
+ *
  *   $slug  string  required — looked up in content('guias')
  */
 
