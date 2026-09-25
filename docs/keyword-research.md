@@ -81,3 +81,20 @@ drive the plan are listed; everything at 10/mo is long tail and is covered by gu
 | puente san ignacio de loyola | 70 | Low | — | this site, §3.C |
 | forwarder paraguay | 50 | Med | 3.96–12.25 | this site, §3.B |
 | Argentina/Bolivia import + visa + Cantón terms | ≤ 10 each | — | — | no LatAm expansion |
+
+## Coverage check (2026-09-25)
+Every keyword in `kwp-data.csv` with volume ≥ 30 or a top bid ≥ 8 kr, matched against the
+existing records. No new KWP export was needed for this pass (the long tail is all 10/mo).
+
+| Keyword(s) | Vol | Top bid (kr) | Page |
+|---|---|---|---|
+| payoneer paraguay / payoneer funciona en paraguay | 320 / 70 | 14.29 | new `/importar/payoneer-paraguay/` |
+| wise paraguay | 320 | 13.11 | new `/importar/wise-paraguay/` |
+| aduana asuncion / aduana paraguay en vivo / teléfono / dirección nacional de aduanas | 170 / 110 / 30 / 40 | — | new `/aduana/aduana-asuncion/` |
+| centro de despachantes de aduanas del paraguay / cdap / camara aduana / lista de despachantes / auxiliar | 1,600 / 70 / 90 / 40 / 30 | 7.93 | section in `/aduana/despachantes-de-aduana-paraguay/` |
+| forwarder / freight forwarder / fletes internacionales / empresas de transporte internacional | 50 / 10 / 30 / 30 | 12.25 | new `/servicios/agente-de-carga-internacional/` |
+| compras por internet paraguay / mejores tiendas online / venta online | 30 / 50 / 50 | 23.51 | new `/comprar/compras-por-internet-paraguay/` |
+| feria de canton 2026 / feria de guangzhou | 70 / 70 | 5.65 | terms added to `/feria-de-canton/` |
+| amazon, ebay, paypal (+ variants), courier brasil / internacional | 30–4,400 | ≤ 8.14 | couriers.com.py (plan §1.10), not this site |
+| alexa precio paraguay | 390 | 0.70 | out of scope |
+| holafly china | 10 | 34.33 | affiliate box on the travel guide once the Holafly URL exists |
