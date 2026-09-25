@@ -822,7 +822,7 @@ return [
             'label' => 'Comparar costos de courier',
             'text' => 'Calcule el costo total de un mismo paquete con distintas tarifas por kilo y factores volumétricos.',
         ],
-        'related' => ['courier-china-paraguay', 'impuestos-compras-online-paraguay', 'temu-paraguay'],
+        'related' => ['courier-china-paraguay', 'impuestos-compras-online-paraguay', 'compras-por-internet-paraguay'],
         'affiliates' => ['courier-1', 'courier-2'],
         'disclaimer' => false,
         'image' => null,
@@ -932,10 +932,124 @@ return [
             'label' => 'Estimar el costo final de mi compra',
             'text' => 'Sume precio, envío, flete del courier y tributos estimados. Usted carga la alícuota vigente que le confirme la DNIT o su courier.',
         ],
-        'related' => ['casillas-courier-paraguay', 'tributos-aduaneros-paraguay', 'temu-paraguay'],
+        'related' => ['casillas-courier-paraguay', 'tributos-aduaneros-paraguay', 'compras-por-internet-paraguay'],
         'affiliates' => [],
         'disclaimer' => false,
         'image' => null,
+    ],
+
+    'compras-por-internet-paraguay' => [
+        'path' => '/comprar/compras-por-internet-paraguay/',
+        'title' => 'Compras por internet en Paraguay: cómo funcionan',
+        'navLabel' => 'Compras por internet',
+        'cluster' => 'compras',
+        'seoTitle' => 'Compras por internet en Paraguay: guía',
+        'metaDescription' => 'Cómo comprar por internet desde Paraguay en tiendas del exterior: envío directo o casilla, Temu, Shein, AliExpress, Alibaba, pago con tarjeta e impuestos.',
+        'lastReviewed' => '2026-09-25',
+        'hero' => [
+            'eyebrow' => 'Comprar online',
+            'h1' => 'Compras por internet en Paraguay: cómo funcionan',
+            'lead' => 'Las compras por internet desde Paraguay en tiendas del exterior llegan por uno de dos caminos: la tienda envía directo a su dirección, si al pagar le ofrece esa opción, o usted envía el pedido a una casilla de courier en el exterior y el courier lo trae al país. Se paga con una tarjeta habilitada para compras en el exterior, y al precio se suman el envío, el flete del courier si lo usa y los tributos que correspondan al ingresar.',
+        ],
+        'intro' => [
+            'Esta guía reúne lo básico para comprar en el exterior desde Paraguay, con foco en las plataformas chinas: Temu, Shein, AliExpress y Alibaba. Cada una tiene su guía propia; aquí verá qué tienen en común, en qué se diferencian y qué revisar antes de pagar para que el costo final no lo sorprenda.',
+            'Las tiendas de Estados Unidos funcionan igual: si no envían a Paraguay, se compra con una casilla en Miami y el courier se encarga del resto. Las reglas de tributos y de productos con permiso son las mismas, venga el paquete de donde venga.',
+            'Si piensa comprar para revender o en cantidad, no es una compra personal sino una importación. En ese caso lea [cómo importar de China a Paraguay](/importar/como-importar-de-china-a-paraguay/) antes de hacer el pedido.',
+        ],
+        'steps' => [
+            [
+                'title' => 'Elija la tienda según lo que compra',
+                'body' => [
+                    'Ropa y artículos baratos del hogar se suelen buscar en Temu o Shein; repuestos chicos, electrónica menor y herramientas, en AliExpress; mercadería por cantidad, en Alibaba o 1688. No hay una tienda que convenga para todo: compare el mismo producto en dos o tres plataformas con el costo puesto en Paraguay, no solo con el precio del carrito.',
+                ],
+            ],
+            [
+                'title' => 'Vea si la tienda envía directo a Paraguay',
+                'body' => [
+                    'Cargue su dirección paraguaya y llegue hasta la pantalla de pago sin pagar. Si la tienda ofrece envío a Paraguay, ahí verá el método, el costo y la fecha estimada. Esa opción cambia: por ejemplo, en abril de 2026 medios locales informaron que Temu suspendió los envíos directos al país (los detalles están en [Temu en Paraguay](/comprar/temu-paraguay/)).',
+                    'Si no aparece envío a Paraguay, o prefiere que un único responsable se ocupe del transporte y del trámite aduanero, use una casilla.',
+                ],
+            ],
+            [
+                'title' => 'Si usa casilla, abra una en el origen correcto',
+                'body' => [
+                    'La casilla es una dirección a su nombre en el exterior. Para tiendas chinas conviene una casilla en China; para tiendas estadounidenses, una en Miami. Al comprar, usted carga esa dirección como destino y el courier le avisa cuando el paquete llega. Vea cómo elegir en [casillas de courier en Paraguay](/comprar/casillas-courier-paraguay/) y cómo funciona el tramo desde China en [courier de China a Paraguay](/comprar/courier-china-paraguay/).',
+                ],
+            ],
+            [
+                'title' => 'Pague con un medio habilitado para el exterior',
+                'body' => [
+                    'Lo más común es una tarjeta de crédito o débito internacional habilitada para compras en el exterior y por internet. Antes de comprar, consulte con su banco si debe activarla para ese uso, qué límite tiene y qué recargo o comisión cobra por compras en moneda extranjera. Los demás medios de pago que acepta cada tienda varían según el país de destino; los ve en la pantalla de pago.',
+                    'Pague siempre dentro de la plataforma. Si un vendedor le pide transferencia o pago por fuera, pierde la protección al comprador de la tienda.',
+                ],
+            ],
+            [
+                'title' => 'Calcule el costo final antes de pagar',
+                'body' => [
+                    'Sume precio, envío de la tienda, flete del courier (por kilo sobre el peso facturable, que puede ser el volumétrico), tributos al ingresar y recargo bancario. La [calculadora de compras online](/herramientas/calculadora-compras-online/) le permite hacer esa suma con sus propios datos.',
+                ],
+            ],
+            [
+                'title' => 'Siga el envío y reciba el paquete',
+                'body' => [
+                    'Guarde la factura o el detalle del pedido y el número de seguimiento. El plazo de entrega depende de la tienda y del courier: tome como referencia la fecha estimada de la tienda y, si usa casilla, sume el tránsito que el courier le informe por escrito. Al recibir, revise el contenido antes de confirmar la recepción en la plataforma.',
+                ],
+            ],
+        ],
+        'table' => [
+            'caption' => 'Qué revisar antes de una compra por internet desde Paraguay',
+            'head' => ['Qué revisar', 'Dónde se ve', 'Por qué importa'],
+            'rows' => [
+                ['Envío a Paraguay', 'Pantalla de pago con su dirección cargada', 'Define si necesita casilla'],
+                ['Vendedor o tienda', 'Valoraciones, antigüedad y reseñas con fotos', 'En los marketplaces la calidad depende de cada vendedor'],
+                ['Tarjeta habilitada', 'Su banco o la app de la tarjeta', 'Una tarjeta sin habilitar para el exterior rechaza el pago'],
+                ['Peso y tamaño del paquete', 'Ficha del producto y tarifa del courier', 'El flete se cobra por peso real o volumétrico'],
+                ['Producto con permiso', 'Tipo de artículo (medicamentos, cosméticos, equipos con radio)', 'Puede quedar retenido aunque los tributos estén pagos'],
+                ['Cantidad', 'Su carrito', 'Una cantidad comercial puede salir del régimen de compras personales'],
+                ['Costo total', 'Pantalla de pago más tarifa del courier', 'Evita sorpresas al retirar'],
+            ],
+            'note' => 'Lista orientativa. Métodos de envío, plazos y medios de pago cambian por tienda y por fecha; la referencia válida es lo que muestra la tienda al pagar.',
+        ],
+        'sections' => [
+            [
+                'h2' => 'Tiendas chinas: en qué se diferencia cada una',
+                'body' => [
+                    'Todas se pueden usar desde Paraguay, pero no funcionan igual. Esta es la diferencia práctica, con el enlace a la guía de cada una.',
+                ],
+                'items' => [
+                    ['title' => 'Temu', 'text' => 'Catálogo amplio de artículos de bajo precio para el hogar, ropa y accesorios. Hoy el camino más previsible es la casilla. Guía: [Temu en Paraguay](/comprar/temu-paraguay/).'],
+                    ['title' => 'Shein', 'text' => 'Ropa y accesorios de moda; conviene revisar la tabla de talles de cada prenda. Guía: [Shein en Paraguay](/comprar/shein-paraguay/).'],
+                    ['title' => 'AliExpress', 'text' => 'Cada vendedor es una tienda distinta, con su propio método de envío y plazo. Guía: [AliExpress en Paraguay](/comprar/aliexpress-paraguay/).'],
+                    ['title' => 'Alibaba y 1688', 'text' => 'Plataformas mayoristas: se negocia con fábricas, hay cantidades mínimas y el flete se organiza aparte. Guías: [Alibaba en Paraguay](/comprar/alibaba-paraguay/) y [1688 en español](/comprar/1688-en-espanol/).'],
+                ],
+            ],
+            [
+                'h2' => 'Impuestos y retenciones en aduana',
+                'body' => [
+                    'Las compras que entran por courier se declaran ante la aduana, que hoy forma parte de la DNIT, bajo el régimen de remesa expresa, pensado para compras de uso personal. El courier calcula los tributos, los paga en su nombre y se los cobra antes de entregar. Los topes y alícuotas cambian por normativa, así que no los repetimos aquí: el mecanismo está explicado en [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/), y los montos vigentes se confirman en la DNIT o con su courier.',
+                    'Si un paquete queda retenido, lo habitual es que falte la factura, que el valor no coincida, que el producto necesite permiso previo o que la cantidad parezca comercial. Cuando la aduana exige despacho formal, el trámite lo hace un [despachante de aduana](/aduana/despachantes-de-aduana-paraguay/).',
+                    'Este sitio no está afiliado a ninguna de las tiendas mencionadas ni a la aduana. Si quiere ayuda para elegir tienda o courier, o para entender una liquidación, puede pedir nuestra [asesoría para compras online](/servicios/asesoria-compras-online/).',
+                ],
+            ],
+        ],
+        'faq' => [
+            ['q' => '¿Cómo se hacen compras por internet desde Paraguay?', 'a' => 'Elige la tienda, verifica si envía directo a Paraguay y, si no, usa una casilla de courier en el exterior. Paga con una tarjeta habilitada para compras en el exterior y, al recibir, paga el flete del courier y los tributos que correspondan.'],
+            ['q' => '¿Cuáles son las mejores tiendas online para comprar desde Paraguay?', 'a' => 'Depende de lo que compra. Para ropa y artículos baratos se usan Temu y Shein, para repuestos y electrónica menor AliExpress, y para cantidades Alibaba o 1688. Compare siempre el costo puesto en Paraguay, no solo el precio.'],
+            ['q' => '¿Necesito casilla para comprar en tiendas del exterior?', 'a' => 'Solo si la tienda no envía a Paraguay o si prefiere que el courier se encargue del transporte y del trámite. Para tiendas chinas conviene una casilla en China; para tiendas de Estados Unidos, una en Miami.'],
+            ['q' => '¿Con qué tarjeta puedo pagar compras en el exterior?', 'a' => 'Con una tarjeta de crédito o débito internacional habilitada para compras en el exterior y por internet. Consulte con su banco si debe activarla y qué recargo cobra por compras en moneda extranjera.'],
+            ['q' => '¿Cuánto tarda en llegar una compra por internet?', 'a' => 'Depende de la tienda y del courier. Tome la fecha estimada que muestra la tienda al pagar y, si usa casilla, sume el tránsito que le informe el courier.'],
+            ['q' => '¿Se pagan impuestos por compras por internet en Paraguay?', 'a' => 'Puede corresponder pagar tributos al ingresar el paquete, según su valor, el régimen y el tipo de mercadería. Los montos vigentes se consultan en la DNIT o con el courier.'],
+        ],
+        'relatedService' => 'asesoria-compras-online',
+        'toolLink' => [
+            'path' => '/herramientas/calculadora-compras-online/',
+            'label' => 'Calcular el costo final de mi compra',
+            'text' => 'Sume precio, envío, flete del courier y tributos estimados para saber cuánto le cuesta la compra puesta en Paraguay.',
+        ],
+        'related' => ['casillas-courier-paraguay', 'impuestos-compras-online-paraguay', 'temu-paraguay'],
+        'affiliates' => [],
+        'disclaimer' => false,
+        'image' => ['base' => '/assets/img/compras-online-entrega-asuncion', 'widths' => [640, 1280, 1920], 'alt' => 'Una mujer recibe en la puerta de su casa en Asunción varios paquetes de una compra online', 'width' => 1920, 'height' => 1086],
     ],
 
 ];

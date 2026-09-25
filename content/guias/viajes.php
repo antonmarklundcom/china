@@ -43,14 +43,14 @@ return [
         'cluster' => 'viajes',
         'seoTitle' => 'Feria de Cantón: guía para ir desde PY',
         'metaDescription' => 'Cómo ir a la Feria de Cantón desde Paraguay: fases y sectores, registro de comprador, visa, vuelos, hotel y cómo negociar con fábricas.',
-        'lastReviewed' => '2026-09-24',
+        'lastReviewed' => '2026-09-25',
         'hero' => [
             'eyebrow' => 'Viajar a China',
             'h1' => 'Feria de Cantón: guía para compradores de Paraguay',
-            'lead' => 'La Feria de Cantón (China Import and Export Fair) se realiza dos veces al año en Guangzhou, en primavera y en otoño, dividida en tres fases por sector. Para ir desde Paraguay necesita elegir la fase de su rubro, registrarse en línea como comprador, tramitar la visa china en una misión en el exterior y reservar vuelo y hotel con anticipación.',
+            'lead' => 'La Feria de Cantón, también llamada Feria de Guangzhou (su nombre oficial es China Import and Export Fair), se realiza dos veces al año en Guangzhou, en primavera y en otoño, dividida en tres fases por sector. Para ir desde Paraguay necesita elegir la fase de su rubro, registrarse en línea como comprador, tramitar la visa china en una misión en el exterior y reservar vuelo y hotel con anticipación.',
         ],
         'intro' => [
-            'La Feria de Cantón es la feria comercial más conocida de China para compradores extranjeros: miles de fábricas y exportadoras exponen en el complejo de Pazhou, en Guangzhou (Cantón). Cada año hay una sesión de primavera, que suele caer entre abril y mayo, y una de otoño, entre octubre y noviembre. Para la sesión de otoño de 2026 (140.ª edición), la organización anunció tres fases: del 15 al 19 de octubre, del 23 al 27 de octubre y del 31 de octubre al 4 de noviembre. Cada sesión se divide en tres fases de pocos días, y cada fase reúne sectores distintos. Por eso lo primero es saber qué fase corresponde a los productos que usted busca.',
+            'La Feria de Cantón es la feria comercial más conocida de China para compradores extranjeros: miles de fábricas y exportadoras exponen en el complejo de Pazhou, en Guangzhou (Cantón). Cada año hay una sesión de primavera, que suele caer entre abril y mayo, y una de otoño, entre octubre y noviembre. Para la Feria de Cantón 2026, en su sesión de otoño (140.ª edición), la organización anunció tres fases: del 15 al 19 de octubre, del 23 al 27 de octubre y del 31 de octubre al 4 de noviembre. Cada sesión se divide en tres fases de pocos días, y cada fase reúne sectores distintos. Por eso lo primero es saber qué fase corresponde a los productos que usted busca.',
             'Esta guía es para importadores, comerciantes y emprendedores de Paraguay que evalúan viajar a la Feria de Cantón por primera vez. Explica cómo elegir la fase, cómo funciona el registro de comprador y el gafete de ingreso, qué tener en cuenta con la visa (Paraguay no tiene embajada china), cómo organizar vuelos y hotel, y cómo aprovechar las reuniones con proveedores.',
             'Las fechas de cada fase, incluidas las de las sesiones de 2027, se publican en el sitio oficial de la feria, cantonfair.org.cn. Confírmelas allí antes de comprar pasajes: esta guía no reemplaza la información oficial.',
         ],
