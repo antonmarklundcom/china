@@ -274,6 +274,37 @@ if ($origin !== '') {
     }
 }
 
+/**
+ * The phone in international format (+595…). VenderCRM matches contacts on the
+ * phone and threads WhatsApp replies onto them, so "0981 123 456",
+ * "981123456", "595981123456" and "+595 981 123456" must all arrive as the
+ * same "+595981123456". Paraguayan rules (the site's market): a leading 0 is
+ * the national trunk prefix; a bare 9-digit number starting with 9 is a mobile.
+ * Anything already international (+ or 00) keeps its own country code.
+ */
+function phone_international(string $raw): string
+{
+    $digits = preg_replace('/\D+/', '', $raw) ?? '';
+
+    if (str_starts_with(ltrim($raw), '+')) {
+        return '+' . $digits;
+    }
+    if (str_starts_with($digits, '00')) {
+        return '+' . substr($digits, 2);
+    }
+    if (str_starts_with($digits, '595') && strlen($digits) >= 11) {
+        return '+' . $digits;
+    }
+    if (str_starts_with($digits, '0')) {
+        return '+595' . substr($digits, 1);
+    }
+    if (strlen($digits) === 9 && $digits[0] === '9') {
+        return '+595' . $digits;
+    }
+
+    return $digits;   // unknown shape: send the digits, the CRM decides
+}
+
 // --- 4. Validate -------------------------------------------------------------
 $phone = field('phone', 30);
 $digits = preg_replace('/\D+/', '', $phone) ?? '';
@@ -380,7 +411,7 @@ $leadResult = [
 ];
 
 $payload = array_filter([
-    'phone'           => $phone,
+    'phone'           => phone_international($phone),
     'name'            => field('name', 200),
     'email'           => $email,
     'message'         => field('message', 5000),
