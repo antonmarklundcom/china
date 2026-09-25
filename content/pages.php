@@ -342,7 +342,7 @@ return [
             [
                 'h2' => 'Fuentes oficiales',
                 'body' => [
-                    'Aduana: Gerencia General de Aduanas de la DNIT (aduana.gov.py). Impuestos: DNIT (dnit.gov.py). Visas para China: la misión diplomática china que corresponda a su residencia.',
+                    'Aduana: Gerencia General de Aduanas de la DNIT ([aduana.gov.py](https://www.aduana.gov.py/)). Impuestos: DNIT ([dnit.gov.py](https://www.dnit.gov.py/)). Visas para China: la misión diplomática china que corresponda a su residencia.',
                 ],
             ],
         ],

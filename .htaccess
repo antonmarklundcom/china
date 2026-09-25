@@ -20,6 +20,17 @@ DirectoryIndex index.php index.html
   #   RewriteRule ^$ /privacidad/? [R=301,L]
   #   RewriteRule ^wp-sitemap\.xml$ /sitemap.xml [R=301,L]
 
+  # --- canonical host ----------------------------------------------------
+  # Production only: http:// and www. on the site's own domain go to
+  # https://china.com.py (one 301). Other hosts (php -S, Hostinger's preview
+  # subdomain) never match, which is why router.php has no mirror of this.
+  RewriteCond %{HTTP_HOST} ^www\.china\.com\.py$ [NC]
+  RewriteRule ^(.*)$ https://china.com.py/$1 [R=301,L]
+  RewriteCond %{HTTP_HOST} ^china\.com\.py$ [NC]
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^(.*)$ https://china.com.py/$1 [R=301,L]
+
   # --- generated text endpoints -------------------------------------------
   RewriteRule ^sitemap\.xml$ /sitemap.php [L]
   RewriteRule ^robots\.txt$  /robots.php  [L]

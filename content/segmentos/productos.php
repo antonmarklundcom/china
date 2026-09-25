@@ -225,7 +225,7 @@ return [
             ],
             [
                 'title' => 'Homologación de equipos',
-                'text' => 'Los celulares destinados al mercado paraguayo necesitan una licencia previa de importación del MIC, que exige el certificado de homologación de la CONATEL (Decreto 6832/2017, modificado por el Decreto 8839/2023); la CONATEL publica el procedimiento en conatel.gov.py. Confirme con la CONATEL o su despachante si el modelo ya está homologado y qué documentos técnicos debe pedir al fabricante antes de comprar.',
+                'text' => 'Los celulares destinados al mercado paraguayo necesitan una licencia previa de importación del MIC, que exige el certificado de homologación de la CONATEL (Decreto 6832/2017, modificado por el Decreto 8839/2023); la CONATEL publica el procedimiento en [conatel.gov.py](https://www.conatel.gov.py/). Confirme con la CONATEL o su despachante si el modelo ya está homologado y qué documentos técnicos debe pedir al fabricante antes de comprar.',
             ],
             [
                 'title' => 'Baterías de litio en el flete',

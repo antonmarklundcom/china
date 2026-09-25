@@ -52,7 +52,7 @@ return [
         'intro' => [
             'Si va a importar mercadería con fines comerciales, lo habitual es que el despacho lo tramite un despachante de aduana matriculado. Él clasifica la mercadería, prepara la declaración, calcula los tributos, responde a la verificación y le avisa cuándo puede retirar la carga. Usted sigue siendo el importador y el responsable de lo que declara, por eso conviene elegir con cuidado.',
             'Esta guía explica qué hace un despachante, cómo comprobar que está habilitado, qué documentos le va a pedir y cómo comparar presupuestos. También aclara qué es el Centro de Despachantes de Aduana del Paraguay, la asociación profesional que muchos buscan en Google cuando quieren una lista de despachantes.',
-            'Este sitio es privado e informativo: no es la aduana ni un despachante. La aduana paraguaya, que antes era la Dirección Nacional de Aduanas (DNA) y desde la Ley 7143/2023 funciona como Gerencia General de Aduanas dentro de la DNIT, publica su información oficial en aduana.gov.py y dnit.gov.py. Nuestra lista de despachantes asociados está en preparación (próximamente); mientras tanto, podemos ponerlo en contacto con un despachante matriculado si nos deja su consulta.',
+            'Este sitio es privado e informativo: no es la aduana ni un despachante. La aduana paraguaya, que antes era la Dirección Nacional de Aduanas (DNA) y desde la Ley 7143/2023 funciona como Gerencia General de Aduanas dentro de la DNIT, publica su información oficial en [aduana.gov.py](https://www.aduana.gov.py/) y [dnit.gov.py](https://www.dnit.gov.py/). Nuestra lista de despachantes asociados está en preparación (próximamente); mientras tanto, podemos ponerlo en contacto con un despachante matriculado si nos deja su consulta.',
         ],
         'steps' => [
             [
@@ -120,7 +120,7 @@ return [
             [
                 'h2' => 'Centro de Despachantes de Aduana del Paraguay',
                 'body' => [
-                    'El Centro de Despachantes de Aduana del Paraguay (CDAP) es la asociación profesional que agrupa a despachantes de aduana del país, con más de un siglo de historia. Representa al gremio ante las autoridades y, a través de su instituto, ofrece formación en la carrera aduanera; no es la aduana ni despacha mercadería por usted. Su sitio es cdap.org.py.',
+                    'El Centro de Despachantes de Aduana del Paraguay (CDAP) es la asociación profesional que agrupa a despachantes de aduana del país, con más de un siglo de historia. Representa al gremio ante las autoridades y, a través de su instituto, ofrece formación en la carrera aduanera; no es la aduana ni despacha mercadería por usted. Su sitio es [cdap.org.py](https://www.cdap.org.py/).',
                     'Si buscó "cámara aduana paraguaya", tenga en cuenta que no existe una cámara que sea la aduana. La aduana es la Gerencia General de Aduanas de la DNIT; el CDAP es el gremio de los despachantes, y las cámaras empresariales, como la Cámara Paraguaya de Exportadores (CAPEX), representan a las empresas que comercian.',
                     'Si busca una "lista de despachantes de aduana en Paraguay", la fuente que acredita quién está habilitado es la propia DNIT, a través del registro de Personas Vinculadas a la Actividad Aduanera (PVAA). Desde agosto de 2025 ese registro se gestiona en línea en el sistema Marangatu, y la habilitación se renueva cada año. El CDAP puede orientarle sobre sus socios. No publicamos teléfonos ni direcciones de estas entidades porque cambian; consulte los datos de contacto en sus sitios oficiales.',
                     'También verá el término "auxiliar de despachante de aduana". Es la persona que trabaja con un despachante y, con habilitación de la aduana, solo puede hacer actos de mero trámite: examinar expedientes, presentar documentos firmados por el despachante y asistir a la verificación de la mercadería. Según el Código Aduanero (Ley 2422/2004), el despachante responde por los actos de sus auxiliares; el auxiliar no firma el despacho ni reemplaza al despachante.',
@@ -138,7 +138,7 @@ return [
         ],
         'faq' => [
             ['q' => '¿Es obligatorio usar un despachante de aduana en Paraguay?', 'a' => 'Como regla general, sí: el Código Aduanero (Ley 2422/2004, art. 22) establece que el importador actúe en las operaciones aduaneras a través de un despachante de aduana habilitado. Los casos con régimen propio, como ciertos [envíos por courier](/comprar/courier-china-paraguay/) o el equipaje de viajeros, los define la normativa; confírmelos con la DNIT.'],
-            ['q' => '¿Dónde encuentro la lista de despachantes de aduana del Paraguay?', 'a' => 'Para verificar la habilitación, consulte el registro de Personas Vinculadas a la Actividad Aduanera (PVAA) de la DNIT (dnit.gov.py), y al Centro de Despachantes de Aduana del Paraguay (cdap.org.py) para información sobre sus socios. Nuestra propia lista de despachantes asociados estará disponible próximamente; mientras tanto, con nuestro servicio de [despacho aduanero](/servicios/despacho-aduanero/) podemos conectarlo con uno.'],
+            ['q' => '¿Dónde encuentro la lista de despachantes de aduana del Paraguay?', 'a' => 'Para verificar la habilitación, consulte el registro de Personas Vinculadas a la Actividad Aduanera (PVAA) de la DNIT ([dnit.gov.py](https://www.dnit.gov.py/)), y al Centro de Despachantes de Aduana del Paraguay ([cdap.org.py](https://www.cdap.org.py/)) para información sobre sus socios. Nuestra propia lista de despachantes asociados estará disponible próximamente; mientras tanto, con nuestro servicio de [despacho aduanero](/servicios/despacho-aduanero/) podemos conectarlo con uno.'],
             ['q' => '¿El Centro de Despachantes es la aduana?', 'a' => 'No. Es una asociación profesional privada del gremio. La aduana es la Gerencia General de Aduanas de la DNIT, cuyas oficinas en la capital resumimos en la guía de la [aduana en Asunción](/aduana/aduana-asuncion/).'],
             ['q' => '¿Qué es un auxiliar de despachante de aduana?', 'a' => 'Un colaborador del despachante habilitado por la aduana para actos de mero trámite, como presentar documentos o asistir a la verificación. El despachante responde por sus actos y es quien firma el despacho.'],
             ['q' => '¿Cuánto cobra un despachante de aduana?', 'a' => 'Depende del valor y del tipo de mercadería, de la vía de ingreso y de lo que incluya el servicio. Pida siempre un presupuesto desglosado por escrito y compárelo con otro.'],
@@ -290,7 +290,7 @@ return [
         ],
         'intro' => [
             'Buena parte del comercio de Ciudad del Este, Encarnación, Pedro Juan Caballero y otras ciudades de frontera funciona bajo el régimen de turismo. Los comercios inscriptos importan bienes (electrónica, perfumes, relojes y otros) con condiciones tributarias propias, a cambio de venderlos a compradores extranjeros no domiciliados en Paraguay.',
-            'En 2024 el Poder Ejecutivo creó el Régimen de Turismo de Compras (RTC) por el Decreto 2063/2024, según informó la DNIT en su portal (dnit.gov.py). En su texto original, el decreto habilita a comercios inscriptos con locales en Asunción, Ciudad del Este, Encarnación, Pedro Juan Caballero, Pilar y Salto del Guairá a importar bienes de una lista anexa de posiciones arancelarias y venderlos a personas físicas extranjeras sin domicilio ni residencia en Paraguay. El régimen tuvo ajustes posteriores; la lista de bienes, los tributos y las obligaciones vigentes conviene leerlos en la normativa que publica la DNIT.',
+            'En 2024 el Poder Ejecutivo creó el Régimen de Turismo de Compras (RTC) por el Decreto 2063/2024, según informó la DNIT en su portal ([dnit.gov.py](https://www.dnit.gov.py/)). En su texto original, el decreto habilita a comercios inscriptos con locales en Asunción, Ciudad del Este, Encarnación, Pedro Juan Caballero, Pilar y Salto del Guairá a importar bienes de una lista anexa de posiciones arancelarias y venderlos a personas físicas extranjeras sin domicilio ni residencia en Paraguay. El régimen tuvo ajustes posteriores; la lista de bienes, los tributos y las obligaciones vigentes conviene leerlos en la normativa que publica la DNIT.',
             'Esta guía sirve a tres perfiles: al turista que compra en la frontera, al residente que quiere entender por qué no puede usar ese régimen para su negocio, y a quien evalúa abrir un comercio de frontera.',
         ],
         'steps' => [
@@ -356,7 +356,7 @@ return [
                 'body' => [],
                 'items' => [
                     ['title' => 'DNIT', 'text' => 'dnit.gov.py publica la normativa y las comunicaciones sobre el régimen de turismo.'],
-                    ['title' => 'Aduana', 'text' => 'aduana.gov.py reúne la información aduanera de importación y equipaje.'],
+                    ['title' => 'Aduana', 'text' => '[aduana.gov.py](https://www.aduana.gov.py/) reúne la información aduanera de importación y equipaje.'],
                     ['title' => 'Su contador', 'text' => 'Para evaluar si un régimen especial aplica a su empresa y qué obligaciones implica.'],
                 ],
             ],
@@ -364,7 +364,7 @@ return [
         'faq' => [
             ['q' => '¿Qué es el régimen de turismo en Paraguay?', 'a' => 'Un régimen especial por el que comercios habilitados importan ciertos bienes con tratamiento tributario diferenciado para venderlos a turistas extranjeros, principalmente en ciudades de frontera.'],
             ['q' => '¿Un paraguayo puede comprar bajo el régimen de turismo?', 'a' => 'No. Según el Decreto 2063/2024, los compradores del régimen son personas físicas extranjeras, sin domicilio ni residencia en Paraguay. Un paraguayo o un extranjero residente compra con el régimen general; ante cualquier cambio, consulte la normativa vigente en dnit.gov.py.'],
-            ['q' => '¿Dónde leo la norma del régimen de turismo?', 'a' => 'En el portal de la DNIT (dnit.gov.py), que publica el Decreto 2063/2024 y la normativa del régimen de turismo de compras.'],
+            ['q' => '¿Dónde leo la norma del régimen de turismo?', 'a' => 'En el portal de la DNIT ([dnit.gov.py](https://www.dnit.gov.py/)), que publica el Decreto 2063/2024 y la normativa del régimen de turismo de compras.'],
             ['q' => '¿Cuánto puedo llevar a Argentina o Brasil desde Ciudad del Este?', 'a' => 'Lo define la aduana de su país. Consulte la franquicia vigente en ARCA para Argentina o en la Receita Federal para Brasil antes de viajar; en nuestra guía de la [aduana de Ciudad del Este y Encarnación](/aduana/aduana-ciudad-del-este-encarnacion/) le indicamos dónde.'],
             ['q' => '¿Puedo comprar en Ciudad del Este para revender en Asunción?', 'a' => 'Para revender necesita mercadería con respaldo legal: compre a un importador con factura o importe a su nombre con despacho aduanero.'],
         ],
@@ -391,7 +391,7 @@ return [
         ],
         'intro' => [
             'La búsqueda "aduana Argentina Paraguay" suele venir de personas que cruzan a comprar o a visitar familia por Posadas–Encarnación (vea la [aduana de Ciudad del Este y Encarnación](/aduana/aduana-ciudad-del-este-encarnacion/)), Clorinda–Puerto Falcón (vea la [aduana de Clorinda](/aduana/aduana-clorinda/)) o la zona de Puerto Iguazú. La regla práctica es la misma en todos los pasos: documentos en regla, compras con factura, y declarar lo que no sea equipaje personal o supere la franquicia del país de entrada.',
-            'La franquicia no es común a los dos países. Argentina la regula a través de ARCA (ex AFIP), con información en arca.gob.ar y argentina.gob.ar; Paraguay, a través de la Gerencia General de Aduanas de la DNIT, con información en aduana.gov.py. Los montos y condiciones cambian, por eso no los repetimos aquí: léalos en esas fuentes el día que viaje.',
+            'La franquicia no es común a los dos países. Argentina la regula a través de ARCA (ex AFIP), con información en arca.gob.ar y argentina.gob.ar; Paraguay, a través de la Gerencia General de Aduanas de la DNIT, con información en [aduana.gov.py](https://www.aduana.gov.py/). Los montos y condiciones cambian, por eso no los repetimos aquí: léalos en esas fuentes el día que viaje.',
             'Este sitio es privado e informativo. No representa a ninguna aduana ni publica el estado de los puentes en vivo.',
         ],
         'steps' => [
@@ -449,7 +449,7 @@ return [
                 'body' => [],
                 'items' => [
                     ['title' => 'Argentina', 'text' => 'ARCA (arca.gob.ar) para franquicia y equipaje; Dirección Nacional de Migraciones de Argentina (en argentina.gob.ar) para documentos.'],
-                    ['title' => 'Paraguay', 'text' => 'Gerencia General de Aduanas de la DNIT (aduana.gov.py, dnit.gov.py) para equipaje y mercadería; Dirección Nacional de Migraciones (migraciones.gov.py) para documentos.'],
+                    ['title' => 'Paraguay', 'text' => 'Gerencia General de Aduanas de la DNIT (aduana.gov.py, [dnit.gov.py](https://www.dnit.gov.py/)) para equipaje y mercadería; Dirección Nacional de Migraciones ([migraciones.gov.py](https://www.migraciones.gov.py/)) para documentos.'],
                 ],
             ],
             [
@@ -463,7 +463,7 @@ return [
         ],
         'faq' => [
             ['q' => '¿Cuánto puedo traer de Paraguay a Argentina sin pagar?', 'a' => 'Lo fija ARCA para viajeros que entran a Argentina, y puede ser distinto por vía terrestre. Consulte el monto vigente en arca.gob.ar antes de cruzar.'],
-            ['q' => '¿Y de Argentina a Paraguay?', 'a' => 'La franquicia para ingresar a Paraguay la define la aduana paraguaya. Consúltela en aduana.gov.py.'],
+            ['q' => '¿Y de Argentina a Paraguay?', 'a' => 'La franquicia para ingresar a Paraguay la define la aduana paraguaya. Consúltela en [aduana.gov.py](https://www.aduana.gov.py/).'],
             ['q' => '¿Puedo cruzar a comprar para revender?', 'a' => 'La franquicia es para uso personal. La mercadería para reventa debe importarse formalmente, con despacho aduanero.'],
             ['q' => '¿Qué pasa si no declaro lo que excede la franquicia?', 'a' => 'La aduana puede aplicar multas y retener o decomisar la mercadería. Declarar y pagar suele salir más barato.'],
             ['q' => '¿Hay información del estado del puente en vivo?', 'a' => 'Este sitio no la publica. Consulte los canales oficiales de las autoridades de frontera y de vialidad de cada país.'],
@@ -491,7 +491,7 @@ return [
         ],
         'intro' => [
             'El cruce por Clorinda se usa mucho para viajes de compras en ambos sentidos: argentinos que van a Asunción y paraguayos que compran en Clorinda, según qué lado resulte más conveniente por el tipo de cambio. Por eso el control aduanero se concentra en qué se lleva, en qué cantidad y si es para uso personal.',
-            'En el puente hay controles de migraciones y aduana de los dos países. Del lado argentino interviene ARCA (ex AFIP) y del lado paraguayo la Gerencia General de Aduanas de la DNIT. Cada uno aplica su propia franquicia para viajeros; consulte los montos vigentes en arca.gob.ar y aduana.gov.py, y vea [qué puede llevar al cruzar entre Argentina y Paraguay](/aduana/cruzar-frontera-argentina-paraguay/).',
+            'En el puente hay controles de migraciones y aduana de los dos países. Del lado argentino interviene ARCA (ex AFIP) y del lado paraguayo la Gerencia General de Aduanas de la DNIT. Cada uno aplica su propia franquicia para viajeros; consulte los montos vigentes en arca.gob.ar y [aduana.gov.py](https://www.aduana.gov.py/), y vea [qué puede llevar al cruzar entre Argentina y Paraguay](/aduana/cruzar-frontera-argentina-paraguay/).',
             'Esta guía reúne lo práctico: documentos, qué se controla, cuándo suele haber más espera y dónde está la información oficial. Somos un sitio privado; no publicamos el estado del puente en vivo.',
         ],
         'steps' => [
@@ -592,7 +592,7 @@ return [
         ],
         'intro' => [
             'Para estimar lo que pagará en aduana necesita tres datos: el valor CIF de la mercadería, su posición arancelaria en la Nomenclatura Común del Mercosur (NCM) y los tributos y tasas vigentes para esa posición. Con eso, el cálculo es una suma en cascada.',
-            'En esta guía explicamos el mecanismo paso a paso. No publicamos alícuotas porque dependen de cada posición NCM y de la normativa vigente; su despachante se las confirma, y la aduana las publica en aduana.gov.py y dnit.gov.py.',
+            'En esta guía explicamos el mecanismo paso a paso. No publicamos alícuotas porque dependen de cada posición NCM y de la normativa vigente; su despachante se las confirma, y la aduana las publica en [aduana.gov.py](https://www.aduana.gov.py/) y [dnit.gov.py](https://www.dnit.gov.py/).',
             'Si compra por internet en Temu, Shein o AliExpress para uso personal, las reglas de los envíos por courier pueden ser distintas; vea nuestra guía de [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/).',
         ],
         'steps' => [
@@ -667,7 +667,7 @@ return [
         'faq' => [
             ['q' => '¿Qué impuestos se pagan al importar en Paraguay?', 'a' => 'En general, el arancel de importación según la NCM, el IVA de importación y otras tasas o cargos que establezca la normativa. El detalle exacto lo muestra la liquidación del despacho.'],
             ['q' => '¿Sobre qué valor se calculan los tributos?', 'a' => 'Sobre el valor en aduana, que parte del valor CIF: mercadería más seguro y flete internacional.'],
-            ['q' => '¿Dónde consulto el arancel de mi producto?', 'a' => 'En el arancel vigente publicado por la aduana (aduana.gov.py) o preguntando a un despachante, que confirma la posición NCM.'],
+            ['q' => '¿Dónde consulto el arancel de mi producto?', 'a' => 'En el arancel vigente publicado por la aduana ([aduana.gov.py](https://www.aduana.gov.py/)) o preguntando a un despachante, que confirma la posición NCM.'],
             ['q' => '¿El IVA de importación se recupera?', 'a' => 'Si su empresa está inscripta en el IVA, en general puede usarlo como crédito fiscal. Confírmelo con su contador.'],
             ['q' => '¿Los tributos son iguales para compras por courier?', 'a' => 'Los envíos por courier pueden tener un régimen propio. Consulte nuestra guía de [impuestos de compras online](/comprar/impuestos-compras-online-paraguay/) y la información de la DNIT.'],
             ['q' => '¿Qué pasa si declaro un valor menor al real?', 'a' => 'La aduana puede ajustar el valor, cobrar la diferencia y aplicar multas. El importador es responsable de lo declarado, aunque el trámite lo haga el despachante.'],
@@ -699,7 +699,7 @@ return [
         ],
         'intro' => [
             'Cuando un despachante le dice "su producto va en la posición tal", se refiere a la NCM. Es la base de todo el despacho: define qué arancel paga, si necesita permisos de otros organismos y qué estadística se registra. Entender cómo se lee le ayuda a hacer mejores preguntas y a detectar errores antes de que cuesten dinero.',
-            'En esta guía verá la estructura del código dígito por dígito, cómo buscar la posición de un producto y por qué la clasificación final debe confirmarla un despachante. Las alícuotas de cada posición no las publicamos: se consultan en el arancel vigente, disponible a través de la aduana (aduana.gov.py).',
+            'En esta guía verá la estructura del código dígito por dígito, cómo buscar la posición de un producto y por qué la clasificación final debe confirmarla un despachante. Las alícuotas de cada posición no las publicamos: se consultan en el arancel vigente, disponible a través de la aduana ([aduana.gov.py](https://www.aduana.gov.py/)).',
         ],
         'steps' => [
             [
@@ -775,7 +775,7 @@ return [
         'faq' => [
             ['q' => '¿Qué significa NCM?', 'a' => 'Nomenclatura Común del Mercosur: el sistema de códigos de ocho dígitos con que los países del Mercosur clasifican las mercaderías.'],
             ['q' => '¿La NCM es igual al código HS de China?', 'a' => 'Los seis primeros dígitos coinciden con el Sistema Armonizado. Los dígitos siguientes son propios de cada país o bloque, así que el código completo no es el mismo.'],
-            ['q' => '¿Dónde busco la NCM de mi producto?', 'a' => 'En el arancel vigente que publica la aduana (aduana.gov.py) o consultando a un despachante, que es quien la declara.'],
+            ['q' => '¿Dónde busco la NCM de mi producto?', 'a' => 'En el arancel vigente que publica la aduana ([aduana.gov.py](https://www.aduana.gov.py/)) o consultando a un despachante, que es quien la declara.'],
             ['q' => '¿Puedo clasificar yo mismo mi producto?', 'a' => 'Puede hacer una primera búsqueda para estimar costos, pero la clasificación que se declara conviene que la confirme un despachante matriculado.'],
             ['q' => '¿La NCM cambia con el tiempo?', 'a' => 'Sí. El Sistema Armonizado se actualiza periódicamente y el Mercosur ajusta la NCM en consecuencia, por lo que una posición que usó hace años puede haber cambiado. Verifique siempre con el arancel vigente.'],
         ],
@@ -806,7 +806,7 @@ return [
         ],
         'intro' => [
             'Las dos ciudades son polos de compras de frontera y también puntos de entrada de carga. Por eso conviven dos realidades distintas: el viajero que cruza con compras personales y el importador que ingresa mercadería comercial por las aduanas y depósitos de la zona.',
-            'Para el viajero, lo que importa es la franquicia del país al que regresa (Brasil o Argentina) y las compras con factura. Para el importador, lo que importa es el despacho: clasificación NCM, tributos y documentos. En ambos casos la información oficial paraguaya está en aduana.gov.py y dnit.gov.py, a cargo de la Gerencia General de Aduanas de la DNIT (antes DNA).',
+            'Para el viajero, lo que importa es la franquicia del país al que regresa (Brasil o Argentina) y las compras con factura. Para el importador, lo que importa es el despacho: clasificación NCM, tributos y documentos. En ambos casos la información oficial paraguaya está en [aduana.gov.py](https://www.aduana.gov.py/) y [dnit.gov.py](https://www.dnit.gov.py/), a cargo de la Gerencia General de Aduanas de la DNIT (antes DNA).',
             'Esta guía resume qué se controla, cómo se relaciona con el régimen de turismo y dónde consultar horarios y requisitos. Somos un sitio privado e informativo, sin vínculo con ninguna aduana.',
         ],
         'steps' => [
@@ -909,7 +909,7 @@ return [
         ],
         'intro' => [
             'Quien busca "aduana Asunción" suele estar en una de estas situaciones: tiene una carga que llegó por puerto o por avión, espera una compra por courier, vuelve de viaje con equipaje o necesita hacer una consulta a la aduana. Cada caso se resuelve en un lugar distinto, y muchas veces no hace falta ir en persona.',
-            'Un dato que confunde: la Dirección Nacional de Aduanas ya no existe con ese nombre. La Ley 7143/2023, promulgada en agosto de 2023, creó la Dirección Nacional de Ingresos Tributarios (DNIT) a partir de la fusión de la Subsecretaría de Estado de Tributación (SET) y la DNA. Desde entonces, la aduana funciona como Gerencia General de Aduanas dentro de la DNIT. Por eso en internet todavía aparecen dos sitios, aduana.gov.py y dnit.gov.py; la información vigente se publica en el portal de la DNIT.',
+            'Un dato que confunde: la Dirección Nacional de Aduanas ya no existe con ese nombre. La Ley 7143/2023, promulgada en agosto de 2023, creó la Dirección Nacional de Ingresos Tributarios (DNIT) a partir de la fusión de la Subsecretaría de Estado de Tributación (SET) y la DNA. Desde entonces, la aduana funciona como Gerencia General de Aduanas dentro de la DNIT. Por eso en internet todavía aparecen dos sitios, [aduana.gov.py](https://www.aduana.gov.py/) y [dnit.gov.py](https://www.dnit.gov.py/); la información vigente se publica en el portal de la DNIT.',
             'Esta guía resume dónde se hace cada trámite en Asunción y alrededores, cómo llegar a los canales oficiales y qué puede seguir en línea. Somos un sitio privado e informativo, sin vínculo con la DNIT ni con ninguna aduana.',
         ],
         'steps' => [
@@ -985,7 +985,7 @@ return [
         ],
         'faq' => [
             ['q' => '¿Dónde queda la aduana en Asunción?', 'a' => 'La sede central de la Gerencia General de Aduanas está sobre la calle El Paraguayo Independiente, en el centro de Asunción. La carga se despacha en la administración del lugar de llegada: el aeropuerto Silvio Pettirossi en Luque o el puerto de descarga. Confirme la dirección vigente en dnit.gov.py.'],
-            ['q' => '¿Cuál es el teléfono de la aduana de Paraguay?', 'a' => 'Los teléfonos y horarios vigentes están en la sección Contáctenos de dnit.gov.py, junto con el formulario para consultas aduaneras. No los copiamos aquí porque pueden cambiar.'],
+            ['q' => '¿Cuál es el teléfono de la aduana de Paraguay?', 'a' => 'Los teléfonos y horarios vigentes están en la sección Contáctenos de [dnit.gov.py](https://www.dnit.gov.py/), junto con el formulario para consultas aduaneras. No los copiamos aquí porque pueden cambiar.'],
             ['q' => '¿La Dirección Nacional de Aduanas sigue existiendo?', 'a' => 'No con ese nombre. La Ley 7143/2023 creó la DNIT fusionando la SET y la DNA; la aduana funciona ahora como Gerencia General de Aduanas de la DNIT.'],
             ['q' => '¿Puedo ver mi carga en la aduana en vivo?', 'a' => 'No hay una transmisión pública del estado de cada carga. Pida a su despachante el número de despacho y el estado en el sistema SOFIA, o use las consultas públicas del portal de la DNIT.'],
             ['q' => '¿Necesito un despachante para retirar mercadería en Asunción?', 'a' => 'Para una importación comercial, como regla general sí: el Código Aduanero exige actuar a través de un despachante habilitado. Los envíos por courier y el equipaje tienen su propio régimen. Podemos conectarlo con un despachante con nuestro servicio de [despacho aduanero](/servicios/despacho-aduanero/).'],

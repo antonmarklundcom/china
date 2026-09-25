@@ -81,7 +81,7 @@ return [
                 'h2' => 'El riesgo de comprar a distancia',
                 'body' => [
                     'Muchos importadores de Paraguay descubren tarde que su «fábrica» en Alibaba era una empresa comercial que revende con margen, o que la mercadería que llegó no coincide con la muestra. Desde Asunción es difícil saber quién está del otro lado, y reclamar después del pago casi nunca funciona.',
-                    'Un agente local reduce ese riesgo porque está en el lugar: puede visitar la planta, pedir la licencia comercial y compararla con el registro público de empresas de China (gsxt.gov.cn), y negociar directamente en chino con quien produce. La guía sobre [proveedores chinos confiables](/importar/proveedores-chinos-confiables/) explica cada verificación.',
+                    'Un agente local reduce ese riesgo porque está en el lugar: puede visitar la planta, pedir la licencia comercial y compararla con el registro público de empresas de China ([gsxt.gov.cn](https://www.gsxt.gov.cn/)), y negociar directamente en chino con quien produce. La guía sobre [proveedores chinos confiables](/importar/proveedores-chinos-confiables/) explica cada verificación.',
                 ],
             ],
             [

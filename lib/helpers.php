@@ -31,6 +31,14 @@ function site_origin(): string
     $https  = ($_SERVER['HTTPS'] ?? '') === 'on' || ($_SERVER['SERVER_PORT'] ?? '') === '443';
     $host   = $_SERVER['HTTP_HOST'] ?? (string) site('domain');
 
+    /* On the production domain the origin is fixed even without config.php
+       (a Git deploy ships none): canonical, OG and sitemap URLs must never
+       say http:// or www. just because a request arrived that way. */
+    $domain = strtolower((string) site('domain'));
+    if ($domain !== '' && in_array(strtolower($host), [$domain, 'www.' . $domain], true)) {
+        return 'https://' . $domain;
+    }
+
     return ($https ? 'https://' : 'http://') . $host;
 }
 
