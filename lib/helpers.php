@@ -6,6 +6,9 @@
 
 declare(strict_types=1);
 
+/** Internal "[text](/path/)" or external "[text](https://…)" link syntax in body copy. */
+const RICH_LINK_PATTERN = '~\\[([^\\]\\[]+)\\]\\((/[a-z0-9\\-/#]*|https?://[^\\s()<>\\[\\]]+)\\)~i';
+
 /**
  * Escape for HTML text and attribute context.
  */
@@ -362,16 +365,36 @@ function image_ready(?array $image): bool
 }
 
 /**
- * Body copy with inline links. Content strings may carry markdown-style links
- * to site pages, "[la guía de aduana](/aduana/)"; the text is escaped first and
- * only root-relative hrefs become anchors, so content can never inject markup
- * or link off-site through this.
+ * Body copy with inline links. Content strings may carry markdown-style links:
+ *
+ *   "[la guía de aduana](/aduana/)"            → an internal link
+ *   "[el arancel vigente](https://www.dnit.gov.py/)" → an external link that
+ *                                                opens in a new tab, with a
+ *                                                small ↗ and rel="noopener"
+ *
+ * The text is escaped first; only root-relative paths and absolute http(s)
+ * URLs become anchors, and the URL is re-validated and re-escaped, so content
+ * can never inject markup or a javascript:/data: link through this.
  */
 function rich(?string $text): string
 {
     return (string) preg_replace_callback(
-        '~\[([^\]\[]+)\]\((/[a-z0-9\-/#]*)\)~i',
-        static fn (array $m): string => '<a href="' . $m[2] . '">' . $m[1] . '</a>',
+        RICH_LINK_PATTERN,
+        static function (array $m): string {
+            if ($m[2][0] === '/') {
+                return '<a href="' . $m[2] . '">' . $m[1] . '</a>';
+            }
+            $href = html_entity_decode($m[2], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+            $host = parse_url($href, PHP_URL_HOST);
+            if (!preg_match('~^https?://~i', $href) || !is_string($host) || !preg_match('~^[a-z0-9.-]+$~i', $host)) {
+                return $m[0];
+            }
+            return '<a class="ext-link" href="' . e($href) . '" rel="noopener" target="_blank">'
+                . $m[1]
+                . '<span class="ext-link__icon" aria-hidden="true">↗</span>'
+                . '<span class="visually-hidden"> ' . e(ui('a11y.new_tab', '(se abre en una pestaña nueva)')) . '</span>'
+                . '</a>';
+        },
         e($text)
     );
 }
@@ -379,7 +402,60 @@ function rich(?string $text): string
 /** The same copy with the link syntax removed, for JSON-LD and meta text. */
 function plain(?string $text): string
 {
-    return (string) preg_replace('~\[([^\]\[]+)\]\((/[a-z0-9\-/#]*)\)~i', '$1', (string) $text);
+    return (string) preg_replace(RICH_LINK_PATTERN, '$1', (string) $text);
+}
+
+/**
+ * The /cotizar/ wizard URL for a lead source. A service slug travels as `s`; a
+ * slug that is not a service (a tool) also carries its `need`, so the wizard can
+ * open on the right branch. With no arguments it describes the page being
+ * rendered, so every "Pedir cotización" button names the page it sits on.
+ */
+function quote_path(?string $slug = null, ?string $need = null): string
+{
+    $slug  = $slug ?? current_lead_slug();
+    $query = [];
+    if ($slug !== null && $slug !== '') {
+        if ($need === null && services($slug) === null) {
+            $need = (string) (lead_value($slug)['need'] ?? '');
+        }
+        if ($need !== null && $need !== '') {
+            $query['need'] = $need;
+        }
+        $query['s'] = $slug;
+    } elseif ($need !== null && $need !== '') {
+        $query['need'] = $need;
+    }
+
+    return '/cotizar/' . ($query === [] ? '' : '?' . http_build_query($query));
+}
+
+/** The WhatsApp glyph, inline, currentColor, decorative. */
+function wa_icon(string $class = 'icon'): string
+{
+    return '<svg class="' . e($class) . '" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.35-.5.05-.95.23-3.2-.67-2.7-1.06-4.4-3.8-4.53-3.98-.13-.18-1.08-1.44-1.08-2.75 0-1.3.68-1.95.93-2.21.24-.27.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.23.55.77 1.9.84 2.03.07.14.11.3.02.48-.09.18-.13.29-.27.44-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.67 1.1 1.44 1.79.99.88 1.82 1.16 2.08 1.29.26.13.41.11.56-.07.15-.18.65-.76.82-1.02.18-.27.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.07.11.07.63-.17 1.31Z"/></svg>';
+}
+
+/**
+ * The brand logomark: two points joined by a route arc on a teal tile. Inline
+ * SVG so it inherits no request; $id keeps the gradient ids unique when the
+ * header and the footer both render it. Keep in step with assets/img/favicon.svg.
+ */
+function logo_mark(string $id = 'h'): string
+{
+    $g = 'lm-g-' . preg_replace('/[^a-z0-9]/i', '', $id);
+
+    return '<svg class="logo-mark" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true" focusable="false">'
+        . '<defs><linearGradient id="' . $g . '" x1="0" y1="0" x2="1" y2="1">'
+        . '<stop offset="0" stop-color="#1f7482"/><stop offset="1" stop-color="#0a3540"/></linearGradient></defs>'
+        . '<rect width="40" height="40" rx="11" fill="url(#' . $g . ')"/>'
+        . '<rect x=".5" y=".5" width="39" height="39" rx="10.5" fill="none" stroke="#fff" stroke-opacity=".16"/>'
+        . '<path d="M13.5 34.5c9.5 0 21-9 21-21" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="1.4" stroke-linecap="round"/>'
+        . '<path d="M10.5 29c0-10.5 7.5-18 18.5-18" fill="none" stroke="#f2994a" stroke-width="2.8" stroke-linecap="round"/>'
+        . '<circle cx="29.5" cy="11" r="6.5" fill="#f2994a" fill-opacity=".2"/>'
+        . '<circle cx="29.5" cy="11" r="3.6" fill="#f2994a"/>'
+        . '<circle cx="10.5" cy="29.5" r="3.4" fill="#0b3a44" stroke="#fff" stroke-width="2"/>'
+        . '</svg>';
 }
 
 /**

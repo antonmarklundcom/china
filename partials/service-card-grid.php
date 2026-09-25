@@ -8,7 +8,7 @@
  *                         copy is rewritten.
  *   $gridCards  array     explicit cards, for the homepage, where one card
  *                         covers several legacy pages:
- *                         ['title', 'text', 'path', 'links' => [['label','path']]]
+ *                         ['title', 'text', 'path', 'kicker'?, 'links' => [['label','path']]]
  *
  * $gridCards wins when both are set.
  *
@@ -43,6 +43,7 @@ if ($gridCards === null) {
             'title' => $gridService['navLabel'],
             'text'  => $gridService['metaDescription'],
             'path'  => $gridService['path'],
+            'kicker' => clusters()[$gridService['cluster']] ?? '',
             'links' => [],
         ];
     }
@@ -55,12 +56,15 @@ $gridN = $gridStart;
     <?php $gridLinks = $gridCard['links'] ?? []; ?>
 
     <?php if ($gridLinks === []): ?>
-      <a class="card card--link" href="<?= e($gridCard['path']) ?>">
+      <a class="card card--link card--svc" href="<?= e($gridCard['path']) ?>">
         <?php if ($gridNumbered): ?>
           <span class="card__num" aria-hidden="true"><?= e(str_pad((string) $gridN++, 2, '0', STR_PAD_LEFT)) ?></span>
+        <?php elseif (!empty($gridCard['kicker'])): ?>
+          <span class="card__kicker"><?= e($gridCard['kicker']) ?></span>
         <?php endif; ?>
         <h3 class="card-title"><?= e($gridCard['title']) ?></h3>
         <p class="card__text"><?= e($gridCard['text']) ?></p>
+        <span class="card__arrow" aria-hidden="true">→</span>
       </a>
     <?php else: ?>
       <article class="card card--service">

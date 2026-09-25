@@ -49,7 +49,7 @@ require ROOT_DIR . '/partials/header.php';
 
   <?php if (!empty($meta['sections'])): ?>
     <section class="section">
-      <div class="container stack">
+      <div class="container container--narrow stack">
         <?php foreach ($meta['sections'] as $pageBlock): ?>
           <div class="prose">
             <?php if (!empty($pageBlock['h2'])): ?>

@@ -1,0 +1,1135 @@
+/* == reading pages ==========================================================
+   The editorial layout shared by templates/guide.php, templates/segment.php
+   and templates/article.php: a ~70ch article column, a sticky sidebar (TOC +
+   compact lead card + tool card) from 1024px, a collapsible TOC below that,
+   in-body CTA cards, and the JS-only reading progress bar / back-to-top
+   (assets/js/reading.js). Tokens only; every rule is scoped to a reading-page
+   class so no other page changes. */
+
+.reading {
+  --reading-text: #2f444b;      /* body copy: 10:1 on --bg, a notch softer than --ink */
+  --reading-rule: #edf1ef;      /* hairlines inside the column */
+  --reading-shadow: 0 1px 2px rgba(11, 58, 68, 0.04), 0 8px 24px rgba(11, 58, 68, 0.06);
+  --reading-top: calc(var(--header-h, 80px) + 24px);
+  padding-block: 40px var(--section-y);
+}
+
+.reading [id] {
+  scroll-margin-top: var(--reading-top);
+}
+
+/* -- hero meta line (steps · minutes · reviewed) ------------------------- */
+
+.reading-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  margin: var(--s-1) 0 0;
+  font-size: var(--t-note);
+  color: var(--on-ink-muted);
+}
+
+.reading-meta > span:first-child {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* -- layout --------------------------------------------------------------- */
+
+.reading__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s-4);
+  align-items: start;
+}
+
+.reading__main {
+  min-width: 0;
+  max-width: 68ch;
+  font-size: 17px;
+  color: var(--reading-text);
+}
+
+.reading__aside {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .reading {
+    padding-top: 64px;
+  }
+
+  .reading__layout {
+    grid-template-columns: minmax(0, 1fr) 296px;
+    column-gap: 64px;
+  }
+
+  .reading__aside {
+    display: block;
+    align-self: stretch;
+  }
+
+  .reading__sticky {
+    position: sticky;
+    top: var(--reading-top);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* clear of the floating WhatsApp button, so the lead card is never under it */
+    max-height: calc(100vh - var(--reading-top) - 104px);
+  }
+
+  /* the TOC gives way first: it scrolls inside itself, the lead card stays whole */
+  .reading__sticky > .toc--aside {
+    flex: 0 1 auto;
+    min-height: 120px;
+  }
+
+  .reading__sticky > .side-lead,
+  .reading__sticky > .side-tool {
+    flex: none;
+  }
+
+  .toc--mobile {
+    display: none;
+  }
+
+  /* the in-body tool card lives in the sidebar at this width */
+  .reading__tool {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reading__layout {
+    grid-template-columns: minmax(0, 1fr) 312px;
+    column-gap: 96px;
+  }
+}
+
+/* -- vertical rhythm inside the column ------------------------------------ */
+
+.reading__main > * + * {
+  margin-top: 40px;
+}
+
+.reading__main > .guide-reviewed + *,
+.reading__main > .disclaimer + * {
+  margin-top: var(--s-4);
+}
+
+.reading__main > .table-wrap + .reading__table-note {
+  margin-top: var(--s-2);
+}
+
+.reading__main > .steps + .steps,
+.reading__main > .inline-cta + .steps {
+  margin-top: 48px;
+}
+
+.reading__main > .reading__section,
+.reading__main > .reading__faq {
+  margin-top: 64px;
+}
+
+/* -- typography ----------------------------------------------------------- */
+
+.reading__main .prose p,
+.reading__main .steps__item p {
+  font-size: inherit;
+  line-height: 1.75;
+  color: var(--reading-text);
+}
+
+.reading__main .prose p + p,
+.reading__main .steps__item p + p {
+  margin-top: 1.1em;
+}
+
+.reading__main a:not([class]) {
+  color: var(--ink);
+  text-decoration-line: underline;
+  text-decoration-color: rgba(242, 153, 74, 0.7);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.reading__main a:not([class]):hover {
+  color: var(--accent-text);
+  text-decoration-color: currentColor;
+}
+
+.reading__main .prose h2,
+.reading__main .reading__h2,
+.reading__faq > h2 {
+  font-size: clamp(28px, 2.6vw, 34px);
+  line-height: 1.12;
+  letter-spacing: -0.028em;
+  margin-bottom: 20px;
+}
+
+.reading__main h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 32px 0 12px;
+}
+
+.reading__main .prose ul:not([class]),
+.reading__main .prose ol:not([class]) {
+  margin: 1.1em 0 0;
+  padding-left: 1.3em;
+  line-height: 1.7;
+}
+
+.reading__main .prose li + li {
+  margin-top: 0.45em;
+}
+
+.reading__main .prose li::marker {
+  color: var(--accent-text);
+}
+
+.reading__main blockquote {
+  margin: 0;
+  padding: 4px 0 4px 24px;
+  border-left: 3px solid var(--accent);
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.reading__main .checklist {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+  gap: 14px;
+  color: var(--reading-text);
+}
+
+.reading__main .checklist strong {
+  color: var(--ink);
+}
+
+/* The lede: the intro's first paragraph reads a size up, in ink. */
+.reading__intro > p:first-of-type {
+  font-size: 19px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+/* -- reviewed note, disclaimer, affiliate box ----------------------------- */
+
+.reading__main .guide-reviewed {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  padding-bottom: var(--s-3);
+  border-bottom: 1px solid var(--reading-rule);
+  font-size: var(--t-note);
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.reading__main .guide-reviewed::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--whatsapp);
+  box-shadow: 0 0 0 3px var(--ok-bg);
+  flex: none;
+  transform: translateY(-1px);
+}
+
+.reading__main .disclaimer {
+  border-radius: var(--r-input);
+  padding: 18px 22px;
+  line-height: 1.6;
+}
+
+.reading__main .affiliate-box {
+  border-radius: var(--r-input);
+  padding: 22px 26px;
+  box-shadow: var(--reading-shadow);
+  font-size: var(--t-small);
+  line-height: 1.55;
+}
+
+/* -- numbered steps as a timeline ----------------------------------------- */
+
+.reading__main .steps {
+  gap: 0;
+}
+
+.reading__main .steps__item {
+  padding: 0 0 48px 64px;
+}
+
+.reading__main .steps__item:last-child {
+  padding-bottom: 0;
+}
+
+/* the server renders the number (lists split around the inline CTA keep
+   counting through <ol start>), so the CSS counter badge steps aside */
+.reading__main .steps__item::before {
+  content: none;
+}
+
+.steps__num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 6px var(--bg);
+  z-index: 1;
+}
+
+.reading__main .steps__item::after {
+  content: "";
+  position: absolute;
+  left: 21.5px;
+  top: 52px;
+  bottom: 8px;
+  width: 1px;
+  background: linear-gradient(var(--outline), var(--border));
+}
+
+.reading__main .steps__item:last-child::after {
+  display: none;
+}
+
+.reading__main .steps__item h2 {
+  font-size: clamp(22px, 2.1vw, 27px);
+  line-height: 1.2;
+  letter-spacing: -0.022em;
+  padding-top: 6px;
+  margin-bottom: 14px;
+}
+
+/* -- tables --------------------------------------------------------------- */
+
+.reading__main .table-wrap {
+  border: 1px solid var(--border);
+  border-radius: var(--r-input);
+  box-shadow: var(--reading-shadow);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* scroll-shadow hint on narrow screens: the cover gradients scroll with
+     the content, the shadows stay put */
+  background:
+    linear-gradient(to right, var(--bg) 30%, rgba(255, 255, 255, 0)) left / 40px 100% no-repeat local,
+    linear-gradient(to left, var(--bg) 30%, rgba(255, 255, 255, 0)) right / 40px 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, rgba(11, 58, 68, 0.14), transparent) left / 14px 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, rgba(11, 58, 68, 0.14), transparent) right / 14px 100% no-repeat scroll;
+}
+
+.reading__main .table-wrap:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.reading__main .data-table {
+  min-width: 540px;
+  font-size: var(--t-small);
+  line-height: 1.5;
+}
+
+.reading__main .data-table caption {
+  caption-side: top;
+  padding: 18px 20px 14px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  border-bottom: 1px solid var(--border);
+}
+
+.reading__main .data-table th,
+.reading__main .data-table td {
+  padding: 14px 20px;
+  border-top: 1px solid var(--reading-rule);
+}
+
+.reading__main .data-table thead th {
+  background: var(--surface);
+  border-top: 0;
+  font-size: var(--t-label);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.reading__main .data-table tbody tr:nth-child(even) {
+  background: rgba(11, 58, 68, 0.022);
+}
+
+.reading__main .data-table tbody tr:hover {
+  background: rgba(242, 153, 74, 0.07);
+}
+
+.reading__main .data-table tbody th {
+  color: var(--ink);
+}
+
+.reading__main .data-table td {
+  color: var(--reading-text);
+}
+
+.reading__table-note {
+  line-height: 1.55;
+}
+
+/* -- FAQ inside the column ------------------------------------------------ */
+
+.reading__faq .faq details {
+  border-radius: var(--r-input);
+  padding: 18px 22px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.reading__faq .faq details:hover {
+  border-color: var(--outline);
+}
+
+.reading__faq .faq details[open] {
+  box-shadow: var(--reading-shadow);
+}
+
+.reading__faq .faq summary {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.reading__faq .faq details > p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--reading-text);
+}
+
+/* -- table of contents ---------------------------------------------------- */
+
+.toc__title {
+  font-size: var(--t-label);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+
+.toc__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.toc__link {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  padding: 6px 10px 6px 14px;
+  border-left: 2px solid var(--border);
+  font-size: var(--t-note);
+  line-height: 1.4;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.toc__link:hover {
+  color: var(--ink);
+  border-left-color: var(--outline);
+}
+
+.toc__link.is-active {
+  color: var(--ink);
+  font-weight: 600;
+  border-left-color: var(--accent);
+  background: linear-gradient(90deg, rgba(242, 153, 74, 0.1), rgba(242, 153, 74, 0));
+}
+
+.toc__num {
+  flex: none;
+  min-width: 1.4em;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--accent-text);
+}
+
+.toc--aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  min-height: 0;
+}
+
+.toc--aside .toc__list {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  /* soft fade at the bottom edge when the list scrolls */
+  -webkit-mask-image: linear-gradient(#000 calc(100% - 20px), transparent);
+  mask-image: linear-gradient(#000 calc(100% - 20px), transparent);
+  padding-bottom: 12px;
+}
+
+/* phones/tablets: a collapsible card under the hero */
+.toc--mobile {
+  border: 1px solid var(--border);
+  border-radius: var(--r-input);
+  background: var(--bg);
+  box-shadow: var(--reading-shadow);
+}
+
+.toc__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-2);
+  padding: 16px 20px;
+  cursor: pointer;
+  list-style: none;
+  border-radius: var(--r-input);
+}
+
+.toc__summary::-webkit-details-marker {
+  display: none;
+}
+
+.toc__summary:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.toc__summary .toc__title {
+  color: var(--ink);
+}
+
+.toc__count {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--t-note);
+  color: var(--muted);
+}
+
+.toc__count::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.toc--mobile[open] .toc__count::after {
+  transform: translateY(2px) rotate(-135deg);
+}
+
+.toc--mobile .toc__list {
+  padding: 0 20px 18px;
+}
+
+.toc--mobile .toc__link {
+  padding-block: 9px;
+  font-size: var(--t-small);
+}
+
+/* -- sidebar lead card ---------------------------------------------------- */
+
+.side-lead {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 22px 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  background:
+    radial-gradient(120% 80% at 100% 0, rgba(242, 153, 74, 0.1), rgba(242, 153, 74, 0) 60%),
+    var(--bg);
+  box-shadow: var(--reading-shadow);
+}
+
+.side-lead__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: var(--t-label);
+  font-weight: 600;
+  color: var(--accent-text);
+}
+
+.side-lead__eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.side-lead__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.022em;
+  color: var(--ink);
+}
+
+.side-lead__text {
+  margin: 0 0 6px;
+  font-size: var(--t-note);
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.side-lead__btn {
+  width: 100%;
+  padding-block: 14px;
+}
+
+.side-lead__btn svg,
+.inline-cta .btn svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  transition: transform 0.15s ease;
+}
+
+.side-lead__btn:hover svg,
+.inline-cta .btn:hover svg {
+  transform: translateX(2px);
+}
+
+.side-lead__wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  font-size: var(--t-note);
+  font-weight: 600;
+  color: var(--ok-text);
+  text-decoration: none;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.side-lead__wa:hover {
+  border-color: var(--ok-text);
+  background: var(--ok-bg);
+}
+
+.side-lead__wa svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--whatsapp);
+  flex: none;
+}
+
+/* -- tool cards (sidebar + in-body) ---------------------------------------- */
+
+.side-tool {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-input);
+  background: var(--surface);
+  font-size: var(--t-note);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.side-tool:hover {
+  border-color: var(--outline);
+  background: var(--bg);
+}
+
+.side-tool__icon,
+.tool-callout__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r-tile);
+  background: var(--ink);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.side-tool__icon svg,
+.tool-callout__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.side-tool__label {
+  flex: 1;
+}
+
+.side-tool__arrow {
+  color: var(--accent-text);
+  transition: transform 0.15s ease;
+}
+
+.side-tool:hover .side-tool__arrow {
+  transform: translateX(3px);
+}
+
+.tool-callout {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--s-3);
+  border-radius: var(--r-input);
+  padding: 20px 22px;
+  background: var(--surface);
+}
+
+.tool-callout__icon {
+  width: 44px;
+  height: 44px;
+}
+
+.tool-callout__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tool-callout::after {
+  content: "→";
+  align-self: center;
+  font-weight: 600;
+  color: var(--accent-text);
+  transition: transform 0.15s ease;
+}
+
+.tool-callout:hover::after {
+  transform: translateX(3px);
+}
+
+.tool-callout .card-title {
+  font-size: 19px;
+}
+
+/* -- inline CTA cards ----------------------------------------------------- */
+
+.inline-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  border-radius: var(--r-card);
+}
+
+.inline-cta__body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inline-cta__chip {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 4px;
+  padding: 5px 12px;
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  font-size: var(--t-label);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.inline-cta__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.inline-cta__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.022em;
+  color: var(--ink);
+}
+
+.inline-cta__text {
+  margin: 0;
+  font-size: var(--t-small);
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.inline-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+.inline-cta__actions .btn {
+  padding: 13px 22px;
+}
+
+/* soft: a quiet card with an accent rule, not a banner */
+.inline-cta--soft {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  background: var(--bg);
+  box-shadow: var(--reading-shadow);
+}
+
+/* strong: closes the steps on ink */
+.inline-cta--strong {
+  position: relative;
+  overflow: hidden;
+  padding: 32px;
+  background: var(--ink);
+  color: var(--on-ink);
+}
+
+.inline-cta--strong::before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(242, 153, 74, 0.22), rgba(242, 153, 74, 0));
+  pointer-events: none;
+}
+
+.inline-cta--strong .inline-cta__chip {
+  background: var(--on-ink-panel);
+  border: 1px solid var(--on-ink-border);
+  color: var(--on-ink);
+}
+
+.inline-cta--strong .inline-cta__title {
+  font-size: clamp(24px, 2.4vw, 30px);
+  line-height: 1.12;
+  color: var(--on-ink);
+  max-width: 22ch;
+}
+
+.inline-cta--strong .inline-cta__text {
+  color: var(--on-ink-muted);
+  font-size: 16px;
+}
+
+.inline-cta__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: var(--t-small);
+  line-height: 1.5;
+  color: var(--on-ink-muted);
+}
+
+.inline-cta__list li {
+  display: flex;
+  gap: 10px;
+}
+
+.inline-cta__list li::before {
+  content: "";
+  width: 14px;
+  height: 8px;
+  margin-top: 5px;
+  border-left: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(-45deg) scale(0.8);
+  flex: none;
+}
+
+.inline-cta--strong .inline-cta__body,
+.inline-cta--strong .inline-cta__actions {
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .inline-cta--soft {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 28px;
+  }
+
+  .inline-cta--soft .inline-cta__actions {
+    flex: none;
+  }
+
+  .inline-cta--strong {
+    padding: 40px;
+  }
+}
+
+/* -- segment page blocks inside the column --------------------------------- */
+
+.reading__traps {
+  display: grid;
+  gap: var(--s-2);
+  margin-top: 20px;
+}
+
+.reading__trap {
+  position: relative;
+  padding: 20px 22px 20px 64px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-input);
+  background: var(--bg);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.reading__trap:hover {
+  border-color: var(--outline);
+  box-shadow: var(--reading-shadow);
+}
+
+.reading__trap-num {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--r-chip);
+  background: #fdf1e7;
+  color: var(--accent-text);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reading__trap h3 {
+  margin: 2px 0 6px;
+  font-size: 19px;
+}
+
+.reading__trap p {
+  margin: 0;
+  font-size: var(--t-small);
+  line-height: 1.65;
+  color: var(--reading-text);
+}
+
+
+/* -- article (blog) --------------------------------------------------------- */
+
+.reading__main .article-meta {
+  color: var(--muted);
+}
+
+/* -- reading progress + back to top (created by reading.js) ---------------- */
+
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 120;
+  pointer-events: none;
+}
+
+.reading-progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  will-change: transform;
+}
+
+.back-to-top {
+  position: fixed;
+  left: var(--s-4);
+  bottom: var(--s-4);
+  z-index: 89;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--ink);
+  box-shadow: var(--shadow-fab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s, border-color 0.15s ease;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.back-to-top:hover {
+  border-color: var(--ink);
+}
+
+.back-to-top:focus-visible {
+  outline: none;
+  box-shadow: var(--focus), var(--shadow-fab);
+}
+
+.back-to-top svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    left: auto;
+    right: var(--s-3);
+    bottom: 76px;   /* above the full-width WhatsApp bar */
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top,
+  .back-to-top.is-visible {
+    transform: none;
+  }
+}
+
+/* -- phones ------------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+  .reading {
+    padding-top: var(--s-4);
+  }
+
+  .reading__main {
+    font-size: 16px;
+  }
+
+  .reading__main > * + * {
+    margin-top: 32px;
+  }
+
+  .reading__main > .reading__section,
+  .reading__main > .reading__faq {
+    margin-top: 48px;
+  }
+
+  .reading__intro > p:first-of-type {
+    font-size: 17px;
+  }
+
+  .reading__main .steps__item {
+    padding: 0 0 36px 52px;
+  }
+
+  .steps__num {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+    box-shadow: 0 0 0 4px var(--bg);
+  }
+
+  .reading__main .steps__item::after {
+    left: 17.5px;
+    top: 44px;
+  }
+
+  .reading__main .steps__item h2 {
+    padding-top: 4px;
+  }
+
+  .inline-cta--strong {
+    padding: 28px 22px;
+  }
+
+  .inline-cta__actions .btn {
+    flex: 1 1 100%;
+  }
+}
+
+/* short laptop screens: the sidebar keeps the TOC and the lead card */
+@media (min-width: 1024px) and (max-height: 760px) {
+  .reading__sticky > .side-tool {
+    display: none;
+  }
+
+  .reading__tool {
+    display: flex;
+  }
+}
+
+/* small phones: the number sits beside the heading only, the body runs the
+   full column width, and a hairline replaces the timeline */
+@media (max-width: 640px) {
+  .reading__main .steps__item {
+    padding: 0 0 32px;
+  }
+
+  .reading__main .steps__item + .steps__item {
+    padding-top: 32px;
+    border-top: 1px solid var(--reading-rule);
+  }
+
+  .reading__main .steps__item::after {
+    display: none;
+  }
+
+  .reading__main .steps__item h2 {
+    display: flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 0 0 0 50px;
+  }
+
+  .reading__main .steps__item + .steps__item .steps__num {
+    top: 32px;
+  }
+
+  .steps__num {
+    box-shadow: none;
+  }
+}

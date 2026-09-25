@@ -1,15 +1,21 @@
 <?php
 /**
- * The floating WhatsApp action. ONE element only: a round pill bottom-right on
- * desktop, a full-width sticky bar at <= 768px — the CSS reshapes it, so a page
- * never shows both.
+ * The persistent conversion actions. Two elements, one per breakpoint — the
+ * CSS shows exactly one of them, so a page never shows both:
  *
- * Without a WhatsApp number in content/site.php it keeps its shape and colour
- * but points at /contacto/ and says "Contactar": degrade, never invent a
- * number.
+ *   .wa-fab  (> 768px)   a floating WhatsApp pill, bottom-right
+ *   .mbar    (<= 768px)  a two-button sticky bar: "Cotizar" (→ /cotizar/, with
+ *                        this page's lead slug when it has one) + "WhatsApp"
  *
- * it opens the WhatsApp menu instead of going straight
- * to one chat — but only once assets/js/whatsapp-menu.js has run. Its href is
+ * assets/js/site.js slides the bar away while an on-page lead form is in view,
+ * so it never covers the form's own submit button.
+ *
+ * Without a WhatsApp number in content/site.php the WhatsApp half keeps its
+ * shape and colour but points at /contacto/ and says "Contactar": degrade,
+ * never invent a number.
+ *
+ * Both WhatsApp triggers open the WhatsApp menu instead of going straight to
+ * one chat — but only once assets/js/whatsapp-menu.js has run. Their href is
  * this page's own prefill from content/lead-values.php, so a visitor without JS
  * still gets a message that names the service they were reading about.
  *
@@ -18,17 +24,31 @@
 
 declare(strict_types=1);
 
-$link     = whatsapp_link(whatsapp_text_for_page());
-$label    = $link ? ui('cta.whatsapp_long') : ui('cta.contact');
-$leadSlug = current_lead_slug() ?? '';
+$link      = whatsapp_link(whatsapp_text_for_page());
+$label     = $link ? ui('cta.whatsapp_long') : ui('cta.contact');
+$leadSlug  = current_lead_slug() ?? '';
+$fabAttrs  = $link ? 'rel="noopener" data-wa-trigger aria-controls="wa-menu" aria-expanded="false"' : '';
+$fabPath   = (string) ($page['path'] ?? '/');
+$fabOnQuote = str_starts_with($fabPath, '/cotizar/');
 ?>
-<a class="wa-fab" href="<?= e($link ?? '/contacto/') ?>"
-   <?= $link ? 'rel="noopener" data-wa-trigger aria-controls="wa-menu" aria-expanded="false"' : '' ?>
+<a class="wa-fab" href="<?= e($link ?? '/contacto/') ?>" <?= $fabAttrs ?>
    data-service="<?= e($leadSlug) ?>">
-  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.35-.5.05-.95.23-3.2-.67-2.7-1.06-4.4-3.8-4.53-3.98-.13-.18-1.08-1.44-1.08-2.75 0-1.3.68-1.95.93-2.21.24-.27.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.23.55.77 1.9.84 2.03.07.14.11.3.02.48-.09.18-.13.29-.27.44-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.67 1.1 1.44 1.79.99.88 1.82 1.16 2.08 1.29.26.13.41.11.56-.07.15-.18.65-.76.82-1.02.18-.27.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.07.11.07.63-.17 1.31Z"/>
-  </svg>
+  <span class="wa-fab__icon"><?= wa_icon() ?></span>
   <span><?= e($label) ?></span>
 </a>
+
+<div class="mbar<?= $fabOnQuote ? ' mbar--single' : '' ?>" data-mbar role="group" aria-label="<?= e(ui('mbar.label')) ?>">
+  <?php if (!$fabOnQuote): ?>
+    <a class="mbar__btn mbar__btn--quote" href="<?= e(quote_path()) ?>" data-mbar-quote>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3h7l5 5v13H7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v5h5M10 13h6M10 17h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span><?= e(ui('cta.quote_short')) ?></span>
+    </a>
+  <?php endif; ?>
+  <a class="mbar__btn mbar__btn--wa" href="<?= e($link ?? '/contacto/') ?>" <?= $fabAttrs ?>
+     data-service="<?= e($leadSlug) ?>">
+    <?= $link ? wa_icon() : '' ?>
+    <span><?= e($link ? ui('cta.whatsapp') : ui('cta.contact')) ?></span>
+  </a>
+</div>
 <?php require ROOT_DIR . '/partials/whatsapp-menu.php'; ?>
-<?php unset($link, $label, $leadSlug); ?>
+<?php unset($link, $label, $leadSlug, $fabAttrs, $fabPath, $fabOnQuote); ?>

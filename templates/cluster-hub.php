@@ -43,17 +43,25 @@ require ROOT_DIR . '/partials/header.php';
 ?>
 <main id="main">
 
-  <section class="page-hero page-hero--hub hub-<?= e($cluster) ?>">
+  <section class="page-hero page-hero--hub hub-<?= e($cluster) ?><?= image_ready($hubImage) ? ' page-hero--has-media' : '' ?>">
     <div class="container">
       <?php require ROOT_DIR . '/partials/breadcrumbs.php'; ?>
-      <div class="page-hero__inner">
-        <p class="eyebrow"><?= e(content('ui')['clusters'][$cluster]) ?></p>
-        <h1><?= e($meta['h1']) ?></h1>
-        <p class="lead"><?= e($meta['lead']) ?></p>
+      <div class="page-hero__split">
+        <div class="page-hero__inner">
+          <p class="eyebrow"><?= e(content('ui')['clusters'][$cluster]) ?></p>
+          <h1><?= e($meta['h1']) ?></h1>
+          <p class="lead"><?= e($meta['lead']) ?></p>
+          <div class="btn-row">
+            <a class="btn btn--primary btn--lg" href="<?= e(quote_path($hubLeadSlug, $cluster)) ?>"><?= e(ui('cta.quote')) ?> <span aria-hidden="true">→</span></a>
+            <?php if ($hubGuides !== []): ?>
+              <a class="btn btn--on-ink btn--lg" href="#guias"><?= e(ui('hub.guides')) ?></a>
+            <?php endif; ?>
+          </div>
+        </div>
+        <?php if (image_ready($hubImage)): ?>
+          <figure class="page-hero__figure"><?= picture_html($hubImage, '(max-width: 1024px) 100vw, 560px', '', true) ?></figure>
+        <?php endif; ?>
       </div>
-      <?php if (image_ready($hubImage)): ?>
-        <figure class="page-hero__figure"><?= picture_html($hubImage, '(max-width: 1280px) 100vw, 1200px', '', true) ?></figure>
-      <?php endif; ?>
     </div>
   </section>
 
@@ -64,7 +72,7 @@ require ROOT_DIR . '/partials/header.php';
   <?php endif; ?>
 
   <?php if ($hubGuides !== []): ?>
-    <section class="section">
+    <section class="section" id="guias">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow"><?= e(ui('hub.guides')) ?></p>
@@ -73,8 +81,10 @@ require ROOT_DIR . '/partials/header.php';
         <div class="grid grid--3 mt-4">
           <?php foreach ($hubGuides as $hubGuide): ?>
             <a class="card card--link card--guide" href="<?= e($hubGuide['path']) ?>">
+              <span class="card__kicker"><?= e(ui('nav.guides')) ?></span>
               <h3 class="card-title"><?= e($hubGuide['navLabel']) ?></h3>
               <p class="card__text"><?= e($hubGuide['metaDescription']) ?></p>
+              <span class="card__arrow" aria-hidden="true">→</span>
             </a>
           <?php endforeach; ?>
         </div>
@@ -102,15 +112,24 @@ require ROOT_DIR . '/partials/header.php';
   <?php if ($hubTools !== []): ?>
     <section class="section">
       <div class="container">
-        <p class="eyebrow"><?= e(ui('hub.tools')) ?></p>
-        <div class="grid grid--3 mt-4">
-          <?php foreach ($hubTools as $hubTool): ?>
-            <a class="card card--link card--tool" href="<?= e($hubTool['path']) ?>">
-              <h3 class="card-title"><?= e($hubTool['title']) ?></h3>
-              <p class="card__text"><?= e($hubTool['metaDescription']) ?></p>
-            </a>
-          <?php endforeach; ?>
+        <div class="section-head">
+          <p class="eyebrow"><?= e(ui('hub.tools')) ?></p>
+          <h2><?= e(ui('home.tools_title')) ?></h2>
         </div>
+        <ol class="tool-rows tool-rows--light">
+          <?php $hubToolN = 0; foreach ($hubTools as $hubTool): ?>
+            <li>
+              <a class="tool-row" href="<?= e($hubTool['path']) ?>">
+                <span class="tool-row__num" aria-hidden="true"><?= e(str_pad((string) ++$hubToolN, 2, '0', STR_PAD_LEFT)) ?></span>
+                <span class="tool-row__body">
+                  <span class="tool-row__title"><?= e($hubTool['title']) ?></span>
+                  <span class="tool-row__text"><?= e($hubTool['metaDescription']) ?></span>
+                </span>
+                <span class="tool-row__go"><?= e(ui('home.tools_cta')) ?> <span aria-hidden="true">→</span></span>
+              </a>
+            </li>
+          <?php endforeach; ?>
+        </ol>
       </div>
     </section>
   <?php endif; ?>
