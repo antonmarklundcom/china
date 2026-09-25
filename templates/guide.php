@@ -10,6 +10,12 @@
  * straight from content/guias.php the way templates/service.php builds a
  * service page straight from content/services.php.
  *
+ * Reading layout: a ~68ch article column beside a sticky sidebar from 1024px
+ * (partials/guide-toc.php, partials/sidebar-lead.php, the tool card), a
+ * collapsible TOC below that, and partials/inline-cta.php after step 3 (5+
+ * steps) and after the last step. Styles in assets/css/parts/reading.css,
+ * scroll-spy / progress bar / back-to-top in assets/js/reading.js.
+ *
  *   $slug  string  required — looked up in content('guias')
  */
 
@@ -71,6 +77,55 @@ $page = [
     'jsonld'   => [$howTo],
 ];
 
+/* ---- reading layout: anchors, TOC, reading time ------------------------
+   One pass over the same arrays that render the body, so every TOC entry
+   points at an id that exists. Ids are slugs of the visible headings; the
+   page's own fixed ids are reserved first so a heading can never shadow them. */
+$readingIds    = ['main' => true, 'delegar' => true, 'contenido' => true];
+$readingAnchor = static function (string $text) use (&$readingIds): string {
+    $slugText = strtr(mb_strtolower(plain($text)), ['á' => 'a', 'é' => 'e', 'í' => 'i', 'ó' => 'o', 'ú' => 'u', 'ü' => 'u', 'ñ' => 'n']);
+    $slugText = trim((string) preg_replace('~[^a-z0-9]+~', '-', $slugText), '-');
+    $slugText = implode('-', array_slice(explode('-', $slugText), 0, 6));
+    $base     = $slugText !== '' ? $slugText : 'seccion';
+    $anchorId = $base;
+    for ($n = 2; isset($readingIds[$anchorId]); $n++) {
+        $anchorId = $base . '-' . $n;
+    }
+    $readingIds[$anchorId] = true;
+    return $anchorId;
+};
+
+$tocAll    = [];
+$stepIds   = [];
+$wordCount = 0;
+foreach ($guide['intro'] as $guideParagraph) {
+    $wordCount += count(preg_split('~\s+~u', trim(plain($guideParagraph))) ?: []);
+}
+foreach ($guide['steps'] as $i => $guideStep) {
+    $stepIds[$i] = $readingAnchor($guideStep['title']);
+    $tocAll[]    = ['id' => $stepIds[$i], 'label' => $guideStep['title'], 'num' => (string) ($i + 1)];
+    foreach ($guideStep['body'] as $guideStepParagraph) {
+        $wordCount += count(preg_split('~\s+~u', trim(plain($guideStepParagraph))) ?: []);
+    }
+}
+$sectionIds = [];
+foreach ($guide['sections'] ?? [] as $i => $guideSection) {
+    $sectionIds[$i] = $readingAnchor($guideSection['h2']);
+    $tocAll[]       = ['id' => $sectionIds[$i], 'label' => $guideSection['h2'], 'num' => null];
+    foreach ($guideSection['body'] as $guideSectionParagraph) {
+        $wordCount += count(preg_split('~\s+~u', trim(plain($guideSectionParagraph))) ?: []);
+    }
+}
+$faqId = null;
+if ($guide['faq'] !== []) {
+    $faqId    = $readingAnchor('preguntas-frecuentes');
+    $tocAll[] = ['id' => $faqId, 'label' => ui('service.faq'), 'num' => null];
+}
+$readingMinutes = max(1, (int) ceil($wordCount / 200));
+$stepCount      = count($guide['steps']);
+/* Soft CTA after step 3 only when there is enough guide left to come back to. */
+$softCtaAfter   = $stepCount >= 5 ? 2 : null;
+
 require ROOT_DIR . '/partials/head.php';
 require ROOT_DIR . '/partials/header.php';
 ?>
@@ -83,6 +138,15 @@ require ROOT_DIR . '/partials/header.php';
         <p class="eyebrow"><?= e($guide['hero']['eyebrow']) ?></p>
         <h1><?= e($guide['hero']['h1']) ?></h1>
         <p class="lead"><?= e($guide['hero']['lead']) ?></p>
+        <p class="reading-meta">
+          <?php if ($stepCount > 0): ?>
+            <span><?= $stepCount ?> <?= e(ui('reading.steps', 'pasos')) ?></span>
+            <span aria-hidden="true">·</span>
+          <?php endif; ?>
+          <span><?= $readingMinutes ?> <?= e(ui('article.reading_time')) ?></span>
+          <span aria-hidden="true">·</span>
+          <span><?= e(ui('guide.reviewed_prefix')) ?> <time datetime="<?= e($guide['lastReviewed']) ?>"><?= e(fmt_date_long($guide['lastReviewed'])) ?></time></span>
+        </p>
       </div>
       <?php if (image_ready($guideImage)): ?>
         <figure class="page-hero__figure"><?= picture_html($guideImage, '(max-width: 1280px) 100vw, 1200px', '', true) ?></figure>
@@ -90,102 +154,126 @@ require ROOT_DIR . '/partials/header.php';
     </div>
   </section>
 
-  <section class="section">
-    <div class="container stack">
-      <p class="note guide-reviewed">
-        <?= e(ui('guide.reviewed_prefix')) ?>
-        <?= e(fmt_date_long($guide['lastReviewed'])) ?>. <?= e(ui('guide.orientativo')) ?>
-      </p>
+  <section class="reading" id="contenido">
+    <div class="container reading__layout">
 
-      <?php if (!empty($guide['disclaimer'])): ?>
-        <?php if (is_array($guide['disclaimer'])) { $discLink = $guide['disclaimer']; } ?>
-        <?php require ROOT_DIR . '/partials/disclaimer-oficial.php'; ?>
-      <?php endif; ?>
+      <?php $tocItems = $tocAll; $tocVariant = 'mobile'; require ROOT_DIR . '/partials/guide-toc.php'; ?>
 
-      <?php if ($guide['intro'] !== []): ?>
-        <div class="prose">
-          <?php foreach ($guide['intro'] as $guideParagraph): ?>
-            <p><?= rich($guideParagraph) ?></p>
-          <?php endforeach; ?>
-        </div>
-      <?php endif; ?>
+      <article class="reading__main" data-reading data-top-label="<?= e(ui('reading.top', 'Volver arriba')) ?>">
+        <p class="note guide-reviewed">
+          <?= e(ui('guide.reviewed_prefix')) ?>
+          <?= e(fmt_date_long($guide['lastReviewed'])) ?>. <?= e(ui('guide.orientativo')) ?>
+        </p>
 
-      <?php if ($guide['steps'] !== []): ?>
-        <ol class="steps mt-4">
-          <?php foreach ($guide['steps'] as $guideStep): ?>
-            <li class="steps__item">
-              <h2><?= e($guideStep['title']) ?></h2>
-              <?php foreach ($guideStep['body'] as $guideStepParagraph): ?>
-                <p><?= rich($guideStepParagraph) ?></p>
-              <?php endforeach; ?>
-            </li>
-          <?php endforeach; ?>
-        </ol>
-      <?php endif; ?>
-
-      <?php if (!empty($guide['table']['rows'])): ?>
-        <?php $guideTable = $guide['table']; ?>
-        <div class="table-wrap mt-4">
-          <table class="data-table">
-            <?php if (!empty($guideTable['caption'])): ?>
-              <caption><?= e($guideTable['caption']) ?></caption>
-            <?php endif; ?>
-            <thead><tr>
-              <?php foreach ($guideTable['head'] as $guideTh): ?><th scope="col"><?= e($guideTh) ?></th><?php endforeach; ?>
-            </tr></thead>
-            <tbody>
-              <?php foreach ($guideTable['rows'] as $guideRow): ?>
-                <tr><?php foreach ($guideRow as $guideCellIndex => $guideCell): ?><?= $guideCellIndex === 0 ? '<th scope="row">' . e($guideCell) . '</th>' : '<td>' . e($guideCell) . '</td>' ?><?php endforeach; ?></tr>
-              <?php endforeach; ?>
-            </tbody>
-          </table>
-        </div>
-        <?php if (!empty($guideTable['note'])): ?>
-          <p class="note"><?= e($guideTable['note']) ?></p>
+        <?php if (!empty($guide['disclaimer'])): ?>
+          <?php if (is_array($guide['disclaimer'])) { $discLink = $guide['disclaimer']; } ?>
+          <?php require ROOT_DIR . '/partials/disclaimer-oficial.php'; ?>
         <?php endif; ?>
-      <?php endif; ?>
 
-      <?php if (!empty($guide['sections'])): ?>
-        <?php foreach ($guide['sections'] as $guideSection): ?>
-          <div class="prose mt-4">
-            <h2><?= e($guideSection['h2']) ?></h2>
-            <?php foreach ($guideSection['body'] as $guideSectionParagraph): ?>
-              <p><?= rich($guideSectionParagraph) ?></p>
+        <?php if ($guide['intro'] !== []): ?>
+          <div class="prose reading__intro">
+            <?php foreach ($guide['intro'] as $guideParagraph): ?>
+              <p><?= rich($guideParagraph) ?></p>
             <?php endforeach; ?>
-            <?php if (!empty($guideSection['items'])): ?>
-              <ul class="checklist">
-                <?php foreach ($guideSection['items'] as $guideSectionItem): ?>
-                  <li><span><strong><?= e($guideSectionItem['title']) ?>.</strong> <?= rich($guideSectionItem['text']) ?></span></li>
-                <?php endforeach; ?>
-              </ul>
-            <?php endif; ?>
           </div>
-        <?php endforeach; ?>
-      <?php endif; ?>
+        <?php endif; ?>
 
-      <?php $affIds = $guide['affiliates'] ?? []; require ROOT_DIR . '/partials/affiliate-box.php'; ?>
+        <?php if ($guide['steps'] !== []): ?>
+          <ol class="steps">
+            <?php foreach ($guide['steps'] as $i => $guideStep): ?>
+              <li class="steps__item" id="<?= e($stepIds[$i]) ?>">
+                <span class="steps__num" aria-hidden="true"><?= $i + 1 ?></span>
+                <h2><?= e($guideStep['title']) ?></h2>
+                <?php foreach ($guideStep['body'] as $guideStepParagraph): ?>
+                  <p><?= rich($guideStepParagraph) ?></p>
+                <?php endforeach; ?>
+              </li>
+              <?php if ($softCtaAfter === $i && $i < $stepCount - 1): ?>
+          </ol>
+          <?php $inlineCtaSlug = $delegateSlug; $inlineCtaVariant = 'soft'; require ROOT_DIR . '/partials/inline-cta.php'; ?>
+          <ol class="steps" start="<?= $i + 2 ?>">
+              <?php endif; ?>
+            <?php endforeach; ?>
+          </ol>
+          <?php $inlineCtaSlug = $delegateSlug; $inlineCtaVariant = 'strong'; require ROOT_DIR . '/partials/inline-cta.php'; ?>
+        <?php endif; ?>
+
+        <?php if (!empty($guide['table']['rows'])): ?>
+          <?php $guideTable = $guide['table']; ?>
+          <div class="table-wrap" role="region" tabindex="0" aria-label="<?= e($guideTable['caption'] ?? $guide['navLabel']) ?>">
+            <table class="data-table">
+              <?php if (!empty($guideTable['caption'])): ?>
+                <caption><?= e($guideTable['caption']) ?></caption>
+              <?php endif; ?>
+              <thead><tr>
+                <?php foreach ($guideTable['head'] as $guideTh): ?><th scope="col"><?= e($guideTh) ?></th><?php endforeach; ?>
+              </tr></thead>
+              <tbody>
+                <?php foreach ($guideTable['rows'] as $guideRow): ?>
+                  <tr><?php foreach ($guideRow as $guideCellIndex => $guideCell): ?><?= $guideCellIndex === 0 ? '<th scope="row">' . e($guideCell) . '</th>' : '<td>' . e($guideCell) . '</td>' ?><?php endforeach; ?></tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+          </div>
+          <?php if (!empty($guideTable['note'])): ?>
+            <p class="note reading__table-note"><?= e($guideTable['note']) ?></p>
+          <?php endif; ?>
+        <?php endif; ?>
+
+        <?php if (!empty($guide['sections'])): ?>
+          <?php foreach ($guide['sections'] as $i => $guideSection): ?>
+            <div class="prose reading__section" id="<?= e($sectionIds[$i]) ?>">
+              <h2><?= e($guideSection['h2']) ?></h2>
+              <?php foreach ($guideSection['body'] as $guideSectionParagraph): ?>
+                <p><?= rich($guideSectionParagraph) ?></p>
+              <?php endforeach; ?>
+              <?php if (!empty($guideSection['items'])): ?>
+                <ul class="checklist">
+                  <?php foreach ($guideSection['items'] as $guideSectionItem): ?>
+                    <li><span><strong><?= e($guideSectionItem['title']) ?>.</strong> <?= rich($guideSectionItem['text']) ?></span></li>
+                  <?php endforeach; ?>
+                </ul>
+              <?php endif; ?>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
+
+        <?php $affIds = $guide['affiliates'] ?? []; require ROOT_DIR . '/partials/affiliate-box.php'; ?>
+
+        <?php if ($guide['toolLink'] !== null): ?>
+          <a class="card card--link tool-callout reading__tool" href="<?= e($guide['toolLink']['path']) ?>">
+            <span class="tool-callout__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 7.5h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 15.5h.01M12 15.5h.01M15.5 15.5h.01" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+            <span class="tool-callout__body">
+              <span class="card-title"><?= e($guide['toolLink']['label']) ?></span>
+              <span class="card__text"><?= e($guide['toolLink']['text']) ?></span>
+            </span>
+          </a>
+        <?php endif; ?>
+
+        <?php if ($guide['faq'] !== []): ?>
+          <div class="reading__faq" id="<?= e($faqId) ?>">
+            <?php $faqItems = $guide['faq']; ?>
+            <?php require ROOT_DIR . '/partials/faq.php'; ?>
+          </div>
+        <?php endif; ?>
+      </article>
+
+      <aside class="reading__aside">
+        <div class="reading__sticky">
+          <?php $tocItems = $tocAll; $tocVariant = 'aside'; require ROOT_DIR . '/partials/guide-toc.php'; ?>
+          <?php $sideLeadSlug = $delegateSlug; require ROOT_DIR . '/partials/sidebar-lead.php'; ?>
+          <?php if ($guide['toolLink'] !== null): ?>
+            <a class="side-tool" href="<?= e($guide['toolLink']['path']) ?>">
+              <span class="side-tool__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 7.5h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 15.5h.01M12 15.5h.01M15.5 15.5h.01" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+              <span class="side-tool__label"><?= e($guide['toolLink']['label']) ?></span>
+              <span class="side-tool__arrow" aria-hidden="true">→</span>
+            </a>
+          <?php endif; ?>
+        </div>
+      </aside>
+
     </div>
   </section>
-
-  <?php if ($guide['toolLink'] !== null): ?>
-    <section class="section section--surface">
-      <div class="container">
-        <a class="card card--link" href="<?= e($guide['toolLink']['path']) ?>">
-          <h2 class="card-title"><?= e($guide['toolLink']['label']) ?></h2>
-          <p class="card__text"><?= e($guide['toolLink']['text']) ?></p>
-        </a>
-      </div>
-    </section>
-  <?php endif; ?>
-
-  <?php if ($guide['faq'] !== []): ?>
-    <section class="section">
-      <div class="container">
-        <?php $faqItems = $guide['faq']; ?>
-        <?php require ROOT_DIR . '/partials/faq.php'; ?>
-      </div>
-    </section>
-  <?php endif; ?>
 
   <!-- Cuándo conviene delegarlo: the guide's own lead form, set
        to the matching service via content/lead-values.php — never a bare
@@ -243,4 +331,5 @@ require ROOT_DIR . '/partials/header.php';
 
   <?php require ROOT_DIR . '/partials/cta-band.php'; ?>
 </main>
+<script src="<?= e(asset('/assets/js/reading.js')) ?>" defer></script>
 <?php require ROOT_DIR . '/partials/footer.php'; ?>

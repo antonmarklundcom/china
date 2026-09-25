@@ -41,12 +41,17 @@ $page = [
     'leadSlug' => $slug,
 ];
 
+/* The quote this tool hands off to: the page's own lead slug plus its need
+   (quote_path() adds the need for a non-service slug). */
+$toolQuote = quote_path($slug);
+$toolWa    = whatsapp_link(whatsapp_text_for_page($page));
+
 require ROOT_DIR . '/partials/head.php';
 require ROOT_DIR . '/partials/header.php';
 ?>
 <main id="main">
 
-  <section class="page-hero">
+  <section class="page-hero page-hero--tool">
     <div class="container">
       <?php require ROOT_DIR . '/partials/breadcrumbs.php'; ?>
       <div class="page-hero__inner">
@@ -57,20 +62,52 @@ require ROOT_DIR . '/partials/header.php';
     </div>
   </section>
 
-  <section class="section">
-    <div class="container stack">
-      <p class="note tool-reviewed">
-        <?= e(ui('tools.reviewed_prefix')) ?>
-        <?= e(fmt_date_long($lastReviewed)) ?>. <?= e(ui('tools.orientativo')) ?>
-      </p>
+  <section class="section tool-body">
+    <div class="container svc-layout">
+      <div class="svc-main stack">
+        <p class="note tool-reviewed">
+          <?= e(ui('tools.reviewed_prefix')) ?>
+          <?= e(fmt_date_long($lastReviewed)) ?>. <?= e(ui('tools.orientativo')) ?>
+        </p>
 
-      <?= $toolCalcHtml ?>
+        <?= $toolCalcHtml ?>
+
+        <!-- The result → quote handoff. assets/js/site.js moves it into the
+             tool's result panel the moment a result is shown; until then (and
+             without JS, when the calculator cannot run) it stays hidden. -->
+        <div class="tool-handoff" data-tool-handoff="<?= e($slug) ?>" hidden>
+          <div class="tool-handoff__copy">
+            <p class="tool-handoff__title"><?= e(ui('tools.handoff_title')) ?></p>
+            <p class="tool-handoff__text"><?= e(ui('tools.handoff_text')) ?></p>
+          </div>
+          <a class="btn btn--primary btn--lg" href="<?= e($toolQuote) ?>"><?= e(ui('tools.handoff_cta')) ?> <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <aside class="svc-aside" aria-label="<?= e(ui('tools.aside_eyebrow')) ?>">
+        <div class="summary">
+          <p class="summary__eyebrow"><?= e(ui('tools.aside_eyebrow')) ?></p>
+          <p class="summary__title"><?= e(ui('tools.aside_title')) ?></p>
+          <ul class="summary__list">
+            <?php foreach ((array) (content('ui')['tools']['aside_points'] ?? []) as $toolPoint): ?>
+              <li><?= e($toolPoint) ?></li>
+            <?php endforeach; ?>
+          </ul>
+          <div class="summary__actions">
+            <a class="btn btn--primary btn--block" href="<?= e($toolQuote) ?>"><?= e(ui('cta.quote')) ?> <span aria-hidden="true">→</span></a>
+            <?php if ($toolWa !== null): ?>
+              <a class="btn btn--whatsapp btn--block" href="<?= e($toolWa) ?>" rel="noopener" data-service="<?= e($slug) ?>"><?= wa_icon() ?> <?= e(ui('cta.whatsapp_long')) ?></a>
+            <?php endif; ?>
+          </div>
+          <p class="summary__foot"><?= e(ui('cta.quote_note')) ?> · <?= e(ui('service.aside_reply')) ?></p>
+        </div>
+      </aside>
     </div>
   </section>
 
   <?php if ($tool['intro'] !== []): ?>
-    <section class="section section--surface">
-      <div class="container prose">
+    <section class="section section--warm">
+      <div class="container prose prose--wide">
         <?php foreach ($tool['intro'] as $paragraph): ?>
           <p><?= rich($paragraph) ?></p>
         <?php endforeach; ?>

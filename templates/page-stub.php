@@ -36,7 +36,7 @@ require ROOT_DIR . '/partials/header.php';
     <div class="container stack">
       <p class="lead"><?= e(ui('placeholder.notice')) ?> <?= e(ui('placeholder.action')) ?></p>
       <div class="btn-row">
-        <a class="btn btn--primary" href="/contacto/"><?= e(ui('cta.consult')) ?></a>
+        <a class="btn btn--primary" href="<?= e(quote_path()) ?>"><?= e(ui('cta.quote')) ?></a>
         <a class="btn btn--secondary" href="<?= e(services_hub_path()) ?>"><?= e(ui('nav.all_services')) ?></a>
       </div>
     </div>

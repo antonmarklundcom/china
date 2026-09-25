@@ -114,7 +114,7 @@ return [
             ['q' => '¿Me pueden decir exactamente cuánto voy a pagar de impuestos?', 'a' => 'Le damos una estimación con las reglas y tarifas vigentes que confirmamos con el courier o la DNIT. El monto final lo liquida la aduana a través del courier; el mecanismo está explicado en [impuestos de compras online en Paraguay](/comprar/impuestos-compras-online-paraguay/).'],
             ['q' => '¿Me ayudan si el paquete quedó retenido?', 'a' => 'Sí, le indicamos qué documento falta y a quién presentarlo. Si hace falta un despacho formal, lo conectamos con un despachante de aduana matriculado.'],
             ['q' => '¿Sirve para compras en Alibaba?', 'a' => 'Sí, para una muestra o un primer pedido chico (vea Alibaba en Paraguay). Para volumen comercial, lo derivamos a un agente de compras y a la guía cómo importar de China a Paraguay.'],
-            ['q' => '¿Trabajan con un courier en particular?', 'a' => 'Coordinamos con couriers socios, pero le explicamos cómo comparar [casillas de courier en Paraguay](/comprar/casillas-courier-paraguay/) para que usted decida.'],
+            ['q' => '¿Trabajan con un courier en particular?', 'a' => 'No tenemos un courier fijo: le explicamos cómo comparar [casillas de courier en Paraguay](/comprar/casillas-courier-paraguay/) para que usted decida.'],
         ],
         'cta' => [
             'label' => 'Consultar mi pedido',

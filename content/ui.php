@@ -56,6 +56,24 @@ return [
         'skip'         => 'Ir al contenido principal',
         'firm'         => 'El sitio',
         'all_services' => 'Ver todos los servicios',
+        'all_tools'    => 'Todas las calculadoras',
+        'quote'        => 'Cotizador',
+    ],
+
+    'a11y' => [
+        'new_tab' => '(se abre en una pestaña nueva)',
+    ],
+
+    // Four statements under the home hero (partials/trust-strip.php). Each one
+    // must stay true without an edit: no numbers, no clients, no partners.
+    'trust' => [
+        'label' => 'Cómo trabajamos',
+        'items' => [
+            ['icon' => 'chat',   'title' => 'Consulta sin costo',              'text' => 'Cotización por escrito y sin compromiso.'],
+            ['icon' => 'clock',  'title' => 'Respuesta en un día hábil',       'text' => 'Le contestamos dentro del siguiente día hábil.'],
+            ['icon' => 'badge',  'title' => 'Profesionales matriculados',      'text' => 'Despachantes y agentes independientes: sabe quién hace cada parte.'],
+            ['icon' => 'source', 'title' => 'Guías con fuentes oficiales',     'text' => 'Cada cifra con su fuente, o marcada para confirmar.'],
+        ],
     ],
 
     'cta' => [
@@ -66,6 +84,25 @@ return [
         'contact'       => 'Contactar',
         'see_included'  => 'Ver qué incluye',
         'talk'          => 'Contarnos su caso',
+        'quote_short'   => 'Cotizar',
+        'calculate'     => 'Calcular el costo',
+        'quote_note'    => 'Sin costo ni compromiso',
+    ],
+
+    // The mobile conversion bar and the desktop WhatsApp pill (partials/whatsapp-fab.php).
+    'mbar' => [
+        'label' => 'Acciones rápidas',
+    ],
+
+    // The exit-intent offer (partials/exit-offer.php). Desktop only, once a week.
+    'exit' => [
+        'eyebrow' => 'Antes de irse',
+        'title'   => '¿Le armamos una cotización sin compromiso?',
+        'text'    => 'Cuéntenos qué quiere traer y le respondemos por escrito, con producto, flete y despacho por separado.',
+        'cta'     => 'Pedir mi cotización',
+        'wa'      => 'Preguntar por WhatsApp',
+        'note'    => 'Sin costo. Respuesta dentro del siguiente día hábil.',
+        'close'   => 'Cerrar',
     ],
 
     'whatsapp' => [
@@ -81,9 +118,26 @@ return [
         'eyebrow'   => 'China ↔ Paraguay, en lenguaje claro',
         'h1_lead'   => 'Compre, importe y viaje a China ',
         'h1_accent' => 'sabiendo cuánto le cuesta.',
-        'lead'      => 'Guías prácticas y calculadoras para comprar en Temu, Shein o Alibaba, '
-                     . 'traer mercadería en contenedor, pasar la aduana y preparar su viaje de '
-                     . 'negocios. Y cuando quiera que alguien se encargue, lo conectamos.',
+        'lead'      => 'Guías prácticas y calculadoras gratuitas para comprar en Temu, Shein o '
+                     . 'Alibaba, importar en contenedor y pasar la aduana. Y cuando prefiera '
+                     . 'delegarlo, coordinamos proveedor, flete y despacho, con cada costo por escrito.',
+        'cta_quote'   => 'Pedir cotización',
+        'cta_calc'    => 'Calcular el costo',
+        'quick_label' => 'Lo más buscado',
+        'route_title' => 'El recorrido de su mercadería',
+        'route_label' => 'El recorrido de una importación',
+        'route'       => [
+            ['title' => 'Fábrica en China',            'text' => 'Proveedor verificado y muestra aprobada'],
+            ['title' => 'Inspección y embarque',       'text' => 'Control antes del pago final'],
+            ['title' => 'Flete marítimo o aéreo',      'text' => 'Contenedor, consolidado o courier'],
+            ['title' => 'Aduana y entrega en Paraguay', 'text' => 'Despachante matriculado'],
+        ],
+        'tools_cta'     => 'Usar la calculadora',
+        'popular_all'   => 'Ver todas las guías',
+        'aduana_cta'    => 'Ver las guías de aduana',
+        'services_cta'  => 'Ver todos los servicios',
+        'unsure_cta'    => 'Armar mi cotización',
+        'contact_alt'   => '¿Prefiere un paso a paso? Use el cotizador',
 
         'doors_eyebrow' => 'Empiece por acá',
         'doors_title'   => '¿Qué quiere hacer?',
@@ -147,7 +201,7 @@ return [
         'steps'   => [
             ['title' => 'Nos cuenta qué necesita', 'text' => 'Producto, cantidad, destino y plazo. Por WhatsApp o formulario.'],
             ['title' => 'Cotización por escrito',  'text' => 'Costo de producto, flete, seguro y despacho, cada uno por separado.'],
-            ['title' => 'Coordinación',            'text' => 'Proveedor, inspección, transporte y aduana con socios que usted conoce.'],
+            ['title' => 'Coordinación',            'text' => 'Proveedor, inspección, transporte y aduana con profesionales que usted conoce.'],
             ['title' => 'Entrega y cierre',        'text' => 'Seguimiento hasta la entrega y los comprobantes de cada pago.'],
         ],
     ],
@@ -167,8 +221,8 @@ return [
     'services_hub' => [
         'eyebrow'      => 'Servicios',
         'title'        => 'Lo que coordinamos por usted.',
-        'lead'         => 'Compras, importación, despacho y viajes. Cada servicio lo ejecuta un socio '
-                        . 'especializado; nosotros coordinamos y le respondemos.',
+        'lead'         => 'Compras, importación, despacho y viajes. Cada servicio lo ejecuta un profesional '
+                        . 'independiente; nosotros coordinamos y le respondemos.',
         'unsure_title' => '¿No sabe qué necesita?',
         'unsure_text'  => 'Cuéntenos qué quiere traer y le decimos qué servicios le corresponden.',
         'unsure_cta'   => 'Escribirnos',
@@ -193,6 +247,8 @@ return [
         'submit'          => 'Enviar consulta',
         'sending'         => 'Enviando…',
         'privacy_note'    => 'Usamos sus datos solo para responderle. Ver la política de privacidad.',
+        'privacy_short'   => 'Usamos sus datos solo para responderle.',
+        'privacy_link'    => 'Ver la política de privacidad',
         'success_title'   => 'Recibimos su consulta.',
         'success_text'    => 'Le respondemos dentro del siguiente día hábil. Si prefiere, escríbanos ahora.',
         'error_title'     => 'No pudimos enviar el formulario.',
@@ -206,6 +262,7 @@ return [
         'remind_phone'    => 'Su WhatsApp',
         'remind_submit'   => 'Quiero que me avisen',
         'remind_ok'       => 'Anotado. Le escribimos si hay novedades.',
+        'assure'          => 'Sin costo ni compromiso. Le respondemos dentro del siguiente día hábil.',
     ],
 
     // Lead form chips. Every key needs a matching entry in lead-values 'needs'.
@@ -246,6 +303,14 @@ return [
         'form_lead'    => 'Déjenos sus datos y le respondemos con los pasos y los costos de su caso, '
                         . 'sin compromiso.',
         'breadcrumb'   => 'Ruta de navegación',
+        'aside_eyebrow' => 'Resumen del servicio',
+        'price_label'   => 'Precio',
+        'price_value'   => 'Según cotización',
+        'price_note'    => 'Alcance y costo por escrito antes de empezar.',
+        'aside_reply'   => 'Respuesta dentro del siguiente día hábil',
+        'aside_more'    => 'Ver todo lo que incluye',
+        'reads_eyebrow' => 'Para leer',
+        'reads_title'   => 'Guías y artículos relacionados',
     ],
 
     'segment' => [
@@ -264,6 +329,16 @@ return [
         'use_result'      => 'Pedir una cotización con este resultado',
         'need_js'         => 'Esta calculadora necesita JavaScript activado en su navegador.',
         'restart'         => 'Volver a empezar',
+        'handoff_title'   => '¿Quiere los números reales?',
+        'handoff_text'    => 'Con estos datos le preparamos una cotización real: producto, flete, seguro y despacho, cada uno por separado.',
+        'handoff_cta'     => 'Reciba una cotización real con estos números',
+        'aside_eyebrow'   => 'Del cálculo a la cotización',
+        'aside_title'     => 'Un estimado orienta. Una cotización decide.',
+        'aside_points'    => [
+            'Tarifas de flete y despacho vigentes para su carga',
+            'Posición arancelaria (NCM) confirmada por un despachante',
+            'Cada costo por separado, por escrito',
+        ],
     ],
 
     'guide' => [
@@ -332,5 +407,11 @@ return [
         'rights'  => 'Todos los derechos reservados.',
         'contact' => 'Contacto',
         'topics'  => 'Temas',
+        'tools'   => 'Calculadoras',
+        'company' => 'El sitio',
+        'legal'   => 'Legal',
+        'not_official' => 'China-Paraguay es un sitio privado de información. No es la aduana, la DNIT, '
+                        . 'una embajada ni un organismo oficial, y no está afiliado a Temu, Shein ni Alibaba.',
+        'reply'   => 'Respuesta dentro del siguiente día hábil.',
     ],
 ];

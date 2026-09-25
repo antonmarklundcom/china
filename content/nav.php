@@ -57,6 +57,27 @@ return [
     // Footer column 2.
     'services' => $allServices,
 
+    // Footer "Temas": one link per cluster hub, then the guide index.
+    'topics' => array_merge(
+        array_values(array_map(
+            static fn (array $hub): array => ['label' => $hub['label'], 'path' => $hub['path']],
+            content('ui')['hubs']
+        )),
+        [
+            ['label' => 'Feria de Cantón',      'path' => '/feria-de-canton/'],
+            ['label' => ui('nav.guides'),       'path' => '/guias/'],
+            ['label' => ui('nav.blog'),         'path' => '/blog/'],
+        ]
+    ),
+
+    // Footer "El sitio" (the company column).
+    'company' => [
+        ['label' => ui('nav.about'),    'path' => '/sobre/'],
+        ['label' => ui('nav.quote'),    'path' => '/cotizar/'],
+        ['label' => ui('nav.contact'),  'path' => '/contacto/'],
+        ['label' => ui('nav.business'), 'path' => '/para-empresas/'],
+    ],
+
     // Footer column 3. Tools are appended from the 'tools' key below.
     'firm' => [
         ['label' => ui('nav.about'),    'path' => '/sobre/'],

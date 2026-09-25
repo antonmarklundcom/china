@@ -124,12 +124,17 @@ $utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content
     <?php endif; ?>
   <?php endforeach; ?>
 
-  <button class="btn btn--primary" type="submit" data-submit
+  <button class="btn btn--primary btn--lg btn--block" type="submit" data-submit
           data-sending="<?= e(ui('form.sending')) ?>"><?= e(ui('form.submit')) ?></button>
 
+  <p class="lead-form__assure">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span><?= e(ui('form.assure')) ?></span>
+  </p>
+
   <p class="note">
-    <?= e(ui('form.privacy_note')) ?>
-    <a href="/privacidad/"><?= e(ui('nav.privacy')) ?></a>.
+    <?= e(ui('form.privacy_short')) ?>
+    <a href="/privacidad/"><?= e(ui('form.privacy_link')) ?></a>.
   </p>
 
   <?php

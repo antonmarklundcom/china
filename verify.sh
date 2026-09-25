@@ -340,7 +340,10 @@ while IFS=$'\t' read -r slug path; do
   # failed pipeline because grep closes the pipe on its first match and curl
   # dies of SIGPIPE — which would fail every page that actually passes.
   html=$(curl -s "${BASE}${path}")
-  if ! printf '%s' "$html" | grep -q "name=\"service\" value=\"${slug}\""; then
+  # Here-string, not printf | grep -q: on a large page grep can exit on its
+  # first match before printf finishes writing, and pipefail turns that
+  # SIGPIPE into a false failure.
+  if ! grep -q "name=\"service\" value=\"${slug}\"" <<<"$html"; then
     fail "$path — form has no name=\"service\" value=\"$slug\""
     missing_service_field=1
   fi
@@ -356,7 +359,7 @@ expected_step=$(php -r '
   require "'"$SITE_ROOT"'/lib/bootstrap.php";
   echo htmlspecialchars(lead_value($argv[1])["nextStep"][0], ENT_QUOTES | ENT_SUBSTITUTE, "UTF-8");
 ' "$FIXTURE_SLUG")
-if printf '%s' "$thanks" | grep -qF "$expected_step"; then
+if grep -qF "$expected_step" <<<"$thanks"; then
   ok "/contacto/?enviado=1&s=${FIXTURE_SLUG} renders that service's next step"
 else
   fail "/contacto/?enviado=1&s=${FIXTURE_SLUG} did not render that service's next step"

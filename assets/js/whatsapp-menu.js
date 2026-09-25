@@ -1,8 +1,8 @@
 /**
  * The WhatsApp menu.
  *
- * Every [data-wa-trigger] — the header pill, the drawer pill and the floating
- * button, which is the sticky bottom bar at <= 768px — opens the one
+ * Every [data-wa-trigger] — the header pill, the drawer pill, the floating
+ * desktop pill and the WhatsApp half of the mobile bar — opens the one
  * [data-wa-menu] panel rendered by partials/whatsapp-menu.php. Each option is
  * an ordinary wa.me link with its own prefill, so the menu is a list of links,
  * not a widget that builds URLs.

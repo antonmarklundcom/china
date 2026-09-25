@@ -1,8 +1,13 @@
 <?php
 /**
- * Homepage: hero with the China → Paraguay route, the four doors (one per
- * topic cluster), the calculators band, the most-read guides, the aduana band,
- * the services, the product chips, the process and the contact form.
+ * Homepage: hero (value proposition, two CTAs, the China → Paraguay route),
+ * the trust strip, the four doors (one per topic cluster), the calculators
+ * band, the most-read guides, the aduana band, the services board, the product
+ * chips, the blog, the process and the contact form.
+ *
+ * Adjacent sections never share a treatment: image cards, a dark split band,
+ * an editorial numbered list, a framed panel, a grouped board, chips, cards,
+ * a timeline, a form.
  *
  * Every list is derived from the content arrays, so a guide, service, tool or
  * product page added there appears here without an edit to this file. The
@@ -20,15 +25,24 @@ $page = [
     'ogImage'     => image_og($homeImage),
 ];
 
-$homeWhatsapp = whatsapp_link(whatsapp_text_for_page());
-$homeGuides   = content('guias');
-$homeHubs     = content('ui')['hubs'];
+$homeWhatsapp   = whatsapp_link(whatsapp_text_for_page());
+$homeGuides     = content('guias');
+$homeHubs       = content('ui')['hubs'];
+$homeClusters   = clusters();
 $homeDoorImages = (array) ($meta['doorImages'] ?? []);
+$homeTools      = content('tools');
+$homeCalc       = $homeTools['calculadora-costo-importacion']['path'] ?? '/herramientas/';
 
 /* Guides per cluster, in file order: the first three go on each door. */
 $homeByCluster = [];
 foreach ($homeGuides as $homeSlug => $homeGuide) {
     $homeByCluster[$homeGuide['cluster'] ?? ''][$homeSlug] = $homeGuide;
+}
+
+/* Services per cluster, for the grouped board. */
+$homeServicesBy = [];
+foreach (services() as $homeSvcSlug => $homeSvc) {
+    $homeServicesBy[$homeSvc['cluster']][$homeSvcSlug] = $homeSvc;
 }
 
 $homePopular = [];
@@ -53,6 +67,7 @@ require ROOT_DIR . '/partials/header.php';
 
   <!-- Hero ------------------------------------------------------------- -->
   <section class="hero hero--home">
+    <div class="hero__mesh" aria-hidden="true"></div>
     <div class="container hero__grid">
 
       <div class="hero__copy">
@@ -66,28 +81,31 @@ require ROOT_DIR . '/partials/header.php';
         <p class="lead hero__lead"><?= e(ui('home.lead')) ?></p>
 
         <div class="btn-row">
-          <a class="btn btn--primary" href="/importar/como-importar-de-china-a-paraguay/">Cómo importar de China</a>
-          <a class="btn btn--secondary" href="/herramientas/calculadora-costo-importacion/">Calcular el costo</a>
+          <a class="btn btn--primary btn--lg" href="<?= e(quote_path(null)) ?>"><?= e(ui('home.cta_quote')) ?> <span aria-hidden="true">→</span></a>
+          <a class="btn btn--on-ink btn--lg" href="<?= e($homeCalc) ?>"><?= e(ui('home.cta_calc')) ?></a>
         </div>
 
-        <ul class="hero__quick" aria-label="Accesos rápidos">
-          <?php foreach (['temu-paraguay', 'shein-paraguay', 'aliexpress-paraguay', 'alibaba-paraguay'] as $homeQuick): ?>
-            <?php if (isset($homeGuides[$homeQuick])): ?>
-              <li><a href="<?= e($homeGuides[$homeQuick]['path']) ?>"><?= e($homeGuides[$homeQuick]['navLabel']) ?></a></li>
-            <?php endif; ?>
-          <?php endforeach; ?>
-        </ul>
+        <div class="hero__quick">
+          <span class="hero__quick-label"><?= e(ui('home.quick_label')) ?></span>
+          <ul>
+            <?php foreach (['temu-paraguay', 'shein-paraguay', 'aliexpress-paraguay', 'alibaba-paraguay'] as $homeQuick): ?>
+              <?php if (isset($homeGuides[$homeQuick])): ?>
+                <li><a href="<?= e($homeGuides[$homeQuick]['path']) ?>"><?= e($homeGuides[$homeQuick]['navLabel']) ?></a></li>
+              <?php endif; ?>
+            <?php endforeach; ?>
+          </ul>
+        </div>
       </div>
 
       <div class="hero__visual">
-        <?= picture_html($homeImage, '(max-width: 768px) 100vw, 50vw', 'hero__img', true) ?>
-        <div class="route-card" aria-label="El recorrido de una importación">
-          <p class="route-card__title">El recorrido de su mercadería</p>
+        <?= picture_html($homeImage, '(max-width: 900px) 100vw, 50vw', 'hero__img', true) ?>
+        <div class="route-card" role="group" aria-label="<?= e(ui('home.route_label')) ?>">
+          <p class="route-card__title"><?= e(ui('home.route_title')) ?></p>
           <ol class="route">
-            <li><span class="route__dot"></span><strong>Fábrica en China</strong><span>Proveedor verificado y muestra aprobada</span></li>
-            <li><span class="route__dot"></span><strong>Inspección y embarque</strong><span>Control antes del pago final</span></li>
-            <li><span class="route__dot"></span><strong>Flete marítimo o aéreo</strong><span>Contenedor, consolidado o courier</span></li>
-            <li><span class="route__dot route__dot--end"></span><strong>Aduana y entrega en Paraguay</strong><span>Despachante matriculado</span></li>
+            <?php $homeRoute = content('ui')['home']['route']; $homeRouteLast = count($homeRoute) - 1; ?>
+            <?php foreach ($homeRoute as $homeRouteI => $homeStop): ?>
+              <li><span class="route__dot<?= $homeRouteI === $homeRouteLast ? ' route__dot--end' : '' ?>"></span><strong><?= e($homeStop['title']) ?></strong><span><?= e($homeStop['text']) ?></span></li>
+            <?php endforeach; ?>
           </ol>
         </div>
       </div>
@@ -95,30 +113,34 @@ require ROOT_DIR . '/partials/header.php';
     </div>
   </section>
 
+  <?php require ROOT_DIR . '/partials/trust-strip.php'; ?>
+
   <!-- Four doors ---------------------------------------------------------- -->
-  <section class="section" id="temas">
+  <section class="section section--doors" id="temas">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow"><?= e(ui('home.doors_eyebrow')) ?></p>
         <h2><?= e(ui('home.doors_title')) ?></h2>
       </div>
 
-      <div class="doors mt-4">
+      <div class="doors">
         <?php foreach ($homeHubs as $homeCluster => $homeHub): ?>
           <article class="door door--<?= e($homeCluster) ?>">
-            <?= picture_html($homeDoorImages[$homeCluster] ?? null, '(max-width: 768px) 100vw, 25vw', 'door__img') ?>
-            <div class="door__body">
+            <div class="door__media">
+              <?= picture_html($homeDoorImages[$homeCluster] ?? null, '(max-width: 768px) 100vw, 25vw', 'door__img') ?>
               <span class="door__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><?= $homeIcons[$homeCluster] ?></svg>
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><?= $homeIcons[$homeCluster] ?></svg>
               </span>
-              <h3 class="card-title"><a href="<?= e($homeHub['path']) ?>"><?= e(content('ui')['clusters'][$homeCluster]) ?></a></h3>
+            </div>
+            <div class="door__body">
+              <h3 class="card-title"><a href="<?= e($homeHub['path']) ?>"><?= e($homeClusters[$homeCluster]) ?></a></h3>
               <p class="card__text"><?= e(content('ui')['cluster_leads'][$homeCluster]) ?></p>
               <ul class="door__links">
                 <?php foreach (array_slice($homeByCluster[$homeCluster] ?? [], 0, 3) as $homeDoorGuide): ?>
                   <li><a href="<?= e($homeDoorGuide['path']) ?>"><?= e($homeDoorGuide['navLabel']) ?></a></li>
                 <?php endforeach; ?>
               </ul>
-              <a class="door__more" href="<?= e($homeHub['path']) ?>"><?= e(ui('hub.see_hub')) ?> &rarr;</a>
+              <a class="door__more" href="<?= e($homeHub['path']) ?>"><?= e(ui('hub.see_hub')) ?> <span aria-hidden="true">→</span></a>
             </div>
           </article>
         <?php endforeach; ?>
@@ -127,24 +149,37 @@ require ROOT_DIR . '/partials/header.php';
   </section>
 
   <!-- Calculators --------------------------------------------------------- -->
-  <section class="section section--ink">
-    <div class="container">
-      <div class="section-head section-head--split">
-        <div class="section-head__text">
-          <p class="eyebrow"><?= e(ui('home.tools_eyebrow')) ?></p>
-          <h2><?= e(ui('home.tools_title')) ?></h2>
+  <section class="section section--ink section--mesh">
+    <div class="container calc-band">
+      <div class="calc-band__intro">
+        <p class="eyebrow"><?= e(ui('home.tools_eyebrow')) ?></p>
+        <h2><?= e(ui('home.tools_title')) ?></h2>
+        <p class="lead"><?= e(ui('home.tools_lead')) ?></p>
+
+        <div class="formula" aria-hidden="true">
+          <span class="formula__term">FOB</span><span class="formula__op">+</span>
+          <span class="formula__term">Flete</span><span class="formula__op">+</span>
+          <span class="formula__term">Seguro</span><span class="formula__op">=</span>
+          <span class="formula__term formula__term--key">CIF</span>
+          <span class="formula__op">+</span><span class="formula__term">Tributos</span>
+          <span class="formula__op">→</span><span class="formula__term formula__term--accent">Costo en Paraguay</span>
         </div>
-        <p class="section-head__aside"><?= e(ui('home.tools_lead')) ?></p>
       </div>
-      <div class="grid grid--3 mt-4">
-        <?php foreach (content('tools') as $homeTool): ?>
-          <a class="card card--link card--glass" href="<?= e($homeTool['path']) ?>">
-            <h3 class="card-title"><?= e($homeTool['title']) ?></h3>
-            <p class="card__text"><?= e($homeTool['metaDescription']) ?></p>
-            <span class="card__cta">Usar la calculadora &rarr;</span>
-          </a>
+
+      <ol class="tool-rows">
+        <?php $homeToolN = 0; foreach ($homeTools as $homeTool): ?>
+          <li>
+            <a class="tool-row" href="<?= e($homeTool['path']) ?>">
+              <span class="tool-row__num" aria-hidden="true"><?= e(str_pad((string) ++$homeToolN, 2, '0', STR_PAD_LEFT)) ?></span>
+              <span class="tool-row__body">
+                <span class="tool-row__title"><?= e($homeTool['title']) ?></span>
+                <span class="tool-row__text"><?= e($homeTool['metaDescription']) ?></span>
+              </span>
+              <span class="tool-row__go"><?= e(ui('home.tools_cta')) ?> <span aria-hidden="true">→</span></span>
+            </a>
+          </li>
         <?php endforeach; ?>
-      </div>
+      </ol>
     </div>
   </section>
 
@@ -152,37 +187,52 @@ require ROOT_DIR . '/partials/header.php';
   <?php if ($homePopular !== []): ?>
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow"><?= e(ui('home.popular_eyebrow')) ?></p>
-          <h2><?= e(ui('home.popular_title')) ?></h2>
+        <div class="section-head section-head--split">
+          <div class="section-head__text">
+            <p class="eyebrow"><?= e(ui('home.popular_eyebrow')) ?></p>
+            <h2><?= e(ui('home.popular_title')) ?></h2>
+          </div>
+          <a class="link-arrow" href="/guias/"><?= e(ui('home.popular_all')) ?> <span aria-hidden="true">→</span></a>
         </div>
-        <div class="grid grid--3 mt-4">
-          <?php foreach ($homePopular as $homeRead): ?>
-            <a class="card card--link card--guide" href="<?= e($homeRead['path']) ?>">
-              <span class="card__kicker"><?= e(content('ui')['clusters'][$homeRead['cluster']] ?? '') ?></span>
-              <h3 class="card-title"><?= e($homeRead['navLabel']) ?></h3>
-              <p class="card__text"><?= e($homeRead['metaDescription']) ?></p>
-            </a>
+        <ol class="reads">
+          <?php $homeReadN = 0; foreach ($homePopular as $homeRead): ?>
+            <li>
+              <a class="read" href="<?= e($homeRead['path']) ?>">
+                <span class="read__num" aria-hidden="true"><?= e(str_pad((string) ++$homeReadN, 2, '0', STR_PAD_LEFT)) ?></span>
+                <span class="read__body">
+                  <span class="card__kicker"><?= e($homeClusters[$homeRead['cluster']] ?? '') ?></span>
+                  <span class="read__title"><?= e($homeRead['navLabel']) ?></span>
+                  <span class="read__text"><?= e($homeRead['metaDescription']) ?></span>
+                </span>
+              </a>
+            </li>
           <?php endforeach; ?>
-        </div>
+        </ol>
       </div>
     </section>
   <?php endif; ?>
 
   <!-- Aduana band ---------------------------------------------------------- -->
-  <section class="section section--surface">
-    <div class="container split split--top">
-      <div class="stack">
-        <p class="eyebrow"><?= e(ui('home.aduana_eyebrow')) ?></p>
-        <h2><?= e(ui('home.aduana_title')) ?></h2>
-        <p class="lead"><?= e(ui('home.aduana_lead')) ?></p>
-        <p><a class="btn btn--secondary" href="<?= e($homeHubs['aduana']['path']) ?>">Ver las guías de aduana</a></p>
+  <section class="section section--warm">
+    <div class="container">
+      <div class="framed split split--top">
+        <div class="stack">
+          <p class="eyebrow"><?= e(ui('home.aduana_eyebrow')) ?></p>
+          <h2><?= e(ui('home.aduana_title')) ?></h2>
+          <p class="lead"><?= e(ui('home.aduana_lead')) ?></p>
+          <div class="btn-row">
+            <a class="btn btn--secondary" href="<?= e($homeHubs['aduana']['path']) ?>"><?= e(ui('home.aduana_cta')) ?></a>
+            <?php if (services('despacho-aduanero') !== null): ?>
+              <a class="btn btn--primary" href="<?= e(quote_path('despacho-aduanero')) ?>"><?= e(ui('cta.quote')) ?></a>
+            <?php endif; ?>
+          </div>
+        </div>
+        <ul class="link-list">
+          <?php foreach ($homeByCluster['aduana'] ?? [] as $homeAduana): ?>
+            <li><a href="<?= e($homeAduana['path']) ?>"><?= e($homeAduana['navLabel']) ?></a></li>
+          <?php endforeach; ?>
+        </ul>
       </div>
-      <ul class="link-list">
-        <?php foreach ($homeByCluster['aduana'] ?? [] as $homeAduana): ?>
-          <li><a href="<?= e($homeAduana['path']) ?>"><?= e($homeAduana['navLabel']) ?></a></li>
-        <?php endforeach; ?>
-      </ul>
     </div>
   </section>
 
@@ -197,20 +247,39 @@ require ROOT_DIR . '/partials/header.php';
         <p class="section-head__aside"><?= e(ui('home.services_lead')) ?></p>
       </div>
 
-      <?php
-      $gridSlugs    = array_keys(services());
-      $gridNumbered = false;
-      require ROOT_DIR . '/partials/service-card-grid.php';
-      ?>
+      <div class="board">
+        <?php foreach ($homeClusters as $homeCluster => $homeClusterLabel): ?>
+          <?php if (empty($homeServicesBy[$homeCluster])) { continue; } ?>
+          <div class="board__col board__col--<?= e($homeCluster) ?>">
+            <p class="board__title">
+              <span class="board__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><?= $homeIcons[$homeCluster] ?? '' ?></svg></span>
+              <?= e($homeClusterLabel) ?>
+            </p>
+            <ul>
+              <?php foreach ($homeServicesBy[$homeCluster] as $homeSvcSlug => $homeSvc): ?>
+                <li>
+                  <a class="board__item" href="<?= e($homeSvc['path']) ?>">
+                    <span class="board__name"><?= e($homeSvc['navLabel']) ?></span>
+                    <span class="board__text"><?= e($homeSvc['metaDescription']) ?></span>
+                  </a>
+                </li>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+        <?php endforeach; ?>
+      </div>
 
       <div class="unsure">
         <div class="unsure__copy">
           <h3 class="card-title"><?= e(ui('home.unsure_title')) ?></h3>
           <p><?= e(ui('home.unsure_text')) ?></p>
         </div>
-        <a class="btn btn--primary" href="<?= e($homeWhatsapp ?? '/contacto/') ?>"<?= $homeWhatsapp ? ' rel="noopener"' : '' ?>>
-          <?= e(ui('cta.talk')) ?>
-        </a>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="<?= e(quote_path(null)) ?>"><?= e(ui('home.unsure_cta')) ?> <span aria-hidden="true">→</span></a>
+          <?php if ($homeWhatsapp !== null): ?>
+            <a class="btn btn--on-ink" href="<?= e($homeWhatsapp) ?>" rel="noopener" data-service=""><?= wa_icon() ?> <?= e(ui('cta.whatsapp')) ?></a>
+          <?php endif; ?>
+        </div>
       </div>
     </div>
   </section>
@@ -219,14 +288,16 @@ require ROOT_DIR . '/partials/header.php';
   <?php if (content('segmentos') !== []): ?>
     <section class="section section--surface">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow"><?= e(ui('industries.eyebrow')) ?></p>
-          <h2><?= e(ui('industries.title')) ?></h2>
-          <p class="lead"><?= e(ui('industries.lead')) ?></p>
+        <div class="section-head section-head--split">
+          <div class="section-head__text">
+            <p class="eyebrow"><?= e(ui('industries.eyebrow')) ?></p>
+            <h2><?= e(ui('industries.title')) ?></h2>
+          </div>
+          <p class="section-head__aside"><?= e(ui('industries.lead')) ?></p>
         </div>
-        <div class="chip-cloud mt-4">
+        <div class="chip-cloud">
           <?php foreach (content('segmentos') as $homeProduct): ?>
-            <a class="chip-link" href="<?= e($homeProduct['path']) ?>"><?= e($homeProduct['navLabel']) ?></a>
+            <a class="chip-link" href="<?= e($homeProduct['path']) ?>"><?= e($homeProduct['navLabel']) ?> <span aria-hidden="true">→</span></a>
           <?php endforeach; ?>
         </div>
       </div>
@@ -238,15 +309,20 @@ require ROOT_DIR . '/partials/header.php';
   <?php if ($homeArticles !== []): ?>
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow"><?= e(ui('home.blog_eyebrow')) ?></p>
-          <h2><?= e(ui('home.blog_title')) ?></h2>
+        <div class="section-head section-head--split">
+          <div class="section-head__text">
+            <p class="eyebrow"><?= e(ui('home.blog_eyebrow')) ?></p>
+            <h2><?= e(ui('home.blog_title')) ?></h2>
+          </div>
+          <a class="link-arrow" href="/blog/"><?= e(ui('nav.blog')) ?> <span aria-hidden="true">→</span></a>
         </div>
-        <div class="grid grid--3 mt-4">
+        <div class="grid grid--3">
           <?php foreach ($homeArticles as $homeArticle): ?>
-            <a class="card card--link" href="/blog/<?= e($homeArticle['slug']) ?>/">
+            <a class="card card--link card--article" href="/blog/<?= e($homeArticle['slug']) ?>/">
+              <span class="card__kicker"><?= e(ui('home.blog_eyebrow')) ?></span>
               <h3 class="card-title"><?= e($homeArticle['title']) ?></h3>
               <p class="card__text"><?= e($homeArticle['description']) ?></p>
+              <span class="card__arrow" aria-hidden="true">→</span>
             </a>
           <?php endforeach; ?>
         </div>
@@ -257,26 +333,30 @@ require ROOT_DIR . '/partials/header.php';
   <!-- Process ------------------------------------------------------------- -->
   <?php require ROOT_DIR . '/partials/process.php'; ?>
 
+  <!-- Casos: renders nothing until content/site.php has real testimonials. -->
+  <?php $testimonialsSurface = false; require ROOT_DIR . '/partials/testimonials.php'; ?>
+
   <!-- Contact ------------------------------------------------------------- -->
-  <section class="section section--surface" id="contacto">
-    <div class="container split">
+  <section class="section section--warm" id="contacto">
+    <div class="container split split--top">
 
       <div class="stack">
         <p class="eyebrow"><?= e(ui('cta_band.eyebrow')) ?></p>
         <h2 class="d2"><?= e(ui('cta_band.title')) ?></h2>
-        <div class="prose"><p><?= e(ui('cta_band.lead')) ?></p></div>
-
-        <?php if ($homeWhatsapp !== null): ?>
-          <div class="btn-row">
-            <a class="btn btn--whatsapp" href="<?= e($homeWhatsapp) ?>" rel="noopener"><?= e(ui('cta.whatsapp_long')) ?></a>
-          </div>
-        <?php endif; ?>
+        <p class="lead"><?= e(ui('cta_band.lead')) ?></p>
 
         <ul class="checklist">
           <?php foreach (content('ui')['contact']['steps'] as $homeStep): ?>
             <li><span><?= e($homeStep) ?></span></li>
           <?php endforeach; ?>
         </ul>
+
+        <div class="btn-row">
+          <a class="btn btn--secondary" href="<?= e(quote_path(null)) ?>"><?= e(ui('home.contact_alt')) ?> <span aria-hidden="true">→</span></a>
+          <?php if ($homeWhatsapp !== null): ?>
+            <a class="btn btn--whatsapp" href="<?= e($homeWhatsapp) ?>" rel="noopener" data-service=""><?= wa_icon() ?> <?= e(ui('cta.whatsapp_long')) ?></a>
+          <?php endif; ?>
+        </div>
       </div>
 
       <div>
