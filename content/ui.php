@@ -71,7 +71,7 @@ return [
         'items' => [
             ['icon' => 'chat',   'title' => 'Consulta sin costo',              'text' => 'Cotización por escrito y sin compromiso.'],
             ['icon' => 'clock',  'title' => 'Respuesta en un día hábil',       'text' => 'Le contestamos dentro del siguiente día hábil.'],
-            ['icon' => 'badge',  'title' => 'Profesionales matriculados',      'text' => 'Despachantes y socios independientes: sabe quién hace cada parte.'],
+            ['icon' => 'badge',  'title' => 'Profesionales matriculados',      'text' => 'Despachantes y agentes independientes: sabe quién hace cada parte.'],
             ['icon' => 'source', 'title' => 'Guías con fuentes oficiales',     'text' => 'Cada cifra con su fuente, o marcada para confirmar.'],
         ],
     ],
@@ -201,7 +201,7 @@ return [
         'steps'   => [
             ['title' => 'Nos cuenta qué necesita', 'text' => 'Producto, cantidad, destino y plazo. Por WhatsApp o formulario.'],
             ['title' => 'Cotización por escrito',  'text' => 'Costo de producto, flete, seguro y despacho, cada uno por separado.'],
-            ['title' => 'Coordinación',            'text' => 'Proveedor, inspección, transporte y aduana con socios que usted conoce.'],
+            ['title' => 'Coordinación',            'text' => 'Proveedor, inspección, transporte y aduana con profesionales que usted conoce.'],
             ['title' => 'Entrega y cierre',        'text' => 'Seguimiento hasta la entrega y los comprobantes de cada pago.'],
         ],
     ],
@@ -221,8 +221,8 @@ return [
     'services_hub' => [
         'eyebrow'      => 'Servicios',
         'title'        => 'Lo que coordinamos por usted.',
-        'lead'         => 'Compras, importación, despacho y viajes. Cada servicio lo ejecuta un socio '
-                        . 'especializado; nosotros coordinamos y le respondemos.',
+        'lead'         => 'Compras, importación, despacho y viajes. Cada servicio lo ejecuta un profesional '
+                        . 'independiente; nosotros coordinamos y le respondemos.',
         'unsure_title' => '¿No sabe qué necesita?',
         'unsure_text'  => 'Cuéntenos qué quiere traer y le decimos qué servicios le corresponden.',
         'unsure_cta'   => 'Escribirnos',
