@@ -745,7 +745,7 @@ return [
                 'body' => [
                     'Transferencia bancaria internacional: la vía clásica para montos grandes. Su banco le informa comisiones, bancos corresponsales y el tipo de cambio; pida el comprobante SWIFT para rastrear el pago. Debe coincidir con los datos de la factura para el despacho.',
                     'Alibaba Trade Assurance: si el proveedor está en [Alibaba.com](/comprar/alibaba-paraguay/) y usted paga por la plataforma, el pedido queda cubierto por el mecanismo de reclamo de Alibaba si el proveedor no envía a tiempo o la calidad no coincide con lo pactado en el pedido. Según las condiciones que publica Alibaba, solo cubre pedidos pagados dentro de la plataforma, a la cuenta que ella indica, no transferencias por fuera.',
-                    'Wise y Payoneer: plataformas de pagos internacionales que muestran el costo antes de confirmar. Que pueda usarlas desde Paraguay para pagar a China depende de su perfil, de la moneda y del tipo de cuenta del proveedor: confírmelo en el sitio de cada plataforma antes de contar con ellas.',
+                    'Wise y Payoneer: plataformas de pagos internacionales que muestran el costo antes de confirmar. Que pueda usarlas desde Paraguay para pagar a China depende de su perfil, de la moneda y del tipo de cuenta del proveedor: confírmelo en el sitio de cada plataforma antes de contar con ellas. Qué puede hacer hoy un residente en Paraguay con cada una está en las guías de [Payoneer en Paraguay](/importar/payoneer-paraguay/) y [Wise en Paraguay](/importar/wise-paraguay/).',
                     'Carta de crédito: el banco paga al proveedor solo contra la presentación de los documentos pactados. Da mucha seguridad, pero tiene costos y trámites que la hacen poco práctica para pedidos chicos.',
                 ],
             ],
@@ -796,8 +796,192 @@ return [
         ],
         'relatedService' => 'agente-de-compras-china',
         'toolLink' => null,
-        'related' => ['proveedores-chinos-confiables', 'alibaba-paraguay', 'como-importar-de-china-a-paraguay'],
+        'related' => ['proveedores-chinos-confiables', 'payoneer-paraguay', 'wise-paraguay'],
         'affiliates' => ['wise', 'payoneer'],
+        'disclaimer' => false,
+        'image' => null,
+    ],
+
+    'payoneer-paraguay' => [
+        'path' => '/importar/payoneer-paraguay/',
+        'title' => 'Payoneer en Paraguay: cobrar en dólares y pagar a China',
+        'navLabel' => 'Payoneer en Paraguay',
+        'cluster' => 'importar',
+        'seoTitle' => 'Payoneer en Paraguay: cómo funciona',
+        'metaDescription' => 'Payoneer en Paraguay: abrir la cuenta, cobrar en dólares, pagar a proveedores chinos y retirar a un banco local, con límites y costos a revisar.',
+        'lastReviewed' => '2026-09-25',
+        'hero' => [
+            'eyebrow' => 'Importar',
+            'h1' => 'Payoneer en Paraguay: cómo funciona para cobrar y pagar a China',
+            'lead' => 'Sí, Payoneer funciona en Paraguay: una persona o empresa residente puede abrir una cuenta, cobrar en dólares de clientes y plataformas del exterior, pagar a proveedores con ese saldo y retirar a una cuenta bancaria paraguaya. Es una cuenta para negocios, no para transferencias personales, y cada operación tiene un costo que Payoneer muestra antes de confirmar.',
+        ],
+        'intro' => [
+            'Payoneer funciona en Paraguay. Paraguay tiene su propia sección en la comunidad oficial de Payoneer, y allí la empresa confirma que acepta cuentas bancarias paraguayas para retirar fondos. La cuenta está pensada para cobrar trabajos y ventas al exterior (freelancers, vendedores en marketplaces, exportadores de servicios) y para pagar a proveedores y colaboradores con ese dinero. No sirve para mandar plata a familiares ni para transferencias personales.',
+            'Para quien importa de China, Payoneer sirve sobre todo si ya cobra en dólares por Payoneer: puede usar ese saldo para pagar a un proveedor sin pasar antes por su banco. Si su dinero está en guaraníes en un banco paraguayo, lo habitual sigue siendo la transferencia bancaria internacional. Las demás vías se comparan en la guía sobre [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/).',
+            'Quien busca alternativas a PayPal en Paraguay para cobrar del exterior suele comparar Payoneer, Wise y la transferencia bancaria directa. Wise tiene límites importantes para residentes en Paraguay, que explicamos en la guía de [Wise en Paraguay](/importar/wise-paraguay/). No indicamos comisiones porque cambian y dependen de cada operación: están en la página oficial de precios de Payoneer (payoneer.com/pricing) y en su cuenta antes de confirmar cada pago. No tenemos relación comercial con Payoneer.',
+        ],
+        'steps' => [
+            [
+                'title' => 'Registrarse con los datos correctos',
+                'body' => [
+                    'El registro se hace en payoneer.com. Elija el tipo de perfil (freelancer, vendedor en línea, empresa) e indique si abre la cuenta como persona o como empresa. Si va a pagar a proveedores a nombre de su empresa, conviene que la cuenta esté a nombre de esa empresa, con el mismo nombre que figura en la proforma y en los documentos del despacho.',
+                    'Use su nombre exactamente como figura en su cédula o pasaporte y la dirección donde vive. Si los datos no coinciden con los documentos, la aprobación se demora o se rechaza.',
+                ],
+            ],
+            [
+                'title' => 'Enviar los documentos de verificación',
+                'body' => [
+                    'Payoneer puede pedir un documento de identidad vigente (cédula, pasaporte o registro de conducir) y un comprobante de domicilio reciente con su nombre y dirección, como una factura de servicios o un extracto bancario. En su comunidad oficial menciona documentos de los últimos tres meses. Una empresa debe presentar además los documentos de la sociedad. La cuenta queda operativa recién cuando Payoneer la aprueba y le avisa por correo.',
+                ],
+            ],
+            [
+                'title' => 'Cobrar en dólares',
+                'body' => [
+                    'Payoneer ofrece datos de cuentas receptoras en varias monedas, incluido el dólar, para que un cliente o una empresa del exterior le pague como si fuera una transferencia local en su país. También se conecta con marketplaces y plataformas de trabajo como Amazon, eBay, Upwork o Fiverr, que pagan directamente a la cuenta. Un pago entre dos cuentas Payoneer se acredita dentro de la red.',
+                    'Según información publicada sobre el servicio en Paraguay, no es posible cargar saldo depositando dinero propio desde un banco paraguayo: el saldo viene de lo que usted cobra. Confírmelo en su cuenta antes de planificar pagos con dinero que todavía está en su banco.',
+                ],
+            ],
+            [
+                'title' => 'Pagar al proveedor chino desde el saldo',
+                'body' => [
+                    'Payoneer permite pagar a proveedores en su moneda local, a una cuenta bancaria, o dentro de la red si el proveedor también tiene cuenta Payoneer. Payoneer aclara que no todas sus funciones están disponibles igual en todos los países: antes de acordarlo con el proveedor, verifique en su cuenta que la opción de pago a China aparezca para usted, en qué moneda (dólares o yuanes) y con qué costo.',
+                    'Rigen las mismas reglas que con cualquier medio de pago: pague a la cuenta a nombre de la empresa de la proforma, por etapas, y deje el saldo para después de la inspección. Si el proveedor le pide pagar a otra cuenta, confírmelo por otro canal antes de transferir. Guarde el comprobante: el [despachante de aduana](/aduana/despachantes-de-aduana-paraguay/) puede pedirlo para respaldar el valor declarado.',
+                ],
+            ],
+            [
+                'title' => 'Retirar a su banco en Paraguay',
+                'body' => [
+                    'Agregue una cuenta bancaria paraguaya a su nombre y retire el saldo. Si la cuenta es en guaraníes, Payoneer convierte los dólares con su tipo de cambio. Si es en dólares, pregunte a su banco cómo recibe esas transferencias. Además de la comisión de Payoneer, su banco o un banco intermediario pueden descontar gastos. El costo y el tipo de cambio aparecen en su cuenta antes de confirmar el retiro.',
+                ],
+            ],
+        ],
+        'table' => [
+            'caption' => 'Payoneer, Wise y transferencia bancaria para un residente en Paraguay',
+            'head' => ['Aspecto', 'Payoneer', 'Wise', 'Transferencia bancaria (SWIFT)'],
+            'rows' => [
+                ['Cuenta para residentes en Paraguay', 'Sí, tras la verificación', 'Paraguay no figura en la lista de países donde se puede tener saldo en Wise', 'Sí, en su banco'],
+                ['Cobrar del exterior', 'Cuentas receptoras en dólares y otras monedas; marketplaces', 'El pagador puede enviar a su banco paraguayo sin que usted tenga cuenta Wise', 'Transferencia a su cuenta en dólares o guaraníes'],
+                ['Pagar a un proveedor chino', 'Desde el saldo, si la opción está disponible en su cuenta', 'Depende de dónde viva y del tipo de cuenta', 'Sí, cualquier monto que su banco acepte'],
+                ['Cargar dinero desde su banco', 'Según información publicada, no desde Paraguay', 'Depende de su país de residencia', 'No aplica'],
+                ['Dónde ver los costos', 'payoneer.com/pricing y su cuenta', 'wise.com/pricing y el cotizador', 'Tarifario de su banco'],
+            ],
+            'note' => 'Condiciones revisadas el 25 de septiembre de 2026 en las páginas oficiales de cada servicio. Cambian: confírmelas antes de cada operación.',
+        ],
+        'sections' => [
+            [
+                'h2' => 'Límites y riesgos a tener en cuenta',
+                'body' => [
+                    'Payoneer es una cuenta de pagos, no un banco paraguayo. Antes de depender de ella para cobrar o para pagar un pedido, tenga en cuenta estos puntos.',
+                ],
+                'items' => [
+                    ['title' => 'Revisiones y retenciones', 'text' => 'Como toda plataforma de pagos, puede pedir documentos adicionales o revisar un pago antes de acreditarlo. No planifique un pago urgente al proveedor con fondos que todavía no ve disponibles.'],
+                    ['title' => 'Solo uso comercial', 'text' => 'La cuenta es para cobrar y pagar actividades de negocio. Un uso distinto puede terminar en el cierre de la cuenta.'],
+                    ['title' => 'Costos acumulados', 'text' => 'Cobrar, convertir y retirar pueden tener cada uno su costo. Payoneer indica que en algunos casos cobra un cargo anual por baja actividad: revise la página de precios.'],
+                    ['title' => 'Registro contable', 'text' => 'Guarde los extractos de Payoneer junto con las facturas. Su contador le indica cómo declarar lo que cobra del exterior.'],
+                ],
+            ],
+        ],
+        'faq' => [
+            ['q' => '¿Payoneer funciona en Paraguay?', 'a' => 'Sí. Un residente en Paraguay puede abrir la cuenta, cobrar del exterior y retirar a un banco paraguayo. Paraguay tiene su propia sección en la comunidad oficial de Payoneer. La cuenta está pensada para uso comercial, no para transferencias personales.'],
+            ['q' => '¿Cuánto cobra Payoneer en Paraguay?', 'a' => 'Depende de la operación: recibir, convertir, pagar y retirar tienen costos distintos. Consulte la página oficial payoneer.com/pricing y el detalle que su cuenta muestra antes de confirmar cada operación.'],
+            ['q' => '¿Puedo pagar a un proveedor chino con Payoneer?', 'a' => 'Si la opción aparece en su cuenta, sí: a una cuenta bancaria del proveedor o, si él también tiene Payoneer, dentro de la red. Verifique moneda y costo antes de acordarlo, y pague siempre a la cuenta a nombre de la empresa de la proforma.'],
+            ['q' => '¿Puedo retirar en guaraníes?', 'a' => 'Sí, a una cuenta bancaria paraguaya a su nombre. Payoneer convierte al retirar a una cuenta en guaraníes. Su banco también puede descontar gastos.'],
+            ['q' => '¿Es mejor Payoneer o Wise desde Paraguay?', 'a' => 'Para un residente en Paraguay, Payoneer permite abrir cuenta y operar; Wise no permite tener saldo a residentes en Paraguay. Wise sí puede servir para que alguien del exterior le envíe dinero a su banco paraguayo. Vea la guía de [Wise en Paraguay](/importar/wise-paraguay/).'],
+        ],
+        'relatedService' => 'agente-de-compras-china',
+        'toolLink' => [
+            'path' => '/herramientas/calculadora-costo-importacion/',
+            'label' => 'Calculadora de costo de importación',
+            'text' => 'Sume al costo por unidad lo que le cuesta pagar al proveedor y vea el precio puesto en Paraguay.',
+        ],
+        'related' => ['pagar-a-proveedores-chinos', 'wise-paraguay', 'proveedores-chinos-confiables'],
+        'affiliates' => ['payoneer'],
+        'disclaimer' => false,
+        'image' => null,
+    ],
+
+    'wise-paraguay' => [
+        'path' => '/importar/wise-paraguay/',
+        'title' => 'Wise en Paraguay: qué se puede hacer y qué no',
+        'navLabel' => 'Wise en Paraguay',
+        'cluster' => 'importar',
+        'seoTitle' => 'Wise en Paraguay: qué se puede hacer',
+        'metaDescription' => 'Wise en Paraguay: si un residente puede abrir cuenta, cómo recibir dinero del exterior, qué pasa con los pagos a China y qué alternativas usar.',
+        'lastReviewed' => '2026-09-25',
+        'hero' => [
+            'eyebrow' => 'Importar',
+            'h1' => 'Wise en Paraguay: qué se puede hacer y qué no',
+            'lead' => 'Si vive en Paraguay, no puede tener saldo en una cuenta Wise: Paraguay no figura en la lista de países de residencia que admite el centro de ayuda de Wise. Sí puede recibir en su banco paraguayo, en guaraníes, dinero que alguien le envía por Wise desde otro país. Para pagar a proveedores chinos, use la transferencia bancaria, Alibaba o Payoneer.',
+        ],
+        'intro' => [
+            'Wise distingue dos cosas que suelen confundirse. Una es dónde tiene que vivir usted para abrir una cuenta y tener saldo en ella. La otra es a qué países puede llegar una transferencia que otra persona envía con Wise. Paraguay está en la segunda lista y no en la primera.',
+            'En la práctica, al revisar el centro de ayuda de Wise el 25 de septiembre de 2026, Paraguay no aparecía entre los países donde un residente puede tener dinero en Wise. Otros países de la región, como Brasil, Chile y Uruguay, sí aparecían. Paraguay sí figura como destino: quien envía desde el exterior puede mandar guaraníes a una cuenta bancaria paraguaya, y el destinatario no necesita cuenta Wise. Las listas cambian, así que conviene verificarlas antes de decidir.',
+            'Esta guía explica qué significa eso para quien importa de China o cobra del exterior, qué haría falta para pagar a China con Wise y qué alternativas tiene. No indicamos comisiones: Wise las publica en wise.com/pricing y las muestra antes de confirmar cada envío. No tenemos relación comercial con Wise.',
+        ],
+        'steps' => [
+            [
+                'title' => 'Confirmar si Wise está disponible para usted',
+                'body' => [
+                    'Lo que cuenta es su país de residencia, no su nacionalidad. En el centro de ayuda de Wise (wise.com/help) están los artículos «¿Dónde necesito vivir para tener dinero en Wise?» y «¿Dónde puedo usar Wise?». Revíselos con su país de residencia. Si vive en Paraguay y Paraguay no está en la lista, Wise no le va a abrir una cuenta con saldo aunque tenga documentos de otro país.',
+                    'No declare otra residencia para poder registrarse. Wise verifica el domicilio, y una cuenta abierta con datos falsos se puede bloquear con su dinero adentro.',
+                ],
+            ],
+            [
+                'title' => 'Recibir dinero del exterior en su banco paraguayo',
+                'body' => [
+                    'Si un cliente, un empleador o un familiar vive en un país donde Wise opera, puede enviarle el dinero a su cuenta bancaria en Paraguay. Wise indica que el destinatario recibe guaraníes desde una cuenta local de Wise y que no necesita tener cuenta en Wise. Pásele al remitente sus datos bancarios exactos, con su nombre como figura en el banco.',
+                    'El remitente ve el costo y el tipo de cambio antes de confirmar. Para usted, el dinero llega como una transferencia local en guaraníes.',
+                ],
+            ],
+            [
+                'title' => 'Entender cómo se paga a China con Wise, donde está disponible',
+                'body' => [
+                    'Para pagar a una empresa china en yuanes (CNY), Wise pide una cuenta Wise Business. La cuenta del proveedor tiene que ser una cuenta de empresa en China continental, en CNY, en un banco miembro del sistema CIPS. Hay que cargar el nombre del beneficiario en caracteres latinos, el número de cuenta, el código SWIFT y la dirección, e indicar el motivo del pago. El banco del proveedor puede pedirle a él el contrato y la factura.',
+                    'Esto le sirve si su empresa está constituida en un país donde Wise admite cuentas de empresa, por ejemplo una sociedad en el exterior. Una empresa solo paraguaya no figura en esa lista, así que hoy no es una vía disponible.',
+                ],
+            ],
+            [
+                'title' => 'Elegir una alternativa para pagar a proveedores chinos',
+                'body' => [
+                    'La transferencia bancaria internacional (SWIFT) desde su banco es la vía habitual para montos comerciales y deja un comprobante útil para el despacho. Si compra en [Alibaba](/comprar/alibaba-paraguay/), pagar dentro de la plataforma agrega el mecanismo de reclamo de Trade Assurance. Si ya cobra en dólares por Payoneer, puede pagar desde ese saldo, como explica la guía de [Payoneer en Paraguay](/importar/payoneer-paraguay/).',
+                    'Con cualquier medio, pague a la cuenta a nombre de la empresa de la proforma, por etapas, y deje el saldo para después de la [inspección de calidad](/servicios/inspeccion-de-calidad/). La guía sobre [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/) explica el esquema completo.',
+                ],
+            ],
+            [
+                'title' => 'Comparar el costo total antes de cada pago',
+                'body' => [
+                    'Compare lo que realmente llega al proveedor, no solo la comisión: tipo de cambio, comisión del banco, gastos de bancos intermediarios y lo que cobre el banco del beneficiario. Pida a su banco el costo total por escrito y súmelo al costo de la mercadería en la [calculadora de costo de importación](/herramientas/calculadora-costo-importacion/).',
+                ],
+            ],
+        ],
+        'table' => [
+            'caption' => 'Qué puede hacer con Wise un residente en Paraguay',
+            'head' => ['Operación', '¿Disponible?', 'Qué hacer'],
+            'rows' => [
+                ['Abrir cuenta y tener saldo en Wise', 'No: Paraguay no figura en la lista de residencia', 'Use su banco o Payoneer'],
+                ['Recibir en su banco paraguayo dinero enviado por Wise desde otro país', 'Sí: Paraguay figura como destino, en guaraníes', 'Dé al remitente sus datos bancarios exactos'],
+                ['Pagar en CNY a una empresa china', 'Solo con Wise Business, en un país donde opera', 'Desde Paraguay, transferencia SWIFT, Alibaba o Payoneer'],
+                ['Tarjeta Wise', 'No, sin cuenta con saldo', 'Tarjeta de su banco para compras en el exterior'],
+                ['Consultar comisiones', 'Públicas', 'wise.com/pricing y el cotizador de Wise'],
+            ],
+            'note' => 'Según el centro de ayuda de Wise, consultado el 25 de septiembre de 2026. Las listas de países cambian: verifíquelas antes de decidir.',
+        ],
+        'sections' => [],
+        'faq' => [
+            ['q' => '¿Wise funciona en Paraguay?', 'a' => 'Solo en parte. Un residente en Paraguay no puede tener saldo en Wise, porque Paraguay no figura en la lista de países de residencia de su centro de ayuda. Sí puede recibir en su banco paraguayo, en guaraníes, dinero que alguien le envía por Wise desde otro país.'],
+            ['q' => '¿Puedo abrir una cuenta Wise con mi cédula paraguaya?', 'a' => 'Lo que cuenta es dónde vive, no el documento. Si vive en otro país de la lista de Wise, puede registrarse con su domicilio real allí. Si vive en Paraguay, no.'],
+            ['q' => '¿Cómo pago a un proveedor chino si no puedo usar Wise?', 'a' => 'Por transferencia bancaria internacional desde su banco, por Alibaba con Trade Assurance si el proveedor está en la plataforma, o con saldo de Payoneer si ya cobra por ahí. Vea la guía sobre [cómo pagar a proveedores chinos](/importar/pagar-a-proveedores-chinos/).'],
+            ['q' => '¿Cuánto cobra Wise?', 'a' => 'Depende de la moneda, el monto y la forma de pago. Wise publica sus precios en wise.com/pricing y muestra el costo antes de confirmar cada envío.'],
+            ['q' => '¿Puedo recibir pagos de clientes del exterior en Paraguay con Wise?', 'a' => 'Sí, si el cliente usa Wise desde un país donde opera y le envía a su cuenta bancaria paraguaya. Usted recibe guaraníes en su banco sin necesidad de cuenta Wise.'],
+        ],
+        'relatedService' => 'agente-de-compras-china',
+        'toolLink' => [
+            'path' => '/herramientas/calculadora-costo-importacion/',
+            'label' => 'Calculadora de costo de importación',
+            'text' => 'Incluya el costo de la transferencia al proveedor y calcule el precio por unidad puesto en Paraguay.',
+        ],
+        'related' => ['pagar-a-proveedores-chinos', 'payoneer-paraguay', 'alibaba-paraguay'],
+        'affiliates' => ['wise'],
         'disclaimer' => false,
         'image' => null,
     ],
