@@ -128,6 +128,92 @@ return [
         'priority' => '0.8',
         'stub' => false,
     ],
+    /* The quote wizard (partials/quote-wizard.php). Its copy lives here under
+       'quote' so the partial holds no text of its own. 'details' is per need
+       key (content/ui.php 'needs'): at most four fields each, exactly one
+       'required'. A field's 'label' is also the line label in the message the
+       wizard composes for the CRM, so keep it short and readable. 'service' on
+       an option is a content/lead-values.php slug the answer maps to (a more
+       precise tier than the chip's own). */
+    '/cotizar/' => [
+        'title' => 'Pedir cotización para importar de China',
+        'description' => 'Pida una cotización en tres pasos: importar para vender, despacho aduanero, compras online o viaje a la Feria de Cantón. Sin costo ni compromiso.',
+        'h1' => 'Pida su cotización en tres pasos',
+        'lead' => 'Unas pocas preguntas para entender su caso. Le respondemos dentro del siguiente día hábil, con los pasos y los costos por escrito.',
+        'changefreq' => 'monthly',
+        'priority' => '0.9',
+        'stub' => false,
+        'quote' => [
+            'eyebrow' => 'Cotización',
+            'steps' => [
+                ['title' => '¿Qué necesita?', 'short' => 'Necesidad', 'hint' => 'Elija la opción más cercana. Puede cambiarla después.'],
+                ['title' => 'Detalles', 'short' => 'Detalles', 'hint' => 'Lo que sepa por ahora. Aproximado está bien.'],
+                ['title' => 'Sus datos de contacto', 'short' => 'Contacto', 'hint' => 'Solo para responderle. No compartimos sus datos.'],
+            ],
+            'progress' => 'Paso %1$d de %2$d',
+            'next' => 'Continuar',
+            'back' => 'Atrás',
+            'submit' => 'Enviar solicitud',
+            'sending' => 'Enviando…',
+            'edit' => 'Cambiar',
+            'required' => 'Complete este dato para continuar.',
+            'required_choice' => 'Elija una opción para continuar.',
+            'invalid_phone' => 'Revise el número: necesitamos un WhatsApp o teléfono válido.',
+            'invalid_email' => 'Revise el correo: parece incompleto.',
+            'email_needed' => 'Para responderle por correo necesitamos su dirección.',
+            'optional' => 'opcional',
+            'done_title' => 'Solicitud enviada',
+            'message_title' => 'Solicitud de cotización',
+            'channel_label' => 'Prefiere que le respondamos por',
+            'channels' => ['WhatsApp', 'Llamada', 'Correo'],
+            /* The one detail field shown when JavaScript is off: enviar.php
+               forwards `message` and nothing else, so the no-JS form asks for
+               everything in one box. */
+            'static_label' => 'Cuéntenos qué necesita',
+            'static_hint' => 'Producto o servicio, cantidad aproximada, presupuesto y para cuándo.',
+            'needs' => [
+                'compras' => 'Un pedido de Temu, Shein, AliExpress o Alibaba: envío, courier y costos al recibir.',
+                'importar' => 'Traer mercadería para su negocio: proveedor, flete, despacho y entrega.',
+                'aduana' => 'Despachar una carga que viene o ya llegó, con un despachante matriculado.',
+                'viajes' => 'Visa, viaje de negocios o la Feria de Cantón en Guangzhou.',
+            ],
+            'details' => [
+                'importar' => [
+                    ['name' => 'producto', 'label' => 'Producto', 'question' => '¿Qué producto quiere importar?', 'type' => 'text', 'required' => true, 'placeholder' => 'Ej.: luminarias LED, repuestos de moto, ropa de trabajo'],
+                    ['name' => 'cantidad', 'label' => 'Cantidad', 'question' => 'Cantidad aproximada', 'type' => 'text', 'placeholder' => 'Ej.: 500 unidades, un contenedor de 20 pies'],
+                    ['name' => 'presupuesto', 'label' => 'Presupuesto', 'question' => 'Presupuesto aproximado', 'type' => 'choice', 'options' => ['Menos de USD 5.000', 'USD 5.000 a 20.000', 'USD 20.000 a 50.000', 'Más de USD 50.000', 'Todavía no sé']],
+                    ['name' => 'plazo', 'label' => 'Plazo', 'question' => '¿Para cuándo lo necesita?', 'type' => 'choice', 'options' => ['Es urgente', 'En 1 a 3 meses', 'Estoy explorando']],
+                ],
+                'aduana' => [
+                    ['name' => 'mercaderia', 'label' => 'Mercadería', 'question' => '¿Qué tipo de mercadería es?', 'type' => 'text', 'required' => true, 'placeholder' => 'Ej.: maquinaria, electrónica, textiles'],
+                    ['name' => 'estado', 'label' => 'Estado del envío', 'question' => '¿La carga ya está en camino?', 'type' => 'choice', 'options' => ['Todavía no salió', 'Sí, ya está en camino', 'Ya llegó a Paraguay']],
+                    ['name' => 'via', 'label' => 'Vía', 'question' => '¿Cómo viaja?', 'type' => 'choice', 'options' => ['Marítima', 'Aérea', 'Terrestre', 'No sé']],
+                ],
+                'compras' => [
+                    ['name' => 'tienda', 'label' => 'Tienda', 'question' => '¿En qué tienda?', 'type' => 'choice', 'options' => ['Temu', 'Shein', 'AliExpress', 'Alibaba', '1688', 'Otra']],
+                    ['name' => 'articulo', 'label' => 'Qué quiere comprar', 'question' => '¿Qué quiere comprar?', 'type' => 'text', 'required' => true, 'placeholder' => 'Ej.: ropa, accesorios para celular, repuestos'],
+                    ['name' => 'uso', 'label' => 'Uso', 'question' => '¿Para qué es?', 'type' => 'choice', 'options' => ['Uso personal', 'Para revender']],
+                ],
+                'viajes' => [
+                    ['name' => 'motivo', 'label' => 'Motivo', 'question' => '¿Qué necesita para el viaje?', 'type' => 'choice', 'required' => true, 'options' => [
+                        ['label' => 'Ir a la Feria de Cantón', 'service' => 'tour-negocios-china'],
+                        ['label' => 'Tramitar la visa', 'service' => 'visa-china'],
+                        ['label' => 'Visitar fábricas o proveedores', 'service' => 'tour-negocios-china'],
+                        ['label' => 'Otro'],
+                    ]],
+                    ['name' => 'fechas', 'label' => 'Fechas', 'question' => 'Fechas aproximadas', 'type' => 'text', 'placeholder' => 'Ej.: segunda quincena de octubre'],
+                    ['name' => 'personas', 'label' => 'Personas', 'question' => '¿Cuántas personas viajan?', 'type' => 'choice', 'options' => ['1', '2', '3 a 5', 'Más de 5']],
+                ],
+            ],
+            'aside' => [
+                'title' => 'Qué pasa después de enviar',
+                'free' => 'La consulta no tiene costo ni compromiso.',
+                'official' => 'No somos un organismo oficial: coordinamos con profesionales independientes, como despachantes matriculados y agentes de carga.',
+                'whatsapp_title' => '¿Prefiere escribirnos?',
+                'whatsapp_text' => 'Abrimos WhatsApp con el mensaje ya escrito. Puede cambiarlo antes de enviarlo.',
+            ],
+        ],
+    ],
     '/sobre/' => [
         'title' => 'Sobre China-Paraguay',
         'description' => 'Qué es China-Paraguay, quién está detrás, cómo elegimos la información que publicamos y cómo trabajamos con socios en China y en Paraguay.',
