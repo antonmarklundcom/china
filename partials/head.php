@@ -30,7 +30,10 @@ $htmlLang    = $page['lang'] ?? market_locale();
 <meta name="description" content="<?= e($page['description']) ?>">
 <?php endif; ?>
 <link rel="canonical" href="<?= e(seo_canonical($page)) ?>">
-<?php foreach ($page['hreflang'] ?? [] as $hrefLocale => $hrefPath): ?>
+<?php
+/* Single-language site: every indexable page declares itself es-PY and x-default. */
+$hreflangs = $page['hreflang'] ?? (empty($page['noindex']) ? [market_locale() => $currentPath, 'x-default' => $currentPath] : []);
+foreach ($hreflangs as $hrefLocale => $hrefPath): ?>
 <link rel="alternate" hreflang="<?= e($hrefLocale) ?>" href="<?= e(url($hrefPath)) ?>">
 <?php endforeach; ?>
 <?php if (!empty($page['noindex'])): ?>

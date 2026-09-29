@@ -317,7 +317,7 @@ return [
     ],
     '/aviso-legal/' => [
         'title' => 'Aviso legal',
-        'description' => 'China-Paraguay es un sitio privado de información. No es un organismo oficial ni representa a la aduana, a la DNIT, a embajadas ni a las tiendas que menciona.',
+        'description' => 'China-Paraguay es un sitio privado de información. No es un organismo oficial ni representa a la aduana, a la DNIT, a embajadas ni a tiendas.',
         'h1' => 'Aviso legal',
         'lead' => 'Lo que este sitio es, y lo que no es.',
         'sections' => [
