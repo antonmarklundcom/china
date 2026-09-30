@@ -81,7 +81,7 @@ require ROOT_DIR . '/partials/header.php';
         <p class="lead hero__lead"><?= e(ui('home.lead')) ?></p>
 
         <div class="btn-row">
-          <a class="btn btn--primary btn--lg" href="<?= e(quote_path(null)) ?>"><?= e(ui('home.cta_quote')) ?> <span aria-hidden="true">→</span></a>
+          <a class="btn btn--primary btn--lg" href="<?= e(quote_path(null, 'importar')) ?>"><?= e(ui('home.cta_quote')) ?> <span aria-hidden="true">→</span></a>
           <a class="btn btn--on-ink btn--lg" href="<?= e($homeCalc) ?>"><?= e(ui('home.cta_calc')) ?></a>
         </div>
 

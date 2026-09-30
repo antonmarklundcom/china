@@ -33,7 +33,7 @@ return [
         'lead' => '',
         'changefreq' => 'weekly',
         'priority' => '1.0',
-        'popular' => ['temu-paraguay', 'como-importar-de-china-a-paraguay', 'shein-paraguay', 'aduana-clorinda', 'aliexpress-paraguay', 'feria-de-canton'],
+        'popular' => ['como-importar-de-china-a-paraguay', 'temu-paraguay', 'shein-paraguay', 'aduana-clorinda', 'aliexpress-paraguay', 'feria-de-canton'],
         'image' => ['base' => '/assets/img/puerto-fluvial-contenedores-paraguay', 'widths' => [640, 1280, 1920], 'alt' => 'Contenedores apilados en un puerto fluvial al atardecer, con una barcaza sobre el río', 'width' => 1920, 'height' => 1434],
         'doorImages' => [
             'compras' => ['base' => '/assets/img/compras-online-entrega-asuncion', 'widths' => [640, 1280, 1920], 'alt' => 'Una mujer recibe en la puerta de su casa en Asunción varios paquetes de una compra online', 'width' => 1920, 'height' => 1086],

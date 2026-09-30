@@ -104,7 +104,7 @@ return [
         ],
         'benefits' => [
             ['title' => 'Costo claro', 'text' => 'Recibe el presupuesto con cada concepto separado, para comparar y decidir antes de empezar.'],
-            ['title' => 'Despachante verificable', 'text' => 'Trabajamos con despachantes matriculados; puede comprobar la matrícula en la fuente oficial.'],
+            ['title' => 'Despachante verificable', 'text' => 'Solo lo conectamos con despachantes matriculados; puede comprobar la matrícula en la fuente oficial.'],
             ['title' => 'Menos tiempo en depósito', 'text' => 'Los documentos se revisan antes de la llegada de la carga, no después.'],
             ['title' => 'Un solo punto de contacto', 'text' => 'Coordinamos entre usted, su agente de carga y el despachante cuando lo necesita.'],
         ],

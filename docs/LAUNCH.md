@@ -6,7 +6,9 @@ accounts. Allow about 30 minutes.
 ## 1. Hosting (Hostinger, Git deploy)
 1. hPanel → the china.com.py website → **Advanced → Git**.
 2. Repository `https://github.com/antonmarklundcom/china`, branch **`main`**, install path
-   **empty** (= `public_html`). The folder must be empty the first time.
+   **empty** (= `public_html`). The folder must be empty the first time: File Manager →
+   `public_html` → delete Hostinger's `default.php` (that file is the "Default page" now showing).
+   PHP version 8.2 or newer (Advanced → PHP Configuration).
 3. Click **Deploy**.
 4. Optional, for automatic deploys: copy the webhook URL shown there into GitHub → repo
    Settings → Webhooks (push events). From then on, every

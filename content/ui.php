@@ -28,8 +28,8 @@ return [
 
     // One hub page per cluster. The guide template uses these for breadcrumbs.
     'hubs' => [
-        'compras'  => ['label' => 'Comprar online',   'path' => '/comprar/'],
         'importar' => ['label' => 'Importar',         'path' => '/importar/'],
+        'compras'  => ['label' => 'Comprar online',   'path' => '/comprar/'],
         'aduana'   => ['label' => 'Aduana',           'path' => '/aduana/'],
         'viajes'   => ['label' => 'Viajar a China',   'path' => '/viajar-a-china/'],
     ],
@@ -115,13 +115,14 @@ return [
     ],
 
     'home' => [
-        'eyebrow'   => 'China ↔ Paraguay, en lenguaje claro',
-        'h1_lead'   => 'Compre, importe y viaje a China ',
+        'eyebrow'   => 'Importar de China a Paraguay, en lenguaje claro',
+        'h1_lead'   => 'Le ayudamos a importar de China ',
         'h1_accent' => 'sabiendo cuánto le cuesta.',
-        'lead'      => 'Guías prácticas y calculadoras gratuitas para comprar en Temu, Shein o '
-                     . 'Alibaba, importar en contenedor y pasar la aduana. Y cuando prefiera '
-                     . 'delegarlo, coordinamos proveedor, flete y despacho, con cada costo por escrito.',
-        'cta_quote'   => 'Pedir cotización',
+        'lead'      => 'Cuéntenos qué producto quiere traer y le ayudamos con el proveedor, el '
+                     . 'flete y el despacho, con cada costo por escrito. Si prefiere hacerlo usted, '
+                     . 'tiene guías y calculadoras gratuitas para importar, comprar en Temu, Shein o '
+                     . 'Alibaba y pasar la aduana.',
+        'cta_quote'   => 'Cotizar mi importación',
         'cta_calc'    => 'Calcular el costo',
         'quick_label' => 'Lo más buscado',
         'route_title' => 'El recorrido de su mercadería',
@@ -152,8 +153,8 @@ return [
 
         'services_eyebrow' => 'Servicios',
         'services_title'   => 'Cuando prefiere que alguien se encargue',
-        'services_lead'    => 'Coordinamos con agentes en China, transportistas y despachantes '
-                            . 'matriculados en Paraguay. Usted recibe una sola respuesta.',
+        'services_lead'    => 'Le ponemos en contacto con agentes en China, transportistas y '
+                            . 'despachantes matriculados en Paraguay. Usted recibe una sola respuesta.',
 
         'aduana_eyebrow' => 'Aduana',
         'aduana_title'   => 'Despacho, tributos y fronteras sin sorpresas.',
