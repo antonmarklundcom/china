@@ -75,6 +75,11 @@ $page = [
     'faq'      => $guide['faq'],
     'leadSlug' => $delegateSlug,
     'jsonld'   => [$howTo],
+    'article'  => array_filter([
+        'headline'     => $guide['title'],
+        'dateModified' => $guide['lastReviewed'] ?? null,
+        'description'  => $guide['metaDescription'],
+    ]),
 ];
 
 /* ---- reading layout: anchors, TOC, reading time ------------------------
