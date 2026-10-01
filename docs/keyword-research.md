@@ -122,3 +122,16 @@ Same session, second export (seeds "aduana", "importacion", "courier"; location 
 "importacion" 590 (+23 % 3 mo, 0 % YoY, top bid 2.32–10.97 kr), "courier" 1,000 (+14 %, −23 % YoY,
 2.86–8.47 kr), "courier china" 10, "agente aduanal" 10. Generic "importacion" mixes students and news with
 buyers, so it is weaker than the "importar de China" terms; "courier" belongs to couriers.com.py.
+
+Round 3c (same day, seeds "aduana", "courier", "importacion"): the full suggestion lists are in `kwp-data.csv`.
+Clusters, volumes per month (the three "aduana" variants share one 5,400, so do not add them):
+- Commercial despachante terms: despachante de aduana 480, despacho aduanero 140, despachante aduana 40 (+600 % 3 mo,
+  top bid 14.59 kr, the highest in the cluster), agente de transporte aduanero 30, agente/agencia aduanal 10 + 10.
+- Looking for the CDAP / a broker list: centro de despachante (de aduana) 720 + 70 + 20 + 20, down 89 % year on year.
+- Import terms: importacion 590, importaci 720 (truncated query), importaciones 140, importacion y exportacion 110,
+  exportacion e importacion 60, proveedores chinos 30, importación china 20.
+- Company-name searches (people looking up a named importer): jv importaciones 90 (+250 % YoY), hn importaciones 50,
+  directo importaciones 30.
+- Tariff: arancelario 1,000 (+49 % 3 mo). Navigational or off-topic: aduana gov py 260, aduana central 40, aduana
+  brasileña 590, organización mundial de aduanas 470, oea aduana 20.
+- "aduna" (the misspelling) does not appear in any export.
