@@ -117,3 +117,8 @@ Raw rows appended to `kwp-data.csv`. Changes are 3 months / year on year.
 Reading: generic aduana demand is falling, so it is not a growth bet. The commercial slice is the
 despachante terms (about 480 + 110 + 140 + 70 per month). Next step: re-pull with location Paraguay
 to separate Paraguayan volume from the rest of Latin America.
+
+Same session, second export (seeds "aduana", "importacion", "courier"; location again not stated):
+"importacion" 590 (+23 % 3 mo, 0 % YoY, top bid 2.32–10.97 kr), "courier" 1,000 (+14 %, −23 % YoY,
+2.86–8.47 kr), "courier china" 10, "agente aduanal" 10. Generic "importacion" mixes students and news with
+buyers, so it is weaker than the "importar de China" terms; "courier" belongs to couriers.com.py.
