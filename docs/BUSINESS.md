@@ -93,7 +93,7 @@ and earns small affiliate income. It is not the business.
    `VENDERCRM_URL=https://crm.clientes.com.py` and `VENDERCRM_API_KEY`, plus `RESEND_API_KEY`,
    `LEAD_NOTIFY_TO` and `LEAD_FROM` (verify SPF/DKIM). Leave GA4 empty.
 4. **Domain:** DNS already points to Hostinger. Turn on SSL and check that http and www both 301
-   to `https://china.com.py`. Redirect `aduana.com.py` (301) to `/aduana/`.
+   to `https://china.com.py`. If you register `aduana.com.py` (not owned yet), redirect it (301) to `/aduana/`.
 5. **Smoke test:** run `deploy/verify-live.sh`. Submit `/cotizar/` and confirm the lead reaches
    VenderCRM as `+595…`. `/config.php` and `/plan.md` must answer 403/404.
 6. **Search Console:** add the domain property, submit the sitemap, and request indexing for 5 URLs.

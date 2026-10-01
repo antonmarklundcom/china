@@ -60,8 +60,9 @@ keys are listed in its prompt). Model ids: Opus `claude-opus-5-5`, Sonnet `claud
    reader (no PRC embassy in Asunción → visa via a third country) without commentary.
 9. **Domain `china.com.py`, brand name "China-Paraguay"** (logo wordmark "China-Paraguay",
    domain shown under it). `content/site.php`: name "China-Paraguay", domain `china.com.py`.
-10. **Other domains:** aduna.com.py — not bought. **aduana.com.py — bought**; at launch it 301s
-    to `https://china.com.py/aduana/` (Hostinger redirect, not a build phase). **couriers.com.py**
+10. **Other domains:** aduna.com.py and **aduana.com.py — neither is bought** (owner confirmed 2026-10-01;
+    an earlier version of this plan said aduana.com.py was bought, which was wrong). If bought, it 301s
+    to `https://china.com.py/aduana/` until it gets its own small site (Hostinger redirect, not a build phase). **couriers.com.py**
     — a separate sister site built later from the same template (courier comparison, Amazon/eBay/
     AliExpress, Miami casillas, PayPal/Wise/Payoneer). This site keeps China-origin shopping only
     and links to couriers.com.py from the courier guides once it is live (Backlog).
@@ -243,7 +244,7 @@ delete the watcher Routine; closing report to Anton including the facts-to-verif
 | 9 | Google Search Console + GA4 | deploy | — |
 
 ## 8. Open business questions (not build work)
-- **aduana.com.py** (bought, USD 25): redirect now; split into its own site only if `/aduana/`
+- **aduana.com.py** (NOT bought yet; plan to buy, price unchecked): redirect now; split into its own site only if `/aduana/`
   outgrows this one (signal: > 3k visits/mo to the cluster). Must never look official.
 - **couriers.com.py**: sister site — "courier paraguay" 5,400/mo, amazon paraguay 4,400, paypal
   paraguay 2,400, ebay paraguay 1,300. Monetised by couriers paying for leads/featured slots.

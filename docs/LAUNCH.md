@@ -38,8 +38,9 @@ accounts. Allow about 30 minutes.
   `/comprar/temu-paraguay/`, `/importar/como-importar-de-china-a-paraguay/`.
 - No Google Analytics (house rule).
 
-## 5. aduana.com.py
-hPanel → Domains → aduana.com.py → Redirect (301) to `https://china.com.py/aduana/`.
+## 5. aduana.com.py (not bought yet)
+Only after you register it: hPanel → Domains → aduana.com.py → Redirect (301) to
+`https://china.com.py/aduana/`, or give it its own site slot (see docs/BUSINESS.md).
 
 ## 6. After launch (not blocking)
 - Partners: despachante, courier China→PY, sourcing agent, travel/visa agency. Their names
