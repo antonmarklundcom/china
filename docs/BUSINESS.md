@@ -3,7 +3,7 @@
 Status 2026-09-30. Phase 1 research, then the launch copy changes in §7. Sources: `plan.md`,
 `docs/kwp-data.csv` (Google Keyword Planner, Paraguay, Sept 2026) and web research. The research
 came from search snippets only; the sites themselves were egress-blocked, so **every competitor
-price below is unverified**. Rates: USD 1 ≈ Gs 7,300 and 1 SEK ≈ Gs 740 (approx.).
+price below is unverified**. Rates (2026-10-01): USD 1 = Gs 5,853 (owner's figure); 1 SEK ≈ Gs 590 (assumes about 9.9 SEK per USD, not checked).
 
 ## 1. What is built, and what isn't
 
@@ -22,12 +22,12 @@ about 30 minutes, but nobody would fulfil the leads and nobody would pay for the
 
 | Theme | Vol/mo | Top CPC | Reading |
 |---|---|---|---|
-| Temu/Shein/AliExpress/Alibaba "paraguay" | ~20,000 | Gs 150–5,600 | Traffic. temu 9,900, shein ~7,000, **aliexpress 2,400 (+81 % YoY)**, alibaba 720. |
-| Aduana (+CDAP, Clorinda, AR-PY border) | ~12,000 | Gs 3,300–7,000 | Mostly navigational (aduana 8,100, CDAP 1,600). "despachante" terms ~250. |
-| Courier (generic) | ~5,600 | Gs 1,500–5,200 | Planned for couriers.com.py; "courier china paraguay" is only 40. |
-| **Importar de China (B2B)** | **~850** | **Gs 5,500–13,000** | Small volume, highest intent: importadoras 210, cómo importar 110, forwarder 50, proveedores ~80. |
-| Feria de Cantón | ~200 | Gs 1,100–4,200 | Seasonal (April/October), high ticket. |
-| Productos chinos / al por mayor | ~100 | up to Gs 9,000 | Long tail. |
+| Temu/Shein/AliExpress/Alibaba "paraguay" | ~20,000 | Gs 120–4,450 | Traffic. temu 9,900, shein ~7,000, **aliexpress 2,400 (+81 % YoY)**, alibaba 720. |
+| Aduana (+CDAP, Clorinda, AR-PY border) | ~12,000 | Gs 2,600–5,600 | Mostly navigational (aduana 8,100, CDAP 1,600). "despachante" terms ~250. |
+| Courier (generic) | ~5,600 | Gs 1,200–4,150 | Planned for couriers.com.py; "courier china paraguay" is only 40. |
+| **Importar de China (B2B)** | **~850** | **Gs 4,400–10,350** | Small volume, highest intent: importadoras 210, cómo importar 110, forwarder 50, proveedores ~80. |
+| Feria de Cantón | ~200 | Gs 900–3,350 | Seasonal (April/October), high ticket. |
+| Productos chinos / al por mayor | ~100 | up to Gs 7,200 | Long tail. |
 | DNIT | not measured | — | Not in the export, and the keyword-library MCP is not connected in this session. |
 
 The market is large: imports from China were **USD 6.1 bn in 2025, 34.5 % of Paraguay's
@@ -56,17 +56,17 @@ franchises rather than referrals, and a consumer customer is worth little to the
 
 | Payer | What a deal is worth to them | Close rate | **Fair fee to us** |
 |---|---|---|---|
-| Sourcing/QC agent | USD 5–15k order × 5–10 % = USD 250–1,500 | ~20 % | **Gs 150–400k**, or 20–30 % of the first commission |
-| LCL/air forwarder | 2–5 CBM, USD 600–2,000 invoice, ~25 % margin | ~25 % | **Gs 100–250k** |
-| Despachante | Fee Gs 0.75–1.5M per dispatch | ~30 % | **Gs 75–150k** |
-| Canton Fair agency | USD 3–5k package × 10 % | pay on booking | **Gs 300–700k per traveller** |
-| Courier (consumer signup) | ~USD 25 margin per shipment | — | Gs 10–30k, not worth selling |
-| Affiliate (AliExpress order) | ~USD 30 basket | — | Gs 7–20k per order |
+| Sourcing/QC agent | USD 5–15k order × 5–10 % = USD 250–1,500 | ~20 % | **Gs 120–320k**, or 20–30 % of the first commission |
+| LCL/air forwarder | 2–5 CBM, USD 600–2,000 invoice, ~25 % margin | ~25 % | **Gs 80–200k** |
+| Despachante | Fee Gs 0.75–1.5M per dispatch | ~30 % | **Gs 60–120k** |
+| Canton Fair agency | USD 3–5k package × 10 % | pay on booking | **Gs 240–560k per traveller** |
+| Courier (consumer signup) | ~USD 25 margin per shipment | — | Gs 8–24k, not worth selling |
+| Affiliate (AliExpress order) | ~USD 30 basket | — | Gs 6–16k per order |
 
-This is consistent with Google Ads: "importar de china a paraguay" at Gs 7,700 a click and a 5 %
-conversion rate works out to about Gs 150k per lead.
-**At month 6–9:** 15 B2B leads × about Gs 200k is **Gs 3M/month (~USD 400)** on per-lead fees.
-Revenue share on closed deals could make that Gs 6–10M.
+This is consistent with Google Ads: "importar de china a paraguay" at Gs 6,100 a click and a 5 %
+conversion rate works out to about Gs 120k per lead.
+**At month 6–9:** 15 B2B leads × about Gs 160k is **Gs 2.4M/month (~USD 410)** on per-lead fees.
+Revenue share on closed deals could make that Gs 5–8M.
 
 ## 4. Recommendation: B2B importers, consumers as funnel
 
@@ -121,3 +121,12 @@ and earns small affiliate income. It is not the business.
    importar de China", its CTA opens `/cotizar/?need=importar`, Importar is the first door, the
    import pillar is first in "más leídas", and the "próximamente" despachante-list promises are
    gone.
+5. **Domains.** aduana.com.py is **not bought yet** (Gs 153,000, about USD 26). Buy it, since one
+   despachante lead (Gs 60–120k) covers about the cost; first a 301 to `/aduana/`, then a small
+   despachante/any-origin clearance site once a despachante partner exists. Realistic year 1:
+   3–8 leads a month, about Gs 0.2–1.0M. couriers.com.py: buy only if cheap, build after
+   china.com.py proves itself.
+6. **Own imports.** Anton imports for his own ecom stores while finding partners: test each
+   partner on a real shipment, use the volume to negotiate terms, publish only real costs and
+   disclose the own-import interest.
+

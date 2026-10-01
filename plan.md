@@ -60,8 +60,8 @@ keys are listed in its prompt). Model ids: Opus `claude-opus-5-5`, Sonnet `claud
    reader (no PRC embassy in Asunción → visa via a third country) without commentary.
 9. **Domain `china.com.py`, brand name "China-Paraguay"** (logo wordmark "China-Paraguay",
    domain shown under it). `content/site.php`: name "China-Paraguay", domain `china.com.py`.
-10. **Other domains:** aduna.com.py and **aduana.com.py — neither is bought** (owner confirmed 2026-10-01;
-    an earlier version of this plan said aduana.com.py was bought, which was wrong). If bought, it 301s
+10. **Other domains:** **aduana.com.py — not bought yet** (owner confirmed 2026-10-01; Gs 153,000; an earlier
+    version of this plan said it was bought, which was wrong). If bought, it 301s
     to `https://china.com.py/aduana/` until it gets its own small site (Hostinger redirect, not a build phase). **couriers.com.py**
     — a separate sister site built later from the same template (courier comparison, Amazon/eBay/
     AliExpress, Miami casillas, PayPal/Wise/Payoneer). This site keeps China-origin shopping only
