@@ -98,3 +98,22 @@ existing records. No new KWP export was needed for this pass (the long tail is a
 | amazon, ebay, paypal (+ variants), courier brasil / internacional | 30–4,400 | ≤ 8.14 | couriers.com.py (plan §1.10), not this site |
 | alexa precio paraguay | 390 | 0.70 | out of scope |
 | holafly china | 10 | 34.33 | affiliate box on the travel guide once the Holafly URL exists |
+
+## Round 3 (2026-10-01): generic "aduana" seed
+KWP export for the seed "aduana" (Swedish UI; the location was not stated, and "aduana brasileña" and
+"organización mundial de aduanas" suggest it is wider than Paraguay, so treat volumes as upper bounds).
+Raw rows appended to `kwp-data.csv`. Changes are 3 months / year on year.
+
+| Keyword | Vol | 3 mo | YoY | Top bid (kr) | Reading |
+|---|---|---|---|---|---|
+| aduana (+ aduaneros, aduanera, same figures) | 5,400 | +22 % | −33 % | 4.57–37.63 | Navigational and shrinking year on year; the top bid is high because despachantes and forwarders buy it. |
+| arancelario | 1,000 | +49 % | −32 % | — | Tariff searches; covered by the tributos and NCM guides, add the word "arancel" to their titles or H2s. |
+| despachante de aduana | 480 | +23 % | 0 % | 2.58–6.81 | Generic term, 4× "despachante de aduana paraguay" (110). Best commercial term in this export. |
+| centro de despachante (de aduana) | 720 / 70 | −19 % / +40 % | −89 % / +40 % | — | Looking for the CDAP; the 720 term collapsed year on year. |
+| despacho aduanero | 140 | −21 % | −21 % | 2.26–6.67 | Existing service page; "despacho aduanero paraguay" is 50. |
+| aduana gov py | 260 | +50 % | −34 % | — | Navigational, people want the official site; no page to build. |
+| aduana brasileña / organización mundial de aduanas | 590 / 260 / 210 | ≈ −19 / +24 % | — | — | Not our topic, skip. |
+
+Reading: generic aduana demand is falling, so it is not a growth bet. The commercial slice is the
+despachante terms (about 480 + 110 + 140 + 70 per month). Next step: re-pull with location Paraguay
+to separate Paraguayan volume from the rest of Latin America.
