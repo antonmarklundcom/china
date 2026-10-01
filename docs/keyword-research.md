@@ -134,4 +134,5 @@ Clusters, volumes per month (the three "aduana" variants share one 5,400, so do 
   directo importaciones 30.
 - Tariff: arancelario 1,000 (+49 % 3 mo). Navigational or off-topic: aduana gov py 260, aduana central 40, aduana
   brasileña 590, organización mundial de aduanas 470, oea aduana 20.
-- "aduna" (the misspelling) does not appear in any export.
+- "aduna" is not a word (a typo in plan.md and in the owner message); the domain meant is aduana.com.py, which the owner has not bought yet (Gs 153,000 at registration, about USD 21–25).
+- "courier paraguay" and "courier en paraguay" share 5,400 (0 % 3 mo, −19 % YoY, bids 2.00–5.68 kr); "paraguay courier casa matriz" 590 is people looking for a competitor's head office.
