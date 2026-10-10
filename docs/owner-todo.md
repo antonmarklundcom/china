@@ -3,7 +3,7 @@
 The code and SEO are done. These need your accounts or decisions (details in `docs/LAUNCH.md`).
 
 - [ ] Hostinger: connect Git (repo `antonmarklundcom/china`, branch `main`, empty install path) and Deploy; add the webhook in GitHub for auto-deploy.
-- [ ] Upload `config.php` (VenderCRM key, `SITE_URL=https://china.com.py`) via File Manager; test `/cotizar/`.
+- [ ] Configure CRM once in `../private/vendercrm.php` using the canonical pair; see README. Keep `SITE_URL=https://china.com.py` in existing site settings; test `/cotizar/`.
 - [ ] Point `china.com.py` at the slot; SSL active; if you register `aduana.com.py`, 301 it to `https://china.com.py/aduana/` (it is not bought yet).
 - [ ] Search Console: add domain property, submit `https://china.com.py/sitemap.xml`, request indexing of the main pages.
 - [ ] Fulfilment partners (plan.md section 7 #5): one despachante, 1-2 couriers China-PY, one sourcing/inspection agent, one visa/Canton travel agency, plus referral terms. Then name them on the pages.

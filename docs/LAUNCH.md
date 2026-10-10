@@ -17,13 +17,7 @@ accounts. Allow about 30 minutes.
    `.htaccess` already sends http:// and www. visitors to `https://china.com.py`.
 
 ## 2. Lead key (once)
-1. Create `config.php` from `config.example.php` with:
-   - `SITE_URL` = `https://china.com.py`
-   - `VENDERCRM_URL` = `https://crm.clientes.com.py`
-   - `VENDERCRM_API_KEY` = the china.com.py key from your vendercrm-lead-endpoints file
-2. Upload it to `public_html/config.php` with the File Manager. It isn't in git, so later
-   deploys never overwrite it.
-3. Or send the key file to Claude and ask for the config (or the with-key zip).
+Copy `vendercrm.private.example.php` to `../private/vendercrm.php` outside the document/deployment root. Enter `VENDERCRM_URL` as the HTTPS CRM origin and `VENDERCRM_API_KEY` once on the server. Preserve that sibling private directory on redeploy. See README for environment and absolute private-path alternatives. `SITE_URL` remains an unrelated `config.php` setting. Never put keys in a deployment ZIP.
 
 ## 3. Test (5 minutes)
 - Open https://china.com.py/cotizar/ → pick "Importar para vender" → fill in → send.
