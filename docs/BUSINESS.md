@@ -12,7 +12,7 @@ price below is unverified**. Rates (2026-10-01): USD 1 = Gs 5,853 (owner's figur
 | Code | **Built.** PHP 8.2 on php-site-template. `./verify.sh` **PASS**: 88 routes, 78 pages with unique meta, no PHP warnings, lead routing, content integrity. |
 | Content | **Built, no stubs.** About 50 guides, services and product pages (~68k words), 4 blog posts, 3 calculators and the `/cotizar/` wizard. Aduana copy already says DNIT (Ley 7143/2023). |
 | Lead pipe | `enviar.php` → VenderCRM, with fallback to `logs/leads.log`. WhatsApp +595 995 628862. |
-| **Placeholders** | **No partners** ("próximamente" despachante list; `courier-1/2` null). **All 12 affiliate URLs null.** Email, legal name and testimonials are null. `config.php` (CRM key) is not in the repo. |
+| **Placeholders** | **No partners** ("próximamente" despachante list; `courier-1/2` null). **All 12 affiliate URLs null.** Email, legal name and testimonials are null. `../private/vendercrm.php` (CRM key) is not in the repo. |
 | Live | DNS → Hostinger. The site shows the **Hostinger default page** because it was never deployed. |
 
 **Verdict: technically deploy-ready (code 9/10), not business-ready (3/10).** Deploying takes
@@ -89,9 +89,7 @@ and earns small affiliate income. It is not the business.
    empty folder). Set PHP to 8.2+.
 2. Advanced → Git: repo `antonmarklundcom/china`, branch `main`, empty install path → Deploy.
    Add the webhook in GitHub for auto-deploy (no Actions minutes).
-3. **Env:** `public_html/config.php` holds `SITE_URL=https://china.com.py`,
-   `VENDERCRM_URL=https://crm.clientes.com.py` and `VENDERCRM_API_KEY`, plus `RESEND_API_KEY`,
-   `LEAD_NOTIFY_TO` and `LEAD_FROM` (verify SPF/DKIM). Leave GA4 empty.
+3. **Configuration:** CRM uses `../private/vendercrm.php` with `VENDERCRM_URL` (HTTPS origin) and `VENDERCRM_API_KEY`, outside the deployment root; see README. Other site settings (`SITE_URL`, `RESEND_API_KEY`, `LEAD_NOTIFY_TO`, `LEAD_FROM`) remain in the existing `config.php` loader. Leave GA4 empty.
 4. **Domain:** DNS already points to Hostinger. Turn on SSL and check that http and www both 301
    to `https://china.com.py`. If you register `aduana.com.py` (not owned yet), redirect it (301) to `/aduana/`.
 5. **Smoke test:** run `deploy/verify-live.sh`. Submit `/cotizar/` and confirm the lead reaches

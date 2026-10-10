@@ -1,3 +1,30 @@
+
+## Persistent VenderCRM setup
+
+Requires PHP 7.4+. For new CRM setup use only `VENDERCRM_URL` and
+`VENDERCRM_API_KEY`. Copy `vendercrm.private.example.php` manually to
+`../private/vendercrm.php` relative to this site's document root, fill the two
+values once on the server, and restrict file permissions to the PHP account.
+The URL is an HTTPS origin such as `https://crm.example.com`, without an API
+route, query or fragment. Do not commit the resulting private file.
+
+Keep the sibling `private` directory outside both the document root and the
+folder replaced by deployments. Redeploy only the site folder; never overwrite
+or reset the private file. If the hosting layout differs, set
+`VENDERCRM_CONFIG_FILE` to an absolute file path physically outside the document
+root. Confirm the actual document root and deployed branch with the host first.
+Alternatively set both canonical variables in the PHP process environment;
+uploading a `.env` file alone does not populate PHP's environment.
+
+Canonical environment/private settings override old CRM values in `config.php`.
+When environment and private file both exist they must agree. Partial canonical
+pairs, conflicting canonical sources and unsafe paths fail without exposing keys.
+Without a canonical source, existing legacy CRM settings and the form's inactive
+behavior remain available. Other site settings continue using their existing loader.
+The helper never creates credentials, sends leads, or changes retry/recovery behavior.
+DNS names must be verified by the deployment owner to resolve to public addresses.
+
+Run `php tests/vendercrm-config.php` for offline synthetic configuration checks.
 # china.com.py — China-Paraguay
 
 A Spanish-language guides and lead-generation site about buying, importing and travelling
