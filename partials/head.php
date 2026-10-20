@@ -76,7 +76,15 @@ foreach ($hreflangs as $hrefLocale => $hrefPath): ?>
   <?php if ($ads !== ''): ?>gtag('config', '<?= e($ads) ?>');<?php endif; ?>
 </script>
 <?php endif; ?>
-<?php $headCrm = cfg('VENDERCRM_URL'); ?>
+<?php
+/* A missing or invalid CRM config must never take the page down: Config
+   throws RuntimeException on a partial/unsafe setting, so omit the script. */
+try {
+    $headCrm = cfg('VENDERCRM_URL');
+} catch (RuntimeException $error) {
+    $headCrm = null;
+}
+?>
 <?php if ($headCrm): ?>
 <!-- VenderCRM first-touch attribution: stores the arriving utm_/gclid/fbclid in
      the vc_attr cookie, which enviar.php maps into the lead. -->
