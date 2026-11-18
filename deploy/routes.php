@@ -48,6 +48,7 @@ foreach (content('segmentos') as $segmento) {
 /* Non-page endpoints. */
 $routes['/robots.txt']  = 200;
 $routes['/sitemap.xml'] = 200;
+$routes['/version.txt'] = 200; // deploy marker: proves Hostinger redeployed the latest main
 
 /* Legacy URLs a rebuild froze: the redirects and 410s in .htaccess and
    router.php get their expected status here, so verify.sh proves all three
